@@ -64,7 +64,7 @@ const config: Config = {
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Matsuri Coin',
@@ -105,10 +105,6 @@ const config: Config = {
             {
               label: 'X (Twitter)',
               href: 'https://x.com/matsuri_dao_jp',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/matsuricoin',
             },
           ],
         },
