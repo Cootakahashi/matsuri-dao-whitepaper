@@ -1,0 +1,331 @@
+/**
+ * Matsuri Coin — Brand Design System
+ * Purple Spirit (MTC token) + Dark Mode Web3 aesthetic
+ */
+
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ===== Light Mode Palette (rarely used — default is dark) ===== */
+:root {
+  --ifm-color-primary: #7c3aed;
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #5b21b6;
+  --ifm-color-primary-darkest: #4c1d95;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #a78bfa;
+  --ifm-color-primary-lightest: #c4b5fd;
+
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.1);
+}
+
+/* ===== Dark Mode Palette — Primary ===== */
+[data-theme='dark'] {
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+
+  --ifm-background-color: #0a0a0f;
+  --ifm-background-surface-color: #12121a;
+  --ifm-navbar-background-color: rgba(10, 10, 15, 0.85);
+  --ifm-footer-background-color: #08080d;
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.15);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(167, 139, 250, 0.08);
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar__logo img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar__logo img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.5));
+}
+
+/* ===== Hero Banner ===== */
+.hero--matsuri {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 30%, rgba(124, 58, 237, 0.15) 0%, transparent 70%),
+              linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+  overflow: hidden;
+}
+
+[data-theme='light'] .hero--matsuri {
+  background: radial-gradient(ellipse at 50% 30%, rgba(124, 58, 237, 0.08) 0%, transparent 70%),
+              linear-gradient(180deg, #faf5ff 0%, #f5f3ff 100%);
+}
+
+.hero--matsuri::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(167, 139, 250, 0.04) 0%, transparent 50%);
+  animation: drift 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(2%, -1%) rotate(1deg); }
+  66% { transform: translate(-1%, 1%) rotate(-0.5deg); }
+}
+
+.hero__logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  box-shadow:
+    0 0 30px rgba(124, 58, 237, 0.3),
+    0 0 60px rgba(124, 58, 237, 0.15),
+    0 0 120px rgba(124, 58, 237, 0.05);
+  animation: pulse-glow 4s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+.hero__logo:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 30px rgba(124, 58, 237, 0.3),
+      0 0 60px rgba(124, 58, 237, 0.15),
+      0 0 120px rgba(124, 58, 237, 0.05);
+  }
+  50% {
+    box-shadow:
+      0 0 40px rgba(139, 92, 246, 0.4),
+      0 0 80px rgba(139, 92, 246, 0.2),
+      0 0 140px rgba(139, 92, 246, 0.08);
+  }
+}
+
+.hero__title--matsuri {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #c4b5fd 0%, #a78bfa 30%, #7c3aed 70%, #6d28d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme='light'] .hero__title--matsuri {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #4c1d95 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero__tagline {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(167, 139, 250, 0.8);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+[data-theme='light'] .hero__tagline {
+  color: rgba(109, 40, 217, 0.7);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__actions .button--primary {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  border: none;
+  color: #fff;
+  padding: 0.85rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+}
+
+.hero__actions .button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.45);
+  color: #fff;
+}
+
+.hero__actions .button--outline {
+  background: transparent;
+  border: 1.5px solid rgba(167, 139, 250, 0.4);
+  color: #a78bfa;
+  padding: 0.85rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.hero__actions .button--outline:hover {
+  border-color: #a78bfa;
+  background: rgba(167, 139, 250, 0.08);
+  transform: translateY(-2px);
+  color: #c4b5fd;
+}
+
+/* ===== Features Section ===== */
+.features--matsuri {
+  padding: 6rem 0;
+  background: #0a0a0f;
+}
+
+[data-theme='light'] .features--matsuri {
+  background: #faf5ff;
+}
+
+.feature__card {
+  background: rgba(18, 18, 26, 0.8);
+  border: 1px solid rgba(167, 139, 250, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+[data-theme='light'] .feature__card {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(124, 58, 237, 0.12);
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.06);
+}
+
+.feature__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(167, 139, 250, 0.25);
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
+}
+
+.feature__icon {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.feature__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.feature__desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme='light'] .feature__desc {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Powered By Section ===== */
+.powered-by {
+  padding: 4rem 0;
+  text-align: center;
+  background: rgba(18, 18, 26, 0.5);
+  border-top: 1px solid rgba(167, 139, 250, 0.06);
+}
+
+[data-theme='light'] .powered-by {
+  background: rgba(245, 243, 255, 0.8);
+  border-top-color: rgba(124, 58, 237, 0.08);
+}
+
+.powered-by__logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.powered-by__logo:hover {
+  opacity: 1;
+}
+
+.powered-by__text {
+  font-size: 0.9rem;
+  color: rgba(167, 139, 250, 0.5);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+[data-theme='light'] .powered-by__text {
+  color: rgba(109, 40, 217, 0.5);
+}
+
+/* ===== Footer Enhancements ===== */
+.footer--dark {
+  border-top: 1px solid rgba(167, 139, 250, 0.08);
+}
+
+/* ===== Docs Content ===== */
+.markdown h1 {
+  font-weight: 800;
+}
+
+.markdown h2 {
+  font-weight: 700;
+}
+
+.markdown blockquote {
+  border-left-color: var(--ifm-color-primary);
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .hero__logo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero__title--matsuri {
+    font-size: 2.2rem;
+  }
+
+  .hero__tagline {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  }
+}
