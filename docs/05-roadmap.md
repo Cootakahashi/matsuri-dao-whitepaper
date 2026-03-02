@@ -69,13 +69,26 @@ Public launch and full ecosystem operation.
 | **Vision** | Creator of the "Export Culture, Import Wealth" Culture OS |
 | **Ethos** | Writes code by day, runs the bar in Golden Gai by night — the definition of "skin in the game" |
 
-### Strategic Partners
+### Jon Anders Jensen
+
+### Ryunosuke Honda
+
+### 🌏 GCF Community — Global Development Contributors
+
+Matsuri Protocol isn't built by the founding team alone.
+**GCF members worldwide** contribute through testing, feedback, translation, and regional expansion.
 
 | Domain | Team |
 | :--- | :--- |
 | **💼 Global Finance** | Private-investor networks across Asia |
 | **⚙️ Engineering** | Distributed engineering guild for blockchain & mobile dev |
 | **🏮 Operations** | Deep pipeline with local communities in Shinjuku Golden Gai & major tourist hubs |
+| **🌐 Community** | Multinational GCF members across Japan, Norway, Thailand, Taiwan, and beyond |
+
+:::tip Build the Infrastructure of Culture Together
+Join GCF and become a co-developer of Matsuri Protocol.
+Contributing isn't just about writing code — introducing local sacred sites, translating docs, organizing events — everything helps spread this protocol to the world.
+:::
 
 ![Founder Vision — standing at the bridge between culture and technology](/production/05-roadmap_founder-vision_bridge.jpeg)
 
