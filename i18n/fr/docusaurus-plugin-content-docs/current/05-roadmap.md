@@ -69,6 +69,27 @@ Ouverture publique et fonctionnement complet de l'écosystème.
 | **Vision** | Créateur du concept « Exporter la culture, importer la prospérité » |
 | **Posture** | Code le jour, tient le bar à Golden Gai la nuit — la définition même du « skin in the game » |
 
+### Jon Anders Jensen
+
+### Ryunosuke Honda
+
+### 🌏 Communauté GCF — Contributeurs au développement mondial
+
+Matsuri Protocol n'est pas construit uniquement par l'équipe fondatrice.
+**Les membres GCF du monde entier** contribuent à travers les tests, les retours, la traduction et l'expansion régionale.
+
+| Domaine | Équipe |
+| :--- | :--- |
+| **💼 Finance mondiale** | Réseau d'investisseurs privés à travers l'Asie |
+| **⚙️ Ingénierie** | Équipe d'ingénierie distribuée, blockchain et développement mobile |
+| **🏮 Opérations** | Pipeline solide avec les communautés locales de Shinjuku Golden Gai et des points touristiques majeurs |
+| **🌐 Communauté** | Membres GCF multinationaux du Japon, de Norvège, de Thaïlande, de Taïwan et au-delà |
+
+:::tip Construisez ensemble l'infrastructure de la culture
+Rejoignez le GCF et devenez co-développeur de Matsuri Protocol.
+Contribuer ne se résume pas à écrire du code — présenter des sites sacrés locaux, traduire des documents, organiser des événements — tout contribue à diffuser ce protocole dans le monde entier.
+:::
+
 ### Partenaires stratégiques
 
 | Domaine | Équipe |

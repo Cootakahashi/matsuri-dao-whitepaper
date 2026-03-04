@@ -26,10 +26,10 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  // Internationalization: 9 languages
+  // Internationalization: 10 languages
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko'],
+    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko', 'my'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },
       ja: { label: '日本語', direction: 'ltr' },
@@ -40,6 +40,7 @@ const config: Config = {
       es: { label: 'Español', direction: 'ltr' },
       th: { label: 'ไทย', direction: 'ltr' },
       ko: { label: '한국어', direction: 'ltr' },
+      my: { label: 'မြန်မာ', direction: 'ltr' },
     },
   },
 
