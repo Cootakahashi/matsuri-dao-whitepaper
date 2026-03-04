@@ -8,7 +8,7 @@ title: ⚡ 智能合约
 
 > **无需信任的设计。**
 > 奖励逻辑、推荐树、减半时间表 — 一切都在**链上**执行，任何人都可以审计。
-> 源代码：[GitHub](https://github.com/matsuri-protocol/contracts)
+> 源代码：[GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -315,4 +315,4 @@ pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
 
 ---
 
-**[◀ 返回路线图](/docs/roadmap)** ｜ **[查看源代码](https://github.com/matsuri-protocol/contracts)**
+**[◀ 返回路线图](/docs/roadmap)** ｜ **[查看源代码](https://github.com/Cootakahashi/matsuri-contracts)**

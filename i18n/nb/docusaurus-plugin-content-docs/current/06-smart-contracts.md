@@ -8,7 +8,7 @@ title: ⚡ Smarte kontrakter
 
 > **Tillitsløst (Trustless) design.**
 > All belønningslogikk, vervingstrær og halveringsplaner håndheves **on-chain** via reviderbare Rust-programmer.
-> Kildekode: [GitHub](https://github.com/matsuri-protocol/contracts)
+> Kildekode: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -315,4 +315,4 @@ Disse kontraktene er **fullstendig åpen kildekode.** Sikkerheten baserer seg p�
 
 ---
 
-**[◀ Tilbake til veikartet](/docs/roadmap)** ｜ **[Se kildekoden](https://github.com/matsuri-protocol/contracts)**
+**[◀ Tilbake til veikartet](/docs/roadmap)** ｜ **[Se kildekoden](https://github.com/Cootakahashi/matsuri-contracts)**

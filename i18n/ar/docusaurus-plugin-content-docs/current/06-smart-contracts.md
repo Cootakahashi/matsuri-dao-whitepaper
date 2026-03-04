@@ -8,7 +8,7 @@ title: ⚡ العقود الذكية
 
 > **تصميم بلا حاجة للثقة (Trustless).**
 > منطق المكافآت وأشجار الإحالة وجداول التنصيف — كل شيء يُنفَّذ **على السلسلة** عبر برامج Rust قابلة للتدقيق.
-> الكود المصدري: [GitHub](https://github.com/matsuri-protocol/contracts)
+> الكود المصدري: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -315,4 +315,4 @@ pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
 
 ---
 
-**[◀ العودة إلى خارطة الطريق](/docs/roadmap)** ｜ **[عرض الكود المصدري](https://github.com/matsuri-protocol/contracts)**
+**[◀ العودة إلى خارطة الطريق](/docs/roadmap)** ｜ **[عرض الكود المصدري](https://github.com/Cootakahashi/matsuri-contracts)**

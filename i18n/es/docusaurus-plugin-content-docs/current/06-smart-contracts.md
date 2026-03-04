@@ -8,7 +8,7 @@ title: ⚡ Contratos Inteligentes
 
 > **Diseño sin necesidad de confianza (Trustless).**
 > Toda la lógica de recompensas, árboles de referidos y calendarios de halving se ejecutan **en cadena** mediante programas Rust auditables.
-> Código fuente: [GitHub](https://github.com/matsuri-protocol/contracts)
+> Código fuente: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -308,4 +308,4 @@ Contratos **totalmente de código abierto.** Seguridad basada en garantías mate
 
 ---
 
-**[◀ Volver a la hoja de ruta](/docs/roadmap)** ｜ **[Ver código fuente](https://github.com/matsuri-protocol/contracts)**
+**[◀ Volver a la hoja de ruta](/docs/roadmap)** ｜ **[Ver código fuente](https://github.com/Cootakahashi/matsuri-contracts)**

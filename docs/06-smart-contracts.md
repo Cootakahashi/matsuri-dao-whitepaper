@@ -8,7 +8,7 @@ title: ⚡ Smart Contracts
 
 > **Trustless by Design.**
 > All reward logic, referral trees, and halving schedules are enforced **on-chain** via auditable Rust programs.
-> Source code: [GitHub](https://github.com/matsuri-protocol/contracts)
+> Source code: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -315,5 +315,5 @@ These contracts are **fully open source.** Security relies on mathematical guara
 
 ---
 
-**[◀ Back to Roadmap](/docs/roadmap)** ｜ **[View Source Code](https://github.com/matsuri-protocol/contracts)**
+**[◀ Back to Roadmap](/docs/roadmap)** ｜ **[View Source Code](https://github.com/Cootakahashi/matsuri-contracts)**
 

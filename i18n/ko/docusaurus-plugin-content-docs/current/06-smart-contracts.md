@@ -8,7 +8,7 @@ title: ⚡ 스마트 컨트랙트
 
 > **무신뢰(Trustless) 설계.**
 > 보상 로직, 추천 트리, 반감기 스케줄 — 모든 것이 **온체인**에서 실행되며 누구나 감사할 수 있습니다.
-> 소스 코드: [GitHub](https://github.com/matsuri-protocol/contracts)
+> 소스 코드: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -315,4 +315,4 @@ pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
 
 ---
 
-**[◀ 로드맵으로 돌아가기](/docs/roadmap)** ｜ **[소스 코드 보기](https://github.com/matsuri-protocol/contracts)**
+**[◀ 로드맵으로 돌아가기](/docs/roadmap)** ｜ **[소스 코드 보기](https://github.com/Cootakahashi/matsuri-contracts)**

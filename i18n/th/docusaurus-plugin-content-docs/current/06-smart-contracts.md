@@ -8,7 +8,7 @@ title: ⚡ สมาร์ทคอนแทร็กต์
 
 > **ออกแบบโดยไม่ต้องเชื่อมั่น (Trustless)**
 > ลอจิกรางวัล ต้นไม้การแนะนำ และตารางลดครึ่ง ทั้งหมดถูกบังคับใช้ **บนเชน** ผ่านโปรแกรม Rust ที่ตรวจสอบได้
-> ซอร์สโค้ด: [GitHub](https://github.com/matsuri-protocol/contracts)
+> ซอร์สโค้ด: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -315,4 +315,4 @@ pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
 
 ---
 
-**[◀ กลับสู่แผนที่เส้นทาง](/docs/roadmap)** ｜ **[ดูซอร์สโค้ด](https://github.com/matsuri-protocol/contracts)**
+**[◀ กลับสู่แผนที่เส้นทาง](/docs/roadmap)** ｜ **[ดูซอร์สโค้ด](https://github.com/Cootakahashi/matsuri-contracts)**

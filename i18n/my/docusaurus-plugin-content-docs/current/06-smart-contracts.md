@@ -8,7 +8,7 @@ title: ⚡ Smart Contracts
 
 > **ယုံကြည်မှု မလိုအပ်သော ဒီဇိုင်း (Trustless)**
 > ဆုလော့ဂျစ်, referral trees နှင့် halving အချိန်ဇယားများ — အားလုံးကို **on-chain** တွင် စစ်ဆေးနိုင်သော Rust programs ဖြင့် ကျင့်သုံးသည်။
-> Source code: [GitHub](https://github.com/matsuri-protocol/contracts)
+> Source code: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
 
 ---
 
@@ -198,4 +198,4 @@ TierMult = { အကြီး: 1.0, အလတ်: 2.0, ကျေးလက်: 5.0
 
 ---
 
-**[◀ Roadmap သို့ ပြန်သွားရန်](/docs/roadmap)** ｜ **[Source Code ကြည့်ရန်](https://github.com/matsuri-protocol/contracts)**
+**[◀ Roadmap သို့ ပြန်သွားရန်](/docs/roadmap)** ｜ **[Source Code ကြည့်ရန်](https://github.com/Cootakahashi/matsuri-contracts)**
