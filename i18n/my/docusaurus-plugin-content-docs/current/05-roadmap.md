@@ -27,7 +27,7 @@ title: 🗓️ Roadmap နှင့် အဖွဲ့
 | ✅ | **မီဒီယာ ထွက်ရှိ** | J-Times (Web & Podcast) ဖြန့်ဝေမှု ပြင်ဆင်ပြီး |
 | ✅ | **Genesis** | Solana ပေါ်တွင် MTC Token Generation Event |
 | ✅ | **Liquidity** | Raydium တွင် ကနဦး LP pool ဖန်တီးပြီး |
-| ⬜ | **Incentive Program** | 50% target-APY liquidity mining စတင်ရန် |
+| ⬜ | **Incentive Program** | 20% target-APY liquidity mining စတင်ရန် |
 | ⬜ | **System Go-Live** | Solana MEV/arbitrage bot production တွင် |
 | ⬜ | **VIP စုဆောင်းမှု** | ပထမ GCF VIP အဖွဲ့ဝင် ၂၀ ဦး ရွေးချယ်ပြီး |
 

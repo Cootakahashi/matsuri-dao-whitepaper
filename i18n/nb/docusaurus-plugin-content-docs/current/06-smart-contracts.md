@@ -38,39 +38,25 @@ graph TB
 
 **Formål:** En hybrid vekstmotor som belønner både *bredde* (ververekkevidde) og *dybde* (økonomisk påvirkning). Ikke bare et affiliateprogram — en fullstendig mining-protokoll der økonomisk aktivitet i den virkelige verden genererer on-chain-verdi.
 
-### Poengformel
+### Poengdesign
 
-```
-S_final = S_raw × M_toku × B_title
-
-where:
-  S_raw   = 0.30 × antall_vervede + 0.70 × (volum / 10^9)
-  M_toku  = f(staket_mtc) ∈ [1.0×, 10.0×]
-  B_title = 1.0 + min(sesonger_rangert × 0.05, 0.50)
-```
+Bidragspoengene er basert på to vektede komponenter:
 
 | Komponent | Vekt | Formål |
 | :--- | :---: | :--- |
 | **Bredde** (antall vervede) | 30% | Nettverksrekkevidde — hvor mange du bringer inn |
 | **Dybde** (oppgjørsvolum) | 70% | Økonomisk påvirkning — ekte kjøp, ikke bare registreringer |
-| **Toku-multiplikator** | ×1–10 | Lås MTC for å øke mining-kraften |
-| **Tittelboost** | +5%/sesong | Permanent belønning for konsekvent toppytelse |
 
-### Toku (徳) Staking-nivåer
+Poeng akkumuleres over tid og konverteres til MTC ved hver halveringsepoke. Ytterligere boostmekanismer er planlagt:
 
-| Staket MTC | Multiplikator | Nivå |
-| :--- | :---: | :--- |
-| 0 | 1.0× | — |
-| 1 000+ | 1.5× | Bronse |
-| 10 000+ | 3.0× | Sølv |
-| 100 000+ | 5.0× | Gull |
-| 1 000 000+ | 10.0× | Diamant |
+| Boost | Beskrivelse | Status |
+| :--- | :--- | :---: |
+| **Toku (徳) Staking** | Lås MTC for å øke bidragspoengene dine (opptil ~50 % boost). Nivåer og nøyaktige multiplikatorer vil bli kalibrert basert på halveringspoolens utgivelsesplan | Koeffisienter TBD |
+| **Sesongrangeringer** | Toppytere hver epoke tjener **Evangelist**-tittelen (permanent SBT) og en poengboost. Nøyaktige prosentsatser vil bli bestemt via styring | Koeffisienter TBD |
 
-### En no Banzuke (Sesongranking)
-
-Hver sesong (epoke) rangeres toppytere. Fordeler:
-- Topp 10 % får **Evangelist**-tittelen (permanent SBT-flagg)
-- Hver rangert sesong gir **+5 % mining-boost** (kumulativt, tak: 50 %)
+:::info Progressivt parameterdesign
+Boostkoeffisienter (staking-nivåer, rangeringsbonuser) er med vilje holdt justerbare. De vil bli fastsatt basert på reelle økosystemdata — totalt antall aktive brukere, halveringspoolens utgivelsestakt og prisstabilitetsmål — deretter låst inn i smarte kontrakter. Denne tilnærmingen sikrer **rettferdig distribusjon** uten å overløfte faste avkastninger.
+:::
 
 ### Anti-Sybil-forsvar (3 lag)
 
@@ -90,67 +76,24 @@ Hver sesong (epoke) rangeres toppytere. Fordeler:
 Dette er «omvendt Uber-surge pricing» — overfylte steder straffes, grensesteder belønnes. Turister ruter seg selv til mindre besøkte steder fordi **det er mer lønnsomt.**
 :::
 
-### 6-lags belønningsformel
+### Prinsipper for belønningsdesign
 
-```
-R_final = R_pioneer × M_dynamic × M_regional × M_streak × M_omikuji
+Bidragspoengene for hvert besøk bestemmes av flere faktorer:
 
-where:
-  R_pioneer  = daily_pool / visit_order     (harmonisk 1/n-nedgang)
-  M_dynamic  = admin-styrt ∈ [0.1×, 50×]
-  M_regional = tier_table[tier] ∈ {1×, 2×, 5×, 10×}
-  M_streak   = 1.0 + min(days × 0.02, 0.50)
-  M_omikuji  = loddtrekning ∈ {1.0, 1.2, 1.5, 3.0}
-```
+| Faktor | Prinsipp | Effekt |
+| :--- | :--- | :--- |
+| **Stedets popularitet** | Mindre besøkte steder gir høyere poeng | Ruter turister bort fra overfylte områder |
+| **Besøkstidspunkt** | Tidligere besøkende på dagen scorer høyere | Oppmuntrer besøk utenfor rushtid |
+| **Regionalt nivå** | Landlige steder og grenseområder rangeres høyest | Driver regional revitalisering |
+| **Besøksfrekvens** | Regelmessige besøkende akkumulerer bonuspoeng | Belønner konsekvent engasjement |
+| **Omikuji-lykke** | Tilfeldig bonustrekning ved hver innsjekking | Morsomt gamification-lag |
+| **Sponsede booster** | Kommuner kan booste bestemte steder | B2B/B2G-inntektsmodell |
 
-### Lag 1: Pionérbonus
+:::info Koeffisientene er justerbare
+De nøyaktige multiplikatorene for hver faktor (f.eks. hvor mye mer et landlig sted tjener vs. et stort sted) vil bli **kalibrert basert på halveringspoolens tidsplan** og reelle bruksdata, deretter progressivt låst inn i smarte kontrakter. Designprinsippet er fast — koeffisientene utvikler seg med økosystemet.
+:::
 
-Harmonisk nedgang — matematikken som ruter turister:
-
-| Besøksrekkefølge | Belønning vs. 1. | Reelt eksempel (1000 MTC-pool) |
-| :---: | :---: | :--- |
-| 1. | 100 % | 1 000 MTC |
-| 5. | 20 % | 200 MTC |
-| 10. | 10 % | 100 MTC |
-| 100. | 1 % | 10 MTC |
-
-> **Første besøkende = 100× mer belønning enn den 100.** Dette skaper et kraftig insentiv for å besøke utenom høysesong.
-
-### Lag 2: Dynamisk multiplikator (trafikkspredning)
-
-Kontrollert i sanntid av administratorer via GCF Admin-panelet:
-
-| Scenario | Multiplikator | Effekt |
-| :--- | :---: | :--- |
-| **Overturistifisert** (Asakusa-topp) | 0.1× | 90 % belønningsstraff |
-| **Normal** | 1.0× | Standard |
-| **Underbesøkt** | 10× | 10× belønningsboost |
-| **Grensekampanje** | 50× | Maksimalt insentiv |
-
-### Lag 3: Regionalt nivå
-
-| Nivå | Etikett | Multiplikator | Eksempler |
-| :---: | :--- | :---: | :--- |
-| 0 | 🏙️ Stor | 1× | 浅草寺, 清水寺, 伏見稲荷 |
-| 1 | 🌆 Middels | 2× | Regionale hovedshriner |
-| 2 | 🏞️ Landlig | 5× | Historiske templer på landsbygda |
-| 3 | ⛰️ Skjult | 10× | Fjelltopphelligdommer, øy-helligdommer |
-
-### Lag 4: Streakbonus
-
-+2 % per sammenhengende dag, tak +50 %. Belønner faste besøkende.
-
-### Lag 5: 🎲 Omikuji-protokoll
-
-| Resultat | Sannsynlighet | Multiplikator |
-| :--- | :---: | :---: |
-| 🏆 **大吉** | 5 % | 3.0× |
-| ✨ **吉** | 15 % | 1.5× |
-| 🌸 **小吉** | 30 % | 1.2× |
-| 🍃 **末吉** | 35 % | 1.0× |
-| 💀 **凶** | 15 % | 1.0× |
-
-### Lag 6: Sponsede beacons (B2B/B2G)
+### Sponsede beacons (B2B/B2G)
 
 Kommuner, togselskaper og turismebyråer kan **sette inn MTC** for å opprette tidsbegrensede høybelønningssoner på bestemte steder.
 
@@ -244,17 +187,19 @@ sequenceDiagram
 | Effekt ferdig | 2500ms | Resultat bekreftet → Visning |
 | Solana TX | ~400ms | Sendt i bakgrunnen |
 
-### Omikuji-sannsynlighetsinnstillinger (GCF Admin)
+### Omikuji-innstillinger (GCF Admin)
 
-Basispunkter (10000 = 100 %) med 0,01 % presisjonskontroll.
+Basispunkter (10000 = 100 %) med 0,01 % presisjonskontroll. Justerbar fra GCF Admin-grensesnittet.
 
-| Grad | Standard | Belønningsm. | NFT |
+| Grad | Sjeldenhet | Bonus | NFT |
 |------|-----------|---------|-----|
-| 🏆 大吉 | 5,00 % (500bp) | ×3.0 | ✅ |
-| ✨ 吉 | 15,00 % (1500bp) | ×1.5 | Valgfritt |
-| 🌸 小吉 | 30,00 % (3000bp) | ×1.2 | — |
-| 🍃 末吉 | 35,00 % (3500bp) | ×1.0 | — |
-| 💀 凶 | 15,00 % (1500bp) | ×1.0 | — |
+| 🏆 大吉 | Sjelden | Høyeste bonus | ✅ |
+| ✨ 吉 | Uvanlig | God bonus | Valgfritt |
+| 🌸 小吉 | Vanlig | Liten bonus | — |
+| 🍃 末吉 | Vanlig | Deltakelse registrert | — |
+| 💀 凶 | Uvanlig | Deltakelse registrert | — |
+
+Sannsynligheter og belønningskoeffisienter vil bli fastsatt progressivt basert på økosystemets størrelse og halveringens utgivelsesvolum, deretter implementert i smarte kontrakter.
 
 ### ZK-Proof of Vision (5-lags verifisering)
 
@@ -269,33 +214,21 @@ GPS-forfalskning og replay-angrep elimineres gjennom flere lag. **Kameradata sen
 | Fingerprint | Enhetsunikhet | /20 |
 | **Totalt** | **PASS-terskel** | **60/100** |
 
-### Belønningsberegning
+### Belønningsdesign
 
-```
-Reward = Base(10 MTC) × SiteMultiplier × OmikujiMult × TierMult
-
-TierMult = { Stor: 1.0, Middels: 2.0, Landlig: 5.0, Skjult: 10.0 }
-```
+Belønninger registreres som **bidragspoeng** basert på flere faktorer: stedtype, Omikuji-resultat, regionalt nivå osv. Nøyaktige koeffisienter vil bli fastsatt progressivt basert på halveringens utgivelsesplan og økosystemets vekst, deretter implementert i smarte kontrakter.
 
 ---
 
 ## Matematikkmoduler (Åpen kildekode-kjerne)
 
-Begge programmene separerer all poengberegnings-/belønningsmatematikk i **rene, reviderbare `math.rs`-moduler** med:
+Alle programmer separerer poengberegnings-/belønningsmatematikk i **rene, reviderbare `math.rs`-moduler** med:
 
 - **Null sideeffekter** — ingen I/O, ingen allokeringer, ingen eksterne kall
 - **Dokumenterte formler** — LaTeX-stil notasjon i rustdoc
-- **Overflytanalyse** — u128 mellomverdier med bevisde grenser
+- **Overflytanalyse** — u128 mellomverdier med beviste grenser
 - **Omfattende tester** — grensetilfeller, grensebetingelser, ratioverifisering
-
-```rust
-// Eksempel: Pionérbonus (fra worship/math.rs)
-#[inline]
-pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
-    if visit_order == 0 { return 0; }
-    (daily_pool as u128 / visit_order as u128) as u64
-}
-```
+- **Justerbare koeffisienter** — belønningsparametere er designet for å kunne oppdateres via styring, som muliggjør progressiv kalibrering etter hvert som økosystemet vokser
 
 ---
 

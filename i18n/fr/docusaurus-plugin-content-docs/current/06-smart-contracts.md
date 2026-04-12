@@ -38,39 +38,25 @@ graph TB
 
 **Objectif :** Un moteur de croissance hybride qui récompense à la fois la *largeur* (portée du parrainage) et la *profondeur* (impact économique). Pas un simple programme d'affiliation — un protocole de minage complet où l'activité économique réelle génère de la valeur on-chain.
 
-### Formule de score
+### Conception du scoring
 
-```
-S_final = S_raw × M_toku × B_title
-
-where:
-  S_raw   = 0.30 × parrainages + 0.70 × (volume / 10^9)
-  M_toku  = f(mtc_staké) ∈ [1.0×, 10.0×]
-  B_title = 1.0 + min(saisons_classées × 0.05, 0.50)
-```
+Le score de contribution repose sur deux composantes pondérées :
 
 | Composant | Poids | Objectif |
 | :--- | :---: | :--- |
 | **Largeur** (nombre de parrainages) | 30% | Portée du réseau — combien de personnes vous amenez |
 | **Profondeur** (volume de règlement) | 70% | Impact économique — achats réels, pas seulement des inscriptions |
-| **Multiplicateur Toku** | ×1–10 | Verrouillez du MTC pour augmenter la puissance de minage |
-| **Boost de titre** | +5%/saison | Récompense permanente pour les meilleurs performeurs constants |
 
-### Niveaux de staking Toku (徳)
+Les scores s'accumulent au fil du temps et sont convertis en MTC à chaque époque de halving. Des mécanismes de boost supplémentaires sont prévus :
 
-| MTC staké | Multiplicateur | Niveau |
-| :--- | :---: | :--- |
-| 0 | 1.0× | — |
-| 1 000+ | 1.5× | Bronze |
-| 10 000+ | 3.0× | Argent |
-| 100 000+ | 5.0× | Or |
-| 1 000 000+ | 10.0× | Diamant |
+| Boost | Description | Statut |
+| :--- | :--- | :---: |
+| **Toku (徳) Staking** | Verrouillez du MTC pour booster votre score de contribution (jusqu'à ~50 % de boost). Les niveaux et multiplicateurs exacts seront calibrés selon le calendrier de libération du pool de halving | Coefficients à déterminer |
+| **Classements saisonniers** | Les meilleurs performeurs de chaque époque obtiennent le titre **Évangéliste** (SBT permanent) et un boost de score. Les pourcentages exacts seront déterminés via la gouvernance | Coefficients à déterminer |
 
-### En no Banzuke (Classement saisonnier)
-
-Chaque saison (époque), les meilleurs performeurs sont classés. Avantages :
-- Le top 10 % obtient le titre **Évangéliste** (drapeau SBT permanent)
-- Chaque saison classée octroie **+5 % de boost de minage** (cumulatif, plafond : 50 %)
+:::info Conception progressive des paramètres
+Les coefficients de boost (niveaux de staking, bonus de classement) sont intentionnellement laissés ajustables. Ils seront finalisés sur la base de données réelles de l'écosystème — nombre total d'utilisateurs actifs, rythme de libération du pool de halving et objectifs de stabilité des prix — puis verrouillés dans les smart contracts. Cette approche garantit une **distribution équitable** sans promettre des rendements fixes.
+:::
 
 ### Défense anti-Sybil (3 couches)
 
@@ -90,65 +76,26 @@ Chaque saison (époque), les meilleurs performeurs sont classés. Avantages :
 C'est le « surge pricing inversé d'Uber » — les sites bondés sont pénalisés, les sites pionniers sont récompensés. Les touristes se dirigent d'eux-mêmes vers des lieux moins visités parce que **c'est plus rentable.**
 :::
 
-### Formule de récompenses à 6 couches
+### Principes de conception des récompenses
 
-```
-R_final = R_pioneer × M_dynamic × M_regional × M_streak × M_omikuji
+Le score de contribution pour chaque visite est déterminé par plusieurs facteurs :
 
-where:
-  R_pioneer  = daily_pool / visit_order     (décroissance harmonique 1/n)
-  M_dynamic  = contrôlé par admin ∈ [0.1×, 50×]
-  M_regional = tier_table[tier] ∈ {1×, 2×, 5×, 10×}
-  M_streak   = 1.0 + min(days × 0.02, 0.50)
-  M_omikuji  = loterie ∈ {1.0, 1.2, 1.5, 3.0}
-```
+| Facteur | Principe | Effet |
+| :--- | :--- | :--- |
+| **Popularité du site** | Les sites moins visités obtiennent des scores plus élevés | Détourne les touristes des zones surpeuplées |
+| **Heure de visite** | Les visiteurs plus tôt dans la journée obtiennent un score plus élevé | Encourage les visites hors pointe |
+| **Niveau régional** | Les sites ruraux et pionniers sont les mieux classés | Favorise la revitalisation régionale |
+| **Fréquence de visite** | Les visiteurs réguliers accumulent des scores bonus | Récompense l'engagement constant |
+| **Fortune Omikuji** | Tirage aléatoire de bonus à chaque check-in | Couche de gamification ludique |
+| **Boosts sponsorisés** | Les municipalités peuvent booster des sites spécifiques | Modèle de revenus B2B/B2G |
 
-### Couche 1 : Bonus pionnier
+:::info Les coefficients sont ajustables
+Les multiplicateurs exacts pour chaque facteur (ex. combien un site rural rapporte de plus qu'un site majeur) seront **calibrés selon le calendrier du pool de halving** et les données d'utilisation réelles, puis progressivement verrouillés dans les smart contracts. Le principe de conception est fixe — les coefficients évoluent avec l'écosystème.
+:::
 
-| Ordre de visite | Récompense vs 1er | Exemple réel (pool 1000 MTC) |
-| :---: | :---: | :--- |
-| 1er | 100 % | 1 000 MTC |
-| 5e | 20 % | 200 MTC |
-| 10e | 10 % | 100 MTC |
-| 100e | 1 % | 10 MTC |
+### Beacons sponsorisés (B2B/B2G)
 
-> **1er visiteur = 100× plus de récompense que le 100e.**
-
-### Couche 2 : Multiplicateur dynamique
-
-| Scénario | Multiplicateur | Effet |
-| :--- | :---: | :--- |
-| **Surtourisme** | 0.1× | 90 % pénalité |
-| **Normal** | 1.0× | Standard |
-| **Peu visité** | 10× | 10× boost |
-| **Campagne pionnière** | 50× | Incitation maximale |
-
-### Couche 3 : Niveau régional
-
-| Niveau | Étiquette | Mult. | Exemples |
-| :---: | :--- | :---: | :--- |
-| 0 | 🏙️ Majeur | 1× | 浅草寺, 清水寺, 伏見稲荷 |
-| 1 | 🌆 Moyen | 2× | Sanctuaires principaux régionaux |
-| 2 | 🏞️ Rural | 5× | Temples historiques à la campagne |
-| 3 | ⛰️ Caché | 10× | Temples de montagne, sanctuaires insulaires |
-
-### Couche 4 : Bonus de série
-
-+2 % par jour consécutif, plafond +50 %.
-
-### Couche 5 : 🎲 Protocole Omikuji
-
-| Résultat | Probabilité | Multiplicateur |
-| :--- | :---: | :---: |
-| 🏆 **大吉** | 5 % | 3.0× |
-| ✨ **吉** | 15 % | 1.5× |
-| 🌸 **小吉** | 30 % | 1.2× |
-| 🍃 **末吉** | 35 % | 1.0× |
-| 💀 **凶** | 15 % | 1.0× |
-
-### Couche 6 : Beacons sponsorisés (B2B/B2G)
-
-Les municipalités et les offices de tourisme peuvent **déposer du MTC** pour créer des zones à forte récompense temporaires.
+Les municipalités, les compagnies ferroviaires et les offices de tourisme peuvent **déposer du MTC** pour créer des zones à forte récompense temporaires sur des sites spécifiques.
 
 ```mermaid
 graph LR
@@ -237,17 +184,19 @@ sequenceDiagram
 | Effet terminé | 2500ms | Résultat → Affichage |
 | Solana TX | ~400ms | En arrière-plan |
 
-### Probabilités Omikuji (Admin GCF)
+### Paramètres Omikuji (Admin GCF)
 
-Points de base (10000 = 100 %) avec précision de 0,01 %.
+Points de base (10000 = 100 %) avec précision de 0,01 %. Ajustable depuis l'interface Admin GCF.
 
-| Grade | Valeur | Mult. | NFT |
+| Grade | Rareté | Bonus | NFT |
 |------|-----------|---------|-----|
-| 🏆 大吉 | 5,00 % | ×3.0 | ✅ |
-| ✨ 吉 | 15,00 % | ×1.5 | Optionnel |
-| 🌸 小吉 | 30,00 % | ×1.2 | — |
-| 🍃 末吉 | 35,00 % | ×1.0 | — |
-| 💀 凶 | 15,00 % | ×1.0 | — |
+| 🏆 大吉 | Rare | Bonus maximum | ✅ |
+| ✨ 吉 | Peu commun | Bon bonus | Optionnel |
+| 🌸 小吉 | Commun | Petit bonus | — |
+| 🍃 末吉 | Commun | Participation enregistrée | — |
+| 💀 凶 | Peu commun | Participation enregistrée | — |
+
+Les probabilités et coefficients de récompense seront finalisés progressivement en fonction de la taille de l'écosystème et du volume de libération du halving, puis implémentés dans les smart contracts.
 
 ### ZK-Proof of Vision (5 couches)
 
@@ -262,33 +211,21 @@ Points de base (10000 = 100 %) avec précision de 0,01 %.
 | Fingerprint | Unicité de l'appareil | /20 |
 | **Total** | **Seuil PASS** | **60/100** |
 
-### Formule de récompenses
+### Conception des récompenses
 
-```
-Reward = Base(10 MTC) × SiteMultiplier × OmikujiMult × TierMult
-
-TierMult = { Majeur: 1.0, Moyen: 2.0, Rural: 5.0, Caché: 10.0 }
-```
+Les récompenses sont enregistrées sous forme de **score de contribution** basé sur de multiples facteurs : type de site, résultat Omikuji, niveau régional, etc. Les coefficients exacts seront finalisés progressivement en fonction du calendrier de libération du halving et de la croissance de l'écosystème, puis implémentés dans les smart contracts.
 
 ---
 
 ## Modules mathématiques (Noyau open source)
 
-Modules `math.rs` purs et auditables :
+Tous les programmes séparent la logique de scoring/récompense dans des **modules `math.rs` purs et auditables** avec :
 
-- **Zéro effets de bord** — pas d'I/O, pas d'allocations
+- **Zéro effets de bord** — pas d'I/O, pas d'allocations, pas d'appels externes
 - **Formules documentées** — notation LaTeX dans rustdoc
-- **Analyse de dépassement** — valeurs intermédiaires u128
-- **Tests exhaustifs** — cas limites et conditions aux bornes
-
-```rust
-// Exemple : Bonus Pionnier (worship/math.rs)
-#[inline]
-pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
-    if visit_order == 0 { return 0; }
-    (daily_pool as u128 / visit_order as u128) as u64
-}
-```
+- **Analyse de dépassement** — valeurs intermédiaires u128 avec bornes prouvées
+- **Tests exhaustifs** — cas limites, conditions aux bornes, vérification des ratios
+- **Coefficients ajustables** — les paramètres de récompense sont conçus pour être modifiables via la gouvernance, permettant une calibration progressive à mesure que l'écosystème grandit
 
 ---
 

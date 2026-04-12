@@ -32,7 +32,7 @@ The product is built. Focus now is monetisation via the CEO-led financial system
 | ✅ | **Backend Infrastructure** | 80+ models, 100+ APIs, 15+ automated tasks, 841 tests |
 | ✅ | **Analytics** | Full session tracking, conversion funnels, A/B testing |
 | 🔜 | **Mobile Launch** | Matsuri & J-Times iOS apps (April 2026) |
-| ⬜ | **Incentive Programme** | 50 % target-APY liquidity mining launch |
+| ⬜ | **Incentive Programme** | 20% target-APY liquidity mining launch |
 | ⬜ | **System Go-Live** | Solana MEV / arbitrage bot in production |
 | ⬜ | **VIP Recruitment** | First 20 GCF VIP members selected |
 

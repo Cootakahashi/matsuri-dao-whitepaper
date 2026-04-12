@@ -47,39 +47,25 @@ graph TB
 
 **Purpose:** A hybrid growth engine that rewards both *breadth* (referral reach) and *depth* (economic impact). Not just affiliates — a full mining protocol where real-world economic activity generates on-chain value.
 
-### Scoring Formula
+### Scoring Design
 
-```
-S_final = S_raw × M_toku × B_title
-
-where:
-  S_raw   = 0.30 × referrals + 0.70 × (volume / 10^9)
-  M_toku  = f(staked_mtc) ∈ [1.0×, 10.0×]
-  B_title = 1.0 + min(seasons_ranked × 0.05, 0.50)
-```
+The contribution score is based on two weighted components:
 
 | Component | Weight | Purpose |
 | :--- | :---: | :--- |
 | **Breadth** (referral count) | 30% | Network reach — how many people you bring |
 | **Depth** (settlement volume) | 70% | Economic impact — real purchases, not just signups |
-| **Toku Multiplier** | ×1–10 | Lock MTC to boost mining power |
-| **Title Boost** | +5%/season | Permanent reward for consistent top performers |
 
-### Toku (徳) Staking Tiers
+Scores accumulate over time and convert to MTC at each halving epoch. Additional boost mechanisms are planned:
 
-| Staked MTC | Multiplier | Tier |
-| :--- | :---: | :--- |
-| 0 | 1.0× | — |
-| 1,000+ | 1.5× | Bronze |
-| 10,000+ | 3.0× | Silver |
-| 100,000+ | 5.0× | Gold |
-| 1,000,000+ | 10.0× | Diamond |
+| Boost | Description | Status |
+| :--- | :--- | :---: |
+| **Toku (徳) Staking** | Lock MTC to boost your contribution score (up to ~50% boost). Tiers and exact multipliers will be calibrated based on the halving pool release schedule | ⬜ Coefficients TBD |
+| **Seasonal Rankings** | Top performers each epoch earn **Evangelist** title (permanent SBT) and a score boost. Exact percentages will be determined via governance | ⬜ Coefficients TBD |
 
-### En no Banzuke (季節ランキング)
-
-Each season (epoch), top performers are ranked. Benefits:
-- Top 10% earn **Evangelist** title (permanent SBT flag)
-- Each season ranked grants **+5% mining boost** (cumulative, cap: 50%)
+:::info Progressive Parameter Design
+Boost coefficients (staking tiers, ranking bonuses) are intentionally left adjustable. They will be finalised based on real ecosystem data — total active users, halving pool release rate, and price stability targets — then locked into smart contracts. This approach ensures **fair distribution** without over-promising fixed returns.
+:::
 
 ### Anti-Sybil Defence (3 Layers)
 
@@ -99,67 +85,24 @@ Each season (epoch), top performers are ranked. Benefits:
 This is "reverse Uber surge pricing" — crowded sites get penalized, frontier sites get boosted. Tourists route themselves to less-visited locations because **it's more profitable.**
 :::
 
-### 6-Layer Reward Formula
+### Reward Design Principles
 
-```
-R_final = R_pioneer × M_dynamic × M_regional × M_streak × M_omikuji
+The contribution score for each visit is determined by multiple factors:
 
-where:
-  R_pioneer  = daily_pool / visit_order     (harmonic 1/n decay)
-  M_dynamic  = admin-controlled ∈ [0.1×, 50×]
-  M_regional = tier_table[tier] ∈ {1×, 2×, 5×, 10×}
-  M_streak   = 1.0 + min(days × 0.02, 0.50)
-  M_omikuji  = fortune_lottery ∈ {1.0, 1.2, 1.5, 3.0}
-```
+| Factor | Principle | Effect |
+| :--- | :--- | :--- |
+| **Site popularity** | Less-visited sites earn higher scores | Routes tourists away from overcrowded areas |
+| **Visit timing** | Earlier visitors of the day score higher | Encourages off-peak visits |
+| **Regional tier** | Rural and frontier sites rank highest | Drives regional revitalisation |
+| **Visit frequency** | Regular visitors accumulate bonus scores | Rewards consistent engagement |
+| **Omikuji fortune** | Random bonus draw on each check-in | Fun gamification layer |
+| **Sponsored boosts** | Municipalities can boost specific sites | B2B/B2G revenue model |
 
-### Layer 1: Pioneer Bonus (先行者利益)
+:::info Coefficients Are Adjustable
+The exact multipliers for each factor (e.g. how much more a rural site earns vs. a major site) will be **calibrated based on the halving pool schedule** and real usage data, then progressively locked into smart contracts. The design principle is fixed — the coefficients evolve with the ecosystem.
+:::
 
-Harmonic decay — the math that routes tourists:
-
-| Visit Order | Reward vs 1st | Real Example (1000 MTC pool) |
-| :---: | :---: | :--- |
-| 1st | 100% | 1,000 MTC |
-| 5th | 20% | 200 MTC |
-| 10th | 10% | 100 MTC |
-| 100th | 1% | 10 MTC |
-
-> **First visitor = 100× more reward than 100th visitor.** This creates a powerful incentive to visit at off-peak times.
-
-### Layer 2: Dynamic Multiplier (混雑分散)
-
-Controlled in real-time by admins via the GCF Admin panel:
-
-| Scenario | Multiplier | Effect |
-| :--- | :---: | :--- |
-| **Over-touristed** (Asakusa peak) | 0.1× | 90% reward penalty |
-| **Normal** | 1.0× | Standard |
-| **Under-visited** | 10× | 10× reward boost |
-| **Frontier campaign** | 50× | Maximum incentive |
-
-### Layer 3: Regional Tier
-
-| Tier | Label | Multiplier | Examples |
-| :---: | :--- | :---: | :--- |
-| 0 | 🏙️ Major | 1× | 浅草寺, 清水寺, 伏見稲荷 |
-| 1 | 🌆 Medium | 2× | 地方一宮, 県庁所在地の大社 |
-| 2 | 🏞️ Rural | 5× | 田舎の歴史ある古社 |
-| 3 | ⛰️ Hidden | 10× | 山奥の霊場, 離島の御嶽 |
-
-### Layer 4: Streak Bonus
-
-+2% per consecutive day, capped at +50%. Rewards regular visitors.
-
-### Layer 5: 🎲 Omikuji Protocol
-
-| Result | Probability | Multiplier |
-| :--- | :---: | :---: |
-| 🏆 **大吉** | 5% | 3.0× |
-| ✨ **吉** | 15% | 1.5× |
-| 🌸 **小吉** | 30% | 1.2× |
-| 🍃 **末吉** | 35% | 1.0× |
-| 💀 **凶** | 15% | 1.0× |
-
-### Layer 6: Sponsored Beacons (B2B/B2G)
+### Sponsored Beacons (B2B/B2G)
 
 Municipalities, railway companies, and tourism boards can **deposit MTC** to create time-limited high-reward zones at specific sites.
 
@@ -218,21 +161,13 @@ The `advance_epoch` instruction can be called by **anyone** — no admin needed.
 
 ## Math Modules (Open Source Core)
 
-Both programs separate all scoring/reward math into **pure, auditable `math.rs` modules** with:
+All programs separate scoring/reward math into **pure, auditable `math.rs` modules** with:
 
 - **Zero side effects** — no I/O, no allocations, no external calls
 - **Documented formulas** — LaTeX-style notation in rustdoc
 - **Overflow analysis** — u128 intermediate values with proven bounds
 - **Comprehensive tests** — edge cases, boundary conditions, ratio verification
-
-```rust
-// Example: Pioneer Bonus (from worship/math.rs)
-#[inline]
-pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
-    if visit_order == 0 { return 0; }
-    (daily_pool as u128 / visit_order as u128) as u64
-}
-```
+- **Adjustable coefficients** — reward parameters are designed to be updatable via governance, allowing progressive calibration as the ecosystem grows
 
 ---
 
@@ -279,15 +214,17 @@ sequenceDiagram
 
 ### おみくじ確率設定 (GCF Admin)
 
-Basis Points (10000 = 100%) で0.01%刻みの精密制御。
+Basis Points (10000 = 100%) で0.01%刻みの精密制御。GCF Admin画面から調整可能。
 
-| 等級 | デフォルト | 報酬倍率 | NFT |
+| 等級 | レアリティ | ボーナス | NFT |
 |------|-----------|---------|-----|
-| 🏆 大吉 | 5.00% (500bp) | ×3.0 | ✅ |
-| ✨ 吉 | 15.00% (1500bp) | ×1.5 | 任意 |
-| 🌸 小吉 | 30.00% (3000bp) | ×1.2 | — |
-| 🍃 末吉 | 35.00% (3500bp) | ×1.0 | — |
-| 💀 凶 | 15.00% (1500bp) | ×1.0 | — |
+| 🏆 大吉 | レア | 最大ボーナス | ✅ |
+| ✨ 吉 | アンコモン | 高ボーナス | 任意 |
+| 🌸 小吉 | コモン | 小ボーナス | — |
+| 🍃 末吉 | コモン | 参加記録 | — |
+| 💀 凶 | アンコモン | 参加記録 | — |
+
+確率と報酬係数はエコシステムの規模と半減期の放出量に基づいて段階的に確定し、スマートコントラクトに実装されます。
 
 ### ZK-Proof of Vision（5層検証）
 
@@ -302,13 +239,9 @@ GPS偽装・リプレイ攻撃を多層で排除。プライバシー保護の�
 | Fingerprint | デバイス一意性 | /20 |
 | **合計** | **PASS 閾値** | **60/100** |
 
-### 報酬計算式
+### 報酬設計
 
-```
-Reward = Base(10 MTC) × SiteMultiplier × OmikujiMult × TierMult
-
-TierMult = { メジャー: 1.0, 中規模: 2.0, 地方: 5.0, 秘境: 10.0 }
-```
+報酬はサイトの種類、おみくじ結果、地域ティアなどの複数要因に基づく**貢献スコア**として記録されます。具体的な係数は半減期の放出スケジュールとエコシステムの成長に合わせて段階的に確定し、スマートコントラクトに実装されます。
 
 ---
 
@@ -323,8 +256,8 @@ Matsuri Protocol issues non-transferable **Soulbound Tokens (SBTs)** and limited
 
 | Type | Transferable | Purpose |
 | :--- | :---: | :--- |
-| **Founder NFT** | No (SBT) | Founding member proof — permanent mining boost |
-| **Evangelist NFT** | No (SBT) | Season ranking achievement — +5% mining per season |
+| **Founder NFT** | No (SBT) | Founding member proof — permanent score boost |
+| **Evangelist NFT** | No (SBT) | Season ranking achievement — score boost |
 | **Goshuin NFT** | No (SBT) | Pilgrimage check-in proof — location-exclusive |
 | **Omikuji NFT** | No (SBT) | 大吉 fortune proof — rare collectible |
 

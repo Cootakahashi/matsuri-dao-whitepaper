@@ -69,9 +69,9 @@ No internet at a rural shrine? No problem. J-Times records your activity locally
 
 ### 2. ⛩️ Adventure Mining — Visit Sacred Sites with Matsuri App
 
-Open the **Matsuri app**, find a shrine or temple on the Sacred Site Map, go there, and check in. The less-visited the site, the more you earn.
+Open the **Matsuri app**, find a shrine or temple on the Sacred Site Map, go there, and check in. Your activity is recorded as a **contribution score**.
 
-**Step-by-step flow:**
+**How it works:**
 
 ```mermaid
 sequenceDiagram
@@ -82,30 +82,30 @@ sequenceDiagram
 
     U->>GPS: Arrive at shrine, tap "Check In"
     GPS->>API: Send coordinates + proof hash
-    API->>API: Validate location (within 200m of site)
-    API->>API: Calculate reward (6-layer formula)
-    API-->>U: Show reward: "⛩️ +150 MTC" + Omikuji draw
+    API->>API: Validate location + record contribution score
+    API-->>U: Show result: "⛩️ Check-in complete!" + Omikuji draw
     U->>API: Draw Omikuji
-    API-->>U: "🏆 大吉! ×3.0 bonus → 450 MTC total"
+    API-->>U: "🏆 大吉! Bonus score!"
     API->>SC: Submit to Solana (async, post-Aug)
 ```
 
-**Reward multipliers — why rural pays more:**
+**Core principle — less-visited sites earn more:**
 
-| Site Type | Examples | Multiplier |
+| Site Type | Examples | Score |
 | :--- | :--- | :---: |
-| 🏙️ **Major** | Sensoji, Kiyomizu-dera, Fushimi Inari | ×1 |
-| 🌆 **Regional** | Prefectural ichinomiya, regional grand shrines | ×2 |
-| 🏞️ **Rural** | Historic country shrines | ×5 |
-| ⛰️ **Frontier** | Mountain temples, remote island sacred sites | ×10 |
+| 🏙️ **Major** | Sensoji, Kiyomizu-dera, Fushimi Inari | Standard |
+| 🌆 **Regional** | Prefectural ichinomiya, regional grand shrines | Higher |
+| 🏞️ **Rural** | Historic country shrines | Much higher |
+| ⛰️ **Frontier** | Mountain temples, remote island sacred sites | Highest |
 
-**Plus additional bonuses:**
-- **Pioneer Bonus** — first visitor of the day earns the most (harmonic decay)
-- **Streak Bonus** — visit consecutive days for up to +50%
-- **Omikuji** — random fortune draw: 大吉 = ×3.0, 吉 = ×1.5, 小吉 = ×1.2
-- **Sponsored Beacons** — municipalities deposit MTC to boost specific sites
+**Additional score factors:**
+- **Visit frequency** — regular visitors earn more over time
+- **Omikuji** — random fortune draw adds bonus score (大吉 is the best!)
+- **Sponsored Sites** — municipalities can boost specific sites
 
-> **Example:** Visit a remote mountain shrine (×10) as the 2nd visitor of the day, with a 5-day streak (+10%), and draw 吉 (×1.5) = base reward amplified **16.5×**.
+:::info Contribution Score → MTC
+Your activity accumulates as a **contribution score**. At each halving epoch (starting June 2027), scores are converted to MTC from the 550M mining pool. The more you contribute relative to the community, the more MTC you receive. Exact boost coefficients will be finalised progressively and implemented in smart contracts — ensuring fair distribution aligned with the actual pool size.
+:::
 
 ---
 
@@ -120,15 +120,15 @@ Share your referral code. When your network transacts, you earn automatically.
 | **L3** | 3rd degree | **5%** |
 | **L4** | 4th degree | **5%** |
 
-**How the En-Mining score works:**
+**How En-Mining scoring works:**
 
-```
-Your Score = (Direct Referrals × 30%) + (Network Transaction Volume × 70%)
-           × Toku Staking Multiplier (1.0× – 10.0×)
-           × Title Boost (+5% per ranked season, max +50%)
-```
+Your contribution score is calculated based on two factors:
+- **Network reach** (30%) — how many people you bring
+- **Economic activity** (70%) — real purchases from your referral network
 
-> **Key insight:** 70% of your score comes from **real economic activity** in your network, not just signups. Inviting 1,000 people who never spend earns less than inviting 10 active spenders.
+> **Key insight:** The majority of your score comes from **real economic activity** in your network, not just signups. Inviting 1,000 people who never spend earns less than inviting 10 active spenders.
+
+Scores accumulate over time and convert to MTC at each halving epoch. Boost multipliers (e.g. staking MTC, seasonal rankings) will be introduced progressively via smart contracts.
 
 :::warning Currently Off-Chain → Moving On-Chain August 2026
 Referral commissions are currently tracked in Django (PostgreSQL) and paid via bank transfer or crypto. Starting **August 2026**, the entire referral commission system will migrate to the **Matsuri Referral smart contract** on Solana — making payouts trustless, instant, and auditable on-chain.
@@ -158,25 +158,25 @@ Provide MTC/SOL liquidity on Raydium DEX and earn rewards.
 
 | Item | Details |
 | :--- | :--- |
-| **Target APY** | 50% (early liquidity incentive) |
+| **Target APY** | 20% (early liquidity incentive) |
 | **DEX** | Raydium (Solana) |
 | **Who** | Anyone holding MTC and SOL |
 
 ---
 
-### 6. 🎲 Omikuji Bonus — Fortune Multiplier
+### 6. 🎲 Omikuji Bonus — Fortune Draw
 
-Every Adventure Mining check-in includes a free Omikuji (fortune) draw. This multiplier is applied on top of all other bonuses.
+Every Adventure Mining check-in includes a free Omikuji (fortune) draw — a bonus on top of your regular score.
 
-| Fortune | Probability | Multiplier |
-| :--- | :---: | :---: |
-| 🏆 **大吉** (Great Blessing) | 5% | ×3.0 |
-| ✨ **吉** (Blessing) | 15% | ×1.5 |
-| 🌸 **小吉** (Small Blessing) | 30% | ×1.2 |
-| 🍃 **末吉** (Future Blessing) | 35% | ×1.0 |
-| 💀 **凶** (Misfortune) | 15% | ×1.0 |
+| Fortune | Rarity | Bonus |
+| :--- | :---: | :--- |
+| 🏆 **大吉** (Great Blessing) | Rare | Highest bonus score + NFT |
+| ✨ **吉** (Blessing) | Uncommon | Good bonus score |
+| 🌸 **小吉** (Small Blessing) | Common | Small bonus |
+| 🍃 **末吉** (Future Blessing) | Common | Participation recorded |
+| 💀 **凶** (Misfortune) | Uncommon | Participation recorded |
 
-The result is determined by a **tamper-proof commit-reveal protocol** on Solana. Not even the server can change your result after the commit phase.
+The result is determined by a **tamper-proof commit-reveal protocol** on Solana. Not even the server can change your result after the commit phase. Exact probabilities and bonus amounts will be finalised in the smart contract implementation.
 
 ---
 
@@ -187,7 +187,7 @@ The result is determined by a **tamper-proof commit-reveal protocol** on Solana.
 | **🎫 Book experiences** | Pay for tours, events, and cultural activities with MTC | ✅ Now |
 | **🏷️ Discount** | 5–10% off vs. yen pricing when paying with MTC | ✅ Now |
 | **🔑 Exclusive access** | NFT-gated events, VIP-only ceremonies, private tours | ✅ Now |
-| **📈 Toku Staking** | Lock MTC to boost your mining multiplier (1.0× → 10.0×) | 🔜 Aug 2026 |
+| **📈 Toku Staking** | Lock MTC to boost your contribution score (up to ~50% boost) | 🔜 Aug 2026 |
 | **🗳️ DAO Governance** | Vote on treasury, protocol upgrades, and site certification | 🔜 2027 |
 | **🛍️ Partner stores** | Pay at participating shops and restaurants | 🔜 Expanding |
 
@@ -209,7 +209,7 @@ The 550M MTC halving pool is designed to last **decades** (20 epochs × 2 years 
 
 - **Transaction fees** from on-chain activity continue to reward network participants
 - **Buyback protocol** (20-25% of business revenue) creates perpetual buy pressure
-- **Toku staking** locks circulating supply, reducing sell pressure
+- **Toku staking** locks circulating supply, reducing sell pressure and boosting contributor rewards
 - **Real business revenue** (events, memberships, courses) sustains the ecosystem independently of token distribution
 
 MTC is backed by a **real economy** — not just token emissions.

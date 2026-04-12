@@ -127,7 +127,7 @@ We run a special reward programme for users who provide MTC/SOL liquidity on Ray
 | Item | Details |
 | :--- | :--- |
 | **Who** | Early liquidity providers ("founding partners") |
-| **Target APY** | **50 %** (set as a risk premium) |
+| **Target APY** | **20%** (set as a risk premium) |
 | **Why** | Bootstrap initial liquidity for a stable trading environment |
 
 ---

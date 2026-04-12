@@ -127,7 +127,7 @@ Vi kører et specielt belønningsprogram for brugere, der tilvejebringer MTC/SOL
 | Post | Detaljer |
 | :--- | :--- |
 | **Hvem** | Tidlige likviditetsudbydere ("grundlæggende partnere") |
-| **Mål-APY** | **50%** (sat som risikopræmie) |
+| **Mål-APY** | **20%** (sat som risikopræmie) |
 | **Hvorfor** | Bootstrappe initial likviditet for et stabilt handelsmiljø |
 
 ---

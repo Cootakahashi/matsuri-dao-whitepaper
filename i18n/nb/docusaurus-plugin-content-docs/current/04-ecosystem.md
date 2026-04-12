@@ -97,7 +97,7 @@ Vi kjører et spesielt belønningsprogram for brukere som tilbyr MTC/SOL-likvidi
 | Element | Detaljer |
 | :--- | :--- |
 | **Hvem** | Tidlige likviditetstilbydere («grunnlegger-partnere») |
-| **Mål-APY** | **50 %** (satt som risikopremie) |
+| **Mål-APY** | **20%** (satt som risikopremie) |
 | **Hvorfor** | Sikre initial likviditet for et stabilt handelsmiljø |
 
 ---

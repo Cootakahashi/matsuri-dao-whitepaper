@@ -69,9 +69,9 @@ Nema interneta kod ruralnog svetišta? Nema problema. J-Times bilježi vašu akt
 
 ### 2. ⛩️ Avanturističko rudarenje — Posjetite sveta mjesta s Matsuri aplikacijom
 
-Otvorite **Matsuri aplikaciju**, pronađite svetište ili hram na Karti svetih mjesta, odite tamo i prijavite se. Što manje posjećeno mjesto, to više zarađujete.
+Otvorite **Matsuri aplikaciju**, pronađite svetište ili hram na Karti svetih mjesta, odite tamo i prijavite se. Vaša aktivnost se bilježi kao **doprinos bodova**.
 
-**Tijek korak po korak:**
+**Kako funkcionira:**
 
 ```mermaid
 sequenceDiagram
@@ -82,30 +82,30 @@ sequenceDiagram
 
     U->>GPS: Stignete do svetišta, dodirnite "Prijavi se"
     GPS->>API: Pošalji koordinate + hash dokaza
-    API->>API: Validiraj lokaciju (unutar 200m od mjesta)
-    API->>API: Izračunaj nagradu (6-slojna formula)
-    API-->>U: Prikaži nagradu: "⛩️ +150 MTC" + Omikuji izvlačenje
+    API->>API: Validiraj lokaciju + zabilježi doprinos bodova
+    API-->>U: Prikaži rezultat: "⛩️ Prijava završena!" + Omikuji izvlačenje
     U->>API: Izvuci Omikuji
-    API-->>U: "🏆 大吉 (Velika sreća)! ×3,0 bonus → 450 MTC ukupno"
+    API-->>U: "🏆 大吉! Bonus bodovi!"
     API->>SC: Pošalji na Solanu (asinkrono, nakon kol.)
 ```
 
-**Množitelji nagrada — zašto ruralna područja plaćaju više:**
+**Osnovno načelo — manje posjećena mjesta zarađuju više:**
 
-| Vrsta mjesta | Primjeri | Množitelj |
+| Vrsta mjesta | Primjeri | Bodovi |
 | :--- | :--- | :---: |
-| 🏙️ **Glavna** | Sensoji, Kiyomizu-dera, Fushimi Inari | ×1 |
-| 🌆 **Regionalna** | Prefekturalna ichinomiya, regionalna velika svetišta | ×2 |
-| 🏞️ **Ruralna** | Povijesna seoska svetišta | ×5 |
-| ⛰️ **Granična** | Planinski hramovi, sveta mjesta na udaljenim otocima | ×10 |
+| 🏙️ **Glavna** | Sensoji, Kiyomizu-dera, Fushimi Inari | Standardni |
+| 🌆 **Regionalna** | Prefekturalna ichinomiya, regionalna velika svetišta | Viši |
+| 🏞️ **Ruralna** | Povijesna seoska svetišta | Mnogo viši |
+| ⛰️ **Granična** | Planinski hramovi, sveta mjesta na udaljenim otocima | Najviši |
 
-**Plus dodatni bonusi:**
-- **Pionirski bonus** — prvi posjetitelj dana zarađuje najviše (harmonijski pad)
-- **Bonus uzastopnosti** — posjećujte uzastopne dane za do +50%
-- **Omikuji** — nasumično izvlačenje sudbine: 大吉 (Velika sreća) = ×3,0, 吉 (Sreća) = ×1,5, 小吉 (Mala sreća) = ×1,2
-- **Sponzorirani signali** — općine polažu MTC za pojačanje određenih mjesta
+**Dodatni čimbenici bodovanja:**
+- **Učestalost posjeta** — redoviti posjetitelji zarađuju više s vremenom
+- **Omikuji** — nasumično izvlačenje sudbine dodaje bonus bodove (大吉 je najbolji!)
+- **Sponzorirana mjesta** — općine mogu pojačati određena mjesta
 
-> **Primjer:** Posjetite udaljeno planinsko svetište (×10) kao 2. posjetitelj dana, s uzastopnošću od 5 dana (+10%), i izvučete 吉 (Sreća) (×1,5) = osnovna nagrada pojačana **16,5×**.
+:::info Doprinos bodova → MTC
+Vaša aktivnost se akumulira kao **doprinos bodova**. Na svakoj epohi prepolovljavanja (počevši od lipnja 2027.), bodovi se pretvaraju u MTC iz fonda za rudarenje od 550M. Što više doprinosite u odnosu na zajednicu, to više MTC-a primate. Točni koeficijenti pojačanja bit će postupno finalizirani i implementirani u pametne ugovore — osiguravajući pravednu distribuciju usklađenu sa stvarnom veličinom fonda.
+:::
 
 ---
 
@@ -122,13 +122,13 @@ Podijelite svoj kod za preporuku. Kad vaša mreža obavlja transakcije, zarađuj
 
 **Kako En-Mining bodovanje funkcionira:**
 
-```
-Vaš rezultat = (Izravne preporuke × 30%) + (Obujam transakcija mreže × 70%)
-           × Toku staking množitelj (1,0× – 10,0×)
-           × Pojačanje titule (+5% po rangiranoj sezoni, maks. +50%)
-```
+Vaš doprinos bodova izračunava se na temelju dva čimbenika:
+- **Doseg mreže** (30%) — koliko ljudi dovodite
+- **Ekonomska aktivnost** (70%) — stvarne kupnje iz vaše mreže preporuka
 
-> **Ključni uvid:** 70% vašeg rezultata dolazi od **stvarne ekonomske aktivnosti** u vašoj mreži, ne samo od registracija. Pozivanje 1.000 ljudi koji nikad ne potroše zarađuje manje od pozivanja 10 aktivnih potrošača.
+> **Ključni uvid:** Većina vašeg rezultata dolazi od **stvarne ekonomske aktivnosti** u vašoj mreži, ne samo od registracija. Pozivanje 1.000 ljudi koji nikad ne potroše zarađuje manje od pozivanja 10 aktivnih potrošača.
+
+Bodovi se akumuliraju s vremenom i pretvaraju u MTC na svakoj epohi prepolovljavanja. Množitelji pojačanja (npr. staking MTC-a, sezonska rangiranja) bit će postupno uvedeni putem pametnih ugovora.
 
 :::warning Trenutno izvanlanačno → Prelazak na lanac kolovoz 2026.
 Provizije za preporuke trenutno se prate u Djangu (PostgreSQL) i isplaćuju putem bankovne doznake ili kripta. Od **kolovoza 2026.**, cijeli sustav provizija za preporuke migrirat će na **Matsuri Referral pametni ugovor** na Solani — čineći isplate pouzdanima bez povjerenja, trenutnima i provjerljivima na lancu.
@@ -158,25 +158,25 @@ Osigurajte MTC/SOL likvidnost na Raydium DEX-u i zarađujte nagrade.
 
 | Stavka | Detalji |
 | :--- | :--- |
-| **Ciljani APY** | 50% (poticaj za ranu likvidnost) |
+| **Ciljani APY** | 20% (poticaj za ranu likvidnost) |
 | **DEX** | Raydium (Solana) |
 | **Tko** | Svatko tko drži MTC i SOL |
 
 ---
 
-### 6. 🎲 Omikuji bonus — Množitelj sreće
+### 6. 🎲 Omikuji bonus — Izvlačenje sudbine
 
-Svaka prijava avanturističkog rudarenja uključuje besplatno Omikuji (sudbina) izvlačenje. Ovaj množitelj se primjenjuje povrh svih ostalih bonusa.
+Svaka prijava avanturističkog rudarenja uključuje besplatno Omikuji (sudbina) izvlačenje — bonus povrh vašeg redovnog rezultata.
 
-| Sudbina | Vjerojatnost | Množitelj |
-| :--- | :---: | :---: |
-| 🏆 **大吉** (Velika sreća) | 5% | ×3,0 |
-| ✨ **吉** (Sreća) | 15% | ×1,5 |
-| 🌸 **小吉** (Mala sreća) | 30% | ×1,2 |
-| 🍃 **末吉** (Buduća sreća) | 35% | ×1,0 |
-| 💀 **凶** (Nesreća) | 15% | ×1,0 |
+| Sudbina | Rijetkost | Bonus |
+| :--- | :---: | :--- |
+| 🏆 **大吉** (Velika sreća) | Rijetko | Najviši bonus bodovi + NFT |
+| ✨ **吉** (Sreća) | Neobično | Dobar bonus bodovi |
+| 🌸 **小吉** (Mala sreća) | Uobičajeno | Mali bonus |
+| 🍃 **末吉** (Buduća sreća) | Uobičajeno | Sudjelovanje zabilježeno |
+| 💀 **凶** (Nesreća) | Neobično | Sudjelovanje zabilježeno |
 
-Rezultat se određuje **protokolom urezivanja i otkrivanja otpornim na manipulaciju** na Solani. Čak ni poslužitelj ne može promijeniti vaš rezultat nakon faze urezivanja.
+Rezultat se određuje **protokolom urezivanja i otkrivanja otpornim na manipulaciju** na Solani. Čak ni poslužitelj ne može promijeniti vaš rezultat nakon faze urezivanja. Točne vjerojatnosti i iznosi bonusa bit će finalizirani u implementaciji pametnog ugovora.
 
 ---
 
@@ -187,7 +187,7 @@ Rezultat se određuje **protokolom urezivanja i otkrivanja otpornim na manipulac
 | **🎫 Rezervirajte iskustva** | Plaćajte ture, događaje i kulturne aktivnosti s MTC-om | ✅ Sada |
 | **🏷️ Popust** | 5–10% popusta u odnosu na cijene u jenima kad plaćate s MTC-om | ✅ Sada |
 | **🔑 Ekskluzivni pristup** | NFT-zaštićeni događaji, VIP ceremonije, privatne ture | ✅ Sada |
-| **📈 Toku staking** | Zaključajte MTC za pojačanje množitelja rudarenja (1,0× → 10,0×) | 🔜 Kol. 2026. |
+| **📈 Toku staking** | Zaključajte MTC za pojačanje vašeg doprinosa bodova (do ~50% pojačanja) | 🔜 Kol. 2026. |
 | **🗳️ DAO upravljanje** | Glasajte o riznici, nadogradnjama protokola i certifikaciji mjesta | 🔜 2027. |
 | **🛍️ Partnerske trgovine** | Plaćajte u sudjelujućim trgovinama i restoranima | 🔜 Širi se |
 

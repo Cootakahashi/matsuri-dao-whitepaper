@@ -97,7 +97,7 @@ Nous proposons un programme de récompenses spécial pour les utilisateurs fourn
 | Élément | Détails |
 | :--- | :--- |
 | **Qui** | Fournisseurs de liquidité précoces (« partenaires fondateurs ») |
-| **APY cible** | **50 %** (fixé comme prime de risque) |
+| **APY cible** | **20%** (fixé comme prime de risque) |
 | **Pourquoi** | Assurer la liquidité initiale pour un environnement de trading stable |
 
 ---

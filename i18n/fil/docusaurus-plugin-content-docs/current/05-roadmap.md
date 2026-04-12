@@ -27,7 +27,7 @@ Tapos na ang produkto. Ang focus ngayon ay monetisation sa pamamagitan ng CEO-le
 | ✅ | **Media Launch** | J-Times (Web & Podcast) distribution infrastructure live na |
 | ✅ | **Genesis** | MTC Token Generation Event sa Solana |
 | ✅ | **Liquidity** | Initial LP pool ginawa sa Raydium |
-| ⬜ | **Incentive Programme** | 50% target-APY liquidity mining launch |
+| ⬜ | **Incentive Programme** | 20% target-APY liquidity mining launch |
 | ⬜ | **System Go-Live** | Solana MEV / arbitrage bot sa production |
 | ⬜ | **VIP Recruitment** | Unang 20 GCF VIP members na pinili |
 

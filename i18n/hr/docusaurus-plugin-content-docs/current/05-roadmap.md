@@ -32,7 +32,7 @@ Proizvod je izgrađen. Fokus je sada na monetizaciji putem financijskog sustava 
 | ✅ | **Pozadinska infrastruktura** | 80+ modela, 100+ API-ja, 15+ automatiziranih zadataka, 841 test |
 | ✅ | **Analitika** | Potpuno praćenje sesija, konverzijski lijevci, A/B testiranje |
 | 🔜 | **Lansiranje mobilnih aplikacija** | Matsuri i J-Times iOS aplikacije (travanj 2026.) |
-| ⬜ | **Program poticaja** | Pokretanje rudarenja likvidnošću s ciljanim APY od 50% |
+| ⬜ | **Program poticaja** | Pokretanje rudarenja likvidnošću s ciljanim APY od 20% |
 | ⬜ | **Pokretanje sustava** | Solana MEV / arbitražni bot u produkciji |
 | ⬜ | **VIP regrutiranje** | Odabir prvih 20 GCF VIP članova |
 

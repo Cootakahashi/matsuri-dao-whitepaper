@@ -97,7 +97,7 @@ Ofrecemos un programa de recompensas especial para los usuarios que aporten liqu
 | Elemento | Detalles |
 | :--- | :--- |
 | **Quién** | Proveedores de liquidez tempranos («socios fundadores») |
-| **APY objetivo** | **50 %** (configurado como prima de riesgo) |
+| **APY objetivo** | **20%** (configurado como prima de riesgo) |
 | **Por qué** | Asegurar liquidez inicial para un entorno de trading estable |
 
 ---

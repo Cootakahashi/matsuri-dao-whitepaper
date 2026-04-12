@@ -27,7 +27,7 @@ El producto está construido. El enfoque actual es la monetización a través de
 | ✅ | **Lanzamiento de medios** | Infraestructura de distribución J-Times (Web y Podcast) en línea |
 | ✅ | **Génesis** | MTC Token Generation Event en Solana |
 | ✅ | **Liquidez** | Pool LP inicial creado en Raydium |
-| ⬜ | **Programa de incentivos** | Lanzamiento de liquidity mining con APY objetivo del 50 % |
+| ⬜ | **Programa de incentivos** | Lanzamiento de liquidity mining con APY objetivo del 20% |
 | ⬜ | **Puesta en marcha** | Bot MEV/arbitraje de Solana en producción |
 | ⬜ | **Captación VIP** | Selección de los primeros 20 miembros VIP del GCF |
 

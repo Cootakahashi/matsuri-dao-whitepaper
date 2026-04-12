@@ -97,7 +97,7 @@ May espesyal kaming reward programme para sa mga users na nagbibigay ng MTC/SOL 
 | Item | Detalye |
 | :--- | :--- |
 | **Sino** | Mga maagang liquidity providers ("founding partners") |
-| **Target APY** | **50%** (itinakda bilang risk premium) |
+| **Target APY** | **20%** (itinakda bilang risk premium) |
 | **Bakit** | I-bootstrap ang initial liquidity para sa isang stable trading environment |
 
 ---

@@ -47,39 +47,25 @@ graph TB
 
 **Namjena:** Hibridni motor rasta koji nagrađuje i *širinu* (doseg preporuka) i *dubinu* (ekonomski utjecaj). Ne samo affiliate sustav — potpuni protokol rudarenja gdje stvarna ekonomska aktivnost generira vrijednost na lancu.
 
-### Formula bodovanja
+### Dizajn bodovanja
 
-```
-S_final = S_raw × M_toku × B_title
-
-gdje je:
-  S_raw   = 0.30 × referrals + 0.70 × (volume / 10^9)
-  M_toku  = f(staked_mtc) ∈ [1.0×, 10.0×]
-  B_title = 1.0 + min(seasons_ranked × 0.05, 0.50)
-```
+Doprinos bodova temelji se na dvije ponderirane komponente:
 
 | Komponenta | Težina | Namjena |
 | :--- | :---: | :--- |
 | **Širina** (broj preporuka) | 30% | Doseg mreže — koliko ljudi dovodite |
 | **Dubina** (volumen poravnanja) | 70% | Ekonomski utjecaj — stvarne kupnje, ne samo registracije |
-| **Toku množitelj** | ×1–10 | Zaključajte MTC za pojačanje snage rudarenja |
-| **Pojačanje titule** | +5%/sezona | Trajna nagrada za dosljedne najbolje izvođače |
 
-### Toku (徳) razine stakinga
+Bodovi se akumuliraju s vremenom i pretvaraju u MTC na svakoj epohi prepolovljavanja. Planirani su dodatni mehanizmi pojačanja:
 
-| Zaključani MTC | Množitelj | Razina |
-| :--- | :---: | :--- |
-| 0 | 1,0× | — |
-| 1.000+ | 1,5× | Bronze |
-| 10.000+ | 3,0× | Silver |
-| 100.000+ | 5,0× | Gold |
-| 1.000.000+ | 10,0× | Diamond |
+| Pojačanje | Opis | Status |
+| :--- | :--- | :---: |
+| **Toku (徳) staking** | Zaključajte MTC za pojačanje vašeg doprinosa bodova (do ~50% pojačanja). Razine i točni množitelji bit će kalibrirani na temelju rasporeda otpuštanja fonda prepolovljavanja | ⬜ Koeficijenti TBD |
+| **Sezonska rangiranja** | Najbolji izvođači svake epohe zarađuju titulu **Evangelist** (trajni SBT) i pojačanje bodova. Točni postoci bit će određeni putem upravljanja | ⬜ Koeficijenti TBD |
 
-### En no Banzuke (sezonski rang)
-
-Svake sezone (epohe), najbolji izvođači se rangiraju. Pogodnosti:
-- Top 10% zarađuje titulu **Evangelist** (trajna SBT oznaka)
-- Svaka rangirana sezona daje **+5% pojačanje rudarenja** (kumulativno, ograničenje: 50%)
+:::info Progresivni dizajn parametara
+Koeficijenti pojačanja (razine stakinga, bonusi rangiranja) namjerno su ostavljeni prilagodljivima. Bit će finalizirani na temelju stvarnih podataka ekosustava — ukupnog broja aktivnih korisnika, stope otpuštanja fonda prepolovljavanja i ciljeva stabilnosti cijena — zatim zaključani u pametne ugovore. Ovaj pristup osigurava **pravednu distribuciju** bez pretjeranog obećavanja fiksnih povrata.
+:::
 
 ### Obrana od Sybil napada (3 sloja)
 
@@ -99,67 +85,24 @@ Svake sezone (epohe), najbolji izvođači se rangiraju. Pogodnosti:
 Ovo je "obrnuto dinamičko određivanje cijena u stilu Ubera" — pretrpana mjesta se kažnjavaju, granična mjesta se pojačavaju. Turisti se sami usmjeravaju prema manje posjećenim lokacijama jer **je to profitabilnije.**
 :::
 
-### Formula nagrade s 6 slojeva
+### Načela dizajna nagrada
 
-```
-R_final = R_pioneer × M_dynamic × M_regional × M_streak × M_omikuji
+Doprinos bodova za svaki posjet određen je višestrukim čimbenicima:
 
-gdje je:
-  R_pioneer  = daily_pool / visit_order     (harmonički 1/n pad)
-  M_dynamic  = admin-kontrolirano ∈ [0.1×, 50×]
-  M_regional = tier_table[tier] ∈ {1×, 2×, 5×, 10×}
-  M_streak   = 1.0 + min(days × 0.02, 0.50)
-  M_omikuji  = fortune_lottery ∈ {1.0, 1.2, 1.5, 3.0}
-```
+| Čimbenik | Načelo | Učinak |
+| :--- | :--- | :--- |
+| **Popularnost mjesta** | Manje posjećena mjesta zarađuju više bodova | Usmjerava turiste od pretrpanih područja |
+| **Vrijeme posjeta** | Raniji posjetitelji dana zarađuju više bodova | Potiče posjete izvan vršnih sati |
+| **Regionalna razina** | Ruralna i granična mjesta rangiraju se najviše | Potiče regionalnu revitalizaciju |
+| **Učestalost posjeta** | Redoviti posjetitelji akumuliraju bonus bodove | Nagrađuje dosljedni angažman |
+| **Omikuji sudbina** | Nasumično izvlačenje bonusa pri svakoj prijavi | Zabavni sloj gamifikacije |
+| **Sponzorirana pojačanja** | Općine mogu pojačati određena mjesta | B2B/B2G model prihoda |
 
-### Sloj 1: Pionirski bonus (先行者利益)
+:::info Koeficijenti su prilagodljivi
+Točni množitelji za svaki čimbenik (npr. koliko više ruralno mjesto zarađuje u odnosu na glavno mjesto) bit će **kalibrirani na temelju rasporeda fonda prepolovljavanja** i stvarnih podataka o korištenju, a zatim postupno zaključani u pametne ugovore. Načelo dizajna je fiksno — koeficijenti se razvijaju s ekosustavom.
+:::
 
-Harmonički pad — matematika koja usmjerava turiste:
-
-| Redoslijed posjeta | Nagrada naspram 1. | Stvarni primjer (fond 1000 MTC) |
-| :---: | :---: | :--- |
-| 1. | 100% | 1.000 MTC |
-| 5. | 20% | 200 MTC |
-| 10. | 10% | 100 MTC |
-| 100. | 1% | 10 MTC |
-
-> **Prvi posjetitelj = 100× veća nagrada od 100. posjetitelja.** Ovo stvara snažan poticaj za posjete izvan vršnih sati.
-
-### Sloj 2: Dinamički množitelj (raspršivanje gužve)
-
-Kontrolira se u stvarnom vremenu od strane administratora putem GCF Admin panela:
-
-| Scenarij | Množitelj | Učinak |
-| :--- | :---: | :--- |
-| **Pretjerani turizam** (Asakusa u vrhu sezone) | 0,1× | 90% kazna na nagradu |
-| **Normalno** | 1,0× | Standardno |
-| **Nedovoljno posjećeno** | 10× | 10× pojačanje nagrade |
-| **Granična kampanja** | 50× | Maksimalni poticaj |
-
-### Sloj 3: Regionalna razina
-
-| Razina | Oznaka | Množitelj | Primjeri |
-| :---: | :--- | :---: | :--- |
-| 0 | 🏙️ Glavna | 1× | 浅草寺, 清水寺, 伏見稲荷 |
-| 1 | 🌆 Srednja | 2× | Lokalna ichinomiya, velika svetišta u prefekturskim središtima |
-| 2 | 🏞️ Ruralna | 5× | Povijesna seoska svetišta |
-| 3 | ⛰️ Skrivena | 10× | Svetilišta duboko u planinama, svetišta na udaljenim otocima |
-
-### Sloj 4: Bonus uzastopnosti
-
-+2% po uzastopnom danu, ograničeno na +50%. Nagrađuje redovite posjetitelje.
-
-### Sloj 5: 🎲 Omikuji protokol
-
-| Rezultat | Vjerojatnost | Množitelj |
-| :--- | :---: | :---: |
-| 🏆 **大吉** (Velika sreća) | 5% | 3,0× |
-| ✨ **吉** (Sreća) | 15% | 1,5× |
-| 🌸 **小吉** (Mala sreća) | 30% | 1,2× |
-| 🍃 **末吉** (Buduća sreća) | 35% | 1,0× |
-| 💀 **凶** (Nesreća) | 15% | 1,0× |
-
-### Sloj 6: Sponzorirani signali (B2B/B2G)
+### Sponzorirani signali (B2B/B2G)
 
 Općine, željezničke tvrtke i turistički uredi mogu **položiti MTC** za stvaranje vremenski ograničenih zona visoke nagrade na određenim mjestima.
 
@@ -218,21 +161,13 @@ Instrukciju `advance_epoch` može pozvati **bilo tko** — administrator nije po
 
 ## Matematički moduli (jezgra otvorenog koda)
 
-Oba programa odvajaju svu matematiku bodovanja/nagrada u **čiste, provjerljive `math.rs` module** sa:
+Svi programi odvajaju matematiku bodovanja/nagrada u **čiste, provjerljive `math.rs` module** sa:
 
 - **Nula nuspojava** — bez I/O, bez alokacija, bez vanjskih poziva
 - **Dokumentirane formule** — LaTeX notacija u rustdoc-u
 - **Analiza prekoračenja** — u128 međuvrijednosti s dokazanim granicama
 - **Sveobuhvatni testovi** — rubni slučajevi, granični uvjeti, verifikacija omjera
-
-```rust
-// Primjer: Pionirski bonus (iz worship/math.rs)
-#[inline]
-pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
-    if visit_order == 0 { return 0; }
-    (daily_pool as u128 / visit_order as u128) as u64
-}
-```
+- **Prilagodljivi koeficijenti** — parametri nagrada dizajnirani su za ažuriranje putem upravljanja, omogućujući postupnu kalibraciju kako ekosustav raste
 
 ---
 
@@ -279,15 +214,17 @@ sequenceDiagram
 
 ### Postavke vjerojatnosti Omikuji (GCF Admin)
 
-Precizna kontrola s korakom od 0,01% koristeći Basis Points (10000 = 100%).
+Basis Points (10000 = 100%) za preciznu kontrolu s korakom od 0,01%. Prilagodljivo putem GCF Admin sučelja.
 
-| Razina | Zadano | Množitelj nagrade | NFT |
+| Razina | Rijetkost | Bonus | NFT |
 |------|-----------|---------|-----|
-| 🏆 大吉 (Velika sreća) | 5,00% (500bp) | ×3,0 | ✅ |
-| ✨ 吉 (Sreća) | 15,00% (1500bp) | ×1,5 | Opcionalno |
-| 🌸 小吉 (Mala sreća) | 30,00% (3000bp) | ×1,2 | — |
-| 🍃 末吉 (Buduća sreća) | 35,00% (3500bp) | ×1,0 | — |
-| 💀 凶 (Nesreća) | 15,00% (1500bp) | ×1,0 | — |
+| 🏆 大吉 | Rijetko | Najviši bonus | ✅ |
+| ✨ 吉 | Neobično | Visoki bonus | Opcionalno |
+| 🌸 小吉 | Uobičajeno | Mali bonus | — |
+| 🍃 末吉 | Uobičajeno | Sudjelovanje zabilježeno | — |
+| 💀 凶 | Neobično | Sudjelovanje zabilježeno | — |
+
+Vjerojatnosti i koeficijenti nagrada bit će postupno utvrđeni na temelju veličine ekosustava i količine otpuštanja prepolovljavanja, te implementirani u pametne ugovore.
 
 ### ZK-Proof of Vision (5-slojna verifikacija)
 
@@ -302,13 +239,9 @@ Višeslojna eliminacija lažiranja GPS-a i replay napada. Slikovni podaci se ne 
 | Otisak | Jedinstvenost uređaja | /20 |
 | **Ukupno** | **Prag za prolaz** | **60/100** |
 
-### Formula izračuna nagrade
+### Dizajn nagrada
 
-```
-Reward = Base(10 MTC) × SiteMultiplier × OmikujiMult × TierMult
-
-TierMult = { Glavna: 1.0, Srednja: 2.0, Ruralna: 5.0, Skrivena: 10.0 }
-```
+Nagrade se bilježe kao **doprinos bodova** na temelju vrste mjesta, rezultata omikuji, regionalne razine i drugih čimbenika. Konkretni koeficijenti bit će postupno utvrđeni u skladu s rasporedom otpuštanja prepolovljavanja i rastom ekosustava, te implementirani u pametne ugovore.
 
 ---
 
@@ -323,8 +256,8 @@ Matsuri Protocol izdaje neprenosive **Soulbound tokene (SBT-ove)** i ograničene
 
 | Vrsta | Prenosivo | Namjena |
 | :--- | :---: | :--- |
-| **Founder NFT** | Ne (SBT) | Dokaz člana osnivača — trajno pojačanje rudarenja |
-| **Evangelist NFT** | Ne (SBT) | Postignuće sezonskog rangiranja — +5% rudarenja po sezoni |
+| **Founder NFT** | Ne (SBT) | Dokaz člana osnivača — trajno pojačanje bodova |
+| **Evangelist NFT** | Ne (SBT) | Postignuće sezonskog rangiranja — pojačanje bodova |
 | **Goshuin NFT** | Ne (SBT) | Dokaz prijave hodočašća — ekskluzivno za lokaciju |
 | **Omikuji NFT** | Ne (SBT) | Dokaz sudbine 大吉 (Velika sreća) — rijedak kolekcionarski primjerak |
 

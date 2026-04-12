@@ -38,39 +38,25 @@ graph TB
 
 **Layunin:** Isang hybrid growth engine na ginagantimpalaan ang parehong *lawak* (referral reach) at *lalim* (economic impact). Hindi lang affiliates — isang full mining protocol kung saan ang real-world economic activity ay gumagawa ng on-chain value.
 
-### Scoring Formula
+### Scoring Design
 
-```
-S_final = S_raw × M_toku × B_title
-
-where:
-  S_raw   = 0.30 × referrals + 0.70 × (volume / 10^9)
-  M_toku  = f(staked_mtc) ∈ [1.0×, 10.0×]
-  B_title = 1.0 + min(seasons_ranked × 0.05, 0.50)
-```
+Ang contribution score ay batay sa dalawang weighted component:
 
 | Component | Weight | Layunin |
 | :--- | :---: | :--- |
 | **Lawak** (bilang ng referral) | 30% | Network reach — ilan ang mga taong dinadala mo |
 | **Lalim** (settlement volume) | 70% | Economic impact — tunay na mga pagbili, hindi lang mga signup |
-| **Toku Multiplier** | ×1–10 | I-lock ang MTC upang palakasin ang mining power |
-| **Title Boost** | +5%/season | Permanenteng gantimpala para sa mga consistent top performers |
 
-### Toku (徳) Staking Tiers
+Ang mga score ay nag-iipon sa paglipas ng panahon at kino-convert sa MTC sa bawat halving epoch. Naka-plano ang karagdagang boost mechanisms:
 
-| Staked MTC | Multiplier | Tier |
-| :--- | :---: | :--- |
-| 0 | 1.0× | — |
-| 1,000+ | 1.5× | Bronze |
-| 10,000+ | 3.0× | Silver |
-| 100,000+ | 5.0× | Gold |
-| 1,000,000+ | 10.0× | Diamond |
+| Boost | Deskripsyon | Status |
+| :--- | :--- | :---: |
+| **Toku (徳) Staking** | I-lock ang MTC upang i-boost ang iyong contribution score (hanggang ~50% boost). Ang mga tier at eksaktong multiplier ay ika-calibrate batay sa halving pool release schedule | ⬜ Coefficients TBD |
+| **Seasonal Rankings** | Ang mga top performer sa bawat epoch ay kumukuha ng **Evangelist** title (permanenteng SBT) at score boost. Ang eksaktong mga porsyento ay tutukuyin sa pamamagitan ng governance | ⬜ Coefficients TBD |
 
-### En no Banzuke (Seasonal Ranking)
-
-Bawat season (epoch), ang mga top performers ay rina-rank. Mga benepisyo:
-- Ang top 10% ay kumukuha ng **Evangelist** title (permanenteng SBT flag)
-- Bawat season na naka-rank ay nagbibigay ng **+5% mining boost** (cumulative, cap: 50%)
+:::info Progressive Parameter Design
+Ang mga boost coefficient (staking tiers, ranking bonuses) ay sadyang iniwan na adjustable. Ang mga ito ay tatapusin batay sa tunay na ecosystem data — kabuuang active users, halving pool release rate, at price stability targets — pagkatapos ay ila-lock sa mga smart contract. Tinitiyak ng diskarteng ito ang **patas na distribusyon** nang hindi nag-over-promise ng fixed returns.
+:::
 
 ### Anti-Sybil Defence (3 Layers)
 
@@ -90,67 +76,24 @@ Bawat season (epoch), ang mga top performers ay rina-rank. Mga benepisyo:
 Ito ay "reverse Uber surge pricing" — ang mga crowded na lugar ay pina-penalize, ang frontier sites ay binu-boost. Ang mga turista ay nagro-route ng kanilang sarili sa mas mababang bisita na lokasyon dahil **mas profitable ito.**
 :::
 
-### 6-Layer Reward Formula
+### Reward Design Principles
 
-```
-R_final = R_pioneer × M_dynamic × M_regional × M_streak × M_omikuji
+Ang contribution score para sa bawat pagbisita ay tinutukoy ng maraming factor:
 
-where:
-  R_pioneer  = daily_pool / visit_order     (harmonic 1/n decay)
-  M_dynamic  = admin-controlled ∈ [0.1×, 50×]
-  M_regional = tier_table[tier] ∈ {1×, 2×, 5×, 10×}
-  M_streak   = 1.0 + min(days × 0.02, 0.50)
-  M_omikuji  = fortune_lottery ∈ {1.0, 1.2, 1.5, 3.0}
-```
+| Factor | Prinsipyo | Epekto |
+| :--- | :--- | :--- |
+| **Popularidad ng site** | Mas mataas ang score sa mga mas kakaunting bisita | Nag-ro-route ng turista palayo sa overcrowded areas |
+| **Oras ng pagbisita** | Mas mataas ang score ng mga naunang bumisita sa araw | Hinihikayat ang off-peak visits |
+| **Regional tier** | Pinakamataas ang ranggo ng rural at frontier sites | Nag-uudyok ng regional revitalisation |
+| **Dalas ng pagbisita** | Nag-iipon ng bonus scores ang mga regular na bisita | Ginagantimpalaan ang consistent engagement |
+| **Omikuji fortune** | Random bonus draw sa bawat check-in | Masayang gamification layer |
+| **Sponsored boosts** | Maaaring i-boost ng mga munisipalidad ang mga partikular na site | B2B/B2G revenue model |
 
-### Layer 1: Pioneer Bonus (先行者利益)
+:::info Adjustable ang mga Coefficient
+Ang eksaktong mga multiplier para sa bawat factor (hal. kung gaano mas malaki ang kinikita ng rural site kumpara sa major site) ay **ika-calibrate batay sa halving pool schedule** at tunay na usage data, pagkatapos ay unti-unting ila-lock sa mga smart contract. Ang design principle ay fixed — ang mga coefficient ay umuusad kasama ng ecosystem.
+:::
 
-Harmonic decay — ang matematika na nag-ro-route ng mga turista:
-
-| Pagkakasunod ng Bisita | Gantimpala vs 1st | Tunay na Halimbawa (1000 MTC pool) |
-| :---: | :---: | :--- |
-| 1st | 100% | 1,000 MTC |
-| 5th | 20% | 200 MTC |
-| 10th | 10% | 100 MTC |
-| 100th | 1% | 10 MTC |
-
-> **Unang bisita = 100× na mas mataas ang gantimpala kaysa sa ika-100 na bisita.** Lumilikha ito ng makapangyarihang incentive na bumisita sa off-peak times.
-
-### Layer 2: Dynamic Multiplier (混雑分散)
-
-Kinokontrol sa real-time ng mga admin sa pamamagitan ng GCF Admin panel:
-
-| Senaryo | Multiplier | Epekto |
-| :--- | :---: | :--- |
-| **Sobrang turista** (Asakusa peak) | 0.1× | 90% na reward penalty |
-| **Normal** | 1.0× | Standard |
-| **Hindi gaanong binibisita** | 10× | 10× na reward boost |
-| **Frontier campaign** | 50× | Maximum incentive |
-
-### Layer 3: Regional Tier
-
-| Tier | Label | Multiplier | Mga Halimbawa |
-| :---: | :--- | :---: | :--- |
-| 0 | 🏙️ Major | 1× | 浅草寺, 清水寺, 伏見稲荷 |
-| 1 | 🌆 Medium | 2× | Mga lokal na Ichinomiya, mga pangunahing shrine sa prefectural capitals |
-| 2 | 🏞️ Rural | 5× | Mga makasaysayang lumang templo sa kanayunan |
-| 3 | ⛰️ Hidden | 10× | Mga sagradong lugar sa kaibuturan ng bundok, mga shrine sa malalayong isla |
-
-### Layer 4: Streak Bonus
-
-+2% bawat magkakasunod na araw, cap sa +50%. Ginagantimpalaan ang mga regular na bisita.
-
-### Layer 5: 🎲 Omikuji Protocol
-
-| Resulta | Probabilidad | Multiplier |
-| :--- | :---: | :---: |
-| 🏆 **大吉** | 5% | 3.0× |
-| ✨ **吉** | 15% | 1.5× |
-| 🌸 **小吉** | 30% | 1.2× |
-| 🍃 **末吉** | 35% | 1.0× |
-| 💀 **凶** | 15% | 1.0× |
-
-### Layer 6: Sponsored Beacons (B2B/B2G)
+### Sponsored Beacons (B2B/B2G)
 
 Ang mga munisipalidad, kompanya ng tren, at tourism boards ay maaaring **mag-deposit ng MTC** upang lumikha ng time-limited high-reward zones sa mga partikular na lugar.
 
@@ -244,17 +187,19 @@ sequenceDiagram
 | Tapos na ang animation | 2500ms | Confirmed na ang resulta → Ipakita |
 | Solana TX | ~400ms | Ipinadala sa background |
 
-### Omikuji Probability Settings (GCF Admin)
+### Omikuji Settings (GCF Admin)
 
-Presisyong kontrol sa 0.01% increments gamit ang Basis Points (10000 = 100%).
+Basis Points (10000 = 100%) na may 0.01% na katumpakan. Maaaring i-adjust mula sa GCF Admin panel.
 
-| Grade | Default | Reward Multiplier | NFT |
+| Grade | Rarity | Bonus | NFT |
 |-------|---------|------------------|-----|
-| 🏆 大吉 | 5.00% (500bp) | ×3.0 | ✅ |
-| ✨ 吉 | 15.00% (1500bp) | ×1.5 | Opsyonal |
-| 🌸 小吉 | 30.00% (3000bp) | ×1.2 | — |
-| 🍃 末吉 | 35.00% (3500bp) | ×1.0 | — |
-| 💀 凶 | 15.00% (1500bp) | ×1.0 | — |
+| 🏆 大吉 | Bihira | Pinakamataas na bonus | ✅ |
+| ✨ 吉 | Hindi karaniwan | Mataas na bonus | Opsyonal |
+| 🌸 小吉 | Karaniwan | Maliit na bonus | — |
+| 🍃 末吉 | Karaniwan | Naitala ang partisipasyon | — |
+| 💀 凶 | Hindi karaniwan | Naitala ang partisipasyon | — |
+
+Ang mga probability at reward coefficient ay unti-unting tatapusin batay sa laki ng ecosystem at halving release volume, at ipapatupad sa mga smart contract.
 
 ### ZK-Proof of Vision (5-Layer Verification)
 
@@ -269,33 +214,21 @@ Multi-layer na pag-aalis ng GPS spoofing at replay attacks. Hindi nagpapadala ng
 | Fingerprint | Device uniqueness | /20 |
 | **Kabuuan** | **PASS threshold** | **60/100** |
 
-### Reward Calculation Formula
+### Reward Design
 
-```
-Reward = Base(10 MTC) × SiteMultiplier × OmikujiMult × TierMult
-
-TierMult = { Major: 1.0, Medium: 2.0, Rural: 5.0, Hidden: 10.0 }
-```
+Ang mga reward ay nire-record bilang isang **contribution score** batay sa maraming factor kabilang ang uri ng site, Omikuji result, at regional tier. Ang mga partikular na coefficient ay unti-unting tatapusin ayon sa halving release schedule at paglago ng ecosystem, at ipapatupad sa mga smart contract.
 
 ---
 
 ## Math Modules (Open Source Core)
 
-Parehong programa ay naghihiwalay ng lahat ng scoring/reward math sa **pure, auditable `math.rs` modules** na may:
+Lahat ng programa ay naghihiwalay ng scoring/reward math sa **pure, auditable `math.rs` modules** na may:
 
 - **Zero side effects** — walang I/O, walang allocations, walang external calls
 - **Documented formulas** — LaTeX-style notation sa rustdoc
 - **Overflow analysis** — u128 intermediate values na may proven bounds
 - **Comprehensive tests** — edge cases, boundary conditions, ratio verification
-
-```rust
-// Halimbawa: Pioneer Bonus (mula sa worship/math.rs)
-#[inline]
-pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
-    if visit_order == 0 { return 0; }
-    (daily_pool as u128 / visit_order as u128) as u64
-}
-```
+- **Adjustable coefficients** — ang reward parameters ay dinisenyo na maa-update sa pamamagitan ng governance, na nagpapahintulot ng progressive calibration habang lumalaki ang ecosystem
 
 ---
 

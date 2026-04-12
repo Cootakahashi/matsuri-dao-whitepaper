@@ -69,9 +69,9 @@ Pas de connexion internet dans un sanctuaire rural ? Pas de problème. J-Times e
 
 ### 2. ⛩️ Adventure Mining — Visiter des sites sacrés avec Matsuri App
 
-Ouvrez l'application **Matsuri**, trouvez un sanctuaire ou un temple sur la carte des sites sacrés, rendez-vous sur place et enregistrez votre visite. Moins le site est fréquenté, plus vous gagnez.
+Ouvrez l'application **Matsuri**, trouvez un sanctuaire ou un temple sur la carte des sites sacrés, rendez-vous sur place et enregistrez votre visite. Votre activité est enregistrée comme un **score de contribution**.
 
-**Flux étape par étape :**
+**Fonctionnement :**
 
 ```mermaid
 sequenceDiagram
@@ -82,30 +82,30 @@ sequenceDiagram
 
     U->>GPS: Arrivée au sanctuaire, appuyez sur « Check In »
     GPS->>API: Envoi des coordonnées + hash de preuve
-    API->>API: Validation de la position (dans un rayon de 200 m)
-    API->>API: Calcul de la récompense (formule à 6 niveaux)
-    API-->>U: Affichage de la récompense : « ⛩️ +150 MTC » + tirage Omikuji
+    API->>API: Validation de la position + enregistrement du score de contribution
+    API-->>U: Affichage : « ⛩️ Check-in validé ! » + tirage Omikuji
     U->>API: Tirer un Omikuji
-    API-->>U: « 🏆 大吉 ! ×3.0 bonus → 450 MTC au total »
+    API-->>U: « 🏆 大吉 ! Score bonus ! »
     API->>SC: Soumission à Solana (asynchrone, post-août)
 ```
 
-**Multiplicateurs de récompense — pourquoi les zones rurales rapportent davantage :**
+**Principe fondamental — les sites moins fréquentés rapportent davantage :**
 
-| Type de site | Exemples | Multiplicateur |
+| Type de site | Exemples | Score |
 | :--- | :--- | :---: |
-| 🏙️ **Majeur** | Sensoji, Kiyomizu-dera, Fushimi Inari | ×1 |
-| 🌆 **Régional** | Ichinomiya préfectoraux, grands sanctuaires régionaux | ×2 |
-| 🏞️ **Rural** | Sanctuaires historiques de campagne | ×5 |
-| ⛰️ **Frontière** | Temples de montagne, sites sacrés d'îles éloignées | ×10 |
+| 🏙️ **Majeur** | Sensoji, Kiyomizu-dera, Fushimi Inari | Standard |
+| 🌆 **Régional** | Ichinomiya préfectoraux, grands sanctuaires régionaux | Plus élevé |
+| 🏞️ **Rural** | Sanctuaires historiques de campagne | Beaucoup plus élevé |
+| ⛰️ **Frontière** | Temples de montagne, sites sacrés d'îles éloignées | Le plus élevé |
 
-**Bonus supplémentaires :**
-- **Bonus Pionnier** — le premier visiteur de la journée gagne le plus (décroissance harmonique)
-- **Bonus Série** — visitez plusieurs jours consécutifs pour un bonus jusqu'à +50 %
-- **Omikuji** — tirage aléatoire de fortune : 大吉 = ×3.0, 吉 = ×1.5, 小吉 = ×1.2
-- **Balises Sponsorisées** — les municipalités déposent des MTC pour booster des sites spécifiques
+**Facteurs de score supplémentaires :**
+- **Fréquence de visite** — les visiteurs réguliers accumulent davantage au fil du temps
+- **Omikuji** — tirage aléatoire de fortune ajoutant un score bonus (大吉 est le meilleur !)
+- **Sites Sponsorisés** — les municipalités peuvent booster des sites spécifiques
 
-> **Exemple :** Visitez un sanctuaire de montagne isolé (×10) en tant que 2e visiteur de la journée, avec une série de 5 jours (+10 %), et tirez 吉 (×1.5) = récompense de base amplifiée de **16,5×**.
+:::info Score de contribution → MTC
+Votre activité s'accumule sous forme de **score de contribution**. À chaque époque de halving (à partir de juin 2027), les scores sont convertis en MTC depuis le pool de minage de 550M. Plus vous contribuez par rapport à la communauté, plus vous recevez de MTC. Les coefficients de boost exacts seront finalisés progressivement et implémentés dans les smart contracts — garantissant une distribution équitable alignée sur la taille réelle du pool.
+:::
 
 ---
 
@@ -122,13 +122,13 @@ Partagez votre code de parrainage. Lorsque votre réseau effectue des transactio
 
 **Fonctionnement du score En-Mining :**
 
-```
-Votre Score = (Parrainages Directs × 30 %) + (Volume de Transactions du Réseau × 70 %)
-            × Multiplicateur Toku Staking (1.0× – 10.0×)
-            × Bonus de Titre (+5 % par saison classée, max +50 %)
-```
+Votre score de contribution est calculé selon deux facteurs :
+- **Portée du réseau** (30 %) — combien de personnes vous amenez
+- **Activité économique** (70 %) — achats réels depuis votre réseau de parrainage
 
-> **Point clé :** 70 % de votre score provient de **l'activité économique réelle** de votre réseau, pas simplement des inscriptions. Inviter 1 000 personnes qui ne dépensent jamais rapporte moins qu'inviter 10 utilisateurs actifs.
+> **Point clé :** La majorité de votre score provient de **l'activité économique réelle** de votre réseau, pas simplement des inscriptions. Inviter 1 000 personnes qui ne dépensent jamais rapporte moins qu'inviter 10 utilisateurs actifs.
+
+Les scores s'accumulent au fil du temps et sont convertis en MTC à chaque époque de halving. Les multiplicateurs de boost (ex. staking de MTC, classements saisonniers) seront introduits progressivement via les smart contracts.
 
 :::warning Actuellement Off-Chain → Migration On-Chain en août 2026
 Les commissions de parrainage sont actuellement suivies dans Django (PostgreSQL) et versées par virement bancaire ou en crypto. À partir d'**août 2026**, l'intégralité du système de commissions de parrainage migrera vers le **smart contract Matsuri Referral** sur Solana — rendant les paiements trustless, instantanés et auditables on-chain.
@@ -158,25 +158,25 @@ Fournissez de la liquidité MTC/SOL sur le DEX Raydium et gagnez des récompense
 
 | Élément | Détails |
 | :--- | :--- |
-| **APY cible** | 50 % (incitation à la liquidité précoce) |
+| **APY cible** | 20% (incitation à la liquidité précoce) |
 | **DEX** | Raydium (Solana) |
 | **Qui** | Toute personne détenant des MTC et des SOL |
 
 ---
 
-### 6. 🎲 Bonus Omikuji — Multiplicateur de Fortune
+### 6. 🎲 Bonus Omikuji — Tirage de Fortune
 
-Chaque enregistrement Adventure Mining inclut un tirage Omikuji (fortune) gratuit. Ce multiplicateur s'applique en plus de tous les autres bonus.
+Chaque enregistrement Adventure Mining inclut un tirage Omikuji (fortune) gratuit — un bonus qui s'ajoute à votre score habituel.
 
-| Fortune | Probabilité | Multiplicateur |
-| :--- | :---: | :---: |
-| 🏆 **大吉** (Grande Bénédiction) | 5 % | ×3.0 |
-| ✨ **吉** (Bénédiction) | 15 % | ×1.5 |
-| 🌸 **小吉** (Petite Bénédiction) | 30 % | ×1.2 |
-| 🍃 **末吉** (Bénédiction Future) | 35 % | ×1.0 |
-| 💀 **凶** (Malchance) | 15 % | ×1.0 |
+| Fortune | Rareté | Bonus |
+| :--- | :---: | :--- |
+| 🏆 **大吉** (Grande Bénédiction) | Rare | Score bonus le plus élevé + NFT |
+| ✨ **吉** (Bénédiction) | Peu commun | Bon score bonus |
+| 🌸 **小吉** (Petite Bénédiction) | Commun | Petit bonus |
+| 🍃 **末吉** (Bénédiction Future) | Commun | Participation enregistrée |
+| 💀 **凶** (Malchance) | Peu commun | Participation enregistrée |
 
-Le résultat est déterminé par un **protocole commit-reveal inviolable** sur Solana. Même le serveur ne peut pas modifier votre résultat après la phase de commit.
+Le résultat est déterminé par un **protocole commit-reveal inviolable** sur Solana. Même le serveur ne peut pas modifier votre résultat après la phase de commit. Les probabilités exactes et les montants de bonus seront finalisés dans l'implémentation du smart contract.
 
 ---
 
@@ -187,7 +187,7 @@ Le résultat est déterminé par un **protocole commit-reveal inviolable** sur S
 | **🎫 Réserver des expériences** | Payez des visites, événements et activités culturelles avec des MTC | ✅ Maintenant |
 | **🏷️ Réduction** | 5–10 % de réduction par rapport au prix en yens lors d'un paiement en MTC | ✅ Maintenant |
 | **🔑 Accès exclusif** | Événements NFT-gated, cérémonies VIP, visites privées | ✅ Maintenant |
-| **📈 Toku Staking** | Verrouillez vos MTC pour booster votre multiplicateur de minage (1.0× → 10.0×) | 🔜 Août 2026 |
+| **📈 Toku Staking** | Verrouillez vos MTC pour booster votre score de contribution (jusqu'à ~50 % de boost) | 🔜 Août 2026 |
 | **🗳️ Gouvernance DAO** | Votez sur la trésorerie, les mises à jour du protocole et la certification des sites | 🔜 2027 |
 | **🛍️ Boutiques partenaires** | Payez dans les commerces et restaurants partenaires | 🔜 En expansion |
 

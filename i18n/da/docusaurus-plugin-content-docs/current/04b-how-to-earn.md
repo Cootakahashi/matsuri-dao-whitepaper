@@ -69,9 +69,9 @@ Intet internet ved en landlig helligdom? Intet problem. J-Times registrerer din 
 
 ### 2. ⛩️ Eventyr-mining — Besøg hellige steder med Matsuri-appen
 
-Åbn **Matsuri-appen**, find en helligdom eller et tempel på det hellige stedkort, tag derhen og check ind. Jo mindre besøgt stedet er, jo mere tjener du.
+Åbn **Matsuri-appen**, find en helligdom eller et tempel på det hellige stedkort, tag derhen og check ind. Din aktivitet registreres som en **bidragsscore**.
 
-**Trin-for-trin-flow:**
+**Sådan fungerer det:**
 
 ```mermaid
 sequenceDiagram
@@ -82,30 +82,30 @@ sequenceDiagram
 
     U->>GPS: Ankommer til helligdom, tryk "Check ind"
     GPS->>API: Send koordinater + proof-hash
-    API->>API: Valider placering (inden for 200m fra stedet)
-    API->>API: Beregn belønning (6-lags formel)
-    API-->>U: Vis belønning: "⛩️ +150 MTC" + Omikuji-trækning
+    API->>API: Valider placering + registrer bidragsscore
+    API-->>U: Vis resultat: "⛩️ Check-in fuldført!" + Omikuji-trækning
     U->>API: Træk Omikuji
-    API-->>U: "🏆 大吉 (Stor lykke)! ×3,0 bonus → 450 MTC i alt"
+    API-->>U: "🏆 大吉! Bonusscore!"
     API->>SC: Indsend til Solana (asynkron, efter aug.)
 ```
 
-**Beløningsmultiplikatorer — hvorfor landområder betaler mere:**
+**Kerneprincip — mindre besøgte steder tjener mere:**
 
-| Stedtype | Eksempler | Multiplikator |
+| Stedtype | Eksempler | Score |
 | :--- | :--- | :---: |
-| 🏙️ **Større** | Sensoji, Kiyomizu-dera, Fushimi Inari | ×1 |
-| 🌆 **Regional** | Præfekturets ichinomiya, regionale storhelligdomme | ×2 |
-| 🏞️ **Landlig** | Historiske landhelligdomme | ×5 |
-| ⛰️ **Grænseområde** | Bjergtempeler, fjerne ø-helligdomme | ×10 |
+| 🏙️ **Større** | Sensoji, Kiyomizu-dera, Fushimi Inari | Standard |
+| 🌆 **Regional** | Præfekturets ichinomiya, regionale storhelligdomme | Højere |
+| 🏞️ **Landlig** | Historiske landhelligdomme | Meget højere |
+| ⛰️ **Grænseområde** | Bjergtempeler, fjerne ø-helligdomme | Højest |
 
-**Plus yderligere bonusser:**
-- **Pioner-bonus** — dagens første besøgende tjener mest (harmonisk henfald)
-- **Seriebonus** — besøg på sammenhængende dage giver op til +50%
-- **Omikuji** — tilfældig lykketrækning: 大吉 (Stor lykke) = ×3,0, 吉 (Lykke) = ×1,5, 小吉 (Lille lykke) = ×1,2
-- **Sponsorerede beacons** — kommuner indsætter MTC for at booste specifikke steder
+**Yderligere scoringsfaktorer:**
+- **Besøgshyppighed** — regelmæssige besøgende tjener mere over tid
+- **Omikuji** — tilfældig lykketrækning tilføjer bonusscore (大吉 er den bedste!)
+- **Sponsorerede steder** — kommuner kan booste specifikke steder
 
-> **Eksempel:** Besøg en fjern bjerghelligdom (×10) som dagens 2. besøgende, med en 5-dages serie (+10%), og træk 吉 (Lykke) (×1,5) = grundbelønning forstærket **16,5×**.
+:::info Bidragsscore → MTC
+Din aktivitet akkumuleres som en **bidragsscore**. Ved hver halveringsepoke (starter juni 2027) konverteres scorer til MTC fra mining-puljen på 550 mio. Jo mere du bidrager i forhold til fællesskabet, jo mere MTC modtager du. Præcise boost-koefficienter vil blive endeligt fastlagt progressivt og implementeret i smart contracts — for at sikre retfærdig distribution tilpasset den faktiske puljestørrelse.
+:::
 
 ---
 
@@ -122,13 +122,13 @@ Del din henvisningskode. Når dit netværk handler, tjener du automatisk.
 
 **Hvordan En-Mining-scoren fungerer:**
 
-```
-Din score = (Direkte henvisninger × 30%) + (Netværkstransaktionsvolumen × 70%)
-           × Toku-stakingmultiplikator (1,0× – 10,0×)
-           × Titelboost (+5% pr. rangeret sæson, maks. +50%)
-```
+Din bidragsscore beregnes baseret på to faktorer:
+- **Netværksrækkevidde** (30%) — hvor mange mennesker du bringer
+- **Økonomisk aktivitet** (70%) — reelle køb fra dit henvisningsnetværk
 
-> **Vigtig indsigt:** 70% af din score kommer fra **reel økonomisk aktivitet** i dit netværk, ikke bare tilmeldinger. At invitere 1.000 mennesker, der aldrig bruger penge, tjener mindre end at invitere 10 aktive forbrugere.
+> **Vigtig indsigt:** Størstedelen af din score kommer fra **reel økonomisk aktivitet** i dit netværk, ikke bare tilmeldinger. At invitere 1.000 mennesker, der aldrig bruger penge, tjener mindre end at invitere 10 aktive forbrugere.
+
+Scorer akkumuleres over tid og konverteres til MTC ved hver halveringsepoke. Boost-multiplikatorer (f.eks. staking af MTC, sæsonranglister) vil blive introduceret progressivt via smart contracts.
 
 :::warning I øjeblikket off-chain → Flytter on-chain august 2026
 Henvisningsprovisioner spores i øjeblikket i Django (PostgreSQL) og betales via bankoverførsel eller krypto. Fra **august 2026** migrerer hele henvisningsprovisionssystemet til **Matsuri Referral smart contract** på Solana — hvilket gør udbetalinger tillidsløse, øjeblikkelige og reviderbare on-chain.
@@ -158,25 +158,25 @@ Tilvejebring MTC/SOL-likviditet på Raydium DEX og tjen belønninger.
 
 | Post | Detaljer |
 | :--- | :--- |
-| **Mål-APY** | 50% (tidlig likviditetsincitament) |
+| **Mål-APY** | 20% (tidlig likviditetsincitament) |
 | **DEX** | Raydium (Solana) |
 | **Hvem** | Alle der holder MTC og SOL |
 
 ---
 
-### 6. 🎲 Omikuji-bonus — Lykke-multiplikator
+### 6. 🎲 Omikuji-bonus — Lykketrækning
 
-Hvert Eventyr-mining-check-in inkluderer en gratis Omikuji (lykke)-trækning. Denne multiplikator anvendes oven på alle andre bonusser.
+Hvert Eventyr-mining-check-in inkluderer en gratis Omikuji (lykke)-trækning — en bonus oven på din almindelige score.
 
-| Lykke | Sandsynlighed | Multiplikator |
-| :--- | :---: | :---: |
-| 🏆 **大吉** (Stor lykke) | 5% | ×3,0 |
-| ✨ **吉** (Lykke) | 15% | ×1,5 |
-| 🌸 **小吉** (Lille lykke) | 30% | ×1,2 |
-| 🍃 **末吉** (Fremtidig lykke) | 35% | ×1,0 |
-| 💀 **凶** (Ulykke) | 15% | ×1,0 |
+| Lykke | Sjældenhed | Bonus |
+| :--- | :---: | :--- |
+| 🏆 **大吉** (Stor lykke) | Sjælden | Højeste bonusscore + NFT |
+| ✨ **吉** (Lykke) | Ualmindelig | God bonusscore |
+| 🌸 **小吉** (Lille lykke) | Almindelig | Lille bonus |
+| 🍃 **末吉** (Fremtidig lykke) | Almindelig | Deltagelse registreret |
+| 💀 **凶** (Ulykke) | Ualmindelig | Deltagelse registreret |
 
-Resultatet bestemmes af en **manipulationssikker commit-reveal-protokol** på Solana. Ikke engang serveren kan ændre dit resultat efter commit-fasen.
+Resultatet bestemmes af en **manipulationssikker commit-reveal-protokol** på Solana. Ikke engang serveren kan ændre dit resultat efter commit-fasen. Præcise sandsynligheder og bonusbeløb vil blive endeligt fastlagt i smart contract-implementeringen.
 
 ---
 
@@ -187,7 +187,7 @@ Resultatet bestemmes af en **manipulationssikker commit-reveal-protokol** på So
 | **🎫 Book oplevelser** | Betal for ture, events og kulturaktiviteter med MTC | ✅ Nu |
 | **🏷️ Rabat** | 5–10% rabat i forhold til yen-priser ved betaling med MTC | ✅ Nu |
 | **🔑 Eksklusiv adgang** | NFT-låste events, VIP-ceremonier, private ture | ✅ Nu |
-| **📈 Toku-staking** | Lås MTC for at booste din mining-multiplikator (1,0× → 10,0×) | 🔜 Aug. 2026 |
+| **📈 Toku-staking** | Lås MTC for at booste din bidragsscore (op til ~50% boost) | 🔜 Aug. 2026 |
 | **🗳️ DAO-styring** | Stem om kasse, protokolopgraderinger og stedcertificering | 🔜 2027 |
 | **🛍️ Partnerbutikker** | Betal i deltagende butikker og restauranter | 🔜 Udvides |
 

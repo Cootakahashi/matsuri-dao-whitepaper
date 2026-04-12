@@ -69,9 +69,9 @@ Walang internet sa isang rural na shrine? Walang problema. Nire-record ng J-Time
 
 ### 2. ⛩️ Adventure Mining — Bumisita sa mga Sagradong Lugar gamit ang Matsuri App
 
-Buksan ang **Matsuri app**, humanap ng shrine o templo sa Sacred Site Map, pumunta doon, at mag-check in. Kung mas kakaunti ang bumibisita sa lugar, mas malaki ang kikitain mo.
+Buksan ang **Matsuri app**, humanap ng shrine o templo sa Sacred Site Map, pumunta doon, at mag-check in. Ang iyong aktibidad ay nire-record bilang isang **contribution score**.
 
-**Hakbang-hakbang na daloy:**
+**Paano ito gumagana:**
 
 ```mermaid
 sequenceDiagram
@@ -82,30 +82,30 @@ sequenceDiagram
 
     U->>GPS: Dumating sa shrine, i-tap ang "Check In"
     GPS->>API: Ipadala ang coordinates + proof hash
-    API->>API: I-validate ang lokasyon (sa loob ng 200m mula sa site)
-    API->>API: Kalkulahin ang reward (6-layer na formula)
-    API-->>U: Ipakita ang reward: "⛩️ +150 MTC" + Omikuji draw
+    API->>API: I-validate ang lokasyon + i-record ang contribution score
+    API-->>U: Ipakita ang resulta: "⛩️ Check-in complete!" + Omikuji draw
     U->>API: Humila ng Omikuji
-    API-->>U: "🏆 大吉! ×3.0 bonus → 450 MTC kabuuan"
+    API-->>U: "🏆 大吉! Bonus score!"
     API->>SC: I-submit sa Solana (async, pagkatapos ng Ago)
 ```
 
-**Mga reward multiplier — bakit mas malaki ang bayad sa rural:**
+**Pangunahing prinsipyo — mas mataas ang score sa mga mas kakaunting bisita:**
 
-| Uri ng Lugar | Mga Halimbawa | Multiplier |
+| Uri ng Lugar | Mga Halimbawa | Score |
 | :--- | :--- | :---: |
-| 🏙️ **Pangunahin** | Sensoji, Kiyomizu-dera, Fushimi Inari | ×1 |
-| 🌆 **Rehiyonal** | Prefectural na ichinomiya, rehiyonal na malalaking shrine | ×2 |
-| 🏞️ **Rural** | Makasaysayang mga shrine sa kanayunan | ×5 |
-| ⛰️ **Frontier** | Mga templo sa bundok, mga sagradong lugar sa malalayong isla | ×10 |
+| 🏙️ **Pangunahin** | Sensoji, Kiyomizu-dera, Fushimi Inari | Standard |
+| 🌆 **Rehiyonal** | Prefectural na ichinomiya, rehiyonal na malalaking shrine | Mas mataas |
+| 🏞️ **Rural** | Makasaysayang mga shrine sa kanayunan | Mas mataas pa |
+| ⛰️ **Frontier** | Mga templo sa bundok, mga sagradong lugar sa malalayong isla | Pinakamataas |
 
-**Dagdag pang mga bonus:**
-- **Pioneer Bonus** — ang unang bumisita sa araw ay kumikita ng pinakamataas (harmonic decay)
-- **Streak Bonus** — bumisita ng magkakasunod na araw para sa hanggang +50%
-- **Omikuji** — random na fortune draw: 大吉 = ×3.0, 吉 = ×1.5, 小吉 = ×1.2
-- **Sponsored Beacons** — nagde-deposito ang mga munisipalidad ng MTC para i-boost ang mga partikular na lugar
+**Karagdagang mga score factor:**
+- **Dalas ng pagbisita** — ang mga regular na bisita ay kumikita ng mas marami habang tumatagal
+- **Omikuji** — random na fortune draw na nagdadagdag ng bonus score (大吉 ang pinakamabuti!)
+- **Sponsored Sites** — maaaring i-boost ng mga munisipalidad ang mga partikular na lugar
 
-> **Halimbawa:** Bumisita sa isang malalayong shrine sa bundok (×10) bilang ika-2 na bisita sa araw, na may 5-araw na streak (+10%), at humila ng 吉 (×1.5) = ang base reward ay naging **16.5× ang laki**.
+:::info Contribution Score → MTC
+Ang iyong aktibidad ay nag-iipon bilang **contribution score**. Sa bawat halving epoch (simula Hunyo 2027), ang mga score ay kino-convert sa MTC mula sa 550M mining pool. Kung mas marami kang nai-contribute kumpara sa komunidad, mas maraming MTC ang matatanggap mo. Ang eksaktong boost coefficients ay isa-isang tatapusin at ipapatupad sa mga smart contract — na tinitiyak ang patas na distribusyon na naka-align sa aktwal na laki ng pool.
+:::
 
 ---
 
@@ -120,15 +120,15 @@ Ibahagi ang iyong referral code. Kapag nag-transact ang iyong network, awtomatik
 | **L3** | Ika-3 na antas | **5%** |
 | **L4** | Ika-4 na antas | **5%** |
 
-**Paano gumagana ang En-Mining score:**
+**Paano gumagana ang En-Mining scoring:**
 
-```
-Iyong Score = (Direktang Referrals × 30%) + (Network Transaction Volume × 70%)
-             × Toku Staking Multiplier (1.0× – 10.0×)
-             × Title Boost (+5% bawat ranked season, max +50%)
-```
+Ang iyong contribution score ay kinakalkula batay sa dalawang factor:
+- **Network reach** (30%) — ilan ang mga taong dinadala mo
+- **Ekonomikong aktibidad** (70%) — tunay na mga pagbili mula sa iyong referral network
 
-> **Mahalagang pananaw:** 70% ng iyong score ay nanggagaling sa **tunay na ekonomikong aktibidad** sa iyong network, hindi lang mga sign-up. Ang pag-imbita ng 1,000 tao na hindi kailanman gumagastos ay kumikita ng mas kaunti kaysa sa pag-imbita ng 10 aktibong gumagastos.
+> **Mahalagang pananaw:** Ang karamihan ng iyong score ay nanggagaling sa **tunay na ekonomikong aktibidad** sa iyong network, hindi lang mga sign-up. Ang pag-imbita ng 1,000 tao na hindi kailanman gumagastos ay kumikita ng mas kaunti kaysa sa pag-imbita ng 10 aktibong gumagastos.
+
+Ang mga score ay nag-iipon sa paglipas ng panahon at kino-convert sa MTC sa bawat halving epoch. Ang mga boost multiplier (hal. pag-stake ng MTC, seasonal rankings) ay unti-unting ipapakilala sa pamamagitan ng mga smart contract.
 
 :::warning Kasalukuyang Off-Chain → Lilipat sa On-Chain Agosto 2026
 Ang mga referral commission ay kasalukuyang tina-track sa Django (PostgreSQL) at binabayaran sa pamamagitan ng bank transfer o crypto. Simula **Agosto 2026**, ang buong referral commission system ay lilipat sa **Matsuri Referral smart contract** sa Solana — na gagawing trustless, instant, at auditable on-chain ang mga payout.
@@ -158,25 +158,25 @@ Magbigay ng MTC/SOL liquidity sa Raydium DEX at kumita ng mga reward.
 
 | Item | Detalye |
 | :--- | :--- |
-| **Target APY** | 50% (maagang liquidity incentive) |
+| **Target APY** | 20% (maagang liquidity incentive) |
 | **DEX** | Raydium (Solana) |
 | **Sino** | Sinumang may hawak na MTC at SOL |
 
 ---
 
-### 6. 🎲 Omikuji Bonus — Fortune Multiplier
+### 6. 🎲 Omikuji Bonus — Fortune Draw
 
-Bawat Adventure Mining check-in ay may kasamang libreng Omikuji (fortune) draw. Ang multiplier na ito ay inilalapat sa ibabaw ng lahat ng iba pang bonus.
+Bawat Adventure Mining check-in ay may kasamang libreng Omikuji (fortune) draw — isang bonus sa ibabaw ng iyong regular na score.
 
-| Fortune | Probability | Multiplier |
-| :--- | :---: | :---: |
-| 🏆 **大吉** (Dakilang Biyaya) | 5% | ×3.0 |
-| ✨ **吉** (Biyaya) | 15% | ×1.5 |
-| 🌸 **小吉** (Maliit na Biyaya) | 30% | ×1.2 |
-| 🍃 **末吉** (Hinaharap na Biyaya) | 35% | ×1.0 |
-| 💀 **凶** (Malas) | 15% | ×1.0 |
+| Fortune | Rarity | Bonus |
+| :--- | :---: | :--- |
+| 🏆 **大吉** (Dakilang Biyaya) | Bihira | Pinakamataas na bonus score + NFT |
+| ✨ **吉** (Biyaya) | Hindi karaniwan | Magandang bonus score |
+| 🌸 **小吉** (Maliit na Biyaya) | Karaniwan | Maliit na bonus |
+| 🍃 **末吉** (Hinaharap na Biyaya) | Karaniwan | Naitala ang partisipasyon |
+| 💀 **凶** (Malas) | Hindi karaniwan | Naitala ang partisipasyon |
 
-Ang resulta ay tinutukoy ng isang **tamper-proof commit-reveal protocol** sa Solana. Kahit ang server ay hindi makakapagbago ng iyong resulta pagkatapos ng commit phase.
+Ang resulta ay tinutukoy ng isang **tamper-proof commit-reveal protocol** sa Solana. Kahit ang server ay hindi makakapagbago ng iyong resulta pagkatapos ng commit phase. Ang eksaktong mga probability at halaga ng bonus ay tatapusin sa implementasyon ng smart contract.
 
 ---
 
@@ -187,7 +187,7 @@ Ang resulta ay tinutukoy ng isang **tamper-proof commit-reveal protocol** sa Sol
 | **🎫 Mag-book ng mga karanasan** | Magbayad para sa mga tour, event, at kultural na aktibidad gamit ang MTC | ✅ Ngayon |
 | **🏷️ Diskwento** | 5–10% na diskwento kumpara sa presyong yen kapag nagbabayad gamit ang MTC | ✅ Ngayon |
 | **🔑 Exclusive na access** | NFT-gated na mga event, VIP-only na seremonya, pribadong tour | ✅ Ngayon |
-| **📈 Toku Staking** | I-lock ang MTC para i-boost ang iyong mining multiplier (1.0× → 10.0×) | 🔜 Ago 2026 |
+| **📈 Toku Staking** | I-lock ang MTC para i-boost ang iyong contribution score (hanggang ~50% boost) | 🔜 Ago 2026 |
 | **🗳️ DAO Governance** | Bumoto sa treasury, protocol upgrades, at site certification | 🔜 2027 |
 | **🛍️ Mga partner store** | Magbayad sa mga kalahok na tindahan at restaurant | 🔜 Lumalawak |
 

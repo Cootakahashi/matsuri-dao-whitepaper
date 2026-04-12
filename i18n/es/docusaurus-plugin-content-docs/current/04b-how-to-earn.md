@@ -69,9 +69,9 @@ Abre la **app J-Times** y consume contenido sobre la cultura japonesa. Cada acci
 
 ### 2. ⛩️ Minería de Aventura — Visita Sitios Sagrados con la App Matsuri
 
-Abre la **app Matsuri**, encuentra un santuario o templo en el Mapa de Sitios Sagrados, ve allí y regístrate. Cuanto menos visitado sea el sitio, más ganas.
+Abre la **app Matsuri**, encuentra un santuario o templo en el Mapa de Sitios Sagrados, ve allí y regístrate. Tu actividad se registra como una **puntuación de contribución**.
 
-**Flujo paso a paso:**
+**Cómo funciona:**
 
 ```mermaid
 sequenceDiagram
@@ -82,30 +82,30 @@ sequenceDiagram
 
     U->>GPS: Llegas al santuario, pulsa "Registrarse"
     GPS->>API: Enviar coordenadas + hash de prueba
-    API->>API: Validar ubicación (dentro de 200m del sitio)
-    API->>API: Calcular recompensa (fórmula de 6 capas)
-    API-->>U: Mostrar recompensa: "⛩️ +150 MTC" + sorteo Omikuji
+    API->>API: Validar ubicación + registrar puntuación de contribución
+    API-->>U: Mostrar resultado: "⛩️ ¡Registro completado!" + sorteo Omikuji
     U->>API: Sacar Omikuji
-    API-->>U: "🏆 大吉! ×3.0 bonus → 450 MTC en total"
+    API-->>U: "🏆 大吉! ¡Puntuación de bonificación!"
     API->>SC: Enviar a Solana (asíncrono, post-ago)
 ```
 
-**Multiplicadores de recompensa — por qué lo rural paga más:**
+**Principio fundamental — los sitios menos visitados otorgan más:**
 
-| Tipo de Sitio | Ejemplos | Multiplicador |
+| Tipo de Sitio | Ejemplos | Puntuación |
 | :--- | :--- | :---: |
-| 🏙️ **Principal** | Sensoji, Kiyomizu-dera, Fushimi Inari | ×1 |
-| 🌆 **Regional** | Ichinomiya prefecturales, grandes santuarios regionales | ×2 |
-| 🏞️ **Rural** | Santuarios históricos en el campo | ×5 |
-| ⛰️ **Frontera** | Templos de montaña, sitios sagrados en islas remotas | ×10 |
+| 🏙️ **Principal** | Sensoji, Kiyomizu-dera, Fushimi Inari | Estándar |
+| 🌆 **Regional** | Ichinomiya prefecturales, grandes santuarios regionales | Mayor |
+| 🏞️ **Rural** | Santuarios históricos en el campo | Mucho mayor |
+| ⛰️ **Frontera** | Templos de montaña, sitios sagrados en islas remotas | La más alta |
 
-**Además, bonificaciones adicionales:**
-- **Bono de Pionero** — el primer visitante del día gana más (decaimiento armónico)
-- **Bono de Racha** — visita días consecutivos para hasta +50%
-- **Omikuji** — sorteo de fortuna aleatorio: 大吉 = ×3.0, 吉 = ×1.5, 小吉 = ×1.2
-- **Balizas Patrocinadas** — los municipios depositan MTC para impulsar sitios específicos
+**Factores adicionales de puntuación:**
+- **Frecuencia de visita** — los visitantes regulares ganan más con el tiempo
+- **Omikuji** — sorteo de fortuna aleatorio que añade puntuación de bonificación (¡大吉 es el mejor!)
+- **Sitios Patrocinados** — los municipios pueden impulsar sitios específicos
 
-> **Ejemplo:** Visita un santuario remoto de montaña (×10) como el 2.º visitante del día, con una racha de 5 días (+10%), y saca 吉 (×1.5) = recompensa base amplificada **16.5×**.
+:::info Puntuación de Contribución → MTC
+Tu actividad se acumula como una **puntuación de contribución**. En cada época de halving (a partir de junio de 2027), las puntuaciones se convierten en MTC del pool de minería de 550M. Cuanto más contribuyas en relación con la comunidad, más MTC recibes. Los coeficientes de bonificación exactos se finalizarán progresivamente e implementarán en los contratos inteligentes — asegurando una distribución justa alineada con el tamaño real del pool.
+:::
 
 ---
 
@@ -122,13 +122,13 @@ Comparte tu código de referido. Cuando tu red realiza transacciones, ganas auto
 
 **Cómo funciona la puntuación En-Mining:**
 
-```
-Tu Puntuación = (Referidos Directos × 30%) + (Volumen de Transacciones de la Red × 70%)
-               × Multiplicador de Staking Toku (1.0× – 10.0×)
-               × Impulso por Título (+5% por temporada clasificada, máx. +50%)
-```
+Tu puntuación de contribución se calcula en base a dos factores:
+- **Alcance de red** (30%) — cuántas personas traes
+- **Actividad económica** (70%) — compras reales de tu red de referidos
 
-> **Dato clave:** El 70% de tu puntuación proviene de **actividad económica real** en tu red, no solo de registros. Invitar a 1.000 personas que nunca gastan rinde menos que invitar a 10 gastadores activos.
+> **Dato clave:** La mayor parte de tu puntuación proviene de **actividad económica real** en tu red, no solo de registros. Invitar a 1.000 personas que nunca gastan rinde menos que invitar a 10 gastadores activos.
+
+Las puntuaciones se acumulan con el tiempo y se convierten en MTC en cada época de halving. Los multiplicadores de impulso (ej. staking de MTC, clasificaciones por temporada) se introducirán progresivamente mediante contratos inteligentes.
 
 :::warning Actualmente Off-Chain → Migración On-Chain en Agosto 2026
 Las comisiones de referidos actualmente se rastrean en Django (PostgreSQL) y se pagan mediante transferencia bancaria o cripto. A partir de **agosto de 2026**, todo el sistema de comisiones de referidos migrará al **smart contract Matsuri Referral** en Solana — haciendo los pagos trustless, instantáneos y auditables on-chain.
@@ -158,25 +158,25 @@ Provee liquidez MTC/SOL en Raydium DEX y gana recompensas.
 
 | Elemento | Detalles |
 | :--- | :--- |
-| **APY Objetivo** | 50% (incentivo de liquidez temprana) |
+| **APY Objetivo** | 20% (incentivo de liquidez temprana) |
 | **DEX** | Raydium (Solana) |
 | **Quién** | Cualquiera que posea MTC y SOL |
 
 ---
 
-### 6. 🎲 Bono Omikuji — Multiplicador de Fortuna
+### 6. 🎲 Bono Omikuji — Sorteo de Fortuna
 
-Cada registro de Minería de Aventura incluye un sorteo Omikuji (fortuna) gratuito. Este multiplicador se aplica sobre todos los demás bonos.
+Cada registro de Minería de Aventura incluye un sorteo Omikuji (fortuna) gratuito — un bono adicional a tu puntuación regular.
 
-| Fortuna | Probabilidad | Multiplicador |
-| :--- | :---: | :---: |
-| 🏆 **大吉** (Gran Bendición) | 5% | ×3.0 |
-| ✨ **吉** (Bendición) | 15% | ×1.5 |
-| 🌸 **小吉** (Pequeña Bendición) | 30% | ×1.2 |
-| 🍃 **末吉** (Bendición Futura) | 35% | ×1.0 |
-| 💀 **凶** (Infortunio) | 15% | ×1.0 |
+| Fortuna | Rareza | Bono |
+| :--- | :---: | :--- |
+| 🏆 **大吉** (Gran Bendición) | Rara | Mayor puntuación de bonificación + NFT |
+| ✨ **吉** (Bendición) | Poco común | Buena puntuación de bonificación |
+| 🌸 **小吉** (Pequeña Bendición) | Común | Pequeña bonificación |
+| 🍃 **末吉** (Bendición Futura) | Común | Participación registrada |
+| 💀 **凶** (Infortunio) | Poco común | Participación registrada |
 
-El resultado se determina mediante un **protocolo commit-reveal a prueba de manipulaciones** en Solana. Ni siquiera el servidor puede cambiar tu resultado después de la fase de commit.
+El resultado se determina mediante un **protocolo commit-reveal a prueba de manipulaciones** en Solana. Ni siquiera el servidor puede cambiar tu resultado después de la fase de commit. Las probabilidades exactas y los montos de bonificación se finalizarán en la implementación del contrato inteligente.
 
 ---
 
@@ -187,7 +187,7 @@ El resultado se determina mediante un **protocolo commit-reveal a prueba de mani
 | **🎫 Reservar experiencias** | Paga tours, eventos y actividades culturales con MTC | ✅ Ahora |
 | **🏷️ Descuento** | 5–10% de descuento vs. precio en yenes al pagar con MTC | ✅ Ahora |
 | **🔑 Acceso exclusivo** | Eventos con acceso NFT, ceremonias solo VIP, tours privados | ✅ Ahora |
-| **📈 Staking Toku** | Bloquea MTC para aumentar tu multiplicador de minería (1.0× → 10.0×) | 🔜 Ago 2026 |
+| **📈 Staking Toku** | Bloquea MTC para aumentar tu puntuación de contribución (hasta ~50% de impulso) | 🔜 Ago 2026 |
 | **🗳️ Gobernanza DAO** | Vota sobre la tesorería, actualizaciones del protocolo y certificación de sitios | 🔜 2027 |
 | **🛍️ Tiendas asociadas** | Paga en tiendas y restaurantes participantes | 🔜 Expandiendo |
 

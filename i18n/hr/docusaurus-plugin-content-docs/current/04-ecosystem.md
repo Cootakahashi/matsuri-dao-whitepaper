@@ -127,7 +127,7 @@ Vodimo poseban program nagrada za korisnike koji osiguravaju MTC/SOL likvidnost 
 | Stavka | Detalji |
 | :--- | :--- |
 | **Tko** | Rani pružatelji likvidnosti ("partneri osnivači") |
-| **Ciljani APY** | **50%** (postavljen kao premija za rizik) |
+| **Ciljani APY** | **20%** (postavljen kao premija za rizik) |
 | **Zašto** | Pokretanje početne likvidnosti za stabilno trgovinsko okruženje |
 
 ---

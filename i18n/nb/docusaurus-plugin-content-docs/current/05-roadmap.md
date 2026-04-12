@@ -27,7 +27,7 @@ Produktet er bygd. Fokus nå er inntektsgenerering via det CEO-ledede finanssyst
 | ✅ | **Medielansering** | J-Times (Web og Podcast) distribusjonsinfrastruktur live |
 | ✅ | **Genesis** | MTC Token Generation Event på Solana |
 | ✅ | **Likviditet** | Initiell LP-pool opprettet på Raydium |
-| ⬜ | **Insentivprogram** | 50 % mål-APY likviditetsmining lanseres |
+| ⬜ | **Insentivprogram** | 20% mål-APY likviditetsmining lanseres |
 | ⬜ | **Systemgåing live** | Solana MEV/arbitrasje-bot i produksjon |
 | ⬜ | **VIP-rekruttering** | Første 20 GCF VIP-medlemmer valgt ut |
 

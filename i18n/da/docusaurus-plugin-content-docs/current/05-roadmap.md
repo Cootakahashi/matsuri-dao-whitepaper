@@ -32,7 +32,7 @@ Produktet er bygget. Fokus er nu på monetarisering via det CEO-ledede finansiel
 | ✅ | **Backend-infrastruktur** | 80+ modeller, 100+ API'er, 15+ automatiserede opgaver, 841 tests |
 | ✅ | **Analyser** | Fuld sessionssporing, konverteringstragte, A/B-test |
 | 🔜 | **Mobillancering** | Matsuri og J-Times iOS-apps (april 2026) |
-| ⬜ | **Incitamentsprogram** | 50% mål-APY likviditets-mining-lancering |
+| ⬜ | **Incitamentsprogram** | 20% mål-APY likviditets-mining-lancering |
 | ⬜ | **System-golive** | Solana MEV / arbitragebot i produktion |
 | ⬜ | **VIP-rekruttering** | Første 20 GCF VIP-medlemmer udvalgt |
 
