@@ -1,7 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 8
 id: smart-contracts
 title: ⚡ Smart Contracts
+description: "Four open-source Anchor/Rust programs on Solana — En-Mining, Worship Routing, Halving Distribution, and Omikuji — with PDA-only vaults and 128-bit arithmetic."
 ---
 
 # ⚡ Smart Contracts — Open Source Architecture
@@ -9,6 +10,14 @@ title: ⚡ Smart Contracts
 > **Trustless by Design.**
 > All reward logic, referral trees, and halving schedules are enforced **on-chain** via auditable Rust programs.
 > Source code: [GitHub](https://github.com/Cootakahashi/matsuri-contracts)
+
+| Spec | Details |
+| :--- | :--- |
+| **Framework** | Anchor 0.32.1 (Rust) |
+| **Chain** | Solana Mainnet-beta |
+| **Programs** | 4 (Distribution, Referral, Worship, Omikuji) |
+| **Build** | Optimised release with LTO, overflow checks enabled |
+| **Math** | Pure `math.rs` modules — zero side effects, 128-bit intermediates |
 
 ---
 
@@ -229,7 +238,11 @@ pub fn pioneer_reward(daily_pool: u64, visit_order: u32) -> u64 {
 
 ## 4. 🎴 AR Mining — WebAR おみくじマイニング
 
-**Purpose:** スマホのブラウザだけで現実空間にARおみくじを出現させ、MTCをマイニングする体験。アプリDL不要。神道の精神性と最先端技術が融合した世界初のWebAR×ブロックチェーンインフラ。
+**Purpose:** A browser-based AR experience that spawns a virtual Omikuji box in real space — mine MTC without downloading an app. The world's first WebAR × blockchain infrastructure fusing Shinto spirituality with cutting-edge technology.
+
+:::info How This Connects to the Mobile Apps
+The Matsuri iOS app uses the Sacred Site Map for GPS check-in. Once checked in, the **WebAR Omikuji** opens in a browser overlay (Three.js) — no separate app needed. The result feeds back into the Matsuri app's reward system. Both native and web experiences work together seamlessly.
+:::
 
 ### アーキテクチャ
 
@@ -299,6 +312,58 @@ TierMult = { メジャー: 1.0, 中規模: 2.0, 地方: 5.0, 秘境: 10.0 }
 
 ---
 
+## NFT / SBT Collection
+
+Matsuri Protocol issues non-transferable **Soulbound Tokens (SBTs)** and limited-edition **NFTs** via Metaplex Core on Solana.
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/nft/founder-nft-001.jpg" alt="Founder's Edition NFT #001" style={{width: '100%', maxWidth: '220px', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.4)'}} />
+  <img src="/img/nft/founder-nft-002.jpg" alt="Founder's Edition NFT #002" style={{width: '100%', maxWidth: '220px', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.4)'}} />
+</div>
+
+| Type | Transferable | Purpose |
+| :--- | :---: | :--- |
+| **Founder NFT** | No (SBT) | Founding member proof — permanent mining boost |
+| **Evangelist NFT** | No (SBT) | Season ranking achievement — +5% mining per season |
+| **Goshuin NFT** | No (SBT) | Pilgrimage check-in proof — location-exclusive |
+| **Omikuji NFT** | No (SBT) | 大吉 fortune proof — rare collectible |
+
+---
+
+## Payment Verification (On-Chain ↔ Off-Chain)
+
+The platform verifies Solana transactions on-chain before crediting purchases — not trust-based, but **cryptographically verified.**
+
+```mermaid
+sequenceDiagram
+    participant U as User (App/Web)
+    participant PH as Phantom Wallet
+    participant SOL as Solana Mainnet
+    participant API as Django Backend
+    participant DB as PostgreSQL
+
+    U->>PH: Sign transaction
+    PH->>SOL: Submit TX
+    SOL-->>PH: TX Signature
+    PH-->>U: Return signature
+    U->>API: POST /payments/solana/verify/
+    API->>SOL: getTransaction(signature)
+    SOL-->>API: TX details (amount, recipient, status)
+    API->>API: Verify: correct recipient, amount, within 15min TTL
+    API->>DB: Create EventPurchase + TokenTransaction
+    API-->>U: Purchase confirmed ✅
+```
+
+| Verification Check | Details |
+| :--- | :--- |
+| **Recipient** | Must match `SOLANA_ADMIN_WALLET` |
+| **Amount** | Must match expected price (SOL or MTC) |
+| **TTL** | Transaction must be within 15 minutes |
+| **Uniqueness** | `solana_signature` is unique-indexed — no double-spend |
+| **Status** | On-chain confirmation required |
+
+---
+
 ## Security Model (Open Source)
 
 These contracts are **fully open source.** Security relies on mathematical guarantees, not obscurity.
@@ -312,6 +377,35 @@ These contracts are **fully open source.** Security relies on mathematical guara
 | **Immutable Tokenomics** | Halving factor, total pool, and epoch duration are set once and cannot be changed |
 | **Pure Math Modules** | Scoring/reward logic separated into auditable, testable math libraries |
 | **Vision Proof** | 5-layer anti-spoofing without transmitting camera data (privacy-preserving) |
+
+### Off-Chain Security (Django Backend)
+
+| Layer | Implementation |
+| :--- | :--- |
+| **Authentication** | Cookie-based JWT (HttpOnly + Secure + SameSite=Lax), 1h access / 30d refresh |
+| **Encryption** | Bank info encrypted with Fernet cipher, failed decryption returns empty dict |
+| **Rate Limiting** | Anon: 30/min, Auth: 100/min, Login: 10/min, Registration: 5/hour |
+| **Payment Security** | PCI-compliant (no card data stored), Stripe/PayPal webhook signature verification |
+| **Data Privacy** | GDPR data export, auto-delete unverified accounts after 7 days |
+| **CORS** | Explicit origin whitelist (no wildcards in production) |
+
+---
+
+## Audit & Verification Status
+
+Transparency is non-negotiable. Here is the current state of third-party verification:
+
+| Item | Status | Details |
+| :--- | :---: | :--- |
+| **Source Code** | ✅ Open Source | [GitHub: matsuri-contracts](https://github.com/Cootakahashi/matsuri-contracts) |
+| **MTC Token** | ✅ Verified | SPL Token on Solana Mainnet — Mint & Freeze authorities permanently revoked |
+| **Smart Contract Audit** | 🔜 Planned Q2 2026 | Professional security audit by independent firm |
+| **Backend Security** | ✅ Production | Rate limiting, encrypted storage, PCI-compliant payments, 841+ tests |
+| **Mobile Apps** | ✅ Tested | 827+ automated tests across 3 iOS apps |
+
+:::warning Transparency Note
+Smart contracts have not yet undergone a formal third-party audit. The code is open source for community review, and a professional audit is scheduled for Q2 2026 before mainnet deployment of mining programs. Until then, all reward distribution is handled off-chain with on-chain settlement verification.
+:::
 
 ---
 

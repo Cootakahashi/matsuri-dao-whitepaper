@@ -5,6 +5,49 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
+const languages = [
+  {code: 'en', label: 'English', flag: '🇬🇧'},
+  {code: 'ja', label: '日本語', flag: '🇯🇵'},
+  {code: 'zh-Hans', label: '中文', flag: '🇨🇳'},
+  {code: 'ko', label: '한국어', flag: '🇰🇷'},
+  {code: 'th', label: 'ไทย', flag: '🇹🇭'},
+  {code: 'my', label: 'မြန်မာ', flag: '🇲🇲'},
+  {code: 'fil', label: 'Filipino', flag: '🇵🇭'},
+  {code: 'fr', label: 'Français', flag: '🇫🇷'},
+  {code: 'es', label: 'Español', flag: '🇪🇸'},
+  {code: 'nb', label: 'Norsk', flag: '🇳🇴'},
+  {code: 'ar', label: 'العربية', flag: '🇸🇦'},
+  {code: 'hr', label: 'Hrvatski', flag: '🇭🇷'},
+  {code: 'da', label: 'Dansk', flag: '🇩🇰'},
+];
+
+function LanguageSelector() {
+  const {i18n} = useDocusaurusContext();
+  const currentLocale = i18n.currentLocale;
+
+  return (
+    <div className="language-selector">
+      <p className="language-selector__label">Select Language</p>
+      <div className="language-selector__grid">
+        {languages.map(({code, label, flag}) => {
+          const href = code === 'en' ? '/' : `/${code}/`;
+          const isActive = currentLocale === code;
+          return (
+            <a
+              key={code}
+              href={href}
+              className={`language-selector__item ${isActive ? 'language-selector__item--active' : ''}`}
+            >
+              <span className="language-selector__flag">{flag}</span>
+              <span className="language-selector__name">{label}</span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function HomepageHero() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -30,6 +73,7 @@ function HomepageHero() {
             Matsuri Web App
           </Link>
         </div>
+        <LanguageSelector />
       </div>
     </header>
   );

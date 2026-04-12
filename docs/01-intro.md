@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: intro
 title: ⛩️ Welcome to Matsuri Coin
+description: "Matsuri Coin (MTC) is a Solana utility token powering Japan's cultural economy — 80+ production models, 100+ APIs, 4 payment methods, and 3 native iOS apps."
 ---
 
 # ⛩️ Welcome to Matsuri Coin
@@ -16,6 +17,31 @@ We're not building just another payment rail.
 We're building a **bridge between Japan and the world** — a new co-creation framework where people who love culture join hands across borders.
 
 ![The fusion of culture and technology — a new world beyond the torii gate](/production/01-2intro_hero_torii-gateway.jpg)
+
+---
+
+## 📖 Whitepaper Guide
+
+<div className="wp-guide">
+
+| | Section | What You'll Learn | Best For |
+| :---: | :--- | :--- | :--- |
+| **1** | [**Vision & Strategy**](/docs/vision) | Why Japan's ¥10T tourism market needs Web3. The economic flywheel that makes MTC deflationary | Understanding the opportunity |
+| **2** | [**The Economy & GCF**](/docs/economy) | 6 revenue streams, commission rates, tokenomics, halving schedule, payment infrastructure | Evaluating the business model |
+| **3** | [**Ecosystem & Mining**](/docs/ecosystem) | 5 mining pillars (Media, Social, Adventure, Creator, Liquidity), Proof of Action | Seeing how users earn MTC |
+| **4** | [**How to Earn & Use MTC**](/docs/how-to-earn) | Step-by-step earning guide, spending options, and the on-chain migration roadmap | Understanding the token's utility |
+| **5** | [**Mobile Apps**](/docs/mobile-apps) | 3 native iOS apps, 827+ tests, Phantom Wallet integration, offline-first architecture | Assessing product maturity |
+| **6** | [**Roadmap & Team**](/docs/roadmap) | Phase 1-3 milestones, DAO governance plan, team backgrounds | Timeline and execution risk |
+| **7** | [**Smart Contracts**](/docs/smart-contracts) | 4 Anchor/Rust programs, security model, audit status, on-chain payment verification | Technical due diligence |
+
+</div>
+
+:::tip Quick Navigation
+**Investor?** Start with [Vision](/docs/vision) → [Economy](/docs/economy) → [Roadmap](/docs/roadmap).
+**User?** Jump to [How to Earn & Use MTC](/docs/how-to-earn) — the complete earning and spending guide.
+**Developer?** Jump to [Smart Contracts](/docs/smart-contracts) → [Mobile Apps](/docs/mobile-apps).
+**Partner?** Read [Ecosystem](/docs/ecosystem) → [Economy (GCF Section)](/docs/economy).
+:::
 
 ---
 
@@ -38,6 +64,24 @@ But beneath that headline lies an **inconvenient truth.**
 
 We're using Web3 to dismantle this broken system.
 Your payment reaches local communities and heritage preservation **directly** — fully transparent, zero middlemen.
+
+---
+
+## 📊 Platform at a Glance
+
+The Matsuri platform is **not a whitepaper promise — it's a production system.**
+
+| Metric | Value |
+| :--- | :--- |
+| **Data Models** | 80+ production database models |
+| **API Endpoints** | 100+ REST APIs serving web, iOS, and partner apps |
+| **Payment Methods** | 4 (Stripe, PayPal, Solana Pay, MTC Balance) |
+| **Authentication** | 6 providers (Email, Google, Apple, Facebook, LINE, Twitter) |
+| **Mobile Apps** | 3 native iOS apps (GCF Admin released on App Store; Matsuri & J-Times launching late April 2026) |
+| **Languages** | 5 (Japanese, English, Chinese, Thai, Norwegian) |
+| **Smart Contracts** | 4 Anchor/Rust programs on Solana |
+| **Automated Tasks** | 15+ Celery background jobs (cart recovery, reminders, analytics) |
+| **Test Coverage** | 841+ backend tests + 827+ mobile tests |
 
 ---
 
@@ -104,6 +148,18 @@ A micro-payment as small as "tossing ¥100 into an offering box" demands fees **
 :::
 
 ---
+
+---
+
+## 🔑 Why Now?
+
+| Factor | Context |
+| :--- | :--- |
+| **¥10T Market** | Japan's inbound tourism hit record highs in 2024-2025 with no signs of slowing. The infrastructure to capture this value on-chain doesn't exist yet |
+| **Weak Yen** | Historically weak yen makes Japan the best-value destination globally — driving unprecedented foreign visitor numbers |
+| **Solana Maturity** | Solana's infrastructure (sub-second finality, $0.001 fees, Metaplex, SPL tokens) has reached production grade only in the last 18 months |
+| **First-Mover** | No other project combines ReFi tourism routing, cultural preservation, and relationship mining on a single blockchain. Matsuri has **zero direct competitors** |
+| **2-Year Halving** | The mining pool launches June 2027 with a 2-year halving cycle — faster than Bitcoin. Early participants lock in the highest reward rates permanently |
 
 :::note Ready to Begin
 MTC ends the era of tourism that merely *consumes* culture. Welcome to the journey of **co-creation** — let's build the future together.

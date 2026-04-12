@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 id: roadmap
 title: 🗓️ Feuille de route et équipe
 ---
@@ -46,16 +46,53 @@ Exploiter la webapp achevée pour étendre les bases physiques et la fonctionnal
 
 ### 🌊 Phase 3 : Circulation (2027+)
 
-**Thème : Adoption de masse et décentralisation**
+**Thème : Adoption de masse, économie de co-création et décentralisation**
 
-Ouverture publique et fonctionnement complet de l'écosystème.
+Lancement public, marketplace on-chain et fonctionnement complet de l'écosystème.
 
 | Statut | Jalon | Détails |
 | :---: | :--- | :--- |
 | ⬜ | **Grande ouverture** | Lancement mondial de Matsuri App |
 | ⬜ | **Grand déverrouillage (1er juin 2027)** | Libération du lockup fondateur + Pool de mining (550 M MTC) actif + Cycle de halving démarre |
+| ⬜ | **Marketplace de co-création** | Boutiques de spécialités locales + magasins partenaires GCF — règlement on-chain avec rachat automatique de MTC |
+| ⬜ | **Financement participatif avec droits NFT** | Les utilisateurs financent des projets culturels sur Solana. Les contributeurs reçoivent des NFT représentant la propriété, le partage de revenus ou les droits de gouvernance sur le projet financé |
+| ⬜ | **Règlement on-chain des boutiques** | Toutes les transactions du marketplace sont réglées via des smart contracts — un pourcentage de chaque vente alimente automatiquement le pool de rachat MTC |
 | ⬜ | **Objectif** | AUM total de l'écosystème : **10 milliards ¥ (~65 M$)** |
 | ⬜ | **Transition DAO** | Transfert partiel du pouvoir décisionnel à la communauté GCF |
+
+#### 🏪 Vision de la marketplace de co-création
+
+L'expression ultime du « Culture OS » — une marketplace décentralisée où **les créateurs de culture et les passionnés de culture échangent directement**, sans intermédiaires extractifs.
+
+```mermaid
+graph LR
+    subgraph "Créateurs"
+        S1["🏺 Artisans locaux\nArtisanat traditionnel"]
+        S2["🍵 Producteurs régionaux\nSpécialités locales"]
+        S3["🎌 Partenaires GCF\nExpériences sélectionnées"]
+    end
+    subgraph "Règlement On-Chain"
+        SC["⚡ Smart Contract\nRépartition automatique des revenus"]
+    end
+    subgraph "Distribution de la valeur"
+        V1["💎 Rachat MTC\n(% de chaque vente)"]
+        V2["🏘️ Fonds communautaire\n(Réinvestissement local)"]
+        V3["👤 Revenus du créateur\n(Paiement direct)"]
+    end
+    S1 & S2 & S3 --> SC
+    SC --> V1 & V2 & V3
+```
+
+| Fonctionnalité | Description | Statut |
+| :--- | :--- | :---: |
+| **🏺 Boutiques de spécialités locales** | Les artisans et producteurs régionaux vendent directement à un public mondial. Paiement en MTC = 5–10 % de réduction | ⬜ Vision |
+| **🎫 Financement participatif + droits NFT** | Financez un projet culturel (restauration de sanctuaire, renouveau de festival, atelier d'artisan). Recevez un NFT représentant votre contribution — avec un potentiel de partage de revenus ou de droits de gouvernance | ⬜ Vision |
+| **⚡ Règlement On-Chain** | Chaque transaction du marketplace est réglée via les smart contracts Solana. Les revenus sont automatiquement répartis : paiement du créateur + fonds communautaire + rachat MTC — aucune comptabilité manuelle | ⬜ Vision |
+| **🗳️ Gouvernance des contributeurs** | Les détenteurs de NFT votent sur l'allocation des ressources des projets financés — une véritable co-création, pas un simple don | ⬜ Vision |
+
+:::info Pourquoi c'est important
+Aujourd'hui, les touristes achètent des souvenirs dans des boutiques qui paient un loyer à des plateformes intermédiaires. Demain, **un artisan du Kyoto rural vendra directement à un fan à Copenhague** — et un pourcentage de cette vente renforcera automatiquement l'économie MTC. C'est le « flywheel » dans sa plus complète expression.
+:::
 
 ---
 

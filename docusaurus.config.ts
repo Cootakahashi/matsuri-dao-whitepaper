@@ -14,6 +14,12 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  // Mermaid diagram rendering
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   // Set the production url of your site here
   url: 'https://whitepaper.matsuri.app',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -26,10 +32,25 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    },
+    {
+      tagName: 'link',
+      attributes: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+    },
+    {
+      tagName: 'meta',
+      attributes: { name: 'viewport', content: 'width=device-width, initial-scale=1.0, viewport-fit=cover' },
+    },
+  ],
+
   // Internationalization: 10 languages
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko', 'my', 'fil'],
+    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko', 'my', 'fil', 'hr', 'da'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },
       ja: { label: '日本語', direction: 'ltr' },
@@ -42,6 +63,8 @@ const config: Config = {
       ko: { label: '한국어', direction: 'ltr' },
       my: { label: 'မြန်မာ', direction: 'ltr' },
       fil: { label: 'Filipino', direction: 'ltr' },
+      hr: { label: 'Hrvatski', direction: 'ltr' },
+      da: { label: 'Dansk', direction: 'ltr' },
     },
   },
 
@@ -61,8 +84,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/brand/matsuri-coin.jpg',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
@@ -93,38 +115,44 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Whitepaper',
           items: [
-            {
-              label: 'Whitepaper',
-              to: '/docs/intro',
-            },
+            {label: 'Introduction', to: '/docs/intro'},
+            {label: 'Tokenomics', to: '/docs/economy'},
+            {label: 'Smart Contracts', to: '/docs/smart-contracts'},
+            {label: 'Roadmap', to: '/docs/roadmap'},
+          ],
+        },
+        {
+          title: 'Products',
+          items: [
+            {label: 'Matsuri Web App', href: 'https://matsuri.group/en'},
+            {label: 'J-Times Media', href: 'https://j-times.org'},
+            {label: 'GCF Portal', href: 'https://gcf.works'},
+          ],
+        },
+        {
+          title: 'Developers',
+          items: [
+            {label: 'Smart Contracts (GitHub)', href: 'https://github.com/Cootakahashi/matsuri-contracts'},
+            {label: 'Solana Explorer', href: 'https://solscan.io'},
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'X (Twitter)',
-              href: 'https://x.com/matsuri_dao_jp',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Matsuri Web App',
-              href: 'https://matsuri.group/en',
-            },
+            {label: 'X (Twitter)', href: 'https://x.com/matsuri_dao_jp'},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Matsuri Coin Project. Built with Culture OS.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Jon & Coo Inc. — Matsuri Coin Project. Built with Culture OS.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    mermaid: {
+      theme: {light: 'neutral', dark: 'dark'},
     },
   } satisfies Preset.ThemeConfig,
 };

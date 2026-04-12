@@ -24,9 +24,8 @@ const FeatureList: FeatureItem[] = [
     title: 'Built on Solana',
     description: (
       <>
-        Sub-second finality and near-zero fees enable micro-transactions at
-        scale — from digital "Saisen" (offerings) to instant booking payments
-        across Japan.
+        Sub-second finality and ~¥0.04 fees enable micro-transactions at
+        scale — from temple offerings to instant booking payments across Japan.
       </>
     ),
   },
@@ -37,6 +36,36 @@ const FeatureList: FeatureItem[] = [
       <>
         Every transaction fuels the Buyback & Burn loop. More tourism, more
         revenue, more burns — creating natural scarcity as the ecosystem grows.
+      </>
+    ),
+  },
+  {
+    icon: '📱',
+    title: '3 Native iOS Apps',
+    description: (
+      <>
+        GCF Admin (released), Matsuri, and J-Times — built with Swift 6, shared
+        infrastructure, and 827+ automated tests. Not a prototype.
+      </>
+    ),
+  },
+  {
+    icon: '🛡️',
+    title: 'Trustless & Transparent',
+    description: (
+      <>
+        Mint and Freeze authorities permanently revoked. 900M fixed supply.
+        Open-source smart contracts. PDA-only vaults — no human key can drain funds.
+      </>
+    ),
+  },
+  {
+    icon: '🌏',
+    title: '11 Languages',
+    description: (
+      <>
+        Whitepaper and platform available in Japanese, English, Chinese, Korean,
+        Thai, Norwegian, Arabic, Spanish, French, Filipino, and Burmese.
       </>
     ),
   },
@@ -60,7 +89,7 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className="features--matsuri">
       <div className="container">
-        <div className="row">
+        <div className="row" style={{rowGap: '1.5rem'}}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

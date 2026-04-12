@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 8
 id: smart-contracts
 title: ⚡ 智能合约
 ---

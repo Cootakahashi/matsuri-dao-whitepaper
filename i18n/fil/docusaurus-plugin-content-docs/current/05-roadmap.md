@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 id: roadmap
 title: 🗓️ Roadmap at Team
 ---
@@ -46,16 +46,53 @@ I-leverage ang natapos na Webapp upang palawakin ang mga physical bases at ang "
 
 ### 🌊 Phase 3: Circulation (2027+)
 
-**Tema: Mass Adoption at Decentralisation**
+**Tema: Mass Adoption, Co-Creation Economy at Decentralisation**
 
-Public launch at full ecosystem operation.
+Public launch, on-chain marketplace, at buong ecosystem operation.
 
 | Status | Milestone | Detalye |
 | :---: | :--- | :--- |
 | ⬜ | **Grand Opening** | Matsuri App worldwide release |
 | ⬜ | **Grand Unlock (1 Hun 2027)** | Founder lockup release + Mining Pool (550 M MTC) live + Halving cycle nagsisimula |
+| ⬜ | **Co-Creation Marketplace** | Mga lokal na specialty shop + GCF partner stores — on-chain settlement na may awtomatikong MTC buyback |
+| ⬜ | **Crowdfunding na may NFT Rights** | Ang mga user ay nagpo-pondo ng mga kultural na proyekto sa Solana. Ang mga backer ay tumatanggap ng mga NFT na kumakatawan sa ownership, revenue share, o governance rights sa pinondohang proyekto |
+| ⬜ | **On-Chain Shop Settlement** | Lahat ng marketplace transaction ay sine-settle sa pamamagitan ng smart contracts — isang porsyento ng bawat benta ay awtomatikong dumadaloy sa MTC buyback pool |
 | ⬜ | **Target** | Ecosystem-wide AUM na **¥10 bilyon (~$65 M)** |
 | ⬜ | **DAO Transition** | Bahagyang paglipat ng decision-making sa GCF community |
+
+#### 🏪 Co-Creation Marketplace Vision
+
+Ang pinakamataas na pagpapahayag ng "Culture OS" — isang decentralised marketplace kung saan **ang mga tagalikha ng kultura at mga tagahanga ng kultura ay direktang nag-transact**, walang mapagsamantalang middleman.
+
+```mermaid
+graph LR
+    subgraph "Mga Tagalikha"
+        S1["🏺 Mga Lokal na Artisano\nTradisyonal na crafts"]
+        S2["🍵 Mga Rehiyonal na Producer\nMga lokal na specialty"]
+        S3["🎌 Mga GCF Partner\nMga curated na karanasan"]
+    end
+    subgraph "On-Chain Settlement"
+        SC["⚡ Smart Contract\nAwtomatikong hatian ng kita"]
+    end
+    subgraph "Pamamahagi ng Halaga"
+        V1["💎 MTC Buyback\n(% ng bawat benta)"]
+        V2["🏘️ Community Fund\n(Lokal na reinvestment)"]
+        V3["👤 Kita ng Tagalikha\n(Direktang bayad)"]
+    end
+    S1 & S2 & S3 --> SC
+    SC --> V1 & V2 & V3
+```
+
+| Feature | Paglalarawan | Status |
+| :--- | :--- | :---: |
+| **🏺 Mga Lokal na Specialty Shop** | Ang mga artisano at rehiyonal na producer ay direktang nagbebenta sa pandaigdigang audience. Pagbabayad sa MTC = 5–10% diskwento | ⬜ Vision |
+| **🎫 Crowdfunding + NFT Rights** | Pondohan ang isang kultural na proyekto (pagpapanumbalik ng shrine, pagbuhay ng festival, artisan workshop). Tumanggap ng NFT na kumakatawan sa iyong kontribusyon — na may posibleng revenue share o governance rights | ⬜ Vision |
+| **⚡ On-Chain Settlement** | Bawat marketplace transaction ay sine-settle sa pamamagitan ng Solana smart contracts. Awtomatikong hinahati ang kita: bayad sa tagalikha + community fund + MTC buyback — walang manual na accounting | ⬜ Vision |
+| **🗳️ Backer Governance** | Ang mga may-hawak ng NFT ay bumoboto kung paano inilalaan ng mga pinondohang proyekto ang mga resources — tunay na co-creation, hindi lang donasyon | ⬜ Vision |
+
+:::info Bakit Ito Mahalaga
+Ngayon, ang mga turista ay bumibili ng souvenir mula sa mga tindahan na nagbabayad ng renta sa mga platform landlord. Bukas, **isang artisano sa rural na Kyoto ay direktang nagbebenta sa isang tagahanga sa Copenhagen** — at isang porsyento ng bentang iyon ay awtomatikong nagpapalakas sa ekonomiya ng MTC. Ito ang "flywheel" sa pinakamataas na anyo nito.
+:::
 
 ---
 

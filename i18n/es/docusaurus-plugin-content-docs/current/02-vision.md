@@ -41,15 +41,15 @@ Un **ciclo automático de 4 pasos** impulsa el precio:
 
 ```mermaid
 graph TD
-    A["① Demanda real"] -->|Los turistas necesitan MTC| B["② Presión compradora"]
-    B -->|Compra a precio de mercado en DEX| C["③ Bloqueo y quema"]
-    C -->|El suministro circulante se reduce físicamente| D["④ Apreciación"]
+    A["① Demanda real"]:::step1 -->|Los turistas necesitan MTC| B["② Presión compradora"]:::step2
+    B -->|Compra a precio de mercado en DEX| C["③ Bloqueo y quema"]:::step3
+    C -->|El suministro circulante se reduce físicamente| D["④ Apreciación"]:::step4
     D -->|La escasez impulsa la demanda| A
 
-    style A fill:#e8f5e9,stroke:#2e7d32
-    style B fill:#fff3e0,stroke:#ef6c00
-    style C fill:#fce4ec,stroke:#c62828
-    style D fill:#e3f2fd,stroke:#1565c0
+    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
+    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
+    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
+    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
 ```
 
 | Paso | Nombre | Mecanismo |

@@ -41,15 +41,15 @@ Matsuri Protocol ၏ အဓိက လက္ခဏာ: **ခရီးသွား
 
 ```mermaid
 graph TD
-    A["① စစ်မှန်သော ဝယ်လိုအား"] -->|ခရီးသွားများ MTC လိုအပ်| B["② ဝယ်ယူဖိအား"]
-    B -->|DEX တွင် ဈေးကွက်ဈေးနှုန်းဖြင့် ဝယ်ယူ| C["③ လော့ခ်နှင့် ဖျက်ဆီး"]
-    C -->|ပျံ့နှံ့မှု ပမာဏ ရုပ်ပိုင်းဆိုင်ရာ ကျုံ့ဝင်| D["④ တန်ဖိုးတိုးတက်"]
+    A["① စစ်မှန်သော ဝယ်လိုအား"]:::step1 -->|ခရီးသွားများ MTC လိုအပ်| B["② ဝယ်ယူဖိအား"]:::step2
+    B -->|DEX တွင် ဈေးကွက်ဈေးနှုန်းဖြင့် ဝယ်ယူ| C["③ လော့ခ်နှင့် ဖျက်ဆီး"]:::step3
+    C -->|ပျံ့နှံ့မှု ပမာဏ ရုပ်ပိုင်းဆိုင်ရာ ကျုံ့ဝင်| D["④ တန်ဖိုးတိုးတက်"]:::step4
     D -->|ရှားပါးမှုက ဝယ်လိုအားကို မြှင့်တင်| A
 
-    style A fill:#e8f5e9,stroke:#2e7d32
-    style B fill:#fff3e0,stroke:#ef6c00
-    style C fill:#fce4ec,stroke:#c62828
-    style D fill:#e3f2fd,stroke:#1565c0
+    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
+    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
+    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
+    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
 ```
 
 | အဆင့် | အမည် | ယန္တရား |

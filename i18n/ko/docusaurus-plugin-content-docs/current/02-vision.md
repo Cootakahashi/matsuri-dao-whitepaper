@@ -41,15 +41,15 @@ Matsuri Protocol의 핵심 특징: **관광객의 열광이 MTC 가격 상승에
 
 ```mermaid
 graph TD
-    A["① 실수요 발생"] -->|관광객이 MTC를 필요로 함| B["② 시장 매수 압력"]
-    B -->|DEX에서 시장가에 매수| C["③ 락 & 번"]
-    C -->|유통량이 물리적으로 감소| D["④ 가치 상승"]
+    A["① 실수요 발생"]:::step1 -->|관광객이 MTC를 필요로 함| B["② 시장 매수 압력"]:::step2
+    B -->|DEX에서 시장가에 매수| C["③ 락 & 번"]:::step3
+    C -->|유통량이 물리적으로 감소| D["④ 가치 상승"]:::step4
     D -->|희소성이 수요를 견인| A
 
-    style A fill:#e8f5e9,stroke:#2e7d32
-    style B fill:#fff3e0,stroke:#ef6c00
-    style C fill:#fce4ec,stroke:#c62828
-    style D fill:#e3f2fd,stroke:#1565c0
+    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
+    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
+    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
+    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
 ```
 
 | 단계 | 명칭 | 메커니즘 |

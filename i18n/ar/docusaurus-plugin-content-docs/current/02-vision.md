@@ -41,15 +41,15 @@ MTC هو **المفتاح الرئيسي الوحيد** الذي يوقف الت
 
 ```mermaid
 graph TD
-    A["① طلب حقيقي"] -->|السياح يحتاجون MTC| B["② ضغط شرائي"]
-    B -->|شراء بسعر السوق على DEX| C["③ قفل وحرق"]
-    C -->|المعروض المتداول ينكمش فعليًا| D["④ ارتفاع القيمة"]
+    A["① طلب حقيقي"]:::step1 -->|السياح يحتاجون MTC| B["② ضغط شرائي"]:::step2
+    B -->|شراء بسعر السوق على DEX| C["③ قفل وحرق"]:::step3
+    C -->|المعروض المتداول ينكمش فعليًا| D["④ ارتفاع القيمة"]:::step4
     D -->|الندرة تحفّز الطلب| A
 
-    style A fill:#e8f5e9,stroke:#2e7d32
-    style B fill:#fff3e0,stroke:#ef6c00
-    style C fill:#fce4ec,stroke:#c62828
-    style D fill:#e3f2fd,stroke:#1565c0
+    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
+    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
+    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
+    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
 ```
 
 | المرحلة | الاسم | الآلية |
