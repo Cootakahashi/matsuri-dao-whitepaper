@@ -118,8 +118,8 @@ const config: Config = {
           title: 'Whitepaper',
           items: [
             {label: 'Introduction', to: '/docs/intro'},
-            {label: 'Tokenomics', to: '/docs/economy'},
-            {label: 'Smart Contracts', to: '/docs/smart-contracts'},
+            {label: 'Tokenomics', to: '/docs/tokenomics'},
+            {label: 'Products & Tech', to: '/docs/product-tech'},
             {label: 'Roadmap', to: '/docs/roadmap'},
           ],
         },

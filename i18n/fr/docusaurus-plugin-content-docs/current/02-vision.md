@@ -1,89 +1,72 @@
 ---
 sidebar_position: 2
 id: vision
-title: 🎯 Vision et stratégie
+title: 🎯 Vision et ambition
 ---
 
-# 🎯 Vision : La stratégie « Inbound First »
+# 🎯 Vision et ambition
 
-> **De la dépendance aux subventions à l'autonomie.**
-> L'ère où l'on maintenait les économies locales en perfusion de fonds publics est révolue. Nous injectons les capitaux étrangers directement dans la culture.
+<div style={{textAlign: 'center', margin: '3rem 0 1rem'}}>
+<h2 style={{fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, margin: 0}}>Du Web2 qui nous met en compétition au Web3 réceptif où l'on co-crée.</h2>
+</div>
 
-La quasi-totalité des projets de revitalisation régionale échouent — parce qu'ils se contentent de redistribuer des budgets publics en décroissance.
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<p style={{fontSize: '1.2rem', letterSpacing: '0.1em', opacity: 0.85, margin: '0.5rem 0 1.5rem'}}>——Faire du 「和」(Wa) japonais le moteur de co-création du monde.</p>
+<small>*※ Web2 = économie gérée et manipulée par les entreprises. Web3 = économie où la blockchain atteste des droits et où l'individu retrouve sa souveraineté.*</small>
+</div>
 
-**Matsuri Protocol prend l'approche diamétralement opposée.**
-
----
-
-## 1. Stratégie : Le moteur d'exportation culturelle
-
-Nous redéfinissons les ressources touristiques japonaises — non comme des « biens de consommation », mais comme des **instruments financiers exportables**.
-
-| Problème | Réalité | Impact |
-| :--- | :--- | :--- |
-| 💸 **Fuite de revenus** | Commissions vers les OTA étrangères (Booking.com, Expedia...) | **15 à 20 % des revenus** s'évaporent — une perte à l'échelle nationale |
-| 🚧 **Le mur invisible** | Barrières linguistiques et de paiement | Les voyageurs fortunés n'accèdent pas aux expériences « Deep Japan » |
-
-:::tip Le rôle de MTC
-MTC est le **seul passe-partout** qui stoppe la fuite et abat les murs.
-:::
+![Pont du 和 — la lumière de l'harmonie relie des personnes de cultures différentes](/brand/03_A_bridge_of_harmony.webp)
 
 ---
 
-## 2. Le volant économique
+## 温故知新 (Onko Chishin) — Visiter l'ancien pour découvrir le nouveau
 
-La signature de Matsuri Protocol : **l'enthousiasme des touristes entraîne mathématiquement la hausse du prix de MTC.**
-Pas de l'espoir — de la **mécanique d'offre et de demande**.
+Qu'est-ce que la culture japonaise ?
 
-### Pourquoi MTC prend-il de la valeur ?
+Période Jōmon (il y a environ 16 000 ans), année impériale 2 686, ou plus de 1 300 ans selon l'historiographie académique —— les interprétations de l'origine varient, mais c'est un fait : sur cette terre s'est transmise une culture de bienveillance et d'harmonie.
 
-Un **cycle automatique en 4 étapes** propulse le prix :
-
-```mermaid
-graph TD
-    A["① Demande réelle"]:::step1 -->|Les touristes ont besoin de MTC| B["② Pression d'achat"]:::step2
-    B -->|Achat au prix du marché sur DEX| C["③ Verrouillage et brûlage"]:::step3
-    C -->|L'offre en circulation diminue réellement| D["④ Appréciation"]:::step4
-    D -->|La rareté stimule la demande| A
-
-    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
-    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
-    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
-    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
-```
-
-| Étape | Nom | Mécanisme |
-| :---: | :--- | :--- |
-| **①** | **Demande réelle** | Les touristes ont besoin de MTC pour réserver des guides et acheter des NFT-billets |
-| **②** | **Pression d'achat** | MTC est acheté au prix du marché sur le DEX — par la consommation, non la spéculation |
-| **③** | **Verrouillage & brûlage** | Une part des MTC utilisés en paiement est instantanément verrouillée ou brûlée — l'offre diminue physiquement |
-| **④** | **Appréciation** | La demande d'achat croît, l'offre de vente décroît — la valeur de rareté progresse mathématiquement |
-
-:::info Vérité fondamentale
-**« Plus les touristes savourent le Japon, plus la fortune des détenteurs de MTC augmente. »**
-Cette équation simple est le battement de cœur du projet.
-:::
-
-![Le volant économique — l'enthousiasme touristique entraîne la hausse mathématique de MTC](/production/02-vision_economic-flywheel_cycle.jpg)
+Nous apprenons de cette sagesse et la fusionnons avec la technologie.
+Notre objectif : **une société où ceux qui participent pensent aux autres, et où cette attention circule**.
 
 ---
 
-## 3. Destination finale : Le Culture OS
+## 和をもって貴しとなす (Wa wo motte tōtoshi to nasu) — De l'harmonie naît la valeur
 
-Notre objectif ultime n'est pas une application de paiement.
-C'est de **transformer la culture en système d'exploitation**.
+Non pas la compétition, mais la co-création. Non pas l'accaparement, mais une économie où chaque personne impliquée est récompensée.
 
-```mermaid
-timeline
-    title Feuille de route Matsuri Protocol
-    Phase 1 (Actuelle) : Dominer les paiements inbound
-    Phase 2 : Intégrer immobilier et maisons traditionnelles dans l'économie MTC (Actifs du Monde Réel)
-    Phase 3 : Ancrer la confiance culturelle sur la blockchain — bâtir un système de préservation permanent
-```
-
-> Nous protégeons une **culture millénaire** avec une **technologie blockchain de pointe**.
-> Voilà l'avenir que Matsuri Protocol construit.
+Ce n'est pas un idéalisme.
+Avec la blockchain et les smart contracts, vient l'ère où l'équité est **garantie comme règle**, sans dépendre de « la bonne volonté de quelqu'un ».
+Nous voulons construire une économie où tous les participants sont récompensés sous des règles transparentes.
 
 ---
 
-**[▶ Suivant : Comment gagnons-nous réellement ? (L'économie)](/docs/economy)**
+## Deux ponts d'expérience
+
+Nous visons un pont qui s'étend dans deux directions.
+
+**Pour les Japonais** — Offrir une expérience internationale où rencontrer le monde en confiance. Un système qui récompense la fierté de sa propre culture et le fait de la porter au monde.
+
+**Pour les étrangers** — Des expériences qui touchent l'essence de la culture japonaise, et non sa simple surface touristique. Une porte ouverte vers le « Japon profond » inaccessible via un forfait.
+
+Des personnes de cultures différentes qui vivent ensemble, créent ensemble, apprennent ensemble.
+Nous croyons que l'accumulation de ces rencontres engendre une compréhension qui transcende les frontières.
+
+---
+
+## Comment concrétiser cette ambition
+
+Concrètement, nous construisons une économie composée de trois produits et d'un seul jeton.
+
+| Élément | Rôle |
+| :--- | :--- |
+| **⛩️ [Matsuri](/docs/ecosystem)** | App pour réserver et payer des expériences culturelles, et miner des pèlerinages. Obtenez des MTC rien qu'en visitant |
+| **📰 [J-Times](/docs/ecosystem)** | Média de culture japonaise. Gagnez des MTC en lisant, écoutant ou partageant |
+| **🤝 [GCF](/docs/gcf)** | Communauté internationale qui forme des guides, organise des événements et fait tourner l'écosystème |
+| **💎 [MTC](/docs/tokenomics)** | Monnaie numérique qui relie tout le reste. Circule comme contrepartie, récompense et instrument d'investissement |
+
+L'ambition seule ne suffit pas à protéger une culture ; il faut un système économique durable.
+La page suivante présente **les obstacles concrets à cette ambition** et **la réponse technologique**.
+
+---
+
+**[◀ Précédent : Bienvenue dans Matsuri Coin](/docs/intro)**｜**[▶ Suivant : Problèmes et solutions](/docs/challenges)**

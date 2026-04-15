@@ -1,112 +1,122 @@
 ---
 sidebar_position: 1
 id: intro
-title: ⛩️ Bienvenido a Matsuri Coin
+title: ⛩️ Bienvenido a Matsuri Coin (MTC)
 ---
 
-# ⛩️ Bienvenido a Matsuri Coin
+# ⛩️ Bienvenido a Matsuri Coin (MTC)
 
-> **Código para la armonía. Valor para la paz.**
-> Un puente de «Wa» en un mundo dividido. MTC es la brújula que guía de la competencia a la co-creación.
+> **Un puente de armonía: de la competencia a la co-creación.**
 
-**Matsuri Coin (MTC)** es un utility token descentralizado construido sobre la blockchain de Solana.
-Está diseñado como un **«Culture OS»** — un sistema operativo cultural que conecta la herencia espiritual de Japón, el «Deep Japan», con la economía global.
+Quienes viven la cultura japonesa, quienes la transmiten, quienes la protegen —
+cada forma de «participación» se convierte en valor económico y sostiene el futuro de la cultura.
+Eso es **Matsuri Coin (MTC)**.
 
-No estamos construyendo un simple sistema de pagos.
-Estamos construyendo un **puente entre Japón y el mundo** — un nuevo marco de co-creación donde los amantes de la cultura se unen más allá de las fronteras.
-
-![Fusión de cultura y tecnología — un nuevo mundo tras el torii](/production/01-2intro_hero_torii-gateway.jpg)
+![Fusión de cultura y tecnología — el nuevo mundo que Matsuri Coin dibuja más allá del torii](/brand/01_A_brand_hero.webp)
 
 ---
 
-## 🎯 Nuestra misión
+## Tres productos y un solo token
 
-:::info Canalizando ¥10 billones en energía de mercado hacia el futuro de la cultura
-El mercado de turismo receptivo de Japón crece hasta **¥10 billones** por año.
-Pero bajo la superficie se esconde una **verdad incómoda**.
-:::
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '1.5rem 0'}}>
 
-### Los problemas de los que nadie habla
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-| Problema | Realidad |
-| :--- | :--- |
-| 💸 **Fuga de ingresos** | La mayor parte de los ingresos se filtra al extranjero en forma de comisiones para OTAs e intermediarios foráneos |
-| 😤 **Agotamiento comunitario** | El sobreturismo llena las comunidades de multitudes, pero ningún ingreso regresa a los locales |
-| 🚧 **El muro de la experiencia** | Los paquetes turísticos apenas rozan la superficie — los viajeros nunca conectan con el *verdadero* Japón |
+### ⛩️ Matsuri
+**App de experiencias culturales**
 
-> **«Los japoneses sufren, los viajeros solo ven una fachada, y la riqueza desaparece en las comisiones de las plataformas.»**
+Reserva, pago y minado de peregrinación.
+**Gana y gasta** MTC.
 
-Usamos Web3 para desmantelar este sistema disfuncional.
-Tu pago llega **directamente** a las comunidades locales y a la preservación cultural — con total transparencia, sin intermediarios.
+[matsuri.group →](https://matsuri.group) ｜ [Más info →](/docs/ecosystem)
 
----
+</div>
 
-## 🏗️ El modelo híbrido: Cultura × Tecnología
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-La mayoría de los proyectos cripto persiguen solo ganancias y tratan la cultura como un bien desechable.
-MTC invierte la ecuación: construimos una **«economía que protege la cultura»** — la estructura híbrida que debió existir desde el principio.
+### 📰 J-Times
+**Medio de cultura japonesa**
 
-```mermaid
-graph LR
-    subgraph "Armonía y preservación"
-    A["🛕 Activos culturales"] --> B["🔗 Transparencia blockchain"]
-    B --> C["💰 Retribución directa"]
-    end
-    subgraph "Conexión global"
-    D["🌍 Amantes de la cultura de todo el mundo"] --> E["⛩️ Poseer MTC"]
-    E --> F["🤝 Convertirse en heredero cultural"]
-    end
-```
+Leer, escuchar o mirar
+ya te hace **ganar** MTC.
 
-| Pilar | Significado |
-| :--- | :--- |
-| **🛕 Armonía y preservación** | Los pagos turísticos fluyen a través de la blockchain directamente hacia la preservación cultural y el apoyo artesanal. Las comunidades (GCF) conservan la soberanía sobre su propio patrimonio |
-| **🌍 Conexión global** | Infraestructura que permite a cualquier persona, en cualquier lugar, apoyar el espíritu «Wa» de Japón. Poseer MTC es participar en la historia viva de Japón |
+[j-times.org →](https://j-times.org) ｜ [Más info →](/docs/ecosystem)
 
----
+</div>
 
-## 💎 ¿Por qué usar MTC?
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-El ecosistema MTC ofrece tanto **enriquecimiento espiritual** como **ventajas económicas tangibles**.
+### 🤝 GCF
+**Comunidad internacional**
 
-### ✨ Valor experiencial
+Forma guías y organiza eventos
+para **ganar y expandir** MTC.
 
-| Beneficio | Detalles |
-| :--- | :--- |
-| **🎌 Experiencias con significado** | Desbloquea el «Deep Japan» — zonas sagradas cerradas al público, ceremonias privadas en santuarios, eventos culturales exclusivos |
-| **🌐 Un vínculo de por vida** | Mantén tu conexión con Japón a través de MTC mucho después de volver a casa |
-| **⚖️ Comercio justo** | Los smart contracts eliminan intermediarios. Tu pago llega directamente a quienes lo merecen |
+[Más info →](/docs/gcf) <small>*(por invitación)*</small>
 
-### 💰 Ventajas económicas
+</div>
 
-| Beneficio | Detalles |
-| :--- | :--- |
-| **🏷️ Tarifas preferenciales** | Paga con MTC y ahorra un **5–10 %** frente al precio en yenes. Ej.: tour de ¥30.000 → ~¥27.000 |
-| **🔑 Acceso exclusivo** | NFT-tickets para lugares «solo con invitación» y eventos limitados — exclusivo para holders de MTC |
-| **🛡️ Cobertura cambiaria** | Bloquea el valor de tu experiencia antes de viajar — sin preocuparte por fluctuaciones de tipo de cambio |
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(248,184,62,0.3)', textAlign: 'center'}}>
 
----
+### 💎 MTC
+**Moneda digital**
 
-## ⚡ ¿Por qué Solana?
+Circula por los tres productos:
+**ganas, usas y haces circular**.
 
-Para servir tanto a la «demanda turística real» como al «trading de alta frecuencia», solo había **una blockchain viable**.
+[Tokenomics →](/docs/tokenomics)
 
-| Comparación | Ethereum | Solana |
-| :--- | :---: | :---: |
-| **Comisiones** | ¥100–¥1.000+ | **~¥0,04** |
-| **Finalidad** | 12 s – minutos | **0,4 segundos** |
-| **Rendimiento** | ~15 TPS | **Miles de TPS** |
+</div>
 
-![De Ethereum a la nueva generación — la potencia bruta de Solana impulsa MTC](/production/01-intro_solana-vs-eth_evolution.jpeg)
+</div>
 
-:::tip La prueba de la ofrenda
-Un micropago tan pequeño como «echar ¥100 en la caja de ofrendas» exige comisiones **inferiores a ¥1**. Solo Solana pasa esta prueba.
+:::info ¿Qué es MTC?
+**Un token de utilidad descentralizado sobre la blockchain de Solana.** No es un simple medio de pago: conecta a quienes visitan con la cultura que merece ser preservada, de modo que cada experiencia sostiene el futuro de Japón — una **economía cultural de co-creación** donde experiencia y economía circulan juntas. Los tres productos están conectados por **MTC**.
 :::
 
 ---
 
-:::note Listos para arrancar
-MTC pone fin a la era del turismo que solo *consume* cultura. Bienvenido al viaje hacia la **co-creación** — construyamos el futuro juntos.
-:::
+## 📖 Guía del whitepaper
 
-**[▶ Visión: ¿Por qué ahora?](/docs/vision)** ｜ **[▶ Únete al GCF (membresía VIP)](/docs/economy)**
+Este documento se divide en tres partes y diez secciones. Empieza por donde más te interese.
+
+**[Parte narrativa] Por qué existe MTC**
+
+| # | Sección | ¿Qué encontrarás? | Ideal para |
+| :---: | :--- | :--- | :--- |
+| 1 | **[Visión y propósito](/docs/vision)** | Filosofía del 温故知新, espíritu del 和, dos puentes | Entender el propósito del proyecto |
+| 2 | **[Problemas y soluciones](/docs/challenges)** | La verdad incómoda del turismo receptivo y la respuesta Web3 | Saber por qué hace falta un cambio |
+| 3 | **[Flywheel económico](/docs/flywheel)** | Ciclo: demanda real → presión compradora → lock & burn → revalorización | Comprender el mecanismo de crecimiento |
+| 4 | **[El futuro que dibuja MTC](/docs/future)** | Economía de tres actores, transición gradual Web2 → Web3, OS cultural | Captar la visión global |
+
+**[Parte práctica] Qué se puede hacer con MTC**
+
+| # | Sección | ¿Qué encontrarás? | Ideal para |
+| :---: | :--- | :--- | :--- |
+| 5 | **[Ecosistema](/docs/ecosystem)** | Visión general de Matsuri / J-Times / GCF y los tres productos | Saber qué se puede hacer |
+| 6 | **[Minado y formas de ganar](/docs/mining)** | Los cinco pilares de la prueba de acción y cómo ganar y gastar | Obtener y usar MTC |
+| 7 | **[Membresía GCF](/docs/gcf)** | Gold/Platinum, estructura de ingresos, diseño de recompensas | Participar como socio |
+
+**[Parte técnica y económica] Por qué puede confiarse en MTC**
+
+| # | Sección | ¿Qué encontrarás? | Ideal para |
+| :---: | :--- | :--- | :--- |
+| 8 | **[Tokenomics](/docs/tokenomics)** | Suministro de 900M, distribución, halving, protocolo de recompra | Evaluar el modelo económico |
+| 9 | **[¿Por qué Solana?](/docs/why-solana)** | Comparación con Ethereum, datos reales de Solana | Verificar la elección técnica |
+| 10 | **[Producto y tecnología](/docs/product-tech)** | Tres apps iOS + smart contracts | Comprobar la madurez técnica |
+| 11 | **[Hoja de ruta y equipo](/docs/roadmap)** | Fases 1-3, DAO, presentación del equipo | Ver la capacidad de ejecución y el calendario |
+
+---
+
+## 🧭 La lectura según tu perfil
+
+- **VIP y socios de negocio** → Comprende el ciclo económico en [Flywheel](/docs/flywheel) y la filosofía de diseño en [Tokenomics](/docs/tokenomics)
+- **Usuarios** → Descubre lo que puedes hacer hoy mismo en [Minado y formas de ganar](/docs/mining)
+- **Desarrolladores y auditores** → Revisa smart contracts y arquitectura en [Producto y tecnología](/docs/product-tech)
+- **Quienes quieren unirse a la comunidad** → Consulta roles y formas de participar en [Membresía GCF](/docs/gcf)
+
+---
+
+:::note Siguiente página
+Si quieres conocer la filosofía de MTC y el «por qué ahora», continúa en **[Visión: el puente del 和 →](/docs/vision)**.
+:::

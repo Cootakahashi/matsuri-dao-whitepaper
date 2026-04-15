@@ -1,112 +1,122 @@
 ---
 sidebar_position: 1
 id: intro
-title: ⛩️ Velkommen til Matsuri Coin
+title: ⛩️ Velkommen til Matsuri Coin (MTC)
 ---
 
-# ⛩️ Velkommen til Matsuri Coin
+# ⛩️ Velkommen til Matsuri Coin (MTC)
 
-> **Kode for harmoni. Verdi for fred.**
-> En bro av «Wa» i en splittet verden. MTC er kompasset som leder fra konkurranse til samskapning.
+> **Som en bro av 和 (wa – harmoni), fra konkurranse til samskaping.**
 
-**Matsuri Coin (MTC)** er en desentralisert brukstoken bygget på Solana-blokkjeden.
-Den er designet som et **«Kultur-OS»** som kobler Japans åndelige arv — «Deep Japan» — til den globale økonomien.
+De som opplever japansk kultur, de som formidler den, de som bevarer den —
+alt engasjement blir til økonomisk verdi og støtter kulturens framtid.
+Det er **Matsuri Coin (MTC)**.
 
-Vi bygger ikke bare et betalingssystem.
-Vi bygger en **bro mellom Japan og verden** — et nytt rammeverk for samskapning der kulturelskere forenes på tvers av landegrenser.
-
-![Fusjon av kultur og teknologi — en ny verden bak torii-porten](/production/01-2intro_hero_torii-gateway.jpg)
+![Kultur møter teknologi ── den nye verdenen bortenfor torii-porten, som Matsuri Coin tegner](/brand/01_A_brand_hero.webp)
 
 ---
 
-## 🎯 Vårt oppdrag
+## Tre produkter og én token
 
-:::info Kanaliserer ¥10 billioner i markedsenergi til kulturens fremtid
-Japans inbound-turistmarked vokser mot **¥10 billioner** per år.
-Men under overflaten skjuler det seg en **ubehagelig sannhet.**
-:::
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '1.5rem 0'}}>
 
-### Problemene ingen snakker om
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-| Problem | Hva som faktisk skjer |
-| :--- | :--- |
-| 💸 **Inntektslekkasje** | Brorparten av inntektene forsvinner til utlandet som provisjoner til utenlandske OTA-er og mellomledd |
-| 😤 **Utbrenthet i lokalsamfunn** | Overturisme fyller lokalsamfunn med folkemengder, men ingen av inntektene når tilbake |
-| 🚧 **Opplevelsesmuren** | Pakketurer berører bare overflaten — reisende får aldri kontakt med det *ekte* Japan |
+### ⛩️ Matsuri
+**Kulturopplevelses-app**
 
-> **«Japanerne sliter, reisende ser en fasade, og formuen forsvinner inn i plattformgebyrer.»**
+Booking, betaling, pilegrimsgruving.
+**Tjen og bruk** MTC.
 
-Vi bruker Web3 til å rive ned dette ødelagte systemet.
-Betalingen din når lokalsamfunn og kulturvern **direkte** — fullstendig transparent, null mellomledd.
+[matsuri.group →](https://matsuri.group) ｜ [Les mer →](/docs/ecosystem)
 
----
+</div>
 
-## 🏗️ Hybridmodellen: Kultur × Teknologi
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-De fleste kryptoprosjekter jager profitt og behandler kultur som forbruksvare.
-MTC snur dette på hodet: vi bygger en **«økonomi som beskytter kultur»** — hybridstrukturen som burde ha eksistert fra dag én.
+### 📰 J-Times
+**Japansk kulturmedium**
 
-```mermaid
-graph LR
-    subgraph "Harmoni og bevaring"
-    A["🛕 Kulturmidler"] --> B["🔗 Blokkjede-transparens"]
-    B --> C["💰 Direkte tilbakeføring"]
-    end
-    subgraph "Global tilkobling"
-    D["🌍 Kulturentusiaster verden over"] --> E["⛩️ Eie MTC"]
-    E --> F["🤝 Bli kulturarvinger"]
-    end
-```
+Les, lytt, se —
+og **tjen** MTC.
 
-| Søyle | Hva det betyr |
-| :--- | :--- |
-| **🛕 Harmoni og bevaring** | Turistbetalinger flyter gjennom blokkjeden direkte til kulturvern og håndverkerstøtte. Lokalsamfunn (GCF) beholder suverenitet over sin egen arv |
-| **🌍 Global tilkobling** | Infrastruktur som lar hvem som helst, hvor som helst, støtte den japanske ånden «Wa». Å eie MTC betyr å dele i Japans levende historie |
+[j-times.org →](https://j-times.org) ｜ [Les mer →](/docs/ecosystem)
 
----
+</div>
 
-## 💎 Hvorfor bruke MTC?
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-MTC-økosystemet leverer både **åndelig berikelse** og **konkret økonomisk oppside.**
+### 🤝 GCF
+**Internasjonal fellesskap**
 
-### ✨ Opplevelsesverdi
+Utdann guider, arranger events —
+**tjen og spre** MTC.
 
-| Fordel | Detaljer |
-| :--- | :--- |
-| **🎌 Meningsfulle opplevelser** | Lås opp «Deep Japan» — hellige områder stengt for offentligheten, private seremoniell, eksklusiv kulturelle begivenheter |
-| **🌐 Et livslangt bånd** | Forbli tilkoblet Japan gjennom MTC lenge etter at du har reist hjem |
-| **⚖️ Rettferdig handel** | Smarte kontrakter eliminerer mellomledd. Betalingen din går rett til de som fortjener den |
+[Les mer →](/docs/gcf) <small>*(etter invitasjon)*</small>
 
-### 💰 Økonomisk oppside
+</div>
 
-| Fordel | Detaljer |
-| :--- | :--- |
-| **🏷️ Foretrukne priser** | Betal med MTC og spar **5–10 %** sammenlignet med yen-priser. F.eks. ¥30 000-tur → ~¥27 000 |
-| **🔑 Eksklusiv tilgang** | Billett-NFT-er til «kun for inviterte»-steder og begrensede arrangementer — kun MTC-holdere |
-| **🛡️ Valutasikring** | Lås opplevelsesverdi før turen — ingen bekymring for valutasvingninger |
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(248,184,62,0.3)', textAlign: 'center'}}>
 
----
+### 💎 MTC
+**Digital valuta**
 
-## ⚡ Hvorfor Solana?
+På tvers av alle tre produkter:
+**tjen, bruk, sirkuler.**
 
-For å betjene både «reell reiselivsetterspørsel» og «høyfrekvent finanshandel» fantes det nøyaktig **én levedyktig blokkjede.**
+[Tokenomics →](/docs/tokenomics)
 
-| Mål | Ethereum | Solana |
-| :--- | :---: | :---: |
-| **Transaksjonsgebyr** | ¥100–¥1 000+ | **~¥0,04** |
-| **Ferdigstillelse** | 12 s – minutter | **0,4 sekunder** |
-| **Gjennomstrømning** | ~15 TPS | **Tusenvis av TPS** |
+</div>
 
-![Fra Ethereum til neste generasjon — Solanas råkraft driver MTC](/production/01-intro_solana-vs-eth_evolution.jpeg)
+</div>
 
-:::tip Tempeltesten
-En mikrobetaling liten som «å kaste ¥100 i offerkassen» krever gebyrer **under ¥1.** Bare Solana består den testen.
+:::info Hva er MTC
+**En desentralisert utility-token på Solana-blokkjeden.** Ikke bare et betalingsmiddel, men en bro mellom de besøkende og kulturen som skal vernes — hver enkelt opplevelse bærer Japans framtid. En **samskapende kulturøkonomi** der opplevelse og økonomi sirkulerer i samme krets. **MTC** er det som binder disse tre produktene sammen.
 :::
 
 ---
 
-:::note Klar til start
-MTC avslutter æraen med turisme som bare *forbruker* kultur. Velkommen til reisen mot **samskapning** — la oss bygge fremtiden sammen.
-:::
+## 📖 Whitepaper-navigasjon
 
-**[▶ Visjon: Hvorfor nå?](/docs/vision)** ｜ **[▶ Bli med i GCF (VIP-medlemskap)](/docs/economy)**
+Dokumentet består av tre deler og ti seksjoner. Begynn der du vil.
+
+**[Fortellingen] Hvorfor MTC finnes**
+
+| # | Seksjon | Hva du får vite | For deg som… |
+| :---: | :--- | :--- | :--- |
+| 1 | **[Visjon og oppdrag](/docs/vision)** | 温故知新 (onko-chishin – lær av det gamle, forstå det nye), 和 (wa – harmoni), de to broene | vil forstå prosjektets sjel |
+| 2 | **[Utfordringer og løsninger](/docs/challenges)** | De ubehagelige sannhetene om dolende turisme, og Web3-svaret | vil vite hvorfor endring trengs |
+| 3 | **[Økonomisk svinghjul](/docs/flywheel)** | Reell etterspørsel → kjøpspress → lock & burn → verdiøkning | vil forstå vekstmekanismen |
+| 4 | **[Framtiden MTC tegner](/docs/future)** | En økonomi der alle tre parter belønnes, Web2→Web3 i trinn, kultur-OS | vil se det store bildet |
+
+**[Praksis] Hva du kan gjøre med MTC**
+
+| # | Seksjon | Hva du får vite | For deg som… |
+| :---: | :--- | :--- | :--- |
+| 5 | **[Økosystemet](/docs/ecosystem)** | Matsuri / J-Times / GCF samlet sett, de tre produktene | vil vite hva man kan gjøre |
+| 6 | **[Gruving og inntjening](/docs/mining)** | De fem søylene av handlingsbevis, konkrete måter å tjene og bruke | vil tjene og bruke MTC |
+| 7 | **[GCF-medlemskap](/docs/gcf)** | Gold/Platinum, inntjeningsstruktur, belønningsdesign | vil delta som partner |
+
+**[Teknologi og økonomi] Hvorfor man kan stole på det**
+
+| # | Seksjon | Hva du får vite | For deg som… |
+| :---: | :--- | :--- | :--- |
+| 8 | **[Tokenomics](/docs/tokenomics)** | 900M tilbud, fordeling, halvering, tilbakekjøpsprotokoll | vil vurdere den økonomiske modellen |
+| 9 | **[Hvorfor Solana?](/docs/why-solana)** | Ethereum-sammenligning, Solana-tall | vil etterprøve det tekniske valget |
+| 10 | **[Produkt og teknologi](/docs/product-tech)** | Tre native iOS-apper + smart contracts | vil se den tekniske modenheten |
+| 11 | **[Veikart og team](/docs/roadmap)** | Fase 1-3, DAO, teamet | vil vurdere gjennomføringsevne og tidslinje |
+
+---
+
+## 🧭 Din leserute
+
+- **VIP- og forretningspartnere** → start med [Svinghjulet](/docs/flywheel), og les designfilosofien i [Tokenomics](/docs/tokenomics)
+- **Brukere** → les [Gruving og inntjening](/docs/mining) og se hva du kan gjøre allerede i dag
+- **Utviklere og revisorer** → gå til [Produkt og teknologi](/docs/product-tech) for smart contracts og arkitektur
+- **De som vil bli med i fellesskapet** → se [GCF-medlemskap](/docs/gcf) for roller og deltakelse
+
+---
+
+:::note Neste side
+Vil du forstå MTCs filosofi og spørsmålet «hvorfor nå», gå videre til **[Visjon: broen av 和 →](/docs/vision)**.
+:::

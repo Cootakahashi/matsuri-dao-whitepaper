@@ -1,109 +1,72 @@
 ---
 sidebar_position: 2
 id: vision
-title: 🎯 Vision og strategi
-description: "Hvordan Matsuri Protocol kanaliserer Japans indgående turismemarked på ¥10 billioner ind i en deflationær tokenøkonomi gennem direkte betalinger til lokalsamfund."
+title: 🎯 Vision og mission
 ---
 
-# 🎯 Vision: "Indgående-først"-strategien
+# 🎯 Vision og mission
 
-> **Fra subsidieafhængighed til suverænitet.**
-> Æraen med at holde landområders økonomier oven vande med skatteindtægter er forbi. Vi kanaliserer udenlandsk kapital direkte ind i kulturen.
-
-De fleste regionaludviklingsprojekter fejler — fordi alt, hvad de gør, er at flytte rundt på krympende indenlandske budgetter.
-
-**Matsuri Protocol tager den stik modsatte tilgang.**
-
----
-
-## 1. Strategi: Kultureksportmaskinen
-
-Vi redefinerer Japans turismeaktiver — ikke som "forbrugsgoder," men som **eksporterbare finansielle instrumenter.**
-
-| Problem | Virkelighed | Konsekvens |
-| :--- | :--- | :--- |
-| 💸 **Indtægtsdræn** | Provision til udenlandske OTA'er (Booking.com, Expedia osv.) | **15%–20% af omsætningen** lækker til udlandet — et tab i national skala |
-| 🚧 **Den usynlige mur** | Sprog- og betalingsbarrierer | Velhavende rejsende kan ikke få adgang til "Dybt Japan"-oplevelser |
-
-:::tip MTC's rolle
-MTC er den **eneste hovednøgle**, der stopper drænet og river muren ned.
-:::
-
----
-
-## 2. Det økonomiske svinghjul
-
-Det definerende træk ved Matsuri Protocol: **turisternes begejstring driver matematisk MTC-prisforøgelse.**
-Ikke håb — **udbud-og-efterspørgselsmekanik.**
-
-### Hvorfor stiger MTC?
-
-En **4-trins automatisk cyklus** understøtter prisen:
-
-```mermaid
-graph TD
-    A["① Reel efterspørgsel"]:::step1 -->|Turister har brug for MTC| B["② Købspres"]:::step2
-    B -->|Købt til markedspris på DEX| C["③ Lås og brænd"]:::step3
-    C -->|Cirkulerende udbud skrumper fysisk| D["④ Værdistigning"]:::step4
-    D -->|Knaphed øger efterspørgslen| A
-
-    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
-    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
-    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
-    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
-```
-
-| Trin | Navn | Mekanisme |
-| :---: | :--- | :--- |
-| **①** | **Reel efterspørgsel** | Turister har brug for MTC til guidebookinger og Ticket-NFT-køb |
-| **②** | **Købspres** | MTC købes til markedspris på en DEX — forbrugsdrevet, ikke spekulativt |
-| **③** | **Lås og brænd** | En del af MTC brugt i betalinger låses eller brændes øjeblikkeligt af smart contracts — udbuddet skrumper fysisk |
-| **④** | **Værdistigning** | Købeefterspørgslen vokser, salgsudbud skrumper — knaphedsværdien stiger matematisk |
-
-:::info Kernesandheden
-**"Jo mere turister nyder Japan, jo mere vokser MTC-indehavernes aktiver."**
-Denne simple ligning er projektets hjerteslag.
-:::
-
-### Hvad skaber nedadgående pres?
-
-Ærlige projekter adresserer begge sider. MTC kan tabe værdi hvis:
-
-| Risiko | Konsekvens | Afbødning |
-| :--- | :--- | :--- |
-| **Turismenedgang** | Mindre reel efterspørgsel efter MTC | Diversificeret indtægt: MEV-bot opererer uafhængigt af turisme |
-| **Salgspres fra minere** | Optjent MTC dumpes på markedet | Toku-staking (lås MTC for op til 10× mining-boost) inciterer til at holde |
-| **Reguleringsændring** | Jurisdiktionsmæssige begrænsninger | SPL-tokenstandard, ingen værdipapirklassificering, juridisk udtalelse planlagt |
-| **Solana-netværksproblem** | Midlertidige transaktionsforsinkelser | Retry-logik med eksponentiel backoff; off-chain-system opererer uafhængigt |
-
-> **Vi lover ikke "tal stiger." Vi bygger mekanismer, der skaber strukturelt købspres og reducerer salgsincitamenter.** Resten er markedsdynamik.
-
-![Det økonomiske svinghjul — turisternes begejstring driver matematisk MTC-prisforøgelse](/production/02-vision_economic-flywheel_cycle.jpg)
-
----
-
-## 3. Slutmålet: Kultur-OS
-
-Vores ultimative mål er ikke en betalingsapp.
-Det er at **gøre kultur til et operativsystem.**
-
-```mermaid
-timeline
-    title Matsuri Protocol — Kultur-OS-køreplanen
-    Fase 1 - 2026 H1 (Nu) : Produkt live, 4 betalingsmetoder, 3 iOS-apps, Raydium LP
-    Fase 2 - 2026 H2 : Smart contracts på mainnet, Adventure Mining, Asien-ekspansion, ¥1 mia. AUM-mål
-    Fase 3 - 2027+ : 550M MTC Grand Unlock, DAO-styring, ¥10 mia. AUM-mål, globalt Kultur-OS
-```
-
-> Vi beskytter **kultur, der har bestået i 1.000 år** med **banebrydende blockchain-teknologi.**
-> Det er den fremtid, Matsuri Protocol bygger.
-
-<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/events/tour-hanazono-torii.jpg" alt="花園神社ナイトツアー" style={{width: '100%', maxWidth: '560px', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.4)'}} />
+<div style={{textAlign: 'center', margin: '3rem 0 1rem'}}>
+<h2 style={{fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, margin: 0}}>Fra et Web2, der sætter folk op imod hinanden, til en Web3-turisme, vi skaber sammen.</h2>
 </div>
 
-*Matsuri-tur ved Hanazono-helligdommen — hvor kultur møder verden.*
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<p style={{fontSize: '1.2rem', letterSpacing: '0.1em', opacity: 0.85, margin: '0.5rem 0 1.5rem'}}>—— gør Japans 和 (wa – harmoni) til verdens motor for samskabelse.</p>
+<small>*※ Web2 = økonomier styret og manipuleret af virksomheder. Web3 = økonomier, hvor rettigheder bevises på blockchain, og den enkelte er suveræn.*</small>
+</div>
+
+![Broen af wa ── 和’s lys forbinder mennesker fra forskellige kulturer](/brand/03_A_bridge_of_harmony.webp)
 
 ---
 
-**[▶ Næste: Hvordan tjener vi egentlig? (Økonomien)](/docs/economy)**
+## 温故知新 (onko-chishin) — opsøg det gamle, forstå det nye
+
+Hvad er japansk kultur egentlig?
+
+Jōmon-tiden (ca. 16.000 år siden), kōki-året 2.686, eller over 1.300 år ifølge den akademiske konsensus — tolkningerne af oprindelsen er mange. Men at en kultur af omtanke og harmoni er blevet overleveret i dette land, er en kendsgerning.
+
+Vi lærer af den visdom og smelter den sammen med teknologien.
+Målet er **et samfund, hvor de involverede tænker på hinanden, og hvor den omtanke cirkulerer**.
+
+---
+
+## 和をもって貴しとなす (wa wo motte tōtoshi to nasu — "harmoni er det ædleste") — værdien opstår i harmonien
+
+Ikke konkurrence, men samskabelse. Ikke at stjæle fra hinanden, men at sørge for, at alle involverede belønnes.
+
+Det er ikke en idealistisk drøm.
+Med blockchain og smart contracts er vi trådt ind i en tid, hvor **retfærdighed kan garanteres som en regel** — ikke som afhængighed af nogens gode vilje.
+En økonomi, hvor alle, der er med, belønnes under gennemsigtige regler — det er det, vi bygger.
+
+---
+
+## To broer mellem oplevelser
+
+Vi bygger broen fra begge sider.
+
+**For japanere** — en tryg ramme til at møde verden. En mekanisme, hvor det at være stolt af sin kultur og formidle den til verden også belønnes.
+
+**For udlændinge** — adgang til kernen i japansk kultur, ikke bare turismens overflade. Døren til det "Deep Japan", som ingen pakkerejse kan tilbyde.
+
+Mennesker fra forskellige kulturer oplever, skaber og forstår sammen.
+Den slags udveksling, stablet på hinanden, skaber forståelse hen over grænserne — det tror vi på.
+
+---
+
+## Hvordan vi realiserer missionen
+
+Konkret bygger vi et økonomisk kredsløb af tre produkter og én token.
+
+| Element | Hvad det gør |
+| :--- | :--- |
+| **⛩️ [Matsuri](/docs/ecosystem)** | Booking, betaling og pilgrimsminedrift for kulturoplevelser. Appen hvor du tjener MTC bare ved at dukke op |
+| **📰 [J-Times](/docs/ecosystem)** | Japansk kulturmedie. Læs, lyt, del – og tjen MTC |
+| **🤝 [GCF](/docs/gcf)** | Et internationalt fællesskab, der uddanner guider, arrangerer events og driver økosystemet |
+| **💎 [MTC](/docs/tokenomics)** | Den digitale valuta, der binder det hele sammen. Cirkulerer som betaling, belønning og investeringsmiddel |
+
+Mission alene kan ikke bevare kultur. Der skal en holdbar økonomi til.
+På næste side fortæller vi om **de virkelige udfordringer, der står i vejen**, og **hvordan teknologien kan løse dem**.
+
+---
+
+**[◀ Forrige: Velkommen til Matsuri Coin](/docs/intro)**｜**[▶ Næste: Udfordringer og løsninger](/docs/challenges)**

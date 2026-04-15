@@ -1,89 +1,72 @@
 ---
 sidebar_position: 2
 id: vision
-title: 🎯 Visjon og strategi
+title: 🎯 Visjon og oppdrag
 ---
 
-# 🎯 Visjon: «Inbound First»-strategien
+# 🎯 Visjon og oppdrag
 
-> **Fra subsidieavhengighet til selvstendighet.**
-> Tiden for å holde distriktsøkonomier i live med statlige tilskudd er over. Vi kanaliserer utenlandsk kapital rett inn i kulturen.
+<div style={{textAlign: 'center', margin: '3rem 0 1rem'}}>
+<h2 style={{fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, margin: 0}}>Fra et Web2 som setter folk opp mot hverandre, til en Web3-turisme vi skaper sammen.</h2>
+</div>
 
-De fleste distriktsfornyelsesprosjekter mislykkes — fordi alt de gjør er å flytte rundt på krympende offentlige budsjetter.
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<p style={{fontSize: '1.2rem', letterSpacing: '0.1em', opacity: 0.85, margin: '0.5rem 0 1.5rem'}}>—— gjør Japans 和 (wa – harmoni) til verdens motor for samskaping.</p>
+<small>*※ Web2 = økonomier styrt og manipulert av selskaper. Web3 = økonomier der rettigheter bevises på blokkjeden, og individet er suverent.*</small>
+</div>
 
-**Matsuri Protocol tar den stikk motsatte tilnærmingen.**
-
----
-
-## 1. Strategi: Kultureksportmaskinen
-
-Vi omdefinerer Japans turistressurser — ikke som «forbruksvarer», men som **eksporterbare finansielle instrumenter.**
-
-| Problem | Virkelighet | Konsekvens |
-| :--- | :--- | :--- |
-| 💸 **Inntektslekkasje** | Provisjoner til utenlandske OTA-er (Booking.com, Expedia osv.) | **15–20 % av inntektene** lekker til utlandet |
-| 🚧 **Den usynlige muren** | Språk- og betalingsbarrierer | Velstående reisende får ikke tilgang til «Deep Japan»-opplevelser |
-
-:::tip MTCs rolle
-MTC er den **eneste hovednøkkelen** som stopper lekkasjen og river ned murene.
-:::
+![Broen av wa ── lyset fra 和 binder mennesker fra ulike kulturer sammen](/brand/03_A_bridge_of_harmony.webp)
 
 ---
 
-## 2. Det økonomiske svinghjulet
+## 温故知新 (onko-chishin) — søk det gamle, forstå det nye
 
-Matsuri Protocols kjennetegn: **turistentusiasme driver matematisk MTC-prisøkning.**
-Ikke håp — **tilbuds- og etterspørselsmekanikk.**
+Hva er egentlig japansk kultur?
 
-### Hvorfor stiger MTC?
+Jōmon-tiden (ca. 16 000 år siden), kōki-året 2 686, eller over 1 300 år ifølge akademisk konsensus — tolkningene av opphavet er mange. Men at en kultur av omtanke og harmoni er gitt videre i dette landet, er et faktum.
 
-En **4-trinns automatisk syklus** driver prisen:
-
-```mermaid
-graph TD
-    A["① Reell etterspørsel"]:::step1 -->|Turister trenger MTC| B["② Kjøpepress"]:::step2
-    B -->|Kjøpt til markeds-pris på DEX| C["③ Lås og brenn"]:::step3
-    C -->|Sirkulerende tilbud krymper fysisk| D["④ Verdiøkning"]:::step4
-    D -->|Knapphet driver etterspørsel| A
-
-    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
-    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
-    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
-    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
-```
-
-| Trinn | Navn | Mekanisme |
-| :---: | :--- | :--- |
-| **①** | **Reell etterspørsel** | Turister trenger MTC for guidebookinger og billett-NFT-kjøp |
-| **②** | **Kjøpepress** | MTC kjøpes til markedspris på DEX — forbruksdrevet, ikke spekulativt |
-| **③** | **Lås og brenn** | En andel av MTC brukt i betalinger låses eller brennes umiddelbart — tilbudet krymper fysisk |
-| **④** | **Verdiøkning** | Kjøpsetterspørsel vokser, salgstilbud krymper — knapphetsverdi stiger matematisk |
-
-:::info Kjernens sannhet
-**«Jo mer turistene nyter Japan, desto mer øker MTC-holdernes formue.»**
-Denne enkle likningen er prosjektets hjertslag.
-:::
-
-![Det økonomiske svinghjulet — turistentusiasme driver matematisk MTC-prisøkning](/production/02-vision_economic-flywheel_cycle.jpg)
+Vi lærer av den visdommen og smelter den sammen med teknologien.
+Målet er **et samfunn der de involverte tenker på hverandre, og omtanken sirkulerer**.
 
 ---
 
-## 3. Sluttmålet: Kultur-OS
+## 和をもって貴しとなす (wa wo motte tōtoshi to nasu — "harmoni er det edleste") — verdien oppstår i harmonien
 
-Vårt endelige mål er ikke en betalingsapp.
-Det er å **gjøre kultur til et operativsystem.**
+Ikke konkurranse, men samskaping. Ikke å stjele fra hverandre, men å sørge for at alle som er involvert, belønnes.
 
-```mermaid
-timeline
-    title Matsuri Protocol veikart
-    Fase 1 (Nå) : Dominere inbound-betalinger
-    Fase 2 : Integrere eiendom og tradisjonelle boliger i MTC-økonomien (Real World Assets)
-    Fase 3 : Forankre kulturell tillit på blokkjeden — bygge et permanent bevaringssystem
-```
-
-> Vi beskytter **kultur som har overlevd i 1000 år** med **banebrytende blokkjedeteknologi.**
-> Det er fremtiden Matsuri Protocol bygger.
+Dette er ikke idealisme.
+Med blokkjeden og smart contracts er vi gått inn i en tid der **rettferdighet kan garanteres som en regel** — ikke avhengig av noens godvilje.
+En økonomi der alle som er med, belønnes under gjennomsiktige regler — det er det vi bygger.
 
 ---
 
-**[▶ Neste: Hvordan tjener vi egentlig? (Økonomien)](/docs/economy)**
+## To broer mellom opplevelser
+
+Vi bygger broen fra begge sider.
+
+**For japanere** — en trygg ramme for å møte verden. En mekanisme der det å være stolt av sin kultur og formidle den til verden også belønnes.
+
+**For utlendinger** — tilgang til kjernen i japansk kultur, ikke bare turismens overflate. Døren til det "Deep Japan" som ingen pakketur tilbyr.
+
+Mennesker fra ulike kulturer opplever, skaper og forstår sammen.
+Denne stablede utvekslingen skaper forståelse på tvers av grenser — det tror vi på.
+
+---
+
+## Hvordan vi realiserer oppdraget
+
+Konkret bygger vi et økonomisk kretsløp av tre produkter og én token.
+
+| Element | Hva det gjør |
+| :--- | :--- |
+| **⛩️ [Matsuri](/docs/ecosystem)** | Booking, betaling og pilegrimsgruving for kulturopplevelser. Appen der du tjener MTC bare ved å dukke opp |
+| **📰 [J-Times](/docs/ecosystem)** | Japansk kulturmedium. Les, lytt, del – og tjen MTC |
+| **🤝 [GCF](/docs/gcf)** | Et internasjonalt fellesskap som utdanner guider, arrangerer events og driver økosystemet |
+| **💎 [MTC](/docs/tokenomics)** | Den digitale valutaen som binder alt sammen. Sirkulerer som betaling, belønning og investeringsmiddel |
+
+Et oppdrag alene kan ikke bevare kultur. Det trengs en bærekraftig økonomi.
+På neste side forteller vi om **de virkelige utfordringene som står i veien**, og **hvordan teknologien kan løse dem**.
+
+---
+
+**[◀ Forrige: Velkommen til Matsuri Coin](/docs/intro)**｜**[▶ Neste: Utfordringer og løsninger](/docs/challenges)**

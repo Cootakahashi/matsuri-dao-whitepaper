@@ -1,109 +1,72 @@
 ---
 sidebar_position: 2
 id: vision
-title: 🎯 Vizija i strategija
-description: "Kako Matsuri Protocol usmjerava japansko tržište dolaznog turizma od ¥10 trilijuna u deflatornu ekonomiju tokena putem izravnih plaćanja zajednicama."
+title: 🎯 Vizija i misija
 ---
 
-# 🎯 Vizija: Strategija "Dolazni turizam na prvom mjestu"
+# 🎯 Vizija i misija
 
-> **Od ovisnosti o subvencijama do suverenosti.**
-> Era podupiranja ruralnih ekonomija poreznim novcem je gotova. Usmjeravamo strani kapital izravno u kulturu.
-
-Većina projekata regionalne revitalizacije propada — jer sve što rade je preraspodjela smanjujućih domaćih proračuna.
-
-**Matsuri Protocol zauzima potpuno suprotan pristup.**
-
----
-
-## 1. Strategija: Stroj za izvoz kulture
-
-Redefiniramo japansku turističku imovinu — ne kao "potrošnu robu", već kao **izvozive financijske instrumente.**
-
-| Problem | Stvarnost | Utjecaj |
-| :--- | :--- | :--- |
-| 💸 **Odljev prihoda** | Provizije stranim OTA platformama (Booking.com, Expedia, itd.) | **15%–20% prihoda** curi u inozemstvo — gubitak na nacionalnoj razini |
-| 🚧 **Nevidljivi zid** | Jezične i platne barijere | Bogati putnici ne mogu pristupiti iskustvima "Dubokog Japana" |
-
-:::tip Uloga MTC-a
-MTC je **jedini glavni ključ** koji zaustavlja odljev i ruši zid.
-:::
-
----
-
-## 2. Ekonomski zamašnjak
-
-Ključna značajka Matsuri Protocola: **oduševljenje turista matematički pokreće rast cijene MTC-a.**
-Ne nada — **mehanika ponude i potražnje.**
-
-### Zašto MTC raste?
-
-**Četverostupanjski automatski ciklus** podupire cijenu:
-
-```mermaid
-graph TD
-    A["① Stvarna potražnja"]:::step1 -->|Turisti trebaju MTC| B["② Pritisak kupnje"]:::step2
-    B -->|Kupljen po tržišnoj cijeni na DEX-u| C["③ Zaključavanje i spaljivanje"]:::step3
-    C -->|Cirkulirajuća ponuda fizički se smanjuje| D["④ Rast vrijednosti"]:::step4
-    D -->|Oskudica pokreće potražnju| A
-
-    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
-    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
-    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
-    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
-```
-
-| Korak | Naziv | Mehanizam |
-| :---: | :--- | :--- |
-| **①** | **Stvarna potražnja** | Turisti trebaju MTC za rezervacije vodiča i kupnju NFT ulaznica |
-| **②** | **Pritisak kupnje** | MTC se kupuje po tržišnoj cijeni na DEX-u — pokrenuto potrošnjom, ne špekulacijom |
-| **③** | **Zaključavanje i spaljivanje** | Dio MTC-a korištenog u plaćanjima odmah se zaključava ili spaljuje putem pametnih ugovora — ponuda se fizički smanjuje |
-| **④** | **Rast vrijednosti** | Potražnja za kupnjom raste, ponuda za prodaju se smanjuje — vrijednost oskudice matematički raste |
-
-:::info Osnovna istina
-**"Što više turisti uživaju u Japanu, to više raste imovina MTC držatelja."**
-Ta jednostavna jednadžba je srce projekta.
-:::
-
-### Što stvara pritisak prema dolje?
-
-Pošteni projekti obrađuju obje strane. MTC može izgubiti vrijednost ako:
-
-| Rizik | Utjecaj | Ublažavanje |
-| :--- | :--- | :--- |
-| **Pad turizma** | Manja stvarna potražnja za MTC-om | Diversificirani prihod: MEV bot radi neovisno o turizmu |
-| **Pritisak prodaje od rudara** | Zarađeni MTC se izbacuje na tržište | Toku staking (zaključajte MTC za do 10× pojačanje rudarenja) potiče držanje |
-| **Regulatorna promjena** | Jurisdikcijska ograničenja | SPL standard tokena, bez klasifikacije kao vrijednosni papir, planira se pravno mišljenje |
-| **Problem Solana mreže** | Privremena kašnjenja transakcija | Logika ponovnog pokušaja s eksponencijalnim odgađanjem; izvanlanačni sustav radi neovisno |
-
-> **Ne obećavamo "broj raste." Gradimo mehanizme koji stvaraju strukturalni pritisak kupnje i smanjuju poticaje za prodaju.** Ostalo su tržišne dinamike.
-
-![Ekonomski zamašnjak — oduševljenje turista matematički pokreće rast cijene MTC-a](/production/02-vision_economic-flywheel_cycle.jpg)
-
----
-
-## 3. Krajnji cilj: Kulturni OS
-
-Naš krajnji cilj nije platna aplikacija.
-Naš cilj je **pretvoriti samu kulturu u operativni sustav.**
-
-```mermaid
-timeline
-    title Matsuri Protocol — Plan kulturnog OS-a
-    Faza 1 - 2026 H1 (Sada) : Proizvod uživo, 4 načina plaćanja, 3 iOS aplikacije, Raydium LP
-    Faza 2 - 2026 H2 : Pametni ugovori na mainnetu, Adventure Mining, ekspanzija u Aziji, cilj AUM ¥1B
-    Faza 3 - 2027+ : Veliko otključavanje 550M MTC, DAO upravljanje, cilj AUM ¥10B, globalni kulturni OS
-```
-
-> Štitimo **kulturu koja traje 1.000 godina** pomoću **najsuvremenije blockchain tehnologije.**
-> To je budućnost koju Matsuri Protocol gradi.
-
-<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/events/tour-hanazono-torii.jpg" alt="花園神社ナイトツアー" style={{width: '100%', maxWidth: '560px', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.4)'}} />
+<div style={{textAlign: 'center', margin: '3rem 0 1rem'}}>
+<h2 style={{fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, margin: 0}}>Od Web2-a koji stavlja ljude jedne protiv drugih do Web3 turizma koji stvaramo zajedno.</h2>
 </div>
 
-*Matsuri tura u svetištu Hanazono — gdje kultura susreće svijet.*
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<p style={{fontSize: '1.2rem', letterSpacing: '0.1em', opacity: 0.85, margin: '0.5rem 0 1.5rem'}}>—— pretvorimo japanski 和 (wa – sklad) u svjetski motor sustvaranja.</p>
+<small>*※ Web2 = ekonomije kojima upravljaju i koje manipuliraju korporacije. Web3 = ekonomije u kojima se prava dokazuju na blockchainu, a pojedinac je suveren.*</small>
+</div>
+
+![Most od wa ── svjetlo 和 povezuje ljude različitih kultura](/brand/03_A_bridge_of_harmony.webp)
 
 ---
 
-**[▶ Dalje: Kako zapravo zarađujemo? (Ekonomija)](/docs/economy)**
+## 温故知新 (onko-chishin) — potraži staro, shvati novo
+
+Što je zapravo japanska kultura?
+
+Jōmon razdoblje (prije otprilike 16 000 godina), kōki godina 2 686, ili preko 1 300 godina prema akademskom konsenzusu — tumačenja podrijetla su mnogobrojna. Ali činjenica je da se u ovoj zemlji prenosi kultura pažnje i sklada.
+
+Učimo iz te mudrosti i stapamo je s tehnologijom.
+Cilj je **društvo u kojemu sudionici misle jedni na druge i u kojemu ta pažnja kruži**.
+
+---
+
+## 和をもって貴しとなす (wa wo motte tōtoshi to nasu — "sklad je najuzvišeniji") — vrijednost se rađa u skladu
+
+Ne natjecanje, nego sustvaranje. Ne otimanje, nego osiguravanje da svi sudionici budu nagrađeni.
+
+To nije idealistički san.
+Blockchain i pametni ugovori uveli su nas u doba u kojem se **pravednost može zajamčiti kao pravilo** — a ne kao oslanjanje na nečiju dobru volju.
+Ekonomija u kojoj su svi sudionici nagrađeni prema transparentnim pravilima — to je ono što gradimo.
+
+---
+
+## Dva mosta između iskustava
+
+Most gradimo s obje strane.
+
+**Za Japance** — sigurno okruženje za susret sa svijetom. Mehanizam u kojemu ste nagrađeni za to što ste ponosni na svoju kulturu i prenosite je svijetu.
+
+**Za strance** — pristup srži japanske kulture, a ne samo turističkoj površini. Vrata "Deep Japana" koja ne nudi nijedan paket-aranžman.
+
+Ljudi različitih kultura zajedno doživljavaju, zajedno stvaraju, zajedno razumiju.
+Takve razmjene, slagane jedna na drugu, grade razumijevanje preko granica — u to vjerujemo.
+
+---
+
+## Kako ostvarujemo misiju
+
+Konkretno, gradimo ekonomski krug od tri proizvoda i jednog tokena.
+
+| Element | Što radi |
+| :--- | :--- |
+| **⛩️ [Matsuri](/docs/ecosystem)** | Rezervacija, plaćanje i hodočasnički mining za kulturna iskustva. Aplikacija u kojoj zarađujete MTC samo time što se pojavite |
+| **📰 [J-Times](/docs/ecosystem)** | Medij o japanskoj kulturi. Čitajte, slušajte, dijelite – i zaradite MTC |
+| **🤝 [GCF](/docs/gcf)** | Međunarodna zajednica koja obrazuje vodiče, organizira evente i pokreće ekosustav |
+| **💎 [MTC](/docs/tokenomics)** | Digitalna valuta koja povezuje sve. Kruži kao sredstvo plaćanja, nagrade i investicije |
+
+Sama misija ne može sačuvati kulturu. Potrebna je održiva ekonomija.
+Na sljedećoj stranici govorimo o **stvarnim izazovima koji stoje na putu** i **kako ih tehnologija može riješiti**.
+
+---
+
+**[◀ Prethodno: Dobrodošli u Matsuri Coin](/docs/intro)**｜**[▶ Sljedeće: Izazovi i rješenja](/docs/challenges)**

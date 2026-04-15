@@ -1,89 +1,74 @@
 ---
 sidebar_position: 2
 id: vision
-title: 🎯 Vision at Estratehiya
+title: 🎯 Bisyon at Layunin
 ---
 
-# 🎯 Vision: Ang "Inbound-First" na Estratehiya
+# 🎯 Bisyon at Layunin
 
-> **Mula sa pag-asa sa subsidiya tungo sa soberanya.**
-> Tapos na ang panahon ng pagsuporta sa mga rural na ekonomiya gamit ang pera ng buwis. Dini-diretso namin ang dayuhang kapital sa kultura.
+<div style={{textAlign: 'center', margin: '3rem 0 1rem'}}>
+<h2 style={{fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, margin: 0}}>Mula sa Web2 na nagtutulak ng kompetisyon, patungo sa Web3 Inbound na sama-samang nagli-lilikha.</h2>
+</div>
 
-Karamihan sa mga regional-revitalisation projects ay nabibigo — dahil ang ginagawa lang nila ay paghahati-hati ng lumiliit na domestic budgets.
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<p style={{fontSize: '1.2rem', letterSpacing: '0.1em', opacity: 0.85, margin: '0.5rem 0 1.5rem'}}>——Ang 和 (wa — pagkakaisa) ng Japan bilang global co-creation engine.</p>
+<small>*※ Web2 = ekonomiyang pinamamahalaan at kinokontrol ng mga kumpanya. Web3 = ekonomiyang may personal na soberanya kung saan ang karapatan ay pinatutunayan ng blockchain.*</small>
+</div>
 
-**Ang Matsuri Protocol ay ang eksaktong kabaligtaran.**
-
----
-
-## 1. Estratehiya: Ang Culture Export Machine
-
-Binibigyan namin ng bagong kahulugan ang mga tourism assets ng Japan — hindi bilang "consumables," kundi bilang **exportable financial instruments.**
-
-| Problema | Realidad | Epekto |
-| :--- | :--- | :--- |
-| 💸 **Revenue Drain** | Komisyon sa mga dayuhang OTA (Booking.com, Expedia, atbp.) | **15%–20% ng revenue** ang tumutulo sa ibang bansa — isang national-scale na pagkalugi |
-| 🚧 **Ang Invisible Wall** | Mga balakid sa wika at pagbabayad | Hindi ma-access ng mga high-net-worth na manlalakbay ang mga karanasan sa "Deep Japan" |
-
-:::tip Ang Papel ng MTC
-Ang MTC ang **tanging Master Key** na humihinto sa drain at bumubuwag sa wall.
-:::
+![Tulay ng 和 ── ang liwanag ng 和 na nag-uugnay sa mga tao ng iba't ibang kultura](/brand/03_A_bridge_of_harmony.webp)
 
 ---
 
-## 2. Ang Economic Flywheel
+## 温故知新 (Onko Chishin) — Balikan ang nakaraan, makilala ang bago
 
-Ang defining feature ng Matsuri Protocol: **ang sigla ng turista ay mathematically nagpapaangat sa presyo ng MTC.**
-Hindi pag-asa — **supply-and-demand mechanics.**
+Ano ang kulturang Hapones?
 
-### Bakit Tumataas ang MTC?
+Panahong Jōmon (mga 16,000 taon na nakalipas), 2,686 taon sa imperyal na kalendaryo, mahigit 1,300 taon ayon sa akademikong konsensus — iba-iba ang interpretasyon sa pinagmulan, ngunit isang katotohanan na sa lupaing ito ay ipinasa ng bawat henerasyon ang kultura ng pag-aalaga at pagkakaisa.
 
-Isang **4-step na automatic cycle** ang sumusuporta sa presyo:
-
-```mermaid
-graph TD
-    A["① Tunay na Demand"]:::step1 -->|Kailangan ng turista ang MTC| B["② Buy Pressure"]:::step2
-    B -->|Binili sa market price sa DEX| C["③ Lock & Burn"]:::step3
-    C -->|Pisikal na lumiliit ang circulating supply| D["④ Pagtaas ng Halaga"]:::step4
-    D -->|Ang scarcity ay nagpapalaki ng demand| A
-
-    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
-    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
-    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
-    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
-```
-
-| Hakbang | Pangalan | Mekanismo |
-| :---: | :--- | :--- |
-| **①** | **Tunay na Demand** | Kailangan ng mga turista ang MTC para sa guide bookings at Ticket-NFT purchases |
-| **②** | **Buy Pressure** | Binibili ang MTC sa market price sa DEX — consumption-driven, hindi speculative |
-| **③** | **Lock & Burn** | Ang bahagi ng MTC na ginamit sa pagbabayad ay agad na nila-lock o binu-burn ng smart contracts — pisikal na lumiliit ang supply |
-| **④** | **Pagtaas ng Halaga** | Lumalaki ang buy demand, lumiliit ang sell supply — mathematically tumataas ang scarcity value |
-
-:::info Ang Pangunahing Katotohanan
-**"Habang mas nag-eenjoy ang mga turista sa Japan, mas lumalaki ang assets ng mga MTC holders."**
-Ang simpleng equation na ito ang tibok ng puso ng proyekto.
-:::
-
-![Ang Economic Flywheel — ang sigla ng turista ay mathematically nagpapaangat sa presyo ng MTC](/production/02-vision_economic-flywheel_cycle.jpg)
+Natututo kami sa karunungan ng mga matatandang iyon at isinasanib ito sa teknolohiya.
+Ang hinahangad namin ay **isang lipunan kung saan ang bawat nakikilahok ay nag-iisip para sa bawat isa, at ang mga pag-iisip na iyon ay umiikot**.
 
 ---
 
-## 3. Ang Endgame: Culture OS
+## 和をもって貴しとなす (Wa o motte tōtoshi to nasu) — Mula sa pagkakaisa nagmumula ang halaga
 
-Ang ultimate goal namin ay hindi isang payment app.
-Ito ay ang **gawing operating system ang kultura mismo.**
+Hindi kompetisyon kundi sama-samang paglikha. Hindi pag-aagawan, kundi ang lahat ng nakikilahok ay magantimpalaan.
 
-```mermaid
-timeline
-    title Matsuri Protocol Roadmap
-    Phase 1 (Ngayon) : Dominahin ang inbound payments
-    Phase 2 : Dalhin ang real estate at traditional properties sa MTC economy (Real World Assets)
-    Phase 3 : I-inscribe ang cultural trust sa blockchain — magtayo ng permanenteng preservation layer
-```
-
-> Pinoprotektahan namin ang **kulturang umabot na ng 1,000 taon** gamit ang **cutting-edge blockchain technology.**
-> Iyan ang hinaharap na itinatayo ng Matsuri Protocol.
+Hindi ito pangarap lamang.
+Dumating na ang panahon kung saan ang blockchain at smart contract ay **ginagarantiyahan ang katarungan bilang tuntunin**, na hindi umaasa sa "kabutihan ng iba".
+Isang ekonomiya kung saan lahat ng nakikilahok ay gantimpalaan sa ilalim ng malinaw na mga tuntunin — ito ang itatayo namin.
 
 ---
 
-**[▶ Susunod: Paano Talaga Kami Kumikita? (Ang Ekonomiya)](/docs/economy)**
+## Tulay ng Dalawang Karanasan
+
+Ang hinahangad namin ay tulay mula sa dalawang direksyon.
+
+**Para sa mga Hapones** — internasyonal na karanasan kung saan maaari kayong makaharap sa mundo nang may kapayapaan ng isip.
+Isang sistema kung saan kayo ay ipinagmamalaki ang inyong kultura at gagantimpalaan sa paghahatid nito sa mundo.
+
+**Para sa mga dayuhan** — karanasan kung saan maaari ninyong mahipo ang esensya ng kulturang Hapones, hindi lamang ang ibabaw ng turismo.
+Ang pinto sa "Deep Japan" na hindi kayo makikilala sa package tour.
+
+Ang mga tao mula sa iba't ibang kultura ay sama-samang dumaranas, sama-samang lumilikha, sama-samang nauunawaan.
+Ang pagtitipon-tipon ng mga palitang ito ay nagdadala ng pang-unawa na lampas sa mga hangganan — iyan ang pinaniniwalaan namin.
+
+---
+
+## Paano gagawin itong realidad?
+
+Sa kongkreto, nagtatayo kami ng isang economic zone na binubuo ng 3 produkto at 1 token.
+
+| Elemento | Ano ang ginagawa |
+| :--- | :--- |
+| **⛩️ [Matsuri](/docs/ecosystem)** | Booking ng cultural experience · pagbabayad · worship mining. App kung saan makakakuha ng MTC sa pamamagitan lamang ng pagbisita |
+| **📰 [J-Times](/docs/ecosystem)** | Japanese culture media. Kumita ng MTC sa pamamagitan ng pagbasa, pakikinig, at pagbabahagi |
+| **🤝 [GCF](/docs/gcf)** | International community na nagtatraining ng guide, nagpaplano ng event, at nagpapagalaw ng ecosystem |
+| **💎 [MTC](/docs/tokenomics)** | Digital currency na nag-uugnay sa lahat. Umiikot sa ecosystem bilang kabayaran ng karanasan · gantimpala · investment |
+
+Hindi maipapangalagaan ang kultura sa pamamagitan lamang ng layunin. Kailangan ng sustainable na economic mechanism.
+Sa susunod na pahina, ipapakita namin ang **mga realistikong hamon na humahadlang sa layuning ito** at **ang solusyon sa teknolohiya**.
+
+---
+
+**[◀ Nakaraan: Maligayang pagdating sa Matsuri Coin](/docs/intro)**｜**[▶ Susunod: Hamon at Solusyon](/docs/challenges)**

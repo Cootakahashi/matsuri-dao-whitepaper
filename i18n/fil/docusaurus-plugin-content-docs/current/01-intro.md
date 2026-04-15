@@ -1,112 +1,122 @@
 ---
 sidebar_position: 1
 id: intro
-title: ⛩️ Maligayang Pagdating sa Matsuri Coin
+title: ⛩️ Maligayang pagdating sa Matsuri Coin (MTC)
 ---
 
-# ⛩️ Maligayang Pagdating sa Matsuri Coin
+# ⛩️ Maligayang pagdating sa Matsuri Coin (MTC)
 
-> **Code para sa Pagkakaisa. Halaga para sa Kapayapaan.**
-> Isang tulay ng "Wa" sa isang nagkahiwa-hiwalay na mundo. Ang MTC ang compass na umaakay mula sa kumpetisyon patungo sa co-creation.
+> **Bilang tulay ng 和 (wa — pagkakaisa), mula sa kompetisyon tungo sa sama-samang paglikha.**
 
-Ang **Matsuri Coin (MTC)** ay isang decentralized utility token na itinayo sa Solana blockchain.
-Dinisenyo bilang isang **"Culture OS,"** ikinokonekta nito ang espirituwal na pamana ng Japan — "Deep Japan" — sa pandaigdigang ekonomiya.
+Ang mga nakakaranas ng kulturang Hapones, ang mga nagpapakilala nito, ang mga nagbabantay nito —
+bawat "pakikilahok" ay nagiging halaga ng ekonomiya at sumusuporta sa kinabukasan ng kultura.
+Iyan ang **Matsuri Coin (MTC)**.
 
-Hindi lang kami gumagawa ng isa pang payment rail.
-Gumagawa kami ng **tulay sa pagitan ng Japan at ng mundo** — isang bagong co-creation framework kung saan ang mga taong nagmamahal sa kultura ay nagkakaisa lampas sa mga hangganan.
-
-![Ang pagsasanib ng kultura at teknolohiya — isang bagong mundo sa kabila ng torii gate](/production/01-2intro_hero_torii-gateway.jpg)
+![Pagsasanib ng kultura at teknolohiya ── ang bagong mundo sa kabila ng torii gate na inilalarawan ng Matsuri Coin](/brand/01_A_brand_hero.webp)
 
 ---
 
-## 🎯 Ang Aming Misyon
+## Tatlong Produkto at Isang Token
 
-:::info Pag-channel ng ¥10 Trilyon na Market Energy sa Hinaharap ng Kultura
-Ang inbound tourism market ng Japan ay lumalaki patungo sa **¥10 trilyon** bawat taon.
-Ngunit sa ilalim ng headline na iyan ay may **hindi komportableng katotohanan.**
-:::
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '1.5rem 0'}}>
 
-### Mga Problemang Hindi Pinag-uusapan
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-| Problema | Ano Talaga ang Nangyayari |
-| :--- | :--- |
-| 💸 **Revenue Drain** | Ang malaking bahagi ng inbound revenue ay tumutulo sa ibang bansa bilang komisyon sa mga dayuhang OTA at intermediaries |
-| 😤 **Community Burnout** | Ang over-tourism ay bumabaha sa mga lokal na lugar ng tao, ngunit walang kita na bumabalik sa mga komunidad na nagdadala ng pasanin |
-| 🚧 **Ang Experience Wall** | Ang mga package tours ay dumadaan lang sa ibabaw — hindi talaga nakokonekta ang mga manlalakbay sa *tunay* na Japan |
+### ⛩️ Matsuri
+**Cultural Experience App**
 
-> **"Ang mga lokal ay nahihirapan, ang mga manlalakbay ay nakakakita ng facade, at ang yaman ay nawawala sa platform fees."**
+Booking ng karanasan, pagbabayad, worship mining.
+**Kumita at gumamit** ng MTC.
 
-Ginagamit namin ang Web3 upang buwagin ang sirang sistemang ito.
-Ang bayad mo ay direktang umaabot sa mga lokal na komunidad at pagpapanatili ng pamana — **fully transparent, zero middlemen.**
+[matsuri.group →](https://matsuri.group) ｜ [Detalye →](/docs/ecosystem)
 
----
+</div>
 
-## 🏗️ Ang Hybrid Model: Kultura × Teknolohiya
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-Karamihan sa mga crypto projects ay humahabol sa kita at itinuturing ang kultura bilang disposable.
-Binaligtad ng MTC ang script: nagtatayo kami ng **"ekonomiyang nagpoprotekta sa kultura"** — ang hybrid structure na dapat ay nandoon na mula pa sa simula.
+### 📰 J-Times
+**Japanese Culture Media**
 
-```mermaid
-graph LR
-    subgraph "Pagkakaisa at Pangangalaga"
-    A["🛕 Mga Cultural Assets"] --> B["🔗 Blockchain Transparency"]
-    B --> C["💰 Direktang Pagbabalik sa mga Komunidad"]
-    end
-    subgraph "Global na Koneksyon"
-    D["🌍 Mga Culture Enthusiasts sa Buong Mundo"] --> E["⛩️ Mag-hold ng MTC"]
-    E --> F["🤝 Maging Cultural Inheritors"]
-    end
-```
+Basahin, pakinggan, panoorin —
+at **kumita** ng MTC.
 
-| Haligi | Ibig Sabihin |
-| :--- | :--- |
-| **🛕 Pagkakaisa at Pangangalaga** | Ang bayad ng turista ay dumadaloy sa blockchain rails diretso sa cultural preservation at artisan support. Ang mga komunidad (GCF) ay may sariling soberanya sa kanilang pamana — walang mapagsamantalang middlemen |
-| **🌍 Global na Koneksyon** | Imprastraktura na nagpapahintulot sa sinuman, saanman, na suportahan ang espiritu ng "Wa" ng Japan. Ang pagho-hold ng MTC ay nangangahulugang pagbabahagi sa buhay na kasaysayan ng Japan — ikaw ay bahagi ng kwento nito |
+[j-times.org →](https://j-times.org) ｜ [Detalye →](/docs/ecosystem)
 
----
+</div>
 
-## 💎 Bakit Gamitin ang MTC?
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
 
-Ang MTC ecosystem ay nagbibigay ng parehong **espirituwal na kasiyahan** at **tunay na pinansyal na benepisyo.**
+### 🤝 GCF
+**International Community**
 
-### ✨ Halaga ng Karanasan
+Sa pagsasanay ng guide at pagpaplano ng event,
+**kumita at palawakin** ang MTC.
 
-| Benepisyo | Detalye |
-| :--- | :--- |
-| **🎌 Makabuluhang Karanasan** | I-unlock ang "Deep Japan" — mga sagradong lugar na sarado sa publiko, pribadong mga seremonya sa shrine, mga invitation-only na cultural events |
-| **🌐 Panghabambuhay na Ugnayan** | Manatiling konektado sa Japan sa pamamagitan ng MTC kahit pagkatapos mong umuwi. Isang lugar na lagi mong "mabaBalikan" |
-| **⚖️ Patas na Palitan** | Inaalis ng smart contracts ang mga intermediaries. Ang pasasalamat mo (at pera) ay direktang napupunta sa mga taong nag-earn nito |
+[Detalye →](/docs/gcf) <small>*(Invitation-based)*</small>
 
-### 💰 Pinansyal na Benepisyo
+</div>
 
-| Benepisyo | Detalye |
-| :--- | :--- |
-| **🏷️ Preferential Rates** | Magbayad gamit ang MTC at magtipid ng **5%–10%** kumpara sa yen pricing. Hal. ¥30,000 tour → ~¥27,000 equivalent |
-| **🔑 Exclusive Access** | Ticket NFTs para sa mga invitation-only na venue at limitadong events — para lang sa MTC holders |
-| **🛡️ Currency Hedge** | I-lock in ang halaga ng karanasan bago ang iyong biyahe — walang pag-aalala tungkol sa pagbabago ng exchange rate |
+<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(248,184,62,0.3)', textAlign: 'center'}}>
 
----
+### 💎 MTC
+**Digital Currency**
 
-## ⚡ Bakit Solana?
+Sa tatlong produkto,
+**kumita, gumamit, at umikot**.
 
-Ang paglilingkod sa parehong "tunay na tourism demand" at "high-frequency financial trading" ay nag-iwan sa amin ng eksaktong **isang viable blockchain.**
+[Tokenomics →](/docs/tokenomics)
 
-| Metric | Ethereum | Solana |
-| :--- | :---: | :---: |
-| **Transaction Fee** | ¥100s–¥1,000s | **~¥0.04** |
-| **Finality** | 12 s – minuto | **0.4 segundo** |
-| **Throughput** | ~15 TPS | **Libu-libong TPS** |
+</div>
 
-![Mula Ethereum hanggang next-gen — ang raw performance ng Solana ang nagpapatakbo sa MTC](/production/01-intro_solana-vs-eth_evolution.jpeg)
+</div>
 
-:::tip Ang Temple-Offering Test
-Ang micro-payment na kasing liit ng "pagtapon ng ¥100 sa offering box" ay nangangailangan ng fees na **wala pang ¥1.** Tanging Solana lang ang pumapasa sa test na iyan.
+:::info Ano ang MTC
+**Decentralized utility token sa Solana blockchain.** Hindi lamang isang paraan ng pagbabayad — pinag-uugnay nito ang mga bumibisita at ang kulturang dapat pangalagaan, at bawat karanasan ay sumusuporta sa kinabukasan ng Japan — isang **co-creative cultural economy** kung saan umiikot ang karanasan at ekonomiya. Ang tatlong produktong ito ay pinag-uugnay lahat ng **MTC**.
 :::
 
 ---
 
-:::note Handa nang Magsimula
-Tinatapos ng MTC ang panahon ng turismo na basta *kumokonsumo* ng kultura. Maligayang pagdating sa paglalakbay ng **co-creation** — sabay-sabay nating itayo ang hinaharap.
-:::
+## 📖 Gabay sa Whitepaper
 
-**[▶ Vision: Bakit Ngayon?](/docs/vision)** ｜ **[▶ Sumali sa GCF (VIP Membership)](/docs/economy)**
+Ang dokumentong ito ay binubuo ng 3 bahagi at 10 seksyon. Maaari kayong magsimula sa kahit saang bahaging interesado kayo.
+
+**【Kuwentong Bahagi】Bakit umiiral ang MTC**
+
+| # | Seksyon | Ano ang matututunan? | Para kanino |
+| :---: | :--- | :--- | :--- |
+| 1 | **[Bisyon at Layunin](/docs/vision)** | Pilosopiya ng 温故知新 (onko chishin) · diwa ng 和 · dalawang tulay | Para maunawaan ang layunin ng proyekto |
+| 2 | **[Hamon at Solusyon](/docs/challenges)** | Di-komportableng katotohanan ng inbound economy at solusyon ng Web3 | Para malaman kung bakit kailangan ng pagbabago |
+| 3 | **[Economic Flywheel](/docs/flywheel)** | Tunay na pangangailangan → buying pressure → lock & burn → pagtaas ng halaga | Para maunawaan ang mekanismo ng paglago |
+| 4 | **[Kinabukasan na Inilalarawan ng MTC](/docs/future)** | Ekonomiya kung saan gantimpalaan ang tatlong panig · Web2→Web3 na paunti-unti · cultural OS | Para maunawaan ang buong bisyon |
+
+**【Praktikal na Bahagi】Ano ang magagawa sa MTC**
+
+| # | Seksyon | Ano ang matututunan? | Para kanino |
+| :---: | :--- | :--- | :--- |
+| 5 | **[Ecosystem](/docs/ecosystem)** | Buong tanaw ng Matsuri / J-Times / GCF at 3 produkto | Para malaman kung ano ang magagawa |
+| 6 | **[Mining at Paraan ng Pagkita](/docs/mining)** | 5 pillars ng proof-of-action · kongkretong paraan ng pagkita at paggamit | Para kumita at gamitin ang MTC |
+| 7 | **[GCF Membership](/docs/gcf)** | Gold/Platinum · istruktura ng kita · disenyo ng gantimpala | Para sumali bilang partner |
+
+**【Teknolohiya at Ekonomiya】Bakit mapagkakatiwalaan**
+
+| # | Seksyon | Ano ang matututunan? | Para kanino |
+| :---: | :--- | :--- | :--- |
+| 8 | **[Tokenomics](/docs/tokenomics)** | 900M supply · distribusyon · halving · buyback protocol | Para suriin ang economic model |
+| 9 | **[Bakit Solana?](/docs/why-solana)** | Paghahambing sa Ethereum · aktwal na data ng Solana | Para patunayan ang batayan ng teknolohiya |
+| 10 | **[Produkto at Teknolohiya](/docs/product-tech)** | 3 iOS apps + smart contract | Para makita ang lalim ng teknolohiya |
+| 11 | **[Roadmap at Team](/docs/roadmap)** | Phase 1-3 · DAO · pagpapakilala ng team | Para makita ang execution at timeline |
+
+---
+
+## 🧭 Paraan ng Pagbabasa Para sa Iyo
+
+- **VIP at Business Partner** → Intindihin ang pag-ikot ng ekonomiya sa [Flywheel](/docs/flywheel) at basahin ang disenyo sa [Tokenomics](/docs/tokenomics)
+- **User** → Alamin sa [Mining at Paraan ng Pagkita](/docs/mining) kung ano ang magagawa ngayong araw
+- **Developer at Auditor** → Suriin ang smart contract at arkitektura sa [Produkto at Teknolohiya](/docs/product-tech)
+- **Gustong sumali sa community** → Tingnan ang papel at paraan ng pagsali sa [GCF Membership](/docs/gcf)
+
+---
+
+:::note Sa Susunod na Pahina
+Para sa mga gustong malaman ang pilosopiya ng MTC at "bakit ngayon ginagawa ito", magtuloy sa **[Bisyon: Tulay ng 和 →](/docs/vision)**.
+:::

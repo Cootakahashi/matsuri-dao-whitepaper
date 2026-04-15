@@ -1,109 +1,74 @@
 ---
 sidebar_position: 2
 id: vision
-title: 🎯 Vision & Strategy
-description: "How Matsuri Protocol channels Japan's ¥10 trillion inbound tourism market into a deflationary token economy through direct-to-community payments."
+title: 🎯 Vision & Mission
 ---
 
-# 🎯 Vision: The "Inbound-First" Strategy
+# 🎯 Vision & Mission
 
-> **From subsidy-dependence to sovereignty.**
-> The era of propping up rural economies with tax money is over. We channel foreign capital straight into culture.
-
-Most regional-revitalisation projects fail — because all they do is shuffle shrinking domestic budgets around.
-
-**Matsuri Protocol takes the exact opposite approach.**
-
----
-
-## 1. Strategy: The Culture Export Machine
-
-We redefine Japan's tourism assets — not as "consumables," but as **exportable financial instruments.**
-
-| Problem | Reality | Impact |
-| :--- | :--- | :--- |
-| 💸 **Revenue Drain** | Commissions to foreign OTAs (Booking.com, Expedia, etc.) | **15 %–20 % of revenue** leaks overseas — a national-scale loss |
-| 🚧 **The Invisible Wall** | Language and payment barriers | High-net-worth travellers can't access "Deep Japan" experiences |
-
-:::tip MTC's Role
-MTC is the **sole Master Key** that stops the drain and tears down the wall.
-:::
-
----
-
-## 2. The Economic Flywheel
-
-The defining feature of Matsuri Protocol: **tourist enthusiasm mathematically drives MTC price appreciation.**
-Not hope — **supply-and-demand mechanics.**
-
-### Why Does MTC Go Up?
-
-A **4-step automatic cycle** underpins the price:
-
-```mermaid
-graph TD
-    A["① Real Demand"]:::step1 -->|Tourists need MTC| B["② Buy Pressure"]:::step2
-    B -->|Purchased at market price on DEX| C["③ Lock & Burn"]:::step3
-    C -->|Circulating supply physically shrinks| D["④ Value Appreciation"]:::step4
-    D -->|Scarcity fuels demand| A
-
-    classDef step1 fill:#1a3a2a,stroke:#4ade80,color:#bbf7d0
-    classDef step2 fill:#3a2a0a,stroke:#f59e0b,color:#fef3c7
-    classDef step3 fill:#3a1a1a,stroke:#f87171,color:#fecaca
-    classDef step4 fill:#1a2a3a,stroke:#60a5fa,color:#bfdbfe
-```
-
-| Step | Name | Mechanism |
-| :---: | :--- | :--- |
-| **①** | **Real Demand** | Tourists need MTC for guide bookings and Ticket-NFT purchases |
-| **②** | **Buy Pressure** | MTC is bought at market price on a DEX — consumption-driven, not speculative |
-| **③** | **Lock & Burn** | A portion of MTC used in payments is instantly locked or burned by smart contracts — supply physically shrinks |
-| **④** | **Value Rise** | Buy demand grows, sell supply shrinks — scarcity value appreciates mathematically |
-
-:::info The Core Truth
-**"The more tourists enjoy Japan, the more MTC holders' assets grow."**
-This simple equation is the heartbeat of the project.
-:::
-
-### What Creates Downward Pressure?
-
-Honest projects address both sides. MTC can lose value if:
-
-| Risk | Impact | Mitigation |
-| :--- | :--- | :--- |
-| **Tourism decline** | Less real demand for MTC | Diversified revenue: MEV bot operates independent of tourism |
-| **Sell pressure from miners** | Earned MTC dumped on market | Toku staking (lock MTC for up to 10× mining boost) incentivises holding |
-| **Regulatory change** | Jurisdictional restrictions | SPL token standard, no securities classification, legal opinion planned |
-| **Solana network issue** | Temporary transaction delays | Retry logic with exponential backoff; off-chain system operates independently |
-
-> **We don't promise "number go up." We build mechanisms that create structural buy pressure and reduce sell incentives.** The rest is market dynamics.
-
-![The Economic Flywheel — tourist enthusiasm mathematically drives MTC price appreciation](/production/02-vision_economic-flywheel_cycle.jpg)
-
----
-
-## 3. The Endgame: Culture OS
-
-Our ultimate goal isn't a payment app.
-It's to **turn culture itself into an operating system.**
-
-```mermaid
-timeline
-    title Matsuri Protocol — The Culture OS Roadmap
-    Phase 1 - 2026 H1 (Now) : Product live, 4 payment methods, 3 iOS apps, Raydium LP
-    Phase 2 - 2026 H2 : Smart contracts on mainnet, Adventure Mining, Asia expansion, ¥1B AUM target
-    Phase 3 - 2027+ : 550M MTC Grand Unlock, DAO governance, ¥10B AUM target, global Culture OS
-```
-
-> We protect **culture that has endured 1,000 years** with **cutting-edge blockchain technology.**
-> That is the future Matsuri Protocol is building.
-
-<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/events/tour-hanazono-torii.jpg" alt="花園神社ナイトツアー" style={{width: '100%', maxWidth: '560px', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.4)'}} />
+<div style={{textAlign: 'center', margin: '3rem 0 1rem'}}>
+<h2 style={{fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, margin: 0}}>From Web2 that pits people against each other, to Web3 inbound built together.</h2>
 </div>
 
-*Matsuri Tour at Hanazono Shrine — where culture meets the world.*
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<p style={{fontSize: '1.2rem', letterSpacing: '0.1em', opacity: 0.85, margin: '0.5rem 0 1.5rem'}}>—— Turning Japan's 和 (wa — harmony) into the world's engine of co-creation.</p>
+<small>*Note: Web2 = an economy managed and operated by corporations. Web3 = an economy where rights are proven on a blockchain and sovereignty belongs to the individual.*</small>
+</div>
+
+![A bridge of 和 — light of harmony connecting people of different cultures](/brand/03_A_bridge_of_harmony.webp)
 
 ---
 
-**[▶ Next: How Do We Actually Earn? (The Economy)](/docs/economy)**
+## 温故知新 (onko-chishin) — study the old to understand the new
+
+What is Japanese culture?
+
+The Jōmon era (around 16,000 years ago), the Imperial year 2,686, an academic consensus of more than 1,300 years — interpretations of its origin vary. But one thing is indisputable: a culture of compassion and harmony has been carried forward on this land for a very long time.
+
+We learn from that wisdom and fuse it with technology.
+What we aim for is a **society in which everyone involved cares about each other, and that care keeps circulating.**
+
+---
+
+## 和をもって貴しとなす (wa o motte tōtoshi to nasu — harmony is most precious) — value is born from harmony
+
+Not competition, but co-creation. Not taking from one another, but rewarding everyone who is involved.
+
+This is not wishful thinking.
+Blockchain and smart contracts now let us **guarantee fairness as a rule**, without relying on anyone's goodwill.
+An economy where everyone involved is rewarded under transparent rules — that is what we are building.
+
+---
+
+## A bridge between two kinds of experience
+
+We aim to build a bridge that runs in both directions.
+
+**For Japanese people** — an international experience you can enter without anxiety.
+A structure where taking pride in your own culture and sharing it with the world actually rewards you.
+
+**For international visitors** — an experience that touches the essence of Japanese culture, not just its surface.
+A door to "Deep Japan" that a package tour can never open.
+
+People of different cultures experiencing, creating, and learning together.
+We believe that the accumulation of those exchanges is what produces understanding across borders.
+
+---
+
+## How we turn this mission into reality
+
+Concretely, we are building an economy of three products and one token.
+
+| Element | What it does |
+| :--- | :--- |
+| **⛩️ [Matsuri](/docs/ecosystem)** | Book and pay for culture experiences, and mine MTC at sacred sites. Just visiting earns you MTC |
+| **📰 [J-Times](/docs/ecosystem)** | A Japanese culture media platform. Read, listen, and share to earn MTC |
+| **🤝 [GCF](/docs/gcf)** | An international community that trains guides, plans events, and moves the ecosystem |
+| **💎 [MTC](/docs/tokenomics)** | The digital currency that ties it all together — circulating as payment, reward, and means of investment |
+
+Mission alone cannot protect culture. It needs a sustainable economic mechanism.
+On the next page we look at **the real-world challenges that stand in the way of this mission**, and **how technology resolves them.**
+
+---
+
+**[◀ Previous: Welcome to Matsuri Coin](/docs/intro)** | **[▶ Next: Challenges & Solutions](/docs/challenges)**
