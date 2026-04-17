@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ Mining และวิธีหารายได้
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ 5 เสาหลักของ Mining และวิธีหารายได้
 
 > **"การมีส่วนร่วม" กับวัฒนธรรม กลายเป็นคุณค่าโดยตรง**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 大吉 (ไดคิจิ)! Score โบนัส!"
     API->>SC: ส่งถึง Solana (async หลังสิงหาคม)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri Worship Mining screen — tier multipliers, AR, omikuji" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Worship Mining</strong> — เช็กอินใกล้ศาลเจ้า ตรวจจับพลังด้วย AR omikuji เพื่อรับโบนัส MTC ตัวคูณจาก 1.0× ถึง 10.0×</p>
+  </div>
+</div>
+
 
 **หลักการพื้นฐาน — ยิ่งจุดผู้มาเยือนน้อย ยิ่งหารายได้ได้มาก:**
 

@@ -4,6 +4,8 @@ id: intro
 title: ⛩️ Bienvenido a Matsuri Coin (MTC)
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛩️ Bienvenido a Matsuri Coin (MTC)
 
 > **Un puente de armonía: de la competencia a la co-creación.**
@@ -18,11 +20,13 @@ Eso es **Matsuri Coin (MTC)**.
 
 ## Tres productos y un solo token
 
-<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+<div style={{display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### ⛩️ Matsuri
+<img src={useBaseUrl("/img/brand/matsuri-logo.png")} alt="Matsuri logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### Matsuri
 **App de experiencias culturales**
 
 Reserva, pago y minado de peregrinación.
@@ -32,9 +36,11 @@ Reserva, pago y minado de peregrinación.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 📰 J-Times
+<img src={useBaseUrl("/img/brand/j-times-logo.png")} alt="J-Times logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### J-Times
 **Medio de cultura japonesa**
 
 Leer, escuchar o mirar
@@ -44,9 +50,11 @@ ya te hace **ganar** MTC.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 🤝 GCF
+<img src={useBaseUrl("/img/brand/gcf-logo.png")} alt="GCF logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### GCF
 **Comunidad internacional**
 
 Forma guías y organiza eventos
@@ -56,9 +64,11 @@ para **ganar y expandir** MTC.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(248,184,62,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(248,184,62,0.35)', background: 'linear-gradient(180deg, rgba(248,184,62,0.08) 0%, rgba(167,139,250,0.04) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 💎 MTC
+<img src={useBaseUrl("/img/brand/matsuri-coin.jpg")} alt="Matsuri Coin (MTC)" style={{width: '96px', height: '96px', objectFit: 'cover', borderRadius: '50%', marginBottom: '0.75rem', boxShadow: '0 4px 20px rgba(167,139,250,0.35)'}} />
+
+#### MTC
 **Moneda digital**
 
 Circula por los tres productos:
@@ -68,6 +78,11 @@ Circula por los tres productos:
 
 </div>
 
+</div>
+
+<div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', margin: '1.5rem 0', fontSize: '0.9rem', opacity: 0.75}}>
+<span>Desarrollado en</span>
+<img src={useBaseUrl("/img/brand/solana-logo.svg")} alt="Solana" style={{height: '22px', width: 'auto'}} />
 </div>
 
 :::info ¿Qué es MTC?

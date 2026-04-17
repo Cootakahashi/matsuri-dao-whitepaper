@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ 로드맵과 팀
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ 로드맵과 팀
 
 >**여기까지 읽어 주신 분께——비전, 경제 설계, 기술 기반은 모두 갖추어져 있습니다.**
@@ -98,6 +100,10 @@ graph LR
 
 ## 👤 팀
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── 창업자 / CEO 겸 리드 아키텍트
 
 | 항목 | 상세 |
@@ -106,12 +112,20 @@ graph LR
 | **비전** | "문화를 수출하고, 부를 수입한다" 문화 OS의 제창자 |
 | **자세** | 스스로 코드를 쓰고, 스스로 현장(골든가이)에 서는 "자기 돈을 거는" 실천자 |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── 이사 / GCF·이벤트 오퍼레이션
 
 | 항목 | 상세 |
 | :--- | :--- |
-| **역할** | GCF 커뮤니티의 운영 총괄. 이벤트·투어의 오퍼레이션 설계와 현장 지휘 |
+| **역할** | GCF 운영 담당. 이벤트·투어의 오퍼레이션 설계와 현장 운영 |
 | **강점** | 국제적인 시점과 GCF 멤버와의 신뢰 관계를 축으로, 에코시스템의 "사람"의 순환을 지탱한다 |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── 이사 / 지역 문화 대사
 

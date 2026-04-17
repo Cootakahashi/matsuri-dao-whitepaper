@@ -4,12 +4,14 @@ id: product-tech
 title: 🔧 Products & Technology
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🔧 Product & technology — what's running proves everything
 
 > **What's running proves everything.**
 > Our mission is not words alone. The web platform is already live, and the iOS apps are in the final stage.
 
-The web app and admin dashboard are **in production**. Three native iOS apps have been completed and are scheduled for release in April 2026. The smart contracts on Solana are open source — we speak not in concepts, but in **running code and a product about to land.**
+The web app and admin dashboard are **in production**. Three native iOS apps have been completed and are released during April–May 2026 (Matsuri in early May). The smart contracts on Solana are open source — we speak not in concepts, but in **running code and a product about to land.**
 
 ![Three apps — culture in the palm of your hand](/brand/09_A_three_phones_workshop.webp)
 
@@ -20,8 +22,8 @@ The web app and admin dashboard are **in production**. Three native iOS apps hav
 | App | Purpose | Status | Supported languages |
 | :--- | :--- | :---: | :--- |
 | **GCF Admin** | Partner management and operational tooling | ✅ Released | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
-| **Matsuri** | Main consumer app | 🔜 April 2026 | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
-| **J-Times** | Culture media and learning | 🔜 April 2026 | 🇯🇵🇬🇧 |
+| **Matsuri** | Main consumer app | 🔜 Early May 2026 | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
+| **J-Times** | Culture media and learning | ✅ Released | 🇯🇵🇬🇧 |
 
 ```mermaid
 graph TB
@@ -53,10 +55,15 @@ An operational management app for GCF (Global Community Friends) members. All th
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/gcf-dashboard-2.png" alt="GCF Admin dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-tools.png" alt="GCF Admin management tools" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-dashboard-1.png" alt="GCF Admin activity" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-dashboard.webp")} alt="GCF Admin dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-members.webp")} alt="GCF Admin member management" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-revenue.webp")} alt="GCF Admin revenue management" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/gcf.png')} alt="GCF on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
+</div>
+
 
 ### What the app can do
 
@@ -92,14 +99,14 @@ GCF Admin can generate Matsuri-branded custom QR codes. Versatile use cases — 
 
 ## 2. ⛩️ Matsuri — main app
 
-:::info Status: scheduled for release in late April 2026 (v3.0)
+:::info Status: scheduled for release in early May 2026 (v3.0)
 The main app for regular users. Event booking, payment, Web3 wallet, AR mining — everything completes in a single app.
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/matsuri-home.png" alt="Matsuri home screen" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-event-detail.png" alt="Matsuri event detail" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-sacred-map.png" alt="Matsuri sacred site map" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri home screen" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-wallet.webp")} alt="Matsuri wallet — MTC balance, send, and history" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-sacred-map.webp")} alt="Matsuri sacred site map" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
 
 ### What the app can do
@@ -156,13 +163,19 @@ sequenceDiagram
 
 ## 3. 📰 J-Times — culture media app
 
-:::info Status: scheduled for release in late April 2026
+:::info Status: released — live on the App Store
 A media platform that conveys the depths of Japanese culture. Read articles, listen to podcasts, watch videos — every action earns MTC.
 :::
 
-<div style={{display: 'flex', gap: '2rem', justifyContent: 'center', alignItems: 'center', margin: '2rem 0'}}>
-  <img src="/img/brand/j-times-logo.png" alt="J-Times logo" style={{width: '100%', maxWidth: '160px', borderRadius: '12px'}} />
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/jtimes.png')} alt="J-Times on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
 </div>
+
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/jtimes-article.webp")} alt="J-Times article reader — drop cap, reading progress" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <img src={useBaseUrl("/img/apps/jtimes-podcast.webp")} alt="J-Times podcast player — waveform, sleep timer" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+</div>
+
 
 ### What the app can do
 

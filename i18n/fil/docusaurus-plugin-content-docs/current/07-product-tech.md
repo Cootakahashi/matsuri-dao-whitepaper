@@ -4,6 +4,8 @@ id: product-tech
 title: 🔧 Produkto at Teknolohiya
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🔧 Produkto at Teknolohiya — Ang Tumatakbong Bagay ay Nagpapatunay ng Lahat
 
 > **Ang tumatakbong bagay ang nagpapatunay ng lahat.**
@@ -53,10 +55,15 @@ Business management app para sa GCF (Global Community Friends) members. Pinag-is
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/gcf-dashboard-2.png" alt="GCF Admin Dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-tools.png" alt="GCF Admin Management Tools" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-dashboard-1.png" alt="GCF Admin Activity" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-dashboard.webp")} alt="GCF Admin Dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-members.webp")} alt="GCF Admin Management Tools" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-revenue.webp")} alt="GCF Admin Activity" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/gcf.png')} alt="GCF on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
+</div>
+
 
 ### Ano ang Magagawa sa App Na Ito
 
@@ -97,9 +104,9 @@ Main app para sa pangkalahatang user. Event booking, pagbabayad, Web3 wallet, AR
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/matsuri-home.png" alt="Matsuri Home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-event-detail.png" alt="Matsuri Event Detail" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-sacred-map.png" alt="Matsuri Sacred Map" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri Home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-wallet.webp")} alt="Matsuri Event Detail" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-sacred-map.webp")} alt="Matsuri Sacred Map" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
 
 ### Ano ang Magagawa sa App Na Ito
@@ -160,9 +167,15 @@ sequenceDiagram
 Media platform na naghahatid ng lalim ng kulturang Hapones. Basahin ang artikulo, pakinggan ang podcast, panoorin ang video — sa bawat aksyon, kumita ng MTC.
 :::
 
-<div style={{display: 'flex', gap: '2rem', justifyContent: 'center', alignItems: 'center', margin: '2rem 0'}}>
-  <img src="/img/brand/j-times-logo.png" alt="J-Times Logo" style={{width: '100%', maxWidth: '160px', borderRadius: '12px'}} />
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/jtimes.png')} alt="J-Times on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
 </div>
+
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/jtimes-article.webp")} alt="J-Times article reader" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <img src={useBaseUrl("/img/apps/jtimes-podcast.webp")} alt="J-Times podcast player" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+</div>
+
 
 ### Ano ang Magagawa sa App Na Ito
 

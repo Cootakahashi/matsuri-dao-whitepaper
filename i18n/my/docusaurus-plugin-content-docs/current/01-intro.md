@@ -4,6 +4,8 @@ id: intro
 title: ⛩️ Matsuri Coin（MTC）မှ ကြိုဆိုပါသည်
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛩️ Matsuri Coin（MTC）မှ ကြိုဆိုပါသည်
 
 > **和 (ဝ — သဟဇာတ) ၏ တံတားအဖြစ်၊ ယှဉ်ပြိုင်မှုမှ အတူတကွဖန်တီးမှုသို့။**
@@ -18,11 +20,13 @@ title: ⛩️ Matsuri Coin（MTC）မှ ကြိုဆိုပါသည်
 
 ## ထုတ်ကုန် ၃ မျိုးနှင့် Token တစ်မျိုး
 
-<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+<div style={{display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### ⛩️ Matsuri
+<img src={useBaseUrl("/img/brand/matsuri-logo.png")} alt="Matsuri logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### Matsuri
 **ယဉ်ကျေးမှုအတွေ့အကြုံ အက်ပ်**
 
 အတွေ့အကြုံဘုကင်၊ ငွေပေးချေမှု၊ ဘုရားဖူး mining။
@@ -32,9 +36,11 @@ MTC ကို **ရှာ၊ သုံး**။
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 📰 J-Times
+<img src={useBaseUrl("/img/brand/j-times-logo.png")} alt="J-Times logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### J-Times
 **ဂျပန်ယဉ်ကျေးမှု မီဒီယာ**
 
 ဖတ်၊ နားထောင်၊ ကြည့်ရုံဖြင့်
@@ -44,9 +50,11 @@ MTC ကို **ရှာ**။
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 🤝 GCF
+<img src={useBaseUrl("/img/brand/gcf-logo.png")} alt="GCF logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### GCF
 **နိုင်ငံတကာ အသိုက်အဝန်း**
 
 guide မွေးမြူ၊ ပွဲစီစဉ်ခြင်းဖြင့်
@@ -56,9 +64,11 @@ MTC ကို **ရှာ၊ ချဲ့**။
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(248,184,62,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(248,184,62,0.35)', background: 'linear-gradient(180deg, rgba(248,184,62,0.08) 0%, rgba(167,139,250,0.04) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 💎 MTC
+<img src={useBaseUrl("/img/brand/matsuri-coin.jpg")} alt="Matsuri Coin (MTC)" style={{width: '96px', height: '96px', objectFit: 'cover', borderRadius: '50%', marginBottom: '0.75rem', boxShadow: '0 4px 20px rgba(167,139,250,0.35)'}} />
+
+#### MTC
 **ဒစ်ဂျစ်တယ် ငွေကြေး**
 
 ထုတ်ကုန် ၃ မျိုးလုံးတွင်
@@ -68,6 +78,11 @@ MTC ကို **ရှာ၊ ချဲ့**။
 
 </div>
 
+</div>
+
+<div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', margin: '1.5rem 0', fontSize: '0.9rem', opacity: 0.75}}>
+<span>တည်ဆောက်ထားသည် —</span>
+<img src={useBaseUrl("/img/brand/solana-logo.svg")} alt="Solana" style={{height: '22px', width: 'auto'}} />
 </div>
 
 :::info MTC ဆိုတာ ဘာလဲ

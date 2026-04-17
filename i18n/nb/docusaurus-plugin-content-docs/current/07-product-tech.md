@@ -4,6 +4,8 @@ id: product-tech
 title: 🔧 Produkt og teknologi
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🔧 Produkt og teknologi — det som kjører beviser alt
 
 > **Det som kjører, beviser alt.**
@@ -53,10 +55,15 @@ Forretnings-app for GCF (Global Community Friends)-medlemmer. All funksjonalitet
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/gcf-dashboard-2.png" alt="GCF Admin dashbord" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-tools.png" alt="GCF Admin-verktøy" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-dashboard-1.png" alt="GCF Admin aktivitet" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-dashboard.webp")} alt="GCF Admin dashbord" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-members.webp")} alt="GCF Admin-verktøy" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-revenue.webp")} alt="GCF Admin aktivitet" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/gcf.png')} alt="GCF on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
+</div>
+
 
 ### Hva appen kan
 
@@ -97,9 +104,9 @@ Hovedapp for vanlige brukere. Eventbooking, betaling, Web3-lommebok, AR-mining �
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/matsuri-home.png" alt="Matsuri hjem-skjerm" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-event-detail.png" alt="Matsuri eventdetalj" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-sacred-map.png" alt="Matsuri helligstedskart" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri hjem-skjerm" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-wallet.webp")} alt="Matsuri eventdetalj" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-sacred-map.webp")} alt="Matsuri helligstedskart" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
 
 ### Hva appen kan
@@ -160,9 +167,15 @@ sequenceDiagram
 Medieplattform som formidler japansk kulturs dybder. Les artikler, lytt til podcaster, se video — hver handling gir MTC.
 :::
 
-<div style={{display: 'flex', gap: '2rem', justifyContent: 'center', alignItems: 'center', margin: '2rem 0'}}>
-  <img src="/img/brand/j-times-logo.png" alt="J-Times logo" style={{width: '100%', maxWidth: '160px', borderRadius: '12px'}} />
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/jtimes.png')} alt="J-Times on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
 </div>
+
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/jtimes-article.webp")} alt="J-Times article reader" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <img src={useBaseUrl("/img/apps/jtimes-podcast.webp")} alt="J-Times podcast player" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+</div>
+
 
 ### Hva appen kan
 

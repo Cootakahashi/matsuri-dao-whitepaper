@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ 路线图与团队
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ 路线图与团队
 
 >**致读到这里的您——愿景、经济设计、技术基础,一切都已就位。**
@@ -98,6 +100,10 @@ graph LR
 
 ## 👤 团队
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── 创始人 / CEO 兼首席架构师
 
 | 项目 | 详情 |
@@ -106,12 +112,20 @@ graph LR
 | **愿景** | "输出文化、输入财富"——文化 OS 的倡议者 |
 | **态度** | 亲自写代码、亲自站在现场(黄金街)——"Skin in the game"(真金白银投入)的践行者 |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── 董事 / GCF 与活动运营
 
 | 项目 | 详情 |
 | :--- | :--- |
-| **角色** | GCF 社区的运营统筹。活动与游览的运营设计与现场指挥 |
+| **角色** | GCF 运营负责。活动与游览的运营设计与现场运营 |
 | **优势** | 以国际化视野与 GCF 会员之间的信任为轴,支撑生态中"人"的循环 |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── 董事 / 地区文化大使
 

@@ -4,6 +4,8 @@ id: gcf
 title: 🤝 GCFメンバーシップ
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🤝 GCF——共創の中核を担う国際コミュニティ
 
 > **「観客」から「共創者」へ。**
@@ -75,6 +77,13 @@ GCFは単なる「会員権」ではありません。
 :::
 
 ---
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', background: 'linear-gradient(180deg, rgba(167,139,250,0.04) 0%, transparent 100%)'}}>
+  <img src={useBaseUrl("/img/apps/gcf-member-detail.webp")} alt="GCF Admin メンバー詳細 ── MTC残高・コミッション・紹介タブ" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '380px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><em>GCFメンバーのプロフィール画面 ── MTC残高、ティア、紹介アクティビティがリアルタイムに一覧。</em></p>
+  </div>
+</div>
 
 ## 特典②：高額紹介報酬
 

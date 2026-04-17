@@ -4,6 +4,8 @@ id: product-tech
 title: 🔧 Produit et technologie
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🔧 Produit et technologie —— ce qui fonctionne vaut toutes les preuves
 
 > **Ce qui fonctionne vaut toutes les preuves.**
@@ -53,10 +55,15 @@ App de gestion métier destinée aux membres GCF (Global Community Friends). Tou
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/gcf-dashboard-2.png" alt="GCF Admin Dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-tools.png" alt="GCF Admin outils" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-dashboard-1.png" alt="GCF Admin activité" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-dashboard.webp")} alt="GCF Admin Dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-members.webp")} alt="GCF Admin outils" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-revenue.webp")} alt="GCF Admin activité" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/gcf.png')} alt="GCF on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
+</div>
+
 
 ### Ce que l'app permet
 
@@ -97,9 +104,9 @@ App principale pour le grand public. Réservation d'événements, paiement, wall
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/matsuri-home.png" alt="Matsuri home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-event-detail.png" alt="Matsuri détail événement" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-sacred-map.png" alt="Matsuri carte sacrée" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-wallet.webp")} alt="Matsuri détail événement" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-sacred-map.webp")} alt="Matsuri carte sacrée" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
 
 ### Ce que l'app permet
@@ -160,9 +167,15 @@ sequenceDiagram
 Plateforme média qui transmet la profondeur de la culture japonaise. Lire des articles, écouter des podcasts, regarder des vidéos —— chaque action permet de gagner des MTC.
 :::
 
-<div style={{display: 'flex', gap: '2rem', justifyContent: 'center', alignItems: 'center', margin: '2rem 0'}}>
-  <img src="/img/brand/j-times-logo.png" alt="Logo J-Times" style={{width: '100%', maxWidth: '160px', borderRadius: '12px'}} />
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/jtimes.png')} alt="J-Times on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
 </div>
+
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/jtimes-article.webp")} alt="J-Times article reader" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <img src={useBaseUrl("/img/apps/jtimes-podcast.webp")} alt="J-Times podcast player" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+</div>
+
 
 ### Ce que l'app permet
 

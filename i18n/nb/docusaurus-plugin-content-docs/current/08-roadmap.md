@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ Veikart og team
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ Veikart og team
 
 >**Til deg som har lest så langt — visjon, økonomisk design og teknisk fundament er på plass.**
@@ -98,6 +100,10 @@ I dag kjøper turister suvenirer i butikker som betaler husleie til plattformen.
 
 ## 👤 Team
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── grunnlegger / CEO og sjefsarkitekt
 
 | Punkt | Detaljer |
@@ -106,12 +112,20 @@ I dag kjøper turister suvenirer i butikker som betaler husleie til plattformen.
 | **Visjon** | Forslagsstilleren bak et kultur-OS som «eksporterer kultur og importerer rikdom» |
 | **Stil** | Skriver selv koden, står selv i felten (Golden Gai) – «skin in the game» |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── styremedlem / GCF- og event-operations
 
 | Punkt | Detaljer |
 | :--- | :--- |
-| **Rolle** | Leder av GCF-fellesskapet. Utformer driften av events og turer, leder felten |
+| **Rolle** | GCF-drift. Utformer driften av events og turer, jobber i felten |
 | **Styrker** | Internasjonalt perspektiv og tillit blant GCF-medlemmer – bærer «sirkulasjonen av mennesker» i økosystemet |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── styremedlem / regionskultur-ambassadør
 

@@ -4,6 +4,8 @@ id: intro
 title: ⛩️ Velkommen til Matsuri Coin (MTC)
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛩️ Velkommen til Matsuri Coin (MTC)
 
 > **Som en bro af 和 (wa – harmoni), fra konkurrence til samskabelse.**
@@ -18,11 +20,13 @@ Det er **Matsuri Coin (MTC)**.
 
 ## Tre produkter og én token
 
-<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+<div style={{display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### ⛩️ Matsuri
+<img src={useBaseUrl("/img/brand/matsuri-logo.png")} alt="Matsuri logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### Matsuri
 **Kulturoplevelses-app**
 
 Booking, betaling og pilgrimsminedrift.
@@ -32,9 +36,11 @@ Booking, betaling og pilgrimsminedrift.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 📰 J-Times
+<img src={useBaseUrl("/img/brand/j-times-logo.png")} alt="J-Times logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### J-Times
 **Japansk kulturmedie**
 
 Læs, lyt, se —
@@ -44,9 +50,11 @@ og **tjen** MTC.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 🤝 GCF
+<img src={useBaseUrl("/img/brand/gcf-logo.png")} alt="GCF logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### GCF
 **International fællesskab**
 
 Uddan guider, arrangér events —
@@ -56,9 +64,11 @@ Uddan guider, arrangér events —
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(248,184,62,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(248,184,62,0.35)', background: 'linear-gradient(180deg, rgba(248,184,62,0.08) 0%, rgba(167,139,250,0.04) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 💎 MTC
+<img src={useBaseUrl("/img/brand/matsuri-coin.jpg")} alt="Matsuri Coin (MTC)" style={{width: '96px', height: '96px', objectFit: 'cover', borderRadius: '50%', marginBottom: '0.75rem', boxShadow: '0 4px 20px rgba(167,139,250,0.35)'}} />
+
+#### MTC
 **Digital valuta**
 
 På tværs af alle tre produkter:
@@ -68,6 +78,11 @@ På tværs af alle tre produkter:
 
 </div>
 
+</div>
+
+<div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', margin: '1.5rem 0', fontSize: '0.9rem', opacity: 0.75}}>
+<span>Bygget på</span>
+<img src={useBaseUrl("/img/brand/solana-logo.svg")} alt="Solana" style={{height: '22px', width: 'auto'}} />
 </div>
 
 :::info Hvad er MTC

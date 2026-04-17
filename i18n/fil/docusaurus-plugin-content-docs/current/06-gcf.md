@@ -4,6 +4,8 @@ id: gcf
 title: 🤝 GCF Membership
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🤝 GCF — International Community na Pangunahing Bahagi ng Co-creation
 
 > **Mula "manonood" patungo sa "co-creator".**
@@ -75,6 +77,13 @@ Tulad ng Bitcoin, dahil sa halving, **ang emission sa maagang yugto ay pinakamal
 :::
 
 ---
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', background: 'linear-gradient(180deg, rgba(167,139,250,0.04) 0%, transparent 100%)'}}>
+  <img src={useBaseUrl("/img/apps/gcf-member-detail.webp")} alt="GCF Admin member detail — MTC balance, commission, referral tabs" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '380px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><em>Profile ng miyembro ng GCF sa admin app — MTC balance, tier, at real-time referral activity.</em></p>
+  </div>
+</div>
 
 ## Privilege ②: Mataas na Referral Reward
 

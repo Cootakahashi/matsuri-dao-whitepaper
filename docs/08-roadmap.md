@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ Roadmap & Team
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ Roadmap & team
 
 >**To those who have read this far — the vision, the economic design, and the technical foundation are all in place.**
@@ -98,6 +100,10 @@ Today, tourists buy souvenirs from shops that pay "rent" to their landlord — t
 
 ## 👤 Team
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi — founder / CEO & lead architect
 
 | Item | Detail |
@@ -106,12 +112,20 @@ Today, tourists buy souvenirs from shops that pay "rent" to their landlord — t
 | **Vision** | Advocate of the "cultural OS" that "exports culture and imports wealth" |
 | **Stance** | Writes the code himself and stands on the ground himself (Golden Gai) — a practitioner of "skin in the game" |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen — director / GCF & event operations
 
 | Item | Detail |
 | :--- | :--- |
-| **Role** | Oversees GCF community operations. Designs the operations of events and tours and leads them on the ground |
+| **Role** | GCF operations. Designs the operations of events and tours and works on the ground |
 | **Strengths** | Supports the "human" flow of the ecosystem through an international perspective and trusted relationships with GCF members |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda — director / regional culture ambassador
 

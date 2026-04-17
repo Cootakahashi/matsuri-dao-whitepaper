@@ -4,6 +4,8 @@ id: product-tech
 title: 🔧 Producto y tecnología
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🔧 Producto y tecnología —— lo que ya funciona lo demuestra todo
 
 > **Lo que ya funciona lo demuestra todo.**
@@ -53,10 +55,15 @@ App de gestión de negocio para miembros GCF (Global Community Friends). Todas l
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/gcf-dashboard-2.png" alt="GCF Admin Dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-tools.png" alt="GCF Admin herramientas" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/gcf-dashboard-1.png" alt="GCF Admin actividad" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-dashboard.webp")} alt="GCF Admin Dashboard" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-members.webp")} alt="GCF Admin herramientas" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/gcf-revenue.webp")} alt="GCF Admin actividad" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/gcf.png')} alt="GCF on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
+</div>
+
 
 ### Lo que se puede hacer
 
@@ -97,9 +104,9 @@ App principal para el usuario general. Reserva de eventos, pagos, wallet Web3 y 
 :::
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
-  <img src="/img/apps/matsuri-home.png" alt="Matsuri home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-event-detail.png" alt="Matsuri detalle evento" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
-  <img src="/img/apps/matsuri-sacred-map.png" alt="Matsuri mapa sagrado" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-wallet.webp")} alt="Matsuri detalle evento" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
+  <img src={useBaseUrl("/img/apps/matsuri-sacred-map.webp")} alt="Matsuri mapa sagrado" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />
 </div>
 
 ### Lo que se puede hacer
@@ -160,9 +167,15 @@ sequenceDiagram
 Plataforma que transmite la profundidad de la cultura japonesa. Lee, escucha pódcasts, mira vídeos —— toda acción otorga MTC.
 :::
 
-<div style={{display: 'flex', gap: '2rem', justifyContent: 'center', alignItems: 'center', margin: '2rem 0'}}>
-  <img src="/img/brand/j-times-logo.png" alt="Logo J-Times" style={{width: '100%', maxWidth: '160px', borderRadius: '12px'}} />
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <img src={useBaseUrl('/img/apple-store/jtimes.png')} alt="J-Times on the App Store" style={{maxWidth: '300px', width: '100%', borderRadius: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.08)'}} />
 </div>
+
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/jtimes-article.webp")} alt="J-Times article reader" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <img src={useBaseUrl("/img/apps/jtimes-podcast.webp")} alt="J-Times podcast player" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+</div>
+
 
 ### Lo que se puede hacer
 

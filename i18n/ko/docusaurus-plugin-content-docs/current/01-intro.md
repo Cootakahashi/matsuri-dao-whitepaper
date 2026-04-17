@@ -4,6 +4,8 @@ id: intro
 title: ⛩️ Matsuri Coin(MTC)에 오신 것을 환영합니다
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛩️ Matsuri Coin(MTC)에 오신 것을 환영합니다
 
 > **和(화)의 가교로서, 경쟁에서 공창(共創)으로.**
@@ -18,11 +20,13 @@ title: ⛩️ Matsuri Coin(MTC)에 오신 것을 환영합니다
 
 ## 세 가지 프로덕트와 하나의 토큰
 
-<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+<div style={{display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### ⛩️ Matsuri
+<img src={useBaseUrl("/img/brand/matsuri-logo.png")} alt="Matsuri logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### Matsuri
 **문화 체험 앱**
 
 체험 예약·결제·참배 마이닝.
@@ -32,9 +36,11 @@ MTC를 **벌고·쓰는** 곳.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 📰 J-Times
+<img src={useBaseUrl("/img/brand/j-times-logo.png")} alt="J-Times logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### J-Times
 **일본 문화 미디어**
 
 읽고·듣고·보는 것만으로
@@ -44,9 +50,11 @@ MTC를 **번다**.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(167,139,250,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.3)', background: 'linear-gradient(180deg, rgba(167,139,250,0.06) 0%, rgba(167,139,250,0.02) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 🤝 GCF
+<img src={useBaseUrl("/img/brand/gcf-logo.png")} alt="GCF logo" style={{width: '96px', height: '96px', objectFit: 'contain', borderRadius: '16px', marginBottom: '0.75rem', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+
+#### GCF
 **국제 커뮤니티**
 
 가이드 육성·이벤트 기획으로
@@ -56,9 +64,11 @@ MTC를 **벌고·넓힌다**.
 
 </div>
 
-<div style={{flex: '1 1 200px', maxWidth: '250px', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(248,184,62,0.3)', textAlign: 'center'}}>
+<div style={{flex: '1 1 220px', maxWidth: '260px', padding: '1.5rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(248,184,62,0.35)', background: 'linear-gradient(180deg, rgba(248,184,62,0.08) 0%, rgba(167,139,250,0.04) 100%)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-### 💎 MTC
+<img src={useBaseUrl("/img/brand/matsuri-coin.jpg")} alt="Matsuri Coin (MTC)" style={{width: '96px', height: '96px', objectFit: 'cover', borderRadius: '50%', marginBottom: '0.75rem', boxShadow: '0 4px 20px rgba(167,139,250,0.35)'}} />
+
+#### MTC
 **디지털 통화**
 
 세 가지 프로덕트 전체에서
@@ -68,6 +78,11 @@ MTC를 **벌고·넓힌다**.
 
 </div>
 
+</div>
+
+<div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', margin: '1.5rem 0', fontSize: '0.9rem', opacity: 0.75}}>
+<span>기반</span>
+<img src={useBaseUrl("/img/brand/solana-logo.svg")} alt="Solana" style={{height: '22px', width: 'auto'}} />
 </div>
 
 :::info MTC란

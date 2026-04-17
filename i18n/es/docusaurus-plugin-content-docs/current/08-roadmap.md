@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ Hoja de ruta y equipo
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ Hoja de ruta y equipo
 
 >**A quienes han leído hasta aquí —— la visión, el diseño económico y la base técnica ya están.**
@@ -98,6 +100,10 @@ Hoy, los turistas compran recuerdos en tiendas que pagan alquiler a la «platafo
 
 ## 👤 Equipo
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── Fundador / CEO y arquitecto jefe
 
 | Concepto | Detalle |
@@ -106,12 +112,20 @@ Hoy, los turistas compran recuerdos en tiendas que pagan alquiler a la «platafo
 | **Visión** | Impulsor del «OS cultural»: exportar cultura, importar riqueza |
 | **Postura** | Escribe código con sus propias manos y trabaja en el terreno (Golden Gai) —— «skin in the game» |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── Director / Operaciones GCF y eventos
 
 | Concepto | Detalle |
 | :--- | :--- |
-| **Rol** | Dirección de la comunidad GCF. Diseño operativo y coordinación en terreno de eventos y tours |
+| **Rol** | Operaciones de GCF. Diseño operativo y trabajo en terreno de eventos y tours |
 | **Fortaleza** | Mirada internacional y confianza con los miembros GCF, sosteniendo el «ciclo humano» del ecosistema |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── Director / Embajador cultural regional
 

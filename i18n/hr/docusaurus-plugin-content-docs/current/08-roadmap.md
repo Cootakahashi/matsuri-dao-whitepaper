@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ Roadmap i tim
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ Roadmap i tim
 
 >**Onima koji su pročitali dovde — vizija, ekonomski dizajn i tehnički temelj su spremni.**
@@ -98,6 +100,10 @@ Danas turisti kupuju suvenire u trgovinama koje plaćaju najamninu platformi. Su
 
 ## 👤 Tim
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── osnivač / CEO i glavni arhitekt
 
 | Stavka | Detalji |
@@ -106,12 +112,20 @@ Danas turisti kupuju suvenire u trgovinama koje plaćaju najamninu platformi. Su
 | **Vizija** | Predlagač kulturnog OS-a koji „izvozi kulturu i uvozi bogatstvo" |
 | **Stil** | Sam piše kod, sam je na terenu (Golden Gai) – „skin in the game" |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── direktor / GCF i event operations
 
 | Stavka | Detalji |
 | :--- | :--- |
-| **Uloga** | Vodi GCF zajednicu. Dizajnira pogon eventa i tura, vodi rad na terenu |
+| **Uloga** | GCF operacije. Dizajnira pogon eventa i tura, radi na terenu |
 | **Snage** | Međunarodna perspektiva i povjerenje među GCF članovima – nosi „cirkulaciju ljudi" u ekosustavu |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── direktor / ambasador regionalnih kultura
 

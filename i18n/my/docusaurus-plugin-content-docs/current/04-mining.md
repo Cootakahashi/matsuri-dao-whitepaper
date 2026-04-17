@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ Mining နှင့် ရှာပုံ
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ Mining မဏ္ဍိုင် ၅ ခုနှင့် ရှာပုံ
 
 > **ယဉ်ကျေးမှုနှင့် "ပါဝင်မှု" သည် တန်ဖိုးဖြစ်သွားသည်။**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 ဒိုင်ကီချိ! Bonus score!"
     API->>SC: Solana သို့ ပို့ (async၊ သြဂုတ် နောက်ပိုင်း)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri Worship Mining screen — tier multipliers, AR, omikuji" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Worship Mining</strong> — ဘုရားကျောင်းအနီးတွင် Check-in လုပ်ပါ၊ AR ကင်မရာဖြင့် စွမ်းအင်ကို ရှာဖွေပါ၊ Omikuji ဖြင့် MTC ဆုကြေး ရယူပါ။ အဆင့် ၁.၀× မှ ၁၀.၀× အထိ။</p>
+  </div>
+</div>
+
 
 **အခြေခံမူ — လာရောက်သူ နည်းသော site က ပိုရှာ:**
 

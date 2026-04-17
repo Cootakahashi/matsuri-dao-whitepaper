@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ خارطة الطريق والفريق
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ خارطة الطريق والفريق
 
 >**إلى من وصلوا إلى هذه النقطة — الرؤية والتصميم الاقتصادي والبنية التقنية، كلها جاهزة.**
@@ -98,6 +100,10 @@ graph LR
 
 ## 👤 الفريق
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── المؤسس / CEO والمهندس الرئيسي
 
 | البند | التفاصيل |
@@ -106,12 +112,20 @@ graph LR
 | **الرؤية** | صاحب مفهوم نظام التشغيل الثقافي: «تصدير الثقافة، استيراد الثروة» |
 | **الموقف** | يكتب الكود بيديه، ويقف في الميدان (Golden Gai) — ممارس لمبدأ «Skin in the game» |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── مدير / عمليات GCF والفعاليات
 
 | البند | التفاصيل |
 | :--- | :--- |
-| **الدور** | الإشراف على تشغيل مجتمع GCF. تصميم وعمليات الفعاليات والجولات في الميدان |
+| **الدور** | عمليات GCF. تصميم وعمليات الفعاليات والجولات في الميدان |
 | **نقاط القوة** | يدعم دورة «الناس» في النظام البيئي بمنظور دولي وعلاقات ثقة مع أعضاء GCF |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── مدير / سفير الثقافة الإقليمية
 

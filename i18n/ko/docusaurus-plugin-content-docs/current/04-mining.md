@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ 마이닝과 수익 방식
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ 마이닝 5개 기둥과 수익 방식
 
 > **문화에 대한 "관계"가, 그대로 가치가 된다.**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 대길! 보너스 스코어!"
     API->>SC: Solana로 전송(비동기, 8월 이후)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri 참배 마이닝 화면 — 티어 배율, AR, 오미쿠지" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>참배 마이닝</strong> — 신사 근처에서 체크인, AR 카메라로 에너지 감지, 오미쿠지로 MTC 보너스 획득. 티어 배율은 Major 1.0× ~ Hidden Gem 10.0×.</p>
+  </div>
+</div>
+
 
 **기본 원칙 — 방문자가 적은 사이트일수록 더 많이 번다:**
 

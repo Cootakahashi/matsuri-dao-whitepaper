@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ Roadmap နှင့် အဖွဲ့
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ Roadmap နှင့် အဖွဲ့
 
 >**ဤနေရာအထိ ဖတ်ပြီးသူများသို့——ရူပါ၊ စီးပွားရေး ဒီဇိုင်း၊ နည်းပညာ အခြေခံ အားလုံး ပြည့်စုံနေပါသည်။**
@@ -98,6 +100,10 @@ graph LR
 
 ## 👤 အဖွဲ့
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── Founder / CEO & Lead Architect
 
 | ခေါင်းစဉ် | အသေးစိတ် |
@@ -106,12 +112,20 @@ graph LR
 | **ရူပါ** | "ယဉ်ကျေးမှု တင်ပို့ချင်း၊ ဥစ္စာ တင်သွင်းခြင်း" ယဉ်ကျေးမှု OS ကို တင်ပြသူ |
 | **ရပ်တည်ချက်** | ကိုယ်တိုင် ကုဒ်ရေး၊ ကိုယ်တိုင် လက်တွေ့မြေပြင် (Golden Gai) တွင် ရပ်တည်သော "ကိုယ်ပိုင် ငွေ ဖြုန်း" လက်တွေ့ကျင့်သူ |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── Director / GCF・Event Operations
 
 | ခေါင်းစဉ် | အသေးစိတ် |
 | :--- | :--- |
-| **အခန်းကဏ္ဍ** | GCF အသိုက်အဝန်း လည်ပတ်မှု ကြီးကြပ်။ Event・tour ၏ operation ဒီဇိုင်းနှင့် လက်တွေ့ ဦးစီးမှု |
+| **အခန်းကဏ္ဍ** | GCF လည်ပတ်မှု တာဝန်ခံ။ Event・tour ၏ operation ဒီဇိုင်းနှင့် လက်တွေ့ လုပ်ငန်း |
 | **အားသာချက်** | နိုင်ငံတကာ ရှုထောင့်နှင့် GCF member များနှင့် ယုံကြည်မှုကို အခြေခံ၍ ecosystem ၏ "လူ" လည်ပတ်မှုကို ထောက်ပံ့ |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── Director / ဒေသ ယဉ်ကျေးမှု သံအမတ်
 

@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ Minado y formas de ganar
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ Los cinco pilares del minado y cómo ganar
 
 > **Cualquier «vínculo» con la cultura se convierte directamente en valor.**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: «🏆 ¡Daikichi! ¡Bonus!»
     API->>SC: Envío a Solana (asíncrono, desde agosto)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri Worship Mining screen — tier multipliers, AR, omikuji" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Minería de visita</strong> — check-in cerca de un santuario, detecta energía con AR, saca un omikuji para bono MTC. Multiplicadores de 1.0× (Major) a 10.0× (Hidden Gem).</p>
+  </div>
+</div>
+
 
 **Principio básico — cuantos menos visitantes, más ganas:**
 

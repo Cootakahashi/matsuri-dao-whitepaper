@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ マイニングと稼ぎ方
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ マイニング5本柱と稼ぎ方
 
 > **文化への「関わり」が、そのまま価値になる。**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 大吉！ボーナススコア！"
     API->>SC: Solanaに送信（非同期、8月以降）
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri 参拝マイニング画面 ── ティア倍率・AR・おみくじ" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>参拝マイニング</strong> ── 神社の近くでチェックインし、ARカメラでエネルギーを検知、おみくじでMTCボーナスを獲得。ティア倍率は Major 1.0× から Hidden Gem 10.0× まで。</p>
+  </div>
+</div>
+
 
 **基本原則 — 訪問者が少ないサイトほど多く稼げる：**
 

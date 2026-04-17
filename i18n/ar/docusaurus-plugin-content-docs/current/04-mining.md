@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ التعدين وطرق الكسب
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ الأعمدة الخمسة للتعدين وطرق الكسب
 
 > **«المشاركة» في الثقافة تتحول مباشرة إلى قيمة.**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 大吉 (دايكيتشي)! نقاط إضافية!"
     API->>SC: إرسال إلى Solana (غير متزامن، بعد أغسطس)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri Worship Mining screen — tier multipliers, AR, omikuji" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>تعدين الزيارة</strong> — سجّل الحضور قرب المعبد، استكشف الطاقة بكاميرا AR، اسحب أوميكوجي لمكافأة MTC. مضاعفات من 1.0× إلى 10.0×.</p>
+  </div>
+</div>
+
 
 **المبدأ الأساسي — المواقع الأقل زيارة تكسب أكثر:**
 

@@ -4,6 +4,8 @@ id: gcf
 title: 🤝 GCF 멤버십
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🤝 GCF——공창의 중핵을 담당하는 국제 커뮤니티
 
 > **"관객"에서 "공창자"로.**
@@ -75,6 +77,13 @@ GCF는 단순한 "회원권"이 아닙니다.
 :::
 
 ---
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', background: 'linear-gradient(180deg, rgba(167,139,250,0.04) 0%, transparent 100%)'}}>
+  <img src={useBaseUrl("/img/apps/gcf-member-detail.webp")} alt="GCF Admin 멤버 상세 — MTC 잔액, 커미션, 추천 탭" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '380px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><em>관리자 앱 내 GCF 멤버 프로필 — MTC 잔액, 티어, 실시간 추천 활동을 한눈에.</em></p>
+  </div>
+</div>
 
 ## 특전 ②: 고액 추천 보상
 

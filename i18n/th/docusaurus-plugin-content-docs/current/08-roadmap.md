@@ -4,6 +4,8 @@ id: roadmap
 title: 🗓️ Roadmap และทีม
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 🗓️ Roadmap และทีม
 
 >**ถึงท่านที่อ่านมาถึงตรงนี้ — วิสัยทัศน์ การออกแบบเศรษฐกิจ และฐานเทคโนโลยี พร้อมแล้วทั้งหมด**
@@ -98,6 +100,10 @@ graph LR
 
 ## 👤 ทีม
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ko.webp")} alt="Ko Takahashi" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Ko Takahashi ── ผู้ก่อตั้ง / CEO & Lead Architect
 
 | รายการ | รายละเอียด |
@@ -106,12 +112,20 @@ graph LR
 | **วิสัยทัศน์** | ผู้เสนอ Cultural OS "ส่งออกวัฒนธรรม นำเข้าความมั่งคั่ง" |
 | **จุดยืน** | เขียนโค้ดด้วยตัวเอง ยืนอยู่หน้างาน (โกลเดนไก) ด้วยตัวเอง ผู้ปฏิบัติจริงของ "Skin in the game" |
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/jon.webp")} alt="Jon Anders Jensen" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
+
 ### Jon Anders Jensen ── กรรมการ / GCF & Event Operations
 
 | รายการ | รายละเอียด |
 | :--- | :--- |
-| **บทบาท** | ดูแลการบริหารชุมชน GCF ออกแบบ Operation ของอีเวนต์/ทัวร์ และสั่งการภาคสนาม |
+| **บทบาท** | ฝ่ายปฏิบัติการ GCF ออกแบบ Operation ของอีเวนต์/ทัวร์ และทำงานภาคสนาม |
 | **จุดแข็ง** | ค้ำจุนการหมุนเวียน "คน" ของระบบนิเวศด้วยมุมมองระหว่างประเทศและความสัมพันธ์ที่ไว้ใจได้กับสมาชิก GCF |
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 0.5rem 0'}}>
+  <img src={useBaseUrl("/img/team/ryu.webp")} alt="Ryunosuke Honda" style={{width: '180px', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '50%', boxShadow: '0 8px 32px rgba(0,0,0,0.3)', border: '3px solid rgba(167,139,250,0.4)'}} />
+</div>
 
 ### Ryunosuke Honda ── กรรมการ / Cultural Ambassador ประจำภูมิภาค
 

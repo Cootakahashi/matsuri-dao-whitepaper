@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ Mining at Paraan ng Pagkita
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ 5 Pillars ng Mining at Paraan ng Pagkita
 
 > **Ang "pakikilahok" sa kultura ay nagiging halaga mismo.**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 Daikichi! Bonus score!"
     API->>SC: Ipadala sa Solana (async, mula Agosto)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri Worship Mining screen — tier multipliers, AR, omikuji" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Worship Mining</strong> — mag-check in malapit sa dambana, tuklasin ang enerhiya gamit ang AR camera, bumunot ng omikuji para sa MTC bonus. Multiplier mula 1.0× hanggang 10.0×.</p>
+  </div>
+</div>
+
 
 **Pangunahing Prinsipyo — Mas maraming kinikita sa mga site na kaunti ang bumibisita:**
 

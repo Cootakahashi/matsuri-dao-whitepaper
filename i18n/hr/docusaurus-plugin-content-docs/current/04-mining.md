@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ Mining i zarada
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ Pet stupova mininga i kako zaraditi
 
 > **Vaše sudjelovanje u kulturi izravno se pretvara u vrijednost.**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 Dai-kichi! Bonus bodovi!"
     API->>SC: Šalje se na Solanu (async, nakon kolovoza)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri Worship Mining screen — tier multipliers, AR, omikuji" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Worship Mining</strong> — prijavite se blizu svetišta, otkrijte energiju AR kamerom, izvucite omikuji za MTC bonus. Multiplikatori od 1.0× do 10.0×.</p>
+  </div>
+</div>
+
 
 **Osnovno načelo — manje posjećena mjesta daju više:**
 

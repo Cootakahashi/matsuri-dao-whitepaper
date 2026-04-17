@@ -4,6 +4,8 @@ id: mining
 title: ⛏️ 挖矿与赚取方式
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # ⛏️ 挖矿的五大支柱与赚取方式
 
 > **与文化的每一次"参与",都直接变成价值。**
@@ -119,6 +121,15 @@ sequenceDiagram
     API-->>U: "🏆 大吉! 额外加分!"
     API->>SC: 发送至 Solana(异步,8 月起)
 ```
+
+
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src={useBaseUrl("/img/apps/matsuri-sanpai-mining.webp")} alt="Matsuri 参拜挖矿界面 — 层级倍数、AR、御神签" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>参拜挖矿</strong> —— 在神社附近签到，用AR相机探测灵力，抽御神签获取MTC奖励。层级倍数从 Major 1.0× 到 Hidden Gem 10.0×。</p>
+  </div>
+</div>
+
 
 **基本原则 — 访客越少的地方,赚得越多:**
 
