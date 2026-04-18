@@ -49,11 +49,26 @@ Matsuri Coin(MTC)의 경제 설계는, 하나의 신념에 기초합니다.
 
 900M MTC의 분배는 다음과 같습니다.
 
-```mermaid
-pie title MTC 분배(900M)
-    "마이닝 풀" : 61
-    "에코시스템 운영" : 39
-```
+<div className="mtc-alloc">
+  <div className="mtc-alloc__donut" role="img" aria-label="MTC 분배: 마이닝 풀 61%, 에코시스템 운영 39%">
+    <div className="mtc-alloc__hole">
+      <span className="mtc-alloc__total">900M</span>
+      <span className="mtc-alloc__unit">MTC</span>
+    </div>
+  </div>
+  <div className="mtc-alloc__legend">
+    <div className="mtc-alloc__row mtc-alloc__row--mining">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">61%</span>
+      <span className="mtc-alloc__amount">⛏️ 550M MTC</span>
+    </div>
+    <div className="mtc-alloc__row mtc-alloc__row--ecosystem">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">39%</span>
+      <span className="mtc-alloc__amount">🌐 350M MTC</span>
+    </div>
+  </div>
+</div>
 
 | 구분 | 비율 | 수량 | 용도 |
 | :--- | :---: | :--- | :--- |

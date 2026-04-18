@@ -8,6 +8,24 @@ title: ⚡ ทำไมต้อง Solana?
 
 > **ด้วยความเคารพต่อ Ethereum — Use Case ของ MTC ต้องการ Solana**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereum คือผู้บุกเบิกบล็อกเชนที่มอบการปฏิวัติ Smart Contract ให้โลก เปิดทางวัฒนธรรม DeFi และ NFT ด้วยชุมชนนักพัฒนาที่ใหญ่ที่สุดและผลงานสั่งสมหลายปี **ความปลอดภัยและความน่าเชื่อถือ**ของ Ethereum ยังเป็นอันดับหนึ่งของวงการ
 
 แต่สิ่งที่ MTC ต้องการทำคือ "การชำระเงินในชีวิตประจำวันที่ใช้ได้จริงในแหล่งท่องเที่ยว" การส่งเงิน 100 ¥ เหมือนหยอดเงินทำบุญที่ศาลเจ้า (お賽銭 — โอไซเซ็น) จะรับค่าธรรมเนียมหลายร้อยเยนหรือรอหลายสิบวินาทีไม่ได้

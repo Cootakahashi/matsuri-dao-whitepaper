@@ -8,6 +8,24 @@ title: ⚡ لماذا Solana؟
 
 > **مع كل احترامنا لـ Ethereum — حالة استخدام MTC كانت تتطلب Solana.**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereum رائد البلوكتشين الذي أهدى العالم ثورة العقود الذكية. فتح آفاق DeFi وثقافة NFT، وبنى **أمانًا وموثوقية** لا يضاهيهما أحد بفضل أكبر مجتمع مطورين وسنوات من الخبرة المتراكمة.
 
 لكن ما يريد MTC تحقيقه هو «مدفوعات يومية تُستخدم في ميدان السياحة». إرسال 100 ¥ كتقدمة في معبد (お賽銭 — أوسايسن) لا يحتمل رسومًا بمئات الينات أو انتظارًا لعشرات الثواني.

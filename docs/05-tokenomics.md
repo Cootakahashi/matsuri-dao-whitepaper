@@ -49,11 +49,26 @@ Renouncing mint authority means "the operator cannot mint more tokens and dilute
 
 900M MTC is allocated as follows.
 
-```mermaid
-pie title MTC allocation (900M)
-    "Mining pool" : 61
-    "Ecosystem operations" : 39
-```
+<div className="mtc-alloc">
+  <div className="mtc-alloc__donut" role="img" aria-label="MTC allocation: 61% Mining Pool, 39% Ecosystem Operations">
+    <div className="mtc-alloc__hole">
+      <span className="mtc-alloc__total">900M</span>
+      <span className="mtc-alloc__unit">MTC</span>
+    </div>
+  </div>
+  <div className="mtc-alloc__legend">
+    <div className="mtc-alloc__row mtc-alloc__row--mining">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">61%</span>
+      <span className="mtc-alloc__amount">⛏️ 550M MTC</span>
+    </div>
+    <div className="mtc-alloc__row mtc-alloc__row--ecosystem">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">39%</span>
+      <span className="mtc-alloc__amount">🌐 350M MTC</span>
+    </div>
+  </div>
+</div>
 
 | Category | Share | Amount | Purpose |
 | :--- | :---: | :--- | :--- |

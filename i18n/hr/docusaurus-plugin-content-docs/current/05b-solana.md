@@ -8,6 +8,24 @@ title: ⚡ Zašto Solana?
 
 > **Uz poštovanje prema Ethereumu — use case MTC-a zahtijevao je Solanu.**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereum je pionir blockchaina koji je svijetu donio revoluciju pametnih ugovora. Ethereum je otvorio kulturu DeFi-ja i NFT-a, a njegova ogromna razvojna zajednica i dugogodišnji track record dali su **sigurnost i pouzdanost** koje su i danas vodeće u industriji.
 
 Ali ono što MTC želi ostvariti jesu „svakodnevna plaćanja koja rade u stvarnosti turizma". Bacanje 100 ¥ u sanduk za prinose ne smije koštati stotine jena naknade i trajati desetke sekundi.

@@ -49,11 +49,26 @@ Ang pag-abandona sa Mint Authority ay nangangahulugan na "hindi makakapaglimbag 
 
 Ang distribusyon ng 900M MTC ay ganito.
 
-```mermaid
-pie title MTC Distribution (900M)
-    "Mining Pool" : 61
-    "Ecosystem Operation" : 39
-```
+<div className="mtc-alloc">
+  <div className="mtc-alloc__donut" role="img" aria-label="MTC Distribution: Mining Pool 61%, Ecosystem Operation 39%">
+    <div className="mtc-alloc__hole">
+      <span className="mtc-alloc__total">900M</span>
+      <span className="mtc-alloc__unit">MTC</span>
+    </div>
+  </div>
+  <div className="mtc-alloc__legend">
+    <div className="mtc-alloc__row mtc-alloc__row--mining">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">61%</span>
+      <span className="mtc-alloc__amount">⛏️ 550M MTC</span>
+    </div>
+    <div className="mtc-alloc__row mtc-alloc__row--ecosystem">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">39%</span>
+      <span className="mtc-alloc__amount">🌐 350M MTC</span>
+    </div>
+  </div>
+</div>
 
 | Kategorya | Proporsyon | Bilang | Paggamit |
 | :--- | :---: | :--- | :--- |

@@ -8,6 +8,24 @@ title: ⚡ Hvorfor Solana?
 
 > **Med respekt for Ethereum — MTC’s use case krævede Solana.**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereum er blockchainens pioner, der bragte smart contract-revolutionen til verden. Ethereum skabte DeFi- og NFT-kulturen, og dens enorme udviklerfællesskab og mangeårige track record har givet en **sikkerhed og pålidelighed**, der stadig er branchens førende.
 
 Men det, MTC vil realisere, er "daglige betalinger, der virker i turistens virkelighed". At kaste 100 ¥ i en offerboks må ikke koste hundredvis af yen i gebyr og tage snesevis af sekunder.

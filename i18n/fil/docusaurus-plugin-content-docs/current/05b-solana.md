@@ -8,6 +8,24 @@ title: ⚡ Bakit Solana?
 
 > **Sa pagrespeto sa Ethereum — kailangan ng Solana ang use case ng MTC.**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ang Ethereum ay pioneer ng blockchain na nagdala sa mundo ng rebolusyon ng smart contract. Binuksan nito ang kultura ng DeFi at NFT, at ang **seguridad at pagkamapagkakatiwalaan** na itinayo ng pinakamalaking developer community at mahabang track record ay hanggang ngayon ay pinakamataas sa industriya.
 
 Ngunit ang gustong maisakatuparan ng MTC ay ang "pang-araw-araw na pagbabayad na magagamit sa larangan ng turismo". Sa isang pagpapadala ng ¥100 tulad ng offering, hindi katanggap-tanggap ang daan-daang yen na bayad o ilang sampu ng segundo ng paghihintay.

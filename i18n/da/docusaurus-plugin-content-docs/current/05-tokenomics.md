@@ -49,11 +49,26 @@ At frasige sig mint-autoriteten betyder, at "driftsteamet ikke kan udstede mere 
 
 900M MTC fordeles som følger.
 
-```mermaid
-pie title MTC-fordeling (900M)
-    "Miningpulje" : 61
-    "Økosystemsdrift" : 39
-```
+<div className="mtc-alloc">
+  <div className="mtc-alloc__donut" role="img" aria-label="MTC-fordeling: Miningpulje 61%, Økosystemsdrift 39%">
+    <div className="mtc-alloc__hole">
+      <span className="mtc-alloc__total">900M</span>
+      <span className="mtc-alloc__unit">MTC</span>
+    </div>
+  </div>
+  <div className="mtc-alloc__legend">
+    <div className="mtc-alloc__row mtc-alloc__row--mining">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">61%</span>
+      <span className="mtc-alloc__amount">⛏️ 550M MTC</span>
+    </div>
+    <div className="mtc-alloc__row mtc-alloc__row--ecosystem">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">39%</span>
+      <span className="mtc-alloc__amount">🌐 350M MTC</span>
+    </div>
+  </div>
+</div>
 
 | Kategori | Andel | Stk. | Formål |
 | :--- | :---: | :--- | :--- |

@@ -8,6 +8,24 @@ title: ⚡ Pourquoi Solana ?
 
 > **Avec tout le respect dû à Ethereum —— le cas d'usage de MTC avait besoin de Solana.**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereum est le pionnier de la blockchain qui a apporté au monde la révolution des smart contracts. Il a ouvert la voie au DeFi et aux NFT, et la **sécurité et la fiabilité** bâties par la plus grande communauté de développeurs et des années de recul restent inégalées dans l'industrie.
 
 Cependant, ce que MTC veut réaliser, ce sont des « paiements du quotidien utilisables sur le terrain touristique ». Pour lancer 100 yens comme une offrande dans un sanctuaire, on ne peut pas accepter plusieurs centaines de yens de frais ni des dizaines de secondes d'attente.

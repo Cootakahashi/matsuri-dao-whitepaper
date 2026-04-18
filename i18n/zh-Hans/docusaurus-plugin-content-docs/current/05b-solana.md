@@ -8,6 +8,24 @@ title: ⚡ 为什么选 Solana?
 
 > **向 Ethereum 致敬——然而 MTC 的使用场景,非 Solana 不可。**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereum 是为世界带来"智能合约"革命的区块链先驱。它开辟了 DeFi 与 NFT 的文化,凭借最大规模的开发者社区与多年积淀所形成的**安全性与可靠性**,至今仍是业界翘楚。
 
 但 MTC 想要实现的,是"能在观光现场日常使用的支付"。像投香火钱一样去发送 100 日元的行为,既容不得数百日元的手续费,也容不得几十秒的等待。

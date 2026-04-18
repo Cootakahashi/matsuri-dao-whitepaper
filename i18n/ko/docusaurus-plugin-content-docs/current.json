@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.【物語編】なぜMTCが存在するのか": {
+    "message": "【스토리편】 MTC가 존재하는 이유",
+    "description": "The label for category '【物語編】なぜMTCが存在するのか' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.【実践編】MTCで何ができるのか": {
+    "message": "【실전편】 MTC로 할 수 있는 일",
+    "description": "The label for category '【実践編】MTCで何ができるのか' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.【技術・経済編】なぜ信頼できるのか": {
+    "message": "【기술・경제편】 왜 신뢰할 수 있는가",
+    "description": "The label for category '【技術・経済編】なぜ信頼できるのか' in sidebar 'tutorialSidebar'"
+  }
+}

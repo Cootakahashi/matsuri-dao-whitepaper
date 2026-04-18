@@ -8,6 +8,24 @@ title: ⚡ ဘာကြောင့် Solana လဲ?
 
 > **Ethereum ကို လေးစားမှုနှင့်အတူ——MTC ၏ အသုံးပြုမှုတွင် Solana လိုအပ်ခဲ့။**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereum သည် smart contract ဟူသော တော်လှန်မှုကို ကမ္ဘာသို့ ပို့ဆောင်ခဲ့သော blockchain ရှေ့ဆောင်။ DeFi နှင့် NFT ယဉ်ကျေးမှုကို ဖြတ်လမ်းသွားပြီး အကြီးမားဆုံး developer အသိုက်အဝန်းနှင့် နှစ်ပေါင်းများစွာ စွမ်းဆောင်ရည်က တည်ဆောက်ခဲ့သော **လုံခြုံမှုနှင့် ယုံကြည်စိတ်ချမှု**သည် ယခုလည်း လုပ်ငန်းအတွင်း ထိပ်ဆုံး ဖြစ်သည်။
 
 သို့သော် MTC အကောင်အထည်ဖော်လိုသည်မှာ "ခရီးသွား လက်တွေ့မြေပြင်တွင် သုံးနိုင်သော နေ့စဉ် ငွေပေးချေ"။ အလှူ (ပြည်)ငွေ ၁၀၀ ယန်း ပို့သော လှုပ်ရှားမှုတွင် ကြေး ရာနှင့် ချီ ပေးရန်၊ စက္ကန့် ဆယ်ဂဏန်း စောင့်ရန်ကို မခံနိုင်။

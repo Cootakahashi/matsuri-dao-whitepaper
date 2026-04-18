@@ -8,6 +8,24 @@ title: ⚡ なぜSolanaなのか？
 
 > **Ethereumへの敬意とともに——MTCのユースケースにはSolanaが必要だった。**
 
+<div className="solana-hero">
+  <img src="/img/brand/solana-logo.svg" alt="Solana" className="solana-hero__logo" />
+  <div className="solana-hero__stats">
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">⚡</span>
+      <span className="solana-hero__stat-value">0.4s</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">💴</span>
+      <span className="solana-hero__stat-value">¥0.04</span>
+    </div>
+    <div className="solana-hero__stat">
+      <span className="solana-hero__stat-icon">🚀</span>
+      <span className="solana-hero__stat-value">2,000+ TPS</span>
+    </div>
+  </div>
+</div>
+
 Ethereumは、スマートコントラクトという革命を世界にもたらしたブロックチェーンの先駆者です。DeFiやNFTの文化を切り拓き、最大級の開発者コミュニティと長年の実績が築いた**セキュリティと信頼性**は、今なお業界随一です。
 
 しかし、MTCが実現したいのは「観光の現場で使える日常の決済」。お賽銭のように100円を送る行為に、数百円の手数料や数十秒の待ち時間は許容できません。

@@ -49,11 +49,26 @@ Mint Authority စွန့်လွှတ်ခြင်းသည် "Operator 
 
 900M MTC ၏ ခွဲဝေမှု အောက်ပါ အတိုင်း ဖြစ်သည်။
 
-```mermaid
-pie title MTC ခွဲဝေ (900M)
-    "Mining Pool" : 61
-    "Ecosystem လုပ်ငန်း" : 39
-```
+<div className="mtc-alloc">
+  <div className="mtc-alloc__donut" role="img" aria-label="MTC ခွဲဝေ: Mining Pool 61%, Ecosystem လုပ်ငန်း 39%">
+    <div className="mtc-alloc__hole">
+      <span className="mtc-alloc__total">900M</span>
+      <span className="mtc-alloc__unit">MTC</span>
+    </div>
+  </div>
+  <div className="mtc-alloc__legend">
+    <div className="mtc-alloc__row mtc-alloc__row--mining">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">61%</span>
+      <span className="mtc-alloc__amount">⛏️ 550M MTC</span>
+    </div>
+    <div className="mtc-alloc__row mtc-alloc__row--ecosystem">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">39%</span>
+      <span className="mtc-alloc__amount">🌐 350M MTC</span>
+    </div>
+  </div>
+</div>
 
 | အမျိုးအစား | အချိုး | အရေအတွက် | အသုံးပြုမှု |
 | :--- | :---: | :--- | :--- |

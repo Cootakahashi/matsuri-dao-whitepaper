@@ -49,11 +49,26 @@ title: 💰 Tokenomics
 
 การจัดสรร 900M MTC เป็นไปตามนี้
 
-```mermaid
-pie title MTC Allocation (900M)
-    "Mining Pool" : 61
-    "การดำเนินงานระบบนิเวศ" : 39
-```
+<div className="mtc-alloc">
+  <div className="mtc-alloc__donut" role="img" aria-label="MTC Allocation: Mining Pool 61%, การดำเนินงานระบบนิเวศ 39%">
+    <div className="mtc-alloc__hole">
+      <span className="mtc-alloc__total">900M</span>
+      <span className="mtc-alloc__unit">MTC</span>
+    </div>
+  </div>
+  <div className="mtc-alloc__legend">
+    <div className="mtc-alloc__row mtc-alloc__row--mining">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">61%</span>
+      <span className="mtc-alloc__amount">⛏️ 550M MTC</span>
+    </div>
+    <div className="mtc-alloc__row mtc-alloc__row--ecosystem">
+      <span className="mtc-alloc__dot"></span>
+      <span className="mtc-alloc__pct">39%</span>
+      <span className="mtc-alloc__amount">🌐 350M MTC</span>
+    </div>
+  </div>
+</div>
 
 | หมวด | สัดส่วน | จำนวน | การใช้ |
 | :--- | :---: | :--- | :--- |

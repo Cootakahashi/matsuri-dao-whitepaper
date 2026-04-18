@@ -73,6 +73,37 @@ function HomepageHero() {
             Matsuri Web App
           </Link>
         </div>
+        <div className="hero__apps">
+          <p className="hero__apps-label">Get the apps on iPhone</p>
+          <div className="hero__apps-grid">
+            <a
+              className="hero__app"
+              href="https://apps.apple.com/jp/app/gcf/id6761515025"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download GCF on the App Store"
+            >
+              <span className="hero__app-icon">🛡️</span>
+              <span className="hero__app-text">
+                <span className="hero__app-name">GCF</span>
+                <span className="hero__app-sub">Download on the App Store</span>
+              </span>
+            </a>
+            <a
+              className="hero__app"
+              href="https://apps.apple.com/jp/app/j-times/id6761513732"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download J-Times on the App Store"
+            >
+              <span className="hero__app-icon">📰</span>
+              <span className="hero__app-text">
+                <span className="hero__app-name">J-Times</span>
+                <span className="hero__app-sub">Download on the App Store</span>
+              </span>
+            </a>
+          </div>
+        </div>
         <LanguageSelector />
       </div>
     </header>
