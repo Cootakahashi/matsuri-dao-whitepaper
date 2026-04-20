@@ -1,4 +1,8 @@
 {
+  "homepage.hero.tagline": {
+    "message": "ယဉ်ကျေးမှုကို ကာကွယ်ပါ။ ပြိုင်ဆိုင်မှု Web2 မှ ပူးပေါင်းဖန်တီးမှု Web3 သို့။",
+    "description": "The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3."
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"

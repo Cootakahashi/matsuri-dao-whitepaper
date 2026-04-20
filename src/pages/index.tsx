@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
+import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -15,10 +16,12 @@ const languages = [
   {code: 'fil', label: 'Filipino', flag: '🇵🇭'},
   {code: 'fr', label: 'Français', flag: '🇫🇷'},
   {code: 'es', label: 'Español', flag: '🇪🇸'},
+  {code: 'it', label: 'Italiano', flag: '🇮🇹'},
   {code: 'nb', label: 'Norsk', flag: '🇳🇴'},
   {code: 'ar', label: 'العربية', flag: '🇸🇦'},
   {code: 'hr', label: 'Hrvatski', flag: '🇭🇷'},
   {code: 'da', label: 'Dansk', flag: '🇩🇰'},
+  {code: 'hi', label: 'हिन्दी', flag: '🇮🇳'},
 ];
 
 function LanguageSelector() {
@@ -61,7 +64,13 @@ function HomepageHero() {
         <Heading as="h1" className="hero__title--matsuri">
           {siteConfig.title}
         </Heading>
-        <p className="hero__tagline">{siteConfig.tagline}</p>
+        <p className="hero__tagline">
+          <Translate
+            id="homepage.hero.tagline"
+            description="The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3.">
+            {'Protect Culture. From competitive Web2 to collaborative Web3.'}
+          </Translate>
+        </p>
         <div className="hero__actions">
           <Link className="button button--primary button--lg" to="/docs/intro">
             Read the Whitepaper
@@ -129,7 +138,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Whitepaper"
-      description="Matsuri Coin (MTC) — The Currency of Culture. A decentralized utility token built on Solana, designed to preserve Japanese culture through the global Web3 economy."
+      description="Matsuri Coin (MTC) — Protect Culture. From competitive Web2 to collaborative Web3. A decentralized utility token built on Solana, designed to preserve Japanese culture through the global Web3 economy."
     >
       <HomepageHero />
       <main>

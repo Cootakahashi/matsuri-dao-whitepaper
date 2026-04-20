@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Matsuri Coin',
-  tagline: 'The Currency of Culture',
+  tagline: 'Protect Culture. From competitive Web2 to collaborative Web3.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -50,7 +50,7 @@ const config: Config = {
   // Internationalization: 10 languages
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko', 'my', 'fil', 'hr', 'da'],
+    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko', 'my', 'fil', 'hr', 'da', 'hi', 'it'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },
       ja: { label: '日本語', direction: 'ltr' },
@@ -65,6 +65,8 @@ const config: Config = {
       fil: { label: 'Filipino', direction: 'ltr' },
       hr: { label: 'Hrvatski', direction: 'ltr' },
       da: { label: 'Dansk', direction: 'ltr' },
+      hi: { label: 'हिन्दी', direction: 'ltr' },
+      it: { label: 'Italiano', direction: 'ltr' },
     },
   },
 

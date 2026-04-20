@@ -1,4 +1,8 @@
 {
+  "homepage.hero.tagline": {
+    "message": "احمِ الثقافة. من Web2 التنافسي إلى Web3 التشاركي.",
+    "description": "The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3."
+  },
   "theme.ErrorPageContent.title": {
     "message": "هذه الصفحة لا تستجيب.",
     "description": "The title of the fallback page when the page crashed"

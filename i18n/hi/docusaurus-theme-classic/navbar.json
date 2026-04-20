@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Matsuri Coin",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "MTC लोगो",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Whitepaper": {
+    "message": "श्वेतपत्र",
+    "description": "Navbar item with label Whitepaper"
+  }
+}

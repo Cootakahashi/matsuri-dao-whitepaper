@@ -1,4 +1,8 @@
 {
+  "homepage.hero.tagline": {
+    "message": "Beskytt kulturen. Fra konkurrerende Web2 til samskapende Web3.",
+    "description": "The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3."
+  },
   "theme.ErrorPageContent.title": {
     "message": "Denne siden krasjet.",
     "description": "The title of the fallback page when the page crashed"

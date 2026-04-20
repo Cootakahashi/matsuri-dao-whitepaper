@@ -1,4 +1,8 @@
 {
+  "homepage.hero.tagline": {
+    "message": "문화를 지키다. 경쟁의 Web2에서 공창의 Web3로.",
+    "description": "The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3."
+  },
   "theme.ErrorPageContent.title": {
     "message": "페이지에 오류가 발생하였습니다.",
     "description": "The title of the fallback page when the page crashed"

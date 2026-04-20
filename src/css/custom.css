@@ -177,6 +177,12 @@ html {
   overflow: hidden;
 }
 
+@media screen and (min-width: 769px) {
+  .hero--matsuri {
+    padding: 5rem 0 3rem;
+  }
+}
+
 [data-theme='light'] .hero--matsuri {
   background: radial-gradient(ellipse at 50% 30%, rgba(124, 58, 237, 0.08) 0%, transparent 70%),
               linear-gradient(180deg, #faf5ff 0%, #f5f3ff 100%);
@@ -203,11 +209,10 @@ html {
 }
 
 .hero__logo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 2rem;
+  width: 220px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1.75rem;
   box-shadow:
     0 0 30px rgba(124, 58, 237, 0.3),
     0 0 60px rgba(124, 58, 237, 0.15),
@@ -1837,8 +1842,8 @@ html {
 /* --- Small Tablet / Large Phone (≤ 768px) --- */
 @media screen and (max-width: 768px) {
   .hero__logo {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: auto;
   }
 
   .hero__title--matsuri {
@@ -1894,7 +1899,7 @@ html {
 /* --- Phone (≤ 600px) --- */
 @media screen and (max-width: 600px) {
   .hero--matsuri { min-height: 80vh; }
-  .hero__logo { width: 100px; height: 100px; margin-bottom: 1.5rem; }
+  .hero__logo { width: 130px; height: auto; margin-bottom: 1.25rem; }
   .hero__title--matsuri { font-size: 2rem; }
   .hero__tagline { font-size: 0.85rem; letter-spacing: 0.08em; margin-bottom: 2rem; }
 
@@ -1924,7 +1929,7 @@ html {
 /* --- Small Phone (≤ 480px) --- */
 @media screen and (max-width: 480px) {
   .hero--matsuri { min-height: 75vh; padding: 2rem 0; }
-  .hero__logo { width: 88px; height: 88px; margin-bottom: 1.25rem; }
+  .hero__logo { width: 110px; height: auto; margin-bottom: 1rem; }
   .hero__title--matsuri { font-size: 1.7rem; }
   .hero__tagline { font-size: 0.8rem; letter-spacing: 0.06em; margin-bottom: 1.5rem; }
 
@@ -1963,7 +1968,7 @@ html {
 /* --- Landscape Phone --- */
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .hero--matsuri { min-height: auto; padding: 3rem 0; }
-  .hero__logo { width: 80px; height: 80px; margin-bottom: 1rem; }
+  .hero__logo { width: 100px; height: auto; margin-bottom: 0.75rem; }
 }
 
 /* ===== Mobile Navbar Sidebar ===== */
