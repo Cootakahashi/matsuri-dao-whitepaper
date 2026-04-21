@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **主题:构建基础,确立现金流**
 
-Web 平台已上线。iOS 应用(Matsuri、J-Times)计划于 2026 年 4 月发布。由 CEO 直接统筹的金融体系聚焦于变现与初期流动性的保障。
+Web 平台已上线,三款 iOS 应用(GCF Admin、J-Times、Matsuri)均已在 App Store 上线(截至 2026 年 4 月)。由 CEO 直接统筹的金融体系聚焦于变现与初期流动性的保障。
 
 | 状态 | 里程碑 | 详情 |
 | :---: | :--- | :--- |

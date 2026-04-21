@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Theme: အခြေခံ တည်ဆောက်ခြင်းနှင့် cash flow ထူထောင်ခြင်း**
 
-Web platform လည်ပတ်နေ။ iOS အက်ပ် (Matsuri・J-Times) သည် 2026 ဧပြီ ထုတ်မည်။ CEO တိုက်ရိုက် ကြီးကြပ်သော ငွေကြေးစနစ်ဖြင့် ဝင်ငွေရရှိမှုနှင့် အစပိုင်း liquidity ကို အာရုံစိုက်။
+Web platform လည်ပတ်နေ။ iOS အက်ပ် သုံးခုလုံး (GCF Admin・J-Times・Matsuri) သည် App Store တွင် ရရှိနိုင်ပြီ (2026 ဧပြီ အထိ)။ CEO တိုက်ရိုက် ကြီးကြပ်သော ငွေကြေးစနစ်ဖြင့် ဝင်ငွေရရှိမှုနှင့် အစပိုင်း liquidity ကို အာရုံစိုက်။
 
 | အခြေအနေ | Milestone | အသေးစိတ် |
 | :---: | :--- | :--- |

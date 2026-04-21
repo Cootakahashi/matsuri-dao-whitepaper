@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Theme: Pagtatayo ng pundasyon at pagtatatag ng cash flow**
 
-Gumagana na ang web platform. Ang iOS app (Matsuri, J-Times) ay ilalabas sa Abril 2026. Pokus sa pagkikita at paghahangad ng initial liquidity sa pamamagitan ng financial system na direktang pinamamahalaan ng CEO.
+Gumagana na ang web platform, at ang tatlong iOS app (GCF Admin, J-Times, Matsuri) ay live na sa App Store (Abril 2026). Pokus sa pagkikita at paghahangad ng initial liquidity sa pamamagitan ng financial system na direktang pinamamahalaan ng CEO.
 
 | Status | Milestone | Detalye |
 | :---: | :--- | :--- |

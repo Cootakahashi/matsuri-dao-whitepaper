@@ -22,7 +22,7 @@ Web aplikacija i admin ploča **u produkciji su**. Tri native iOS aplikacije su 
 | Aplikacija | Namjena | Status | Jezici |
 | :--- | :--- | :---: | :--- |
 | **GCF Admin** | Upravljanje partnerima / alat za pogon | ✅ Objavljena | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
-| **Matsuri** | Glavna aplikacija za obične korisnike | 🔜 Travanj 2026. | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
+| **Matsuri** | Glavna aplikacija za obične korisnike | ✅ Objavljena | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
 | **J-Times** | Kulturni medij i učenje | 🔜 Travanj 2026. | 🇯🇵🇬🇧 |
 
 ```mermaid
@@ -101,9 +101,15 @@ U GCF Adminu mogu se generirati prilagođeni QR kodovi s Matsuri logotipom. Kori
 
 ## 2. ⛩️ Matsuri — glavna aplikacija
 
-:::info Status: krajem travnja 2026. (v3.0)
-Glavna aplikacija za obične korisnike. Rezervacija eventa, plaćanje, Web3 wallet, AR mining — sve u jednoj aplikaciji.
+:::info Status: objavljena u App Storeu (v3.0)
+Glavna aplikacija za obične korisnike. Rezervacija eventa, plaćanje, Web3 wallet, AR mining — sve u jednoj aplikaciji. **Sada dostupna u App Storeu.**
 :::
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Pogledaj Matsuri u App Storeu" className="app-store-badge">
+    <img src={useBaseUrl('/img/apple-store/matsuri-pc.webp')} alt="Matsuri on the App Store" style={{maxWidth: '900px', width: '100%', borderRadius: '14px', boxShadow: '0 14px 44px rgba(0,0,0,0.22)', border: '1px solid rgba(167,139,250,0.18)'}} />
+  </a>
+</div>
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
   <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri početni ekran" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />

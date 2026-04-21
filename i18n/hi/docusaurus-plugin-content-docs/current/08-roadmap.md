@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **विषय : नींव और नगदी प्रवाह**
 
-Web platform live है। iOS ऐप्स (Matsuri, J-Times) अप्रैल 2026 में release के लिए निर्धारित हैं। हम CEO-के-नेतृत्व में वित्तीय प्रणाली के ज़रिए monetization और शुरुआती liquidity सुरक्षित करने पर केंद्रित हैं।
+Web platform live है, और तीनों iOS ऐप्स (GCF Admin, J-Times, Matsuri) अब App Store पर उपलब्ध हैं (अप्रैल 2026 तक)। हम CEO-के-नेतृत्व में वित्तीय प्रणाली के ज़रिए monetization और शुरुआती liquidity सुरक्षित करने पर केंद्रित हैं।
 
 | स्थिति | Milestone | विवरण |
 | :---: | :--- | :--- |

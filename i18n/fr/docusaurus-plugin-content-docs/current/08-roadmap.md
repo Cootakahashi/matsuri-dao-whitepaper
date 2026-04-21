@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Thème : consolider la base et le flux de trésorerie**
 
-La plateforme web est opérationnelle. Les apps iOS (Matsuri et J-Times) sortent en avril 2026. Concentration sur la monétisation et la liquidité initiale dans le cadre du système financier supervisé par le CEO.
+La plateforme web est opérationnelle et les trois apps iOS (GCF Admin, J-Times et Matsuri) sont désormais disponibles sur l'App Store (avril 2026). Concentration sur la monétisation et la liquidité initiale dans le cadre du système financier supervisé par le CEO.
 
 | Statut | Jalon | Détail |
 | :---: | :--- | :--- |

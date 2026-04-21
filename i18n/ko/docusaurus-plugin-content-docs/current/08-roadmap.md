@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **테마: 기반 구축과 캐시플로우의 확립**
 
-웹 플랫폼은 가동 중. iOS 앱(Matsuri·J-Times)은 2026년 4월 출시 예정. CEO 직할의 금융 시스템에 의한 수익화와 초기 유동성의 확보에 집중합니다.
+웹 플랫폼은 가동 중이며, 세 개의 iOS 앱(GCF Admin·J-Times·Matsuri) 모두 App Store에 출시되었습니다(2026년 4월 시점). CEO 직할의 금융 시스템에 의한 수익화와 초기 유동성의 확보에 집중합니다.
 
 | 상태 | 마일스톤 | 상세 |
 | :---: | :--- | :--- |

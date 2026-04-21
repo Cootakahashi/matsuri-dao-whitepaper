@@ -22,7 +22,7 @@ La app web y el panel de gestión están **en producción**. Las tres apps iOS n
 | App | Uso | Estado | Idiomas |
 | :--- | :--- | :---: | :--- |
 | **GCF Admin** | Gestión de partners / operaciones | ✅ Lanzada | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
-| **Matsuri** | App principal para usuarios | 🔜 Abril 2026 | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
+| **Matsuri** | App principal para usuarios | ✅ Lanzada | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
 | **J-Times** | Medio cultural y aprendizaje | 🔜 Abril 2026 | 🇯🇵🇬🇧 |
 
 ```mermaid
@@ -101,9 +101,15 @@ GCF Admin permite generar QR personalizados con el logo Matsuri. Ideal para invi
 
 ## 2. ⛩️ Matsuri — app principal
 
-:::info Estado: lanzamiento previsto a finales de abril de 2026 (v3.0)
-App principal para el usuario general. Reserva de eventos, pagos, wallet Web3 y minado AR, todo en una sola app.
+:::info Estado: lanzada en App Store (v3.0)
+App principal para el usuario general. Reserva de eventos, pagos, wallet Web3 y minado AR, todo en una sola app. **Ya disponible en la App Store.**
 :::
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Ver Matsuri en la App Store" className="app-store-badge">
+    <img src={useBaseUrl('/img/apple-store/matsuri-pc.webp')} alt="Matsuri on the App Store" style={{maxWidth: '900px', width: '100%', borderRadius: '14px', boxShadow: '0 14px 44px rgba(0,0,0,0.22)', border: '1px solid rgba(167,139,250,0.18)'}} />
+  </a>
+</div>
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
   <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />

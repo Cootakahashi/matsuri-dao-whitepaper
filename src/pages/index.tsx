@@ -87,6 +87,19 @@ function HomepageHero() {
           <div className="hero__apps-grid">
             <a
               className="hero__app"
+              href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Matsuri on the App Store"
+            >
+              <span className="hero__app-icon">⛩️</span>
+              <span className="hero__app-text">
+                <span className="hero__app-name">Matsuri</span>
+                <span className="hero__app-sub">Download on the App Store</span>
+              </span>
+            </a>
+            <a
+              className="hero__app"
               href="https://apps.apple.com/jp/app/gcf/id6761515025"
               target="_blank"
               rel="noopener noreferrer"

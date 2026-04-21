@@ -22,7 +22,7 @@ The web app and admin dashboard are **in production**. Three native iOS apps hav
 | App | Purpose | Status | Supported languages |
 | :--- | :--- | :---: | :--- |
 | **GCF Admin** | Partner management and operational tooling | ✅ Released | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
-| **Matsuri** | Main consumer app | 🔜 Early May 2026 | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
+| **Matsuri** | Main consumer app | ✅ Released | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
 | **J-Times** | Culture media and learning | ✅ Released | 🇯🇵🇬🇧 |
 
 ```mermaid
@@ -101,9 +101,15 @@ GCF Admin can generate Matsuri-branded custom QR codes. Versatile use cases — 
 
 ## 2. ⛩️ Matsuri — main app
 
-:::info Status: scheduled for release in early May 2026 (v3.0)
-The main app for regular users. Event booking, payment, Web3 wallet, AR mining — everything completes in a single app.
+:::info Status: released on the App Store (v3.0)
+The main app for regular users. Event booking, payment, Web3 wallet, AR mining — everything completes in a single app. **Now live on the App Store.**
 :::
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="View Matsuri on the App Store" className="app-store-badge">
+    <img src={useBaseUrl('/img/apple-store/matsuri-pc.webp')} alt="Matsuri on the App Store" style={{maxWidth: '900px', width: '100%', borderRadius: '14px', boxShadow: '0 14px 44px rgba(0,0,0,0.22)', border: '1px solid rgba(167,139,250,0.18)'}} />
+  </a>
+</div>
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
   <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri home screen" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />

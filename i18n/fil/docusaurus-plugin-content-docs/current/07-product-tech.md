@@ -22,7 +22,7 @@ Ang web app at management dashboard ay **nasa production operation**. Ang tatlon
 | App | Paggamit | Status | Suportadong Wika |
 | :--- | :--- | :---: | :--- |
 | **GCF Admin** | Partner management · operation tool | ✅ Released | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
-| **Matsuri** | Main app para sa pangkalahatang user | 🔜 Abril 2026 release | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
+| **Matsuri** | Main app para sa pangkalahatang user | ✅ Released | 🇯🇵🇬🇧🇨🇳🇹🇭🇳🇴 |
 | **J-Times** | Culture media at pag-aaral | 🔜 Abril 2026 release | 🇯🇵🇬🇧 |
 
 ```mermaid
@@ -101,9 +101,15 @@ Sa GCF Admin, maaaring gumawa ng custom QR code na may Matsuri logo. Supportado 
 
 ## 2. ⛩️ Matsuri — Main App
 
-:::info Status: Ilalabas sa huling bahagi ng Abril 2026 (v3.0)
-Main app para sa pangkalahatang user. Event booking, pagbabayad, Web3 wallet, AR mining — lahat sa isang app.
+:::info Status: Released na sa App Store (v3.0)
+Main app para sa pangkalahatang user. Event booking, pagbabayad, Web3 wallet, AR mining — lahat sa isang app. **Live na sa App Store.**
 :::
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Tingnan ang Matsuri sa App Store" className="app-store-badge">
+    <img src={useBaseUrl('/img/apple-store/matsuri-pc.webp')} alt="Matsuri on the App Store" style={{maxWidth: '900px', width: '100%', borderRadius: '14px', boxShadow: '0 14px 44px rgba(0,0,0,0.22)', border: '1px solid rgba(167,139,250,0.18)'}} />
+  </a>
+</div>
 
 <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
   <img src={useBaseUrl("/img/apps/matsuri-home.webp")} alt="Matsuri Home" style={{width: '100%', maxWidth: '200px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)'}} />

@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **テーマ：基盤構築とキャッシュフローの確立**
 
-Webプラットフォームは稼働中。iOSアプリ（Matsuri・J-Times）は2026年4月リリース予定。CEO直轄の金融システムによる収益化と初期流動性の確保に集中します。
+Webプラットフォームは稼働中。iOSアプリ（GCF Admin・J-Times・Matsuri）は全て App Store にて配信開始しました（2026年4月時点）。CEO直轄の金融システムによる収益化と初期流動性の確保に集中します。
 
 | 状態 | マイルストーン | 詳細 |
 | :---: | :--- | :--- |

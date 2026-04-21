@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Tema: Gradnja temelja i uspostava priljeva gotovine**
 
-Web platforma je u pogonu. iOS aplikacije (Matsuri, J-Times) izlaze u travnju 2026. Fokusiramo se na monetizaciju i ranu likvidnost preko financijskog sustava pod direktnom ovlasti CEO-a.
+Web platforma je u pogonu, a sve tri iOS aplikacije (GCF Admin, J-Times, Matsuri) sada su dostupne u App Storeu (travanj 2026.). Fokusiramo se na monetizaciju i ranu likvidnost preko financijskog sustava pod direktnom ovlasti CEO-a.
 
 | Status | Miljokaz | Detalji |
 | :---: | :--- | :--- |

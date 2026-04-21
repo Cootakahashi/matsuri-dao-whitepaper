@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Tema: Grunnbygging og etablering av kontantstrøm**
 
-Webplattformen kjører. iOS-apper (Matsuri, J-Times) utgis april 2026. Vi fokuserer på inntjening og tidlig likviditet via et finanssystem direkte under CEO.
+Webplattformen kjører, og alle tre iOS-appene (GCF Admin, J-Times, Matsuri) er nå tilgjengelige i App Store (april 2026). Vi fokuserer på inntjening og tidlig likviditet via et finanssystem direkte under CEO.
 
 | Status | Milepæl | Detaljer |
 | :---: | :--- | :--- |

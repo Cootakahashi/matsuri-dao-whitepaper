@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Tema: fondamenta e cash flow**
 
-La piattaforma web è attiva. Le app iOS (Matsuri, J-Times) sono previste in uscita ad aprile 2026. Ci concentriamo sulla monetizzazione attraverso un sistema finanziario guidato dal CEO e sull'assicurare la liquidità iniziale.
+La piattaforma web è attiva e tutte e tre le app iOS (GCF Admin, J-Times, Matsuri) sono ora disponibili sull'App Store (aprile 2026). Ci concentriamo sulla monetizzazione attraverso un sistema finanziario guidato dal CEO e sull'assicurare la liquidità iniziale.
 
 | Stato | Milestone | Dettaglio |
 | :---: | :--- | :--- |
