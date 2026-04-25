@@ -50,7 +50,7 @@ const config: Config = {
   // Internationalization: 10 languages
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko', 'my', 'fil', 'hr', 'da', 'hi', 'it'],
+    locales: ['en', 'ja', 'zh-Hans', 'fr', 'nb', 'ar', 'es', 'th', 'ko', 'my', 'fil', 'hr', 'da', 'hi', 'it', 'de', 'vi', 'ne', 'id', 'ms'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },
       ja: { label: '日本語', direction: 'ltr' },
@@ -67,6 +67,11 @@ const config: Config = {
       da: { label: 'Dansk', direction: 'ltr' },
       hi: { label: 'हिन्दी', direction: 'ltr' },
       it: { label: 'Italiano', direction: 'ltr' },
+      de: { label: 'Deutsch', direction: 'ltr' },
+      vi: { label: 'Tiếng Việt', direction: 'ltr' },
+      ne: { label: 'नेपाली', direction: 'ltr' },
+      id: { label: 'Bahasa Indonesia', direction: 'ltr' },
+      ms: { label: 'Bahasa Melayu', direction: 'ltr' },
     },
   },
 
