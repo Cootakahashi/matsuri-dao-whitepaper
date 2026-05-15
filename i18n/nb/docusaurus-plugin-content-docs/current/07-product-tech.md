@@ -509,7 +509,3 @@ Kontraktene er **helt åpen kildekode**. Sikkerheten hviler ikke på uklarhet, m
 | **Uforanderlig tokenomics** | Halveringsrate, total pool, epokelengde er låst etter oppsett |
 | **Rene matematikkmoduler** | Belønnings-/scoring-logikk er isolert, testbart matematikkbibliotek |
 | **Vision Proof** | 5 lag mot juks – uten å sende kameradata (personvern) |
-
----
-
-**[▶ Neste: Veikart og team](/docs/roadmap)**｜**[◀ Forrige: Tokenomics](/docs/tokenomics)**

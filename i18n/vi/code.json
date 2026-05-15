@@ -2,5 +2,13 @@
   "homepage.hero.tagline": {
     "message": "Bảo vệ văn hóa. Từ Web2 cạnh tranh đến Web3 cộng tạo.",
     "description": "The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3."
+  },
+  "homepage.hero.cta.whitepaper": {
+    "message": "Đọc Whitepaper",
+    "description": "Primary CTA button on the homepage hero — opens the whitepaper"
+  },
+  "homepage.hero.cta.webapp": {
+    "message": "Ứng dụng web Matsuri",
+    "description": "Secondary CTA button on the homepage hero — opens the Matsuri web app"
   }
 }

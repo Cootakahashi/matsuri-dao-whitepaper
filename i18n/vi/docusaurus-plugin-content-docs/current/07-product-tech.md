@@ -509,7 +509,3 @@ Các contract này **hoàn toàn nguồn mở.** Bảo mật dựa trên các đ
 | **Tokenomics bất biến** | Tỷ lệ halving, tổng pool và độ dài epoch không thể thay đổi sau cấu hình ban đầu |
 | **Module math thuần** | Logic phần thưởng/chấm điểm sống trong thư viện math riêng, có thể test |
 | **Vision Proof** | Phát hiện giả mạo 5 lớp không bao giờ truyền dữ liệu camera (giữ quyền riêng tư) |
-
----
-
-**[▶ Tiếp: Lộ trình & đội ngũ](/docs/roadmap)** | **[◀ Trước: Tokenomics](/docs/tokenomics)**

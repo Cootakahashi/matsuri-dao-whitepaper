@@ -509,7 +509,3 @@ Los contratos son **totalmente open source**. La seguridad no se apoya en oscuri
 | **Tokenomics inmutable** | Ratio de halving, pool total y duración de época no cambian tras la configuración inicial |
 | **Módulo matemático puro** | Lógica de recompensa/score en una librería matemática aislada y testeable |
 | **Vision Proof** | Detección de spoofing en 5 capas sin enviar datos de cámara (privacidad) |
-
----
-
-**[▶ Siguiente: Hoja de ruta y equipo](/docs/roadmap)**｜**[◀ Anterior: Tokenomics](/docs/tokenomics)**

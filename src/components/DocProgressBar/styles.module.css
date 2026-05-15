@@ -1,0 +1,76 @@
+.docProgress {
+  position: sticky;
+  top: var(--ifm-navbar-height, 60px);
+  z-index: 100;
+  background: var(--ifm-background-color);
+  padding: 0.65rem 0 0.85rem;
+  margin: 0 0 2rem;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.08);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+}
+
+[data-theme='dark'] .docProgress {
+  background: rgba(10, 10, 15, 0.85);
+}
+
+[data-theme='light'] .docProgress {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.docProgress__bar {
+  height: 3px;
+  background: rgba(167, 139, 250, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 0.55rem;
+}
+
+.docProgress__fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--ifm-color-primary) 0%,
+    var(--mtc-gold) 100%
+  );
+  border-radius: inherit;
+  transition: width 0.12s ease-out;
+  box-shadow: 0 0 14px rgba(167, 139, 250, 0.45);
+}
+
+.docProgress__meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-600);
+  opacity: 0.85;
+}
+
+.docProgress__chapter {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.18em;
+  font-weight: 700;
+}
+
+.docProgress__chapterNum {
+  color: var(--mtc-gold);
+  font-size: 1.05em;
+}
+
+.docProgress__chapterSep {
+  opacity: 0.35;
+}
+
+.docProgress__chapterTotal {
+  opacity: 0.55;
+}
+
+.docProgress__chapterLabel {
+  font-weight: 500;
+}

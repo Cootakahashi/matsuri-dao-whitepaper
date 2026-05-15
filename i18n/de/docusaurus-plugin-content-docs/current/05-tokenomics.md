@@ -122,8 +122,7 @@ Die MTC-Wirtschaft ist noch jung, doch reale Aktivität hat bereits begonnen.
 | Kennzahl | Status |
 | :--- | :--- |
 | **Veranstaltete Events** | 50+ (Testbetrieb) |
-| **GCF Platinum-Mitglieder** | 20 von 50 Plätzen besetzt |
-| **GCF Gold-Mitglieder** | Rekrutierung beginnt in Kürze |
+| **GCF-Community** | Onboarding läuft |
 | **Web-Plattform** | Live, gewinnt und bedient derzeit Test-Nutzer:innen |
 | **iOS-Apps** | Entwicklung abgeschlossen, geplante Veröffentlichung April 2026 |
 
@@ -141,7 +140,6 @@ Ein fester Prozentsatz der Geschäftseinnahmen ist dafür reserviert, **MTC am M
 | Erlösquelle | Zuteilung | Maßnahme |
 | :--- | :---: | :--- |
 | **Matsuri-HQ-Einnahmen** (Guides, Events) | **20 %** | **Buyback** vom Markt + Aufstockung des Liquiditätspools |
-| **GCF-Mitgliedschaft** (Mitgliedsbeiträge) | **25 %** | **Buyback** vom Markt |
 
 :::info Buyback-Status heute
 Das Buyback-Protokoll **nimmt den Betrieb auf**, sobald die Geschäftseinnahmen anziehen. Anfangs läuft es off-chain (manuell); ab Ende 2026 wandert es schrittweise zur automatischen Ausführung per Smart Contract. Sobald on-chain, ist die vollständige Ausführungshistorie der Buybacks für jede Person auf der Blockchain nachprüfbar.

@@ -377,7 +377,3 @@ graph LR
 
 链下阶段的奖励同样可以被核验——所有交易都包含作为支付证明的 `solana_signature`。
 :::
-
----
-
-**[▶ 下一页:代币经济](/docs/tokenomics)** ｜ **[◀ 上一页:生态系统](/docs/ecosystem)**

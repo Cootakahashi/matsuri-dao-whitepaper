@@ -377,7 +377,3 @@ Situation actuelle :
 
 Les récompenses de la période off-chain sont également vérifiables : chaque transaction inclut une `solana_signature` comme preuve de paiement.
 :::
-
----
-
-**[▶ Suivant : Tokenomics](/docs/tokenomics)** ｜ **[◀ Précédent : Écosystème](/docs/ecosystem)**

@@ -509,7 +509,3 @@ Kontrak ini **sepenuhnya open source.** Keamanan didasarkan pada jaminan matemat
 | **Tokenomics tak berubah** | Tingkat halving, total pool, dan panjang epoch tak bisa diubah setelah konfigurasi awal |
 | **Modul math murni** | Logika imbalan/skoring berada di pustaka math terpisah yang dapat di-test |
 | **Vision Proof** | Deteksi spoof 5 lapis yang tak pernah mentransmisikan data kamera (menjaga privasi) |
-
----
-
-**[▶ Berikutnya: Roadmap & tim](/docs/roadmap)** | **[◀ Sebelumnya: Tokenomics](/docs/tokenomics)**

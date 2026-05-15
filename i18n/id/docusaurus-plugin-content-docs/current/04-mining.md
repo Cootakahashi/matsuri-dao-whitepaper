@@ -377,7 +377,3 @@ Status saat ini:
 
 Imbalan yang dihasilkan dalam periode off-chain tetap dapat diverifikasi — setiap transaksi mencakup `solana_signature` sebagai bukti settlement.
 :::
-
----
-
-**[▶ Berikutnya: Tokenomics](/docs/tokenomics)** | **[◀ Sebelumnya: Ekosistem](/docs/ecosystem)**

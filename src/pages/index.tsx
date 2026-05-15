@@ -51,8 +51,18 @@ function LanguageSelector() {
   );
 }
 
+const WEBAPP_LOCALE_MAP: Record<string, string> = {
+  en: 'en',
+  ja: 'ja',
+  'zh-Hans': 'zh',
+  nb: 'no',
+  th: 'th',
+};
+
 function HomepageHero() {
-  const {siteConfig} = useDocusaurusContext();
+  const {siteConfig, i18n} = useDocusaurusContext();
+  const webappLang = WEBAPP_LOCALE_MAP[i18n.currentLocale] ?? 'en';
+  const webappHref = `https://matsuri.group/${webappLang}`;
   return (
     <header className="hero--matsuri">
       <div className="container" style={{textAlign: 'center', position: 'relative', zIndex: 1}}>
@@ -73,13 +83,21 @@ function HomepageHero() {
         </p>
         <div className="hero__actions">
           <Link className="button button--primary button--lg" to="/docs/intro">
-            Read the Whitepaper
+            <Translate
+              id="homepage.hero.cta.whitepaper"
+              description="Primary CTA button on the homepage hero — opens the whitepaper">
+              {'Read the Whitepaper'}
+            </Translate>
           </Link>
           <Link
             className="button button--outline button--lg"
-            href="https://matsuri.group/en"
+            href={webappHref}
           >
-            Matsuri Web App
+            <Translate
+              id="homepage.hero.cta.webapp"
+              description="Secondary CTA button on the homepage hero — opens the Matsuri web app">
+              {'Matsuri Web App'}
+            </Translate>
           </Link>
         </div>
         <div className="hero__apps">

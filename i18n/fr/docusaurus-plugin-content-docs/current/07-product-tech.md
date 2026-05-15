@@ -509,7 +509,3 @@ Les contrats sont **entièrement open source**. La sécurité ne repose pas sur 
 | **Tokenomics immuable** | Taux de halving, pool total et durée d'époque immuables après le paramétrage initial |
 | **Module math pur** | Logique de récompense/score dans une librairie mathématique isolée et testable |
 | **Vision Proof** | Détection de spoofing en 5 couches sans envoi de données caméra (confidentialité) |
-
----
-
-**[▶ Suivant : Feuille de route et équipe](/docs/roadmap)**｜**[◀ Précédent : Tokenomics](/docs/tokenomics)**

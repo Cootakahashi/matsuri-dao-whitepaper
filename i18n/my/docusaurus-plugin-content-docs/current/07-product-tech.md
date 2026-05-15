@@ -509,7 +509,3 @@ Program အားလုံးသည် scoring・ဆု တွက်ချက်
 | **ပြုပြင်၍မရသော tokenomics** | ထက်ဝက်နှုန်း・စုစုပေါင်း pool・epoch ကာလ အစပိုင်း ချိန်ညှိပြီးနောက် ပြောင်းလဲ၍ မရ |
 | **Pure math module** | ဆု/score logic သည် ခွဲခြား test လုပ်နိုင်သော math library |
 | **Vision Proof** | Camera data မပို့ခြင်း layer ၅ ခု အတု တွေ့ရှိမှု (ကိုယ်ရေးကိုယ်တာ ကာကွယ်) |
-
----
-
-**[▶ ရှေ့သို့: Roadmap နှင့် အဖွဲ့](/docs/roadmap)**｜**[◀ နောက်သို့: Tokenomics](/docs/tokenomics)**

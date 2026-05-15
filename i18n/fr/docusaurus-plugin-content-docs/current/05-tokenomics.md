@@ -122,8 +122,7 @@ L'économie MTC en est à ses débuts, mais l'activité réelle a démarré.
 | Indicateur | Résultat |
 | :--- | :--- |
 | **Événements organisés** | Plus de 50 (phase de test) |
-| **Membres GCF Platinum** | 20 intégrés (sur 50) |
-| **Membres GCF Gold** | Ouverture des inscriptions à venir |
+| **Communauté GCF** | Intégration en cours |
 | **Plateforme web** | En marche, avec utilisateurs recrutés à des fins de test |
 | **App iOS** | Développement terminé, sortie prévue en avril 2026 |
 
@@ -141,7 +140,6 @@ Nous allouons un pourcentage déterminé des revenus au rachat de MTC sur le mar
 | Source | Ratio | Action |
 | :--- | :---: | :--- |
 | **Ventes Matsuri HQ** (guides / événements) | **20 %** | **Rachat** sur le marché + apport au pool de liquidité |
-| **Adhésion GCF** (cotisations) | **25 %** | **Rachat** sur le marché |
 
 :::info État actuel des rachats
 Le protocole de rachat **entrera en opération** au fur et à mesure que les revenus se consolident. Au début, exécuté off-chain (manuellement) ; à partir de fin 2026, migration progressive vers une exécution automatique par smart contract. Après bascule on-chain, l'historique sera vérifiable par quiconque sur la blockchain.

@@ -377,7 +377,3 @@ Estado actual:
 
 Las recompensas del periodo off-chain también son verificables: toda transacción incluye `solana_signature` como prueba de pago.
 :::
-
----
-
-**[▶ Siguiente: Tokenomics](/docs/tokenomics)** ｜ **[◀ Anterior: Ecosistema](/docs/ecosystem)**

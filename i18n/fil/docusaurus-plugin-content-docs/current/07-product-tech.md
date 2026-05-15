@@ -509,7 +509,3 @@ Ang contract na ito ay **kompletong open source**. Ang seguridad ay hindi base s
 | **Immutable Tokenomics** | Hindi na mababago ang halving rate, total pool, at epoch duration pagkatapos ng initial configuration |
 | **Pure Math Modules** | Ang reward/score logic ay nasa separated at testable na math library |
 | **Vision Proof** | 5-layer spoofing detection nang hindi ipinapadala ang camera data (privacy protection) |
-
----
-
-**[▶ Susunod: Roadmap at Team](/docs/roadmap)**｜**[◀ Nakaraan: Tokenomics](/docs/tokenomics)**

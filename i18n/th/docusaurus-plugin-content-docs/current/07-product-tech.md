@@ -509,7 +509,3 @@ sequenceDiagram
 | **Tokenomics ไม่เปลี่ยน** | อัตรา Halving, พูลรวม, ระยะ Epoch ไม่เปลี่ยนหลังตั้งครั้งแรก |
 | **Pure Math Module** | Logic รางวัล/Score แยกเป็นไลบรารีคณิตศาสตร์ที่ทดสอบได้ |
 | **Vision Proof** | ตรวจการปลอม 5 ชั้นที่ไม่ส่งข้อมูลกล้อง (คุ้มครองความเป็นส่วนตัว) |
-
----
-
-**[▶ ถัดไป: Roadmap & ทีม](/docs/roadmap)** ｜ **[◀ ก่อนหน้า: Tokenomics](/docs/tokenomics)**

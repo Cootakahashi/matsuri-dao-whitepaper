@@ -377,7 +377,3 @@ Status i dag:
 
 Off-chain-belønningerne kan også verificeres — alle transaktioner indeholder `solana_signature` som betalingsbevis.
 :::
-
----
-
-**[▶ Næste: Tokenomics](/docs/tokenomics)** ｜ **[◀ Forrige: Økosystemet](/docs/ecosystem)**

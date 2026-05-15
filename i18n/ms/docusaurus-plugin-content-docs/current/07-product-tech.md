@@ -509,7 +509,3 @@ Kontrak ini **sepenuhnya open source.** Keselamatan berdasarkan jaminan matemati
 | **Tokenomics tak boleh diubah** | Kadar halving, jumlah pool, dan panjang epoch tidak boleh diubah selepas konfigurasi awal |
 | **Modul math tulen** | Logik ganjaran/pemarkahan tinggal dalam pustaka math berasingan yang boleh diuji |
 | **Vision Proof** | Pengesanan spoof 5 lapis yang tidak pernah menghantar data kamera (memelihara privasi) |
-
----
-
-**[▶ Seterusnya: Pelan hala tuju & pasukan](/docs/roadmap)** | **[◀ Sebelum: Tokenomics](/docs/tokenomics)**

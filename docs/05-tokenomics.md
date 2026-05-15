@@ -122,8 +122,7 @@ The MTC economy is still early, but real activity has already begun.
 | Metric | Status |
 | :--- | :--- |
 | **Events hosted** | 50+ (test operation) |
-| **GCF Platinum members** | 20 of 50 seats filled |
-| **GCF Gold members** | Recruitment to open soon |
+| **GCF community** | Onboarding in progress |
 | **Web platform** | Live, currently gathering and serving test users |
 | **iOS apps** | Development complete, scheduled release April 2026 |
 
@@ -141,7 +140,6 @@ A fixed percentage of business revenue is earmarked for **buying MTC back from t
 | Revenue source | Allocation | Action |
 | :--- | :---: | :--- |
 | **Matsuri HQ revenue** (guides, events) | **20%** | **Buyback** from market + liquidity pool additions |
-| **GCF membership** (membership fees) | **25%** | **Buyback** from market |
 
 :::info Buyback status today
 The buyback protocol will **begin operation** as business revenue ramps up. Initially it runs off-chain (manually); it migrates in stages to automatic execution by smart contract from late 2026 onward. Once on-chain, the full execution history of buybacks will be verifiable on the blockchain by anyone.

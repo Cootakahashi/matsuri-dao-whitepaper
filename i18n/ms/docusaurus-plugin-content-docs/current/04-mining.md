@@ -377,7 +377,3 @@ Status semasa:
 
 Ganjaran yang diperoleh dalam tempoh off-chain masih boleh disahkan — setiap transaksi termasuk `solana_signature` sebagai bukti penyelesaian.
 :::
-
----
-
-**[▶ Seterusnya: Tokenomics](/docs/tokenomics)** | **[◀ Sebelum: Ekosistem](/docs/ecosystem)**

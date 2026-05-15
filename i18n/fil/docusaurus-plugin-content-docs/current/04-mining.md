@@ -377,7 +377,3 @@ Kasalukuyang Sitwasyon:
 
 Maaaring i-verify ang reward kahit sa off-chain period — lahat ng transaksyon ay may kasamang `solana_signature` bilang proof of settlement.
 :::
-
----
-
-**[▶ Susunod: Tokenomics](/docs/tokenomics)** ｜ **[◀ Nakaraan: Ecosystem](/docs/ecosystem)**

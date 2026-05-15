@@ -122,8 +122,7 @@ Nasa early stage pa ang MTC economic zone, ngunit nagsimula na ang aktwal na akt
 | Metric | Track Record |
 | :--- | :--- |
 | **Bilang ng events** | Higit 50 beses (test operation) |
-| **GCF Platinum members** | 20 pasok na (sa 50) |
-| **GCF Gold members** | Magsisimula pa lang ang recruitment |
+| **GCF community** | Patuloy ang onboarding |
 | **Web platform** | Gumagana. Test na ginagamit upang makaipon ng user |
 | **iOS app** | Tapos na ang development, ilalabas sa Abril 2026 |
 
@@ -141,7 +140,6 @@ Ang aming patakaran ay gamitin ang fixed na proporsyon ng business revenue para 
 | Revenue Source | Payback Rate | Aksyon |
 | :--- | :---: | :--- |
 | **Matsuri headquarters revenue** (Guide · Event) | **20%** | **Buyback** mula sa merkado at pag-add sa liquidity pool |
-| **GCF Membership** (Membership fee) | **25%** | **Buyback** mula sa merkado |
 
 :::info Kasalukuyang Status ng Buyback
 Ang buyback protocol ay **magsisimula ngayon** alinsunod sa full-scale na kita. Sa umpisa, manu-manong isasagawa sa off-chain, at unti-unting lilipat sa automatic execution sa pamamagitan ng smart contract mula sa huling bahagi ng 2026. Pagkatapos ng on-chain migration, ang history ng buyback execution ay ma-veverify ng kahit sino sa blockchain.

@@ -509,7 +509,3 @@ Diese Contracts sind **vollständig Open Source.** Sicherheit beruht auf mathema
 | **Unveränderliche Tokenomics** | Halving-Rate, Gesamtpool und Epoch-Länge können nach der initialen Konfiguration nicht geändert werden |
 | **Reine Math-Module** | Belohnungs-/Score-Logik liegt in einer separaten, testbaren Math-Bibliothek |
 | **Vision Proof** | 5-schichtige Spoof-Erkennung, die niemals Kameradaten überträgt (datenschutzwahrend) |
-
----
-
-**[▶ Nächste: Roadmap & Team](/docs/roadmap)** | **[◀ Vorherige: Tokenomics](/docs/tokenomics)**

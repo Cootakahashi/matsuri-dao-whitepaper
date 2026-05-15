@@ -377,7 +377,3 @@ Stato attuale:
 
 Le ricompense maturate nel periodo off-chain restano comunque verificabili — ogni transazione include un `solana_signature` come prova del regolamento.
 :::
-
----
-
-**[▶ Successiva: Tokenomics](/docs/tokenomics)** | **[◀ Precedente: Ecosistema](/docs/ecosystem)**

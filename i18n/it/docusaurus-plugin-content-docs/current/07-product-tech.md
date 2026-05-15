@@ -509,7 +509,3 @@ Questi contratti sono **completamente open source.** La sicurezza si basa su gar
 | **Tokenomics immutabile** | Tasso di halving, pool totale e durata delle epoche non possono essere modificati dopo la configurazione iniziale |
 | **Moduli di pura matematica** | La logica di ricompensa/scoring vive in una libreria matematica separata e testabile |
 | **Vision Proof** | Rilevamento dello spoofing a 5 livelli che non trasmette mai i dati della fotocamera (privacy-preserving) |
-
----
-
-**[▶ Successiva: Roadmap e team](/docs/roadmap)** | **[◀ Precedente: Tokenomics](/docs/tokenomics)**

@@ -509,7 +509,3 @@ These contracts are **fully open source.** Security is based on mathematical gua
 | **Immutable tokenomics** | Halving rate, total pool, and epoch length cannot be changed after initial configuration |
 | **Pure math modules** | Reward/scoring logic lives in a separate, testable math library |
 | **Vision Proof** | 5-layer spoof detection that never transmits camera data (privacy-preserving) |
-
----
-
-**[▶ Next: Roadmap & team](/docs/roadmap)** | **[◀ Previous: Tokenomics](/docs/tokenomics)**

@@ -122,8 +122,7 @@ MTC-økonomien er stadig i en tidlig fase, men den reelle aktivitet er allerede 
 | Indikator | Resultat |
 | :--- | :--- |
 | **Afholdte events** | 50+ (testdrift) |
-| **GCF Platinum-medlemmer** | 20 tilmeldt (af 50) |
-| **GCF Gold-medlemmer** | Rekruttering starter nu |
+| **GCF-fællesskab** | Onboarding i gang |
 | **Webplatform** | I drift. Samler testbrugere og kører |
 | **iOS-app** | Udvikling afsluttet, release planlagt april 2026 |
 
@@ -141,7 +140,6 @@ En fast andel af forretningsomsætningen er øremærket til tilbagekøb af MTC p
 | Indtægtskilde | Andel | Handling |
 | :--- | :---: | :--- |
 | **Matsuri HQ omsætning** (guider, events) | **20%** | **Tilbagekøb** på markedet og tilførsel til likviditetspuljen |
-| **GCF-medlemskab** (medlemsgebyrer) | **25%** | **Tilbagekøb** på markedet |
 
 :::info Status for tilbagekøb lige nu
 Tilbagekøbsprotokollen **sættes i drift**, efterhånden som forretningsomsætningen tager fart. I begyndelsen udføres den off-chain (manuelt), og fra anden halvdel af 2026 migreres den trinvist til automatisk smart contract-udførelse. Efter migreringen kan hele historikken verificeres på blockchainen.

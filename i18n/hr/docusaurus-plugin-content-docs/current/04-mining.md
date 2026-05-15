@@ -377,7 +377,3 @@ Trenutačna situacija:
 
 Off-chain nagrade također su provjerljive — sve transakcije sadrže `solana_signature` kao dokaz plaćanja.
 :::
-
----
-
-**[▶ Sljedeće: Tokenomika](/docs/tokenomics)** ｜ **[◀ Prethodno: Ekosustav](/docs/ecosystem)**

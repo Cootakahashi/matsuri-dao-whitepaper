@@ -122,8 +122,7 @@ La economía MTC está aún en su fase inicial, pero ya hay actividad real.
 | Indicador | Resultado |
 | :--- | :--- |
 | **Eventos realizados** | Más de 50 (operación de prueba) |
-| **Miembros GCF Platinum** | 20 incorporados (de 50) |
-| **Miembros GCF Gold** | Próximo inicio de convocatoria |
+| **Comunidad GCF** | Incorporación en curso |
 | **Plataforma web** | En marcha, captando y operando usuarios en pruebas |
 | **App iOS** | Desarrollo completado, lanzamiento previsto en abril de 2026 |
 
@@ -141,7 +140,6 @@ Destinaremos un porcentaje fijo de los ingresos del negocio a la recompra de MTC
 | Fuente | Ratio | Acción |
 | :--- | :---: | :--- |
 | **Ventas de Matsuri HQ** (guías / eventos) | **20 %** | **Recompra** en el mercado + aporte al pool de liquidez |
-| **Membresía GCF** (cuotas) | **25 %** | **Recompra** en el mercado |
 
 :::info Estado actual de la recompra
 El protocolo de recompra **empezará a operar** a medida que se consoliden los ingresos del negocio. Al inicio se ejecutará off-chain (manualmente) y, a partir de finales de 2026, se migrará progresivamente a ejecución automática mediante smart contract. Tras la transición on-chain, el historial de recompras será verificable en la blockchain por cualquiera.

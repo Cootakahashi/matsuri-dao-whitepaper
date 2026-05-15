@@ -509,7 +509,3 @@ Ugovori su **potpuno open source**. Sigurnost ne počiva na nepreglednosti, nego
 | **Nepromjenjiva tokenomika** | Stopa halvinga, ukupni pool, trajanje epohe zaključani su nakon postavljanja |
 | **Čisti matematički moduli** | Logika nagrada/bodovanja je izolirana, testirana matematička biblioteka |
 | **Vision Proof** | 5 slojeva protiv varanja – bez slanja podataka kamere (privatnost) |
-
----
-
-**[▶ Sljedeće: Roadmap i tim](/docs/roadmap)**｜**[◀ Prethodno: Tokenomika](/docs/tokenomics)**

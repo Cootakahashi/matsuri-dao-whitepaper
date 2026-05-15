@@ -509,7 +509,3 @@ Kontrakterne er **fuldt open source**. Sikkerheden hviler ikke på uigennemsigti
 | **Uforanderlig tokenomics** | Halveringsrate, total pulje, epokelængde er låst efter opsætning |
 | **Rene matematikmoduler** | Belønnings-/scoringslogik er isoleret, testbart matematikbibliotek |
 | **Vision Proof** | 5 lag mod snyd – uden at sende kameradata (privatliv) |
-
----
-
-**[▶ Næste: Roadmap og team](/docs/roadmap)**｜**[◀ Forrige: Tokenomics](/docs/tokenomics)**

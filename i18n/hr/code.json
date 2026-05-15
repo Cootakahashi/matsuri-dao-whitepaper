@@ -3,6 +3,14 @@
     "message": "Zaštitimo kulturu. Od kompetitivnog Web2 do suradničkog Web3.",
     "description": "The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3."
   },
+  "homepage.hero.cta.whitepaper": {
+    "message": "Pročitaj bijelu knjigu",
+    "description": "Primary CTA button on the homepage hero — opens the whitepaper"
+  },
+  "homepage.hero.cta.webapp": {
+    "message": "Matsuri web aplikacija",
+    "description": "Secondary CTA button on the homepage hero — opens the Matsuri web app"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"

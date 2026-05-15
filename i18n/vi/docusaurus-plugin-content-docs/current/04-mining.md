@@ -377,7 +377,3 @@ Tình trạng hiện tại:
 
 Phần thưởng kiếm được trong giai đoạn off-chain vẫn có thể kiểm chứng — mỗi giao dịch bao gồm `solana_signature` làm bằng chứng thanh toán.
 :::
-
----
-
-**[▶ Tiếp: Tokenomics](/docs/tokenomics)** | **[◀ Trước: Hệ sinh thái](/docs/ecosystem)**

@@ -377,7 +377,3 @@ graph LR
 
 รางวัลช่วง off-chain ก็ตรวจสอบได้ — ทุกธุรกรรมมี `solana_signature` เป็นหลักฐานการชำระเงิน
 :::
-
----
-
-**[▶ ถัดไป: Tokenomics](/docs/tokenomics)** ｜ **[◀ ก่อนหน้า: Ecosystem](/docs/ecosystem)**

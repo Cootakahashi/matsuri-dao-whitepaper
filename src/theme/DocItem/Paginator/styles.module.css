@@ -1,0 +1,135 @@
+.paginator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 3rem 0 1rem;
+}
+
+@media (max-width: 640px) {
+  .paginator {
+    grid-template-columns: 1fr;
+  }
+}
+
+.placeholder {
+  display: none;
+}
+
+@media (min-width: 641px) {
+  .placeholder {
+    display: block;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1.1rem 1.35rem;
+  border-radius: 16px;
+  border: 1px solid rgba(167, 139, 250, 0.18);
+  background: linear-gradient(
+    180deg,
+    rgba(167, 139, 250, 0.04) 0%,
+    rgba(167, 139, 250, 0.015) 100%
+  );
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease,
+    background 0.18s ease;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+[data-theme='dark'] .card {
+  border-color: rgba(167, 139, 250, 0.14);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mx, 50%) var(--my, 0%),
+    rgba(212, 175, 90, 0.07),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 90, 0.4);
+  box-shadow: 0 14px 38px -16px rgba(124, 58, 237, 0.35);
+  background: linear-gradient(
+    180deg,
+    rgba(167, 139, 250, 0.07) 0%,
+    rgba(212, 175, 90, 0.025) 100%
+  );
+  color: inherit;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.cardPrev {
+  text-align: left;
+}
+
+.cardNext {
+  text-align: right;
+}
+
+.cardLabel {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mtc-gold);
+  opacity: 0.85;
+}
+
+.cardNext .cardLabel {
+  justify-content: flex-end;
+}
+
+.cardArrow {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--mtc-gold);
+  transition: transform 0.18s ease;
+}
+
+.card:hover .cardArrow {
+  transform: translateX(0);
+}
+
+.cardPrev:hover .cardArrow {
+  transform: translateX(-3px);
+}
+
+.cardNext:hover .cardArrow {
+  transform: translateX(3px);
+}
+
+.cardTitle {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ifm-heading-color);
+  letter-spacing: -0.005em;
+}
+
+/* Override Docusaurus's default pagination styles when our cards render */
+:global(.pagination-nav) {
+  display: none !important;
+}

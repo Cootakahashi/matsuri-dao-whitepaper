@@ -377,7 +377,3 @@ graph LR
 
 Off-chain ကာလအတွင်း ဆုများကိုပါ စစ်ဆေးနိုင်——လုပ်ငန်းစဉ်တိုင်းတွင် ငွေပေးချေ သက်သေအဖြစ် `solana_signature` ပါဝင်သည်။
 :::
-
----
-
-**[▶ ရှေ့သို့: Tokenomics](/docs/tokenomics)** ｜ **[◀ နောက်သို့: Ecosystem](/docs/ecosystem)**

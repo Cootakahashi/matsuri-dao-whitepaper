@@ -377,7 +377,3 @@ Current status:
 
 Rewards earned in the off-chain period are still verifiable — every transaction includes a `solana_signature` as proof of settlement.
 :::
-
----
-
-**[▶ Next: Tokenomics](/docs/tokenomics)** | **[◀ Previous: Ecosystem](/docs/ecosystem)**

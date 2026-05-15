@@ -2,5 +2,13 @@
   "homepage.hero.tagline": {
     "message": "संस्कृतिको रक्षा। प्रतिस्पर्धात्मक Web2 बाट सहकार्यात्मक Web3 सम्म।",
     "description": "The tagline shown in the homepage hero — about protecting culture as we move from competitive Web2 to collaborative Web3."
+  },
+  "homepage.hero.cta.whitepaper": {
+    "message": "व्हाइटपेपर पढ्नुहोस्",
+    "description": "Primary CTA button on the homepage hero — opens the whitepaper"
+  },
+  "homepage.hero.cta.webapp": {
+    "message": "Matsuri वेब एप",
+    "description": "Secondary CTA button on the homepage hero — opens the Matsuri web app"
   }
 }

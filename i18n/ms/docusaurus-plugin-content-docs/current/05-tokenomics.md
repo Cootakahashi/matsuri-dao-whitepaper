@@ -122,8 +122,7 @@ Ekonomi MTC masih awal, tetapi aktiviti sebenar telah pun bermula.
 | Metrik | Status |
 | :--- | :--- |
 | **Acara dianjurkan** | 50+ (operasi ujian) |
-| **Ahli GCF Platinum** | 20 daripada 50 kerusi diisi |
-| **Ahli GCF Gold** | Pengambilan akan dibuka tidak lama lagi |
+| **Komuniti GCF** | Onboarding sedang berjalan |
 | **Platform web** | Aktif, kini mengumpul dan melayani pengguna ujian |
 | **Aplikasi iOS** | Pembangunan selesai, dijadualkan dilancarkan April 2026 |
 
@@ -141,7 +140,6 @@ Peratusan tetap pendapatan perniagaan diperuntukkan untuk **membeli semula MTC d
 | Sumber pendapatan | Peruntukan | Tindakan |
 | :--- | :---: | :--- |
 | **Pendapatan Matsuri HQ** (pemandu, acara) | **20%** | **Buyback** daripada pasaran + tambahan liquidity pool |
-| **Keahlian GCF** (yuran keahlian) | **25%** | **Buyback** daripada pasaran |
 
 :::info Status buyback hari ini
 Protokol buyback akan **mula beroperasi** apabila pendapatan perniagaan meningkat. Pada awalnya ia berjalan off-chain (manual); ia berhijrah secara berperingkat ke pelaksanaan automatik oleh smart contract dari hujung 2026. Sebaik sahaja on-chain, sejarah pelaksanaan penuh buyback akan boleh disahkan pada blockchain oleh sesiapa sahaja.

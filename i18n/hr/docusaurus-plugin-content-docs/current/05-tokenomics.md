@@ -122,8 +122,7 @@ MTC ekonomija još je u ranoj fazi, ali stvarna aktivnost već je u tijeku.
 | Pokazatelj | Rezultat |
 | :--- | :--- |
 | **Održani eventi** | 50+ (testno) |
-| **GCF Platinum članovi** | 20 prijavljenih (od 50) |
-| **GCF Gold članovi** | Upisi kreću sada |
+| **GCF zajednica** | Uvođenje u tijeku |
 | **Web platforma** | U pogonu. Okuplja testne korisnike i radi |
 | **iOS aplikacija** | Razvoj završen, objava u travnju 2026. |
 
@@ -141,7 +140,6 @@ Fiksni postotak poslovnog prihoda namijenjen je otkupu MTC-a s tržišta.
 | Izvor prihoda | Postotak | Akcija |
 | :--- | :---: | :--- |
 | **Prihod Matsuri HQ-a** (vodiči, eventi) | **20%** | **Otkup** s tržišta i dodavanje u pool likvidnosti |
-| **GCF članstvo** (članarine) | **25%** | **Otkup** s tržišta |
 
 :::info Trenutačni status buybacka
 Buyback protokol **kreće u rad** kako poslovni prihod postaje značajan. U početku se izvodi off-chain (ručno), a od druge polovice 2026. postupno prelazi na automatsku izvedbu pametnim ugovorom. Nakon migracije cijela se povijest može provjeriti na blockchainu.

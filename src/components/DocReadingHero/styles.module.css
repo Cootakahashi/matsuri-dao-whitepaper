@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.hero__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-700);
+  background: rgba(167, 139, 250, 0.08);
+  border: 1px solid rgba(167, 139, 250, 0.18);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+[data-theme='dark'] .hero__pill {
+  background: rgba(167, 139, 250, 0.06);
+  border-color: rgba(167, 139, 250, 0.15);
+  color: var(--ifm-color-emphasis-700);
+}
+
+.hero__pillDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--mtc-gold);
+  box-shadow: 0 0 8px rgba(212, 175, 90, 0.55);
+}
+
+.hero__pillIcon {
+  flex-shrink: 0;
+  color: var(--ifm-color-primary);
+  opacity: 0.9;
+}

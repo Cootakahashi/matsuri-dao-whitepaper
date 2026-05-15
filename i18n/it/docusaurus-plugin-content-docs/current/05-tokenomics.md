@@ -122,8 +122,7 @@ L'economia di MTC è ancora agli inizi, ma un'attività reale è già partita.
 | Metrica | Stato |
 | :--- | :--- |
 | **Eventi organizzati** | 50+ (operatività di prova) |
-| **Membri GCF Platinum** | 20 posti occupati su 50 |
-| **Membri GCF Gold** | Apertura delle iscrizioni in arrivo |
+| **Comunità GCF** | Onboarding in corso |
 | **Piattaforma web** | Attiva, attualmente raccoglie e serve utenti di test |
 | **App iOS** | Sviluppo completato, uscita prevista ad aprile 2026 |
 
@@ -141,7 +140,6 @@ Una percentuale fissa dei ricavi del business è destinata al **riacquisto di MT
 | Fonte di ricavo | Allocazione | Azione |
 | :--- | :---: | :--- |
 | **Ricavi Matsuri HQ** (guide, eventi) | **20%** | **Buyback** dal mercato + immissioni nel pool di liquidità |
-| **Iscrizione GCF** (quote associative) | **25%** | **Buyback** dal mercato |
 
 :::info Stato attuale del buyback
 Il protocollo di buyback **entrerà in operazione** man mano che i ricavi del business cresceranno. Inizialmente gira off-chain (manualmente); migra per gradi all'esecuzione automatica via smart contract a partire dalla fine del 2026. Una volta on-chain, l'intero storico delle esecuzioni di buyback sarà verificabile sulla blockchain da chiunque.

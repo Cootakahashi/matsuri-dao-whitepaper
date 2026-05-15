@@ -377,7 +377,3 @@ Aktueller Stand:
 
 In der Off-Chain-Phase verdiente Belohnungen sind dennoch nachprüfbar — jede Transaktion enthält eine `solana_signature` als Beleg der Abwicklung.
 :::
-
----
-
-**[▶ Nächste: Tokenomics](/docs/tokenomics)** | **[◀ Vorherige: Ökosystem](/docs/ecosystem)**
