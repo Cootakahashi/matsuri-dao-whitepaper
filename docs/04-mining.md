@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > Earn through action. Spend it on experience. Hold it and watch it grow.
 
-MTC is not a speculative token. It circulates through a real economy where every action produces value and captures it. The web application and admin dashboard are **already live**. Contribution scores are currently recorded off-chain (in Django) and will migrate on-chain in stages starting August 2026.
+MTC is not a speculative token. It circulates through a real economy where every action produces value and captures it. The web application and admin dashboard are **already live**. Contribution scores are currently recorded off-chain (in Django) and will migrate on-chain in **audit-gated stages** — each contract goes to mainnet only after passing its security audit (see the [on-chain migration roadmap](#on-chain-migration-roadmap) below).
 
 :::tip The big picture
 MTC has a **fully closed-loop economy**: you earn through real activity, you spend on real experiences, and value grows as the ecosystem grows. This page explains the mechanics in detail.
@@ -80,17 +80,17 @@ No internet at a remote shrine? No problem. J-Times logs activity locally and **
 2. Records it locally even offline (retained for 7 days)
 3. Sends it to the server for verification when the network returns
 4. Reflects it in your balance as contribution score
-5. From August 2026: verified scores are recorded on-chain via an oracle and become verifiable on the blockchain
+5. In a later audited phase: verified scores are recorded on-chain via an oracle and become verifiable on the blockchain
 
 ---
 
 ### 2. ⛩️ Adventure mining (walk and earn)
 
-**Project "Junrei" — smart contract complete, mainnet deployment August 2026**
+**Project "Junrei" — smart-contract design complete; mainnet deployment in a later audited phase (after the Phase 1 buyback contract)**
 
 ![Night at a sacred site — in the silence, the omikuji becomes a light](/brand/07_A_night_shrine.webp)
 
-A next-generation feature that uses GPS and token incentives to shape the physical "flow of people." The sacred-site map is **already live** in the Matsuri web app. Contribution scores are currently recorded off-chain; on-chain reward distribution begins after the August 2026 smart-contract deployment.
+A next-generation feature that uses GPS and token incentives to shape the physical "flow of people." The sacred-site map is **already live** in the Matsuri web app. Contribution scores are currently recorded off-chain; on-chain reward distribution begins after this contract's audited mainnet deployment in a later phase.
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as You (Matsuri App)
     participant GPS as GPS check-in
     participant API as Matsuri backend
-    participant SC as Solana (from Aug 2026)
+    participant SC as Solana (later audited phase)
 
     U->>GPS: Arrive at shrine, tap "check in"
     GPS->>API: Send coordinates + proof hash
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: Show result: "⛩️ Check-in complete!" + omikuji
     U->>API: Draw omikuji
     API-->>U: "🏆 Daikichi! Bonus score!"
-    API->>SC: Push to Solana (async, from August)
+    API->>SC: Push to Solana (async, later phase)
 ```
 
 
@@ -201,8 +201,8 @@ GCF members receive access to the dedicated admin dashboard.
 | **📢 Distribute content** | Publish and spread J-Times articles and content |
 | **📊 Referral tracking** | Track the activity and revenue of referred users in real time |
 
-:::warning Currently off-chain → migrating on-chain in August 2026
-Referral commissions are currently tracked in Django (PostgreSQL) and paid out by bank transfer or crypto. From **August 2026**, they move to the **Matsuri Referral smart contract** on Solana, bringing on-chain, auditable payouts.
+:::warning Currently off-chain → migrating on-chain in a later audited phase
+Referral commissions are currently tracked in Django (PostgreSQL) and paid out by bank transfer or crypto. In a later phase — after it passes its own security audit — they move to the **Matsuri Referral smart contract** on Solana, bringing on-chain, auditable payouts. (The first audited on-chain contract is `matsuri-buyback`; see the [migration roadmap](#on-chain-migration-roadmap).)
 :::
 
 ![Mobile suite — manage everything from your phone](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ No money is wagered. It is simply a random bonus on top of **the action of "havi
 | **🎫 Book experiences** | Pay for tours, events, and cultural activities in MTC | ✅ Available |
 | **🏷️ Discount** | 5–10% off the yen-denominated price when paying in MTC | ✅ Available |
 | **🔑 Exclusive access** | NFT-gated events, VIP-only rituals, private tours | ✅ Available |
-| **📈 Toku staking** | Lock MTC to boost your contribution score (up to ~50% boost) | 🔜 August 2026 |
+| **📈 Toku staking** | Lock MTC to boost your contribution score (up to ~50% boost) | 🔜 Later phase |
 | **🗳️ DAO governance** | Vote on treasury, protocol upgrades, and site accreditation | 🔜 2027 |
 | **🛍️ Partner shops** | Pay at partner shops and restaurants | 🔜 Expanding |
 
@@ -331,6 +331,16 @@ MTC is backed by a **real economy** — not just token emissions.
 
 The Matsuri economy is migrating in stages from off-chain (Django/PostgreSQL) to on-chain (Solana smart contracts). Through this migration, all operations become **trustless, auditable, and permissionless**.
 
+:::info Audit-staged rollout — what ships first
+The migration is gated by a **staged security audit (Hashlock)**, so the order is driven by audits, not by a fixed calendar:
+
+- **`matsuri-buyback`** (revenue → automatic MTC buy-back) is the **first** contract to go on-chain — audited in 2026 (Phase 1), deployed after the Raydium listing.
+- **`matsuri-vesting`** (the 550M halving-release pool) follows around the **2027-06-01 Grand Unlock** (Phase 1.5), together with `matsuri-distribution`.
+- The **mining contracts** below (referral / adventure / omikuji) are **later phases**, each deployed only after passing its own audit.
+
+The product-phase numbers in the table below describe the rollout vision; their dates are sequenced behind this audit schedule.
+:::
+
 ```mermaid
 graph LR
     subgraph "Today (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 Engagement tracking\n(PostgreSQL)"]
         O4["💰 Payouts\n(bank / crypto, manual)"]
     end
-    subgraph "August 2026 (hybrid)"
+    subgraph "First on-chain (2026, post-audit)"
+        H0["💱 Revenue buyback → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "Later audited phases (hybrid)"
         H1["⚡ Referrals → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Adventure mining → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 Crowdfunding + NFT rights\n(backer governance)"]
         G3["⚡ Automatic revenue sharing\n(creator + community + buyback)"]
     end
-    O1 & O2 & O3 & O4 -->|"migrate"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"migrate (audited)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"grand unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"co-create"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | Phase | Timeline | What goes on-chain |
 | :--- | :--- | :--- |
 | **Phase 1 (now)** | Live | MTC token (SPL), Raydium LP, Solana Pay verification |
-| **Phase 2 (August 2026)** | Smart contract mainnet deployment | Referral commissions, adventure-mining rewards, Omikuji draws, oracle-based media mining |
-| **Phase 3 (June 2027)** | Grand unlock | 550M MTC halving distribution, DAO governance, full decentralization |
-| **Phase 4 (2027+)** | Co-creation economy | On-chain marketplace (regional specialty shops + GCF store), crowdfunding with NFT rights, automatic revenue sharing to creator + community + buyback |
+| **Phase 2 (2026, audit-gated)** | First smart contract on mainnet, after its Hashlock audit | **`matsuri-buyback`** — business revenue → automatic MTC buy-back |
+| **Phase 3 (Grand Unlock, 2027-06-01)** | 550M pool activates | **`matsuri-vesting`** — halving-release of the 550M mining pool (with `matsuri-distribution`); DAO governance begins |
+| **Phase 4 (later, each audit-gated)** | Mining contracts on mainnet | Referral commissions, adventure-mining rewards, Omikuji draws, oracle-based media mining |
+| **Phase 5 (2027+)** | Co-creation economy | On-chain marketplace (regional specialty shops + GCF store), crowdfunding with NFT rights, automatic revenue sharing to creator + community + buyback |
 
 :::warning Why don't we put everything on-chain right now?
 **We do not enable any on-chain feature that moves user funds until the security audit is complete.** That is our principle.
 
 Current status:
 - **Risk to user funds: none** — all rewards and scores are managed off-chain (Django) today. No smart-contract feature that moves user funds is live
-- **Audit schedule: Q2–Q3 2026** — contracts will be deployed to mainnet one by one, only after passing professional security audits
+- **Staged audit (Hashlock):** Phase 1 audits `matsuri-buyback` (2026); Phase 1.5 audits `matsuri-vesting` + `matsuri-distribution` (around the 2027-06-01 unlock). Contracts are deployed to mainnet one by one, only after passing their audit
 - **Audit completion is a prerequisite for deployment** — we will never activate an unaudited smart contract on mainnet
 
 Rewards earned in the off-chain period are still verifiable — every transaction includes a `solana_signature` as proof of settlement.

@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > Peroleh melalui tindakan. Belanjakan untuk pengalaman. Pegang dan saksikan ia berkembang.
 
-MTC bukan token spekulatif. Ia beredar melalui ekonomi sebenar di mana setiap tindakan menghasilkan nilai dan menangkapnya. Aplikasi web dan papan pemuka admin **sudah aktif**. Skor sumbangan kini direkodkan off-chain (di Django) dan akan berpindah on-chain secara berperingkat bermula Ogos 2026.
+MTC bukan token spekulatif. Ia beredar melalui ekonomi sebenar di mana setiap tindakan menghasilkan nilai dan menangkapnya. Aplikasi web dan papan pemuka admin **sudah aktif**. Skor sumbangan kini direkodkan off-chain (di Django) dan akan berpindah on-chain dalam **peringkat yang dikawal oleh audit (audit-gated)** — setiap contract naik ke mainnet hanya selepas lulus audit keselamatannya (lihat [pelan hala tuju penghijrahan on-chain](#on-chain-migration-roadmap) di bawah).
 
 :::tip Gambaran besar
 MTC mempunyai **ekonomi yang sepenuhnya tertutup**: anda peroleh melalui aktiviti sebenar, anda belanjakan untuk pengalaman sebenar, dan nilai berkembang apabila ekosistem berkembang. Halaman ini menjelaskan mekaniknya secara terperinci.
@@ -80,17 +80,17 @@ Tiada internet di kuil terpencil? Tidak masalah. J-Times merekod aktiviti secara
 2. Merekodnya secara tempatan walaupun luar talian (disimpan selama 7 hari)
 3. Menghantarnya ke pelayan untuk pengesahan apabila rangkaian kembali
 4. Mencerminkannya dalam baki anda sebagai skor sumbangan
-5. Daripada Ogos 2026: skor yang disahkan direkodkan on-chain melalui oracle dan menjadi boleh disahkan pada blockchain
+5. Pada peringkat yang diaudit kemudian: skor yang disahkan direkodkan on-chain melalui oracle dan menjadi boleh disahkan pada blockchain
 
 ---
 
 ### 2. ⛩️ Perlombongan pengembaraan (jalan dan peroleh)
 
-**Projek "Junrei" — smart contract selesai, pelaksanaan mainnet Ogos 2026**
+**Projek "Junrei" — reka bentuk smart contract selesai; pelaksanaan mainnet pada peringkat yang diaudit kemudian (selepas contract buyback Fasa 1)**
 
 ![Malam di tapak suci — dalam kesunyian, omikuji menjadi cahaya](/brand/07_A_night_shrine.webp)
 
-Ciri generasi seterusnya yang menggunakan GPS dan insentif token untuk membentuk "aliran orang" fizikal. Peta tapak suci **sudah aktif** dalam aplikasi web Matsuri. Skor sumbangan kini direkodkan off-chain; pengagihan ganjaran on-chain bermula selepas pelaksanaan smart contract Ogos 2026.
+Ciri generasi seterusnya yang menggunakan GPS dan insentif token untuk membentuk "aliran orang" fizikal. Peta tapak suci **sudah aktif** dalam aplikasi web Matsuri. Skor sumbangan kini direkodkan off-chain; pengagihan ganjaran on-chain bermula selepas pelaksanaan mainnet teraudit contract ini pada peringkat kemudian.
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as Anda (Aplikasi Matsuri)
     participant GPS as Check-in GPS
     participant API as Backend Matsuri
-    participant SC as Solana (sejak Og 2026)
+    participant SC as Solana (peringkat diaudit kemudian)
 
     U->>GPS: Tiba di kuil, ketuk "check in"
     GPS->>API: Hantar koordinat + proof hash
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: Tunjukkan hasil: "⛩️ Check-in selesai!" + omikuji
     U->>API: Tarik omikuji
     API-->>U: "🏆 Daikichi! Skor bonus!"
-    API->>SC: Tolak ke Solana (asinkron, daripada Ogos)
+    API->>SC: Tolak ke Solana (asinkron, peringkat kemudian)
 ```
 
 
@@ -201,8 +201,8 @@ Ahli GCF menerima akses ke papan pemuka admin yang khusus.
 | **📢 Edarkan kandungan** | Terbitkan dan sebarkan artikel dan kandungan J-Times |
 | **📊 Penjejakan rujukan** | Jejak aktiviti dan pendapatan pengguna yang dirujuk dalam masa nyata |
 
-:::warning Kini off-chain → berhijrah on-chain pada Ogos 2026
-Komisen rujukan kini dijejak di Django (PostgreSQL) dan dibayar melalui pemindahan bank atau crypto. Daripada **Ogos 2026**, mereka berpindah ke **smart contract Matsuri Referral** di Solana, membawa pembayaran on-chain yang boleh diaudit.
+:::warning Kini off-chain → berhijrah on-chain pada peringkat yang diaudit kemudian
+Komisen rujukan kini dijejak di Django (PostgreSQL) dan dibayar melalui pemindahan bank atau crypto. Pada peringkat kemudian — selepas lulus audit keselamatannya sendiri — mereka berpindah ke **smart contract Matsuri Referral** di Solana, membawa pembayaran on-chain yang boleh diaudit. (Contract pertama yang diaudit dan naik on-chain ialah `matsuri-buyback`; lihat [pelan hala tuju penghijrahan](#on-chain-migration-roadmap).)
 :::
 
 ![Mobile suite — uruskan semua dari telefon anda](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ Tiada wang dipertaruhkan. Ia hanyalah bonus rawak di atas **tindakan "telah mela
 | **🎫 Tempah pengalaman** | Bayar untuk tur, acara, dan aktiviti budaya dalam MTC | ✅ Tersedia |
 | **🏷️ Diskaun** | Diskaun 5–10% daripada harga yen apabila membayar dalam MTC | ✅ Tersedia |
 | **🔑 Akses eksklusif** | Acara gated NFT, ritual khusus VIP, tur peribadi | ✅ Tersedia |
-| **📈 Toku staking** | Kunci MTC untuk meningkatkan skor sumbangan anda (boost sehingga ~50%) | 🔜 Ogos 2026 |
+| **📈 Toku staking** | Kunci MTC untuk meningkatkan skor sumbangan anda (boost sehingga ~50%) | 🔜 Peringkat kemudian |
 | **🗳️ Tadbir urus DAO** | Undi tentang treasury, naik taraf protokol, dan akreditasi tapak | 🔜 2027 |
 | **🛍️ Kedai rakan kongsi** | Bayar di kedai dan restoran rakan kongsi | 🔜 Mengembang |
 
@@ -331,6 +331,16 @@ MTC disokong oleh **ekonomi sebenar** — bukan sekadar pelepasan token.
 
 Ekonomi Matsuri sedang berhijrah secara berperingkat daripada off-chain (Django/PostgreSQL) ke on-chain (smart contracts Solana). Melalui penghijrahan ini, semua operasi menjadi **trustless, boleh diaudit, dan permissionless**.
 
+:::info Pelancaran berperingkat berasaskan audit — apa yang naik dahulu
+Penghijrahan ini dikawal oleh **audit keselamatan berperingkat (Hashlock)**, jadi susunannya didorong oleh audit, bukan kalendar tetap:
+
+- **`matsuri-buyback`** (pendapatan → belian semula MTC automatik) ialah contract **pertama** yang naik on-chain — diaudit pada 2026 (Fasa 1), dilaksanakan selepas penyenaraian Raydium.
+- **`matsuri-vesting`** (pool pelepasan halving 550M) menyusul sekitar **Grand Unlock 2027-06-01** (Fasa 1.5), bersama `matsuri-distribution`.
+- **Contract perlombongan** di bawah (referral / adventure / omikuji) ialah **peringkat-peringkat kemudian**, setiap satu dilaksanakan hanya selepas lulus auditnya sendiri.
+
+Nombor fasa produk dalam jadual di bawah menggambarkan visi pelancaran; tarikhnya disusun di belakang jadual audit ini.
+:::
+
 ```mermaid
 graph LR
     subgraph "Hari ini (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 Penjejakan engagement\n(PostgreSQL)"]
         O4["💰 Pembayaran\n(bank / crypto, manual)"]
     end
-    subgraph "Ogos 2026 (hibrid)"
+    subgraph "On-chain pertama (2026, pasca-audit)"
+        H0["💱 Belian semula pendapatan → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "Peringkat-peringkat teraudit kemudian (hibrid)"
         H1["⚡ Rujukan → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Perlombongan pengembaraan → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 Crowdfunding + hak NFT\n(tadbir urus backer)"]
         G3["⚡ Perkongsian pendapatan automatik\n(creator + komuniti + buyback)"]
     end
-    O1 & O2 & O3 & O4 -->|"hijrah"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"hijrah (teraudit)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"grand unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"cipta bersama"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | Fasa | Jadual | Apa yang go on-chain |
 | :--- | :--- | :--- |
 | **Fasa 1 (sekarang)** | Aktif | Token MTC (SPL), Raydium LP, pengesahan Solana Pay |
-| **Fasa 2 (Ogos 2026)** | Pelaksanaan mainnet smart contract | Komisen rujukan, ganjaran perlombongan pengembaraan, tarikan Omikuji, perlombongan media berasaskan oracle |
-| **Fasa 3 (Jun 2027)** | Grand unlock | Pengagihan halving 550M MTC, tadbir urus DAO, ternyahpusat penuh |
-| **Fasa 4 (2027+)** | Ekonomi kreasi bersama | Pasaran on-chain (kedai pakar serantau + GCF store), crowdfunding dengan hak NFT, perkongsian pendapatan automatik kepada creator + komuniti + buyback |
+| **Fasa 2 (2026, audit-gated)** | Smart contract pertama di mainnet, selepas audit Hashlock-nya | **`matsuri-buyback`** — pendapatan perniagaan → belian semula MTC automatik |
+| **Fasa 3 (Grand Unlock, 2027-06-01)** | Pool 550M diaktifkan | **`matsuri-vesting`** — pelepasan halving pool perlombongan 550M (dengan `matsuri-distribution`); tadbir urus DAO bermula |
+| **Fasa 4 (kemudian, setiap satu audit-gated)** | Contract perlombongan di mainnet | Komisen rujukan, ganjaran perlombongan pengembaraan, tarikan Omikuji, perlombongan media berasaskan oracle |
+| **Fasa 5 (2027+)** | Ekonomi kreasi bersama | Pasaran on-chain (kedai pakar serantau + GCF store), crowdfunding dengan hak NFT, perkongsian pendapatan automatik kepada creator + komuniti + buyback |
 
 :::warning Mengapa kami tidak meletakkan semua on-chain sekarang?
 **Kami tidak mengaktifkan sebarang ciri on-chain yang menggerakkan dana pengguna sehingga audit keselamatan selesai.** Itulah prinsip kami.
 
 Status semasa:
 - **Risiko terhadap dana pengguna: tiada** — semua ganjaran dan skor kini diuruskan off-chain (Django). Tiada ciri smart contract yang menggerakkan dana pengguna yang aktif
-- **Jadual audit: Q2–Q3 2026** — kontrak akan dilaksanakan ke mainnet satu demi satu, hanya selepas lulus audit keselamatan profesional
+- **Audit berperingkat (Hashlock):** Fasa 1 mengaudit `matsuri-buyback` (2026); Fasa 1.5 mengaudit `matsuri-vesting` + `matsuri-distribution` (sekitar unlock 2027-06-01). Contract dilaksanakan ke mainnet satu demi satu, hanya selepas lulus auditnya
 - **Penyiapan audit adalah prasyarat untuk pelaksanaan** — kami tidak akan pernah mengaktifkan smart contract tanpa audit pada mainnet
 
 Ganjaran yang diperoleh dalam tempoh off-chain masih boleh disahkan — setiap transaksi termasuk `solana_signature` sebagai bukti penyelesaian.

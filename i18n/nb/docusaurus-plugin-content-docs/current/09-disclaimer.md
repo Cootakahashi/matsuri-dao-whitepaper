@@ -34,6 +34,7 @@ MTC kan i dag handles på Raydium (DEX), men hvis likviditeten er utilstrekkelig
 
 ### Teknisk risiko
 - Smart contracts kan inneholde feil eller sårbarheter
+- Protokollens smart contracts gjennomgår en **trinnvis tredjeparts-sikkerhetsrevisjon (Hashlock)** og er **ennå ikke deployet til mainnet**. Ingen kontrakt aktiveres på mainnet før den har bestått sin revisjon. En fullført revisjon fjerner ikke all risiko
 - Feil eller nedetid i selve Solana-nettverket kan midlertidig gjøre transaksjoner umulig
 - Dataavvik kan oppstå i forbindelse med off-chain → on-chain-migrering
 

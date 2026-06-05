@@ -176,6 +176,10 @@ Price = Liquidity (SOL) ÷ Supply (MTC)
 हमने Bitcoin के चार-वर्षीय चक्र से तेज़, **दो-वर्षीय halving चक्र** अपनाया है।
 Release rate हर दो साल में आधी होती है, जिससे सैद्धांतिक रूप से पुरस्कार दशकों तक बहते रहते हैं।
 
+:::info यह कौन-सा contract करता है
+2027-06-01 unlock पर 550M pool तृतीय-पक्ष **Streamflow** lockup से **`matsuri-vesting`** smart contract में बहता है, जो halving release को on-chain निष्पादित करता है। `matsuri-vesting` चरणबद्ध **Hashlock** audit (Phase 1.5) का हिस्सा है, `matsuri-distribution` के साथ। पहला आने वाला contract `matsuri-buyback` है (Phase 1, 2026)।
+:::
+
 | अवधि | Release हिस्सा | Released मात्रा | संचित |
 | :--- | :---: | :--- | :---: |
 | **अवधि 1** 2027–2029 | **50%** | ~275M | 50% |

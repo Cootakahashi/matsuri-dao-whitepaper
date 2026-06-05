@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > หารายได้จากการกระทำ ใช้กับประสบการณ์ ถือไว้ให้เติบโต
 
-MTC ไม่ใช่โทเคนเก็งกำไร ทุกการกระทำสร้างคุณค่าและได้คุณค่ากลับคืน หมุนเวียนในเศรษฐกิจจริง Web Application และ Admin Dashboard **เปิดใช้งานอยู่แล้ว** ปัจจุบันบันทึก Contribution Score แบบ off-chain (Django) และจะทยอยย้ายเป็น on-chain ตั้งแต่สิงหาคม 2026
+MTC ไม่ใช่โทเคนเก็งกำไร ทุกการกระทำสร้างคุณค่าและได้คุณค่ากลับคืน หมุนเวียนในเศรษฐกิจจริง Web Application และ Admin Dashboard **เปิดใช้งานอยู่แล้ว** ปัจจุบันบันทึก Contribution Score แบบ off-chain (Django) และจะย้ายเป็น on-chain แบบ **ขั้นที่กำกับด้วยการตรวจสอบ (audit-gated)** — แต่ละสัญญาจะขึ้น mainnet ก็ต่อเมื่อผ่านการตรวจสอบความปลอดภัยแล้วเท่านั้น (ดู[แผนผังการย้าย on-chain](#on-chain-migration-roadmap)ด้านล่าง)
 
 :::tip ภาพรวม
 MTC มี **เศรษฐกิจหมุนเวียนเต็มรูปแบบ**: หารายได้ผ่านกิจกรรมจริง ใช้กับประสบการณ์จริง มูลค่าเติบโตไปพร้อมกับการขยายของระบบนิเวศ หน้านี้จะอธิบายกลไกเหล่านี้โดยละเอียด
@@ -80,17 +80,17 @@ graph LR
 2. บันทึกในเครื่องแม้ออฟไลน์ (เก็บ 7 วัน)
 3. ส่งไปเซิร์ฟเวอร์เพื่อตรวจสอบเมื่อกลับมาออนไลน์
 4. สะท้อนในยอดคงเหลือในฐานะ Contribution Score
-5. ตั้งแต่สิงหาคม 2026: บันทึก Score ที่ผ่านการตรวจสอบแล้วผ่าน Oracle ขึ้น on-chain ตรวจสอบบน Blockchain ได้
+5. ในขั้นที่ผ่านการตรวจสอบในภายหลัง: บันทึก Score ที่ผ่านการตรวจสอบแล้วผ่าน Oracle ขึ้น on-chain ตรวจสอบบน Blockchain ได้
 
 ---
 
 ### 2. ⛩️ Adventure Mining (เดินเพื่อรับรางวัล)
 
-**โปรเจกต์ "จาริกแสวงบุญ" — Smart Contract เสร็จสมบูรณ์ เตรียม deploy Mainnet สิงหาคม 2026**
+**โปรเจกต์ "จาริกแสวงบุญ" — การออกแบบ Smart Contract เสร็จสมบูรณ์ การ deploy Mainnet จะอยู่ในขั้นที่ผ่านการตรวจสอบในภายหลัง (หลังจากสัญญา buyback ของ Phase 1)**
 
 ![ดินแดนศักดิ์สิทธิ์ยามค่ำ — ในความเงียบงัน โอมิคูจิกลายเป็นแสงสว่าง](/brand/07_A_night_shrine.webp)
 
-ฟีเจอร์รุ่นใหม่ที่ใช้ GPS และแรงจูงใจโทเคนควบคุม "การไหลของคน" ในโลกจริง แผนที่ดินแดนศักดิ์สิทธิ์เปิดใช้งานใน Matsuri Web App แล้ว ปัจจุบันบันทึก Score แบบ off-chain และเริ่มแจกจ่ายรางวัล on-chain หลัง deploy Smart Contract สิงหาคม 2026
+ฟีเจอร์รุ่นใหม่ที่ใช้ GPS และแรงจูงใจโทเคนควบคุม "การไหลของคน" ในโลกจริง แผนที่ดินแดนศักดิ์สิทธิ์เปิดใช้งานใน Matsuri Web App แล้ว ปัจจุบันบันทึก Score แบบ off-chain และจะเริ่มแจกจ่ายรางวัล on-chain หลังจาก deploy สัญญานี้ขึ้น mainnet ที่ผ่านการตรวจสอบแล้วในขั้นภายหลัง
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as คุณ (Matsuri App)
     participant GPS as GPS Check-in
     participant API as Matsuri Backend
-    participant SC as Solana (ตั้งแต่สิงหาคม 2026)
+    participant SC as Solana (ขั้นที่ผ่านการตรวจสอบในภายหลัง)
 
     U->>GPS: ถึงศาลเจ้า แตะ "Check-in"
     GPS->>API: ส่งพิกัด + proof hash
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: แสดงผล: "⛩️ Check-in เสร็จสิ้น!" + Omikuji
     U->>API: เสี่ยง Omikuji
     API-->>U: "🏆 大吉 (ไดคิจิ)! Score โบนัส!"
-    API->>SC: ส่งถึง Solana (async หลังสิงหาคม)
+    API->>SC: ส่งถึง Solana (async ขั้นภายหลัง)
 ```
 
 
@@ -201,8 +201,8 @@ Score สะสมตามเวลาและแปลงเป็น MTC ใ
 | **📢 ส่งคอนเทนต์** | ส่งและเผยแพร่บทความ/คอนเทนต์ J-Times |
 | **📊 ติดตามการแนะนำ** | ติดตามพฤติกรรม/รายได้ของผู้ใช้ที่แนะนำแบบเรียลไทม์ |
 
-:::warning ปัจจุบัน off-chain → ย้ายเป็น on-chain สิงหาคม 2026
-ค่าคอมมิชชันการแนะนำปัจจุบันติดตามใน Django (PostgreSQL) และจ่ายผ่านโอนเงินธนาคารหรือคริปโต ตั้งแต่ **สิงหาคม 2026** จะย้ายเป็น **Matsuri Referral Smart Contract** บน Solana ทำให้การจ่ายเงินตรวจสอบได้บน on-chain
+:::warning ปัจจุบัน off-chain → ย้ายเป็น on-chain ในขั้นที่ผ่านการตรวจสอบในภายหลัง
+ค่าคอมมิชชันการแนะนำปัจจุบันติดตามใน Django (PostgreSQL) และจ่ายผ่านโอนเงินธนาคารหรือคริปโต ในขั้นภายหลัง — หลังจากผ่านการตรวจสอบความปลอดภัยของตัวเอง — จะย้ายเป็น **Matsuri Referral Smart Contract** บน Solana ทำให้การจ่ายเงินตรวจสอบได้บน on-chain (สัญญาแรกที่ผ่านการตรวจสอบและขึ้น on-chain คือ `matsuri-buyback`; ดู[แผนผังการย้าย](#on-chain-migration-roadmap))
 :::
 
 ![Mobile Suite — การจัดการทั้งหมดจากสมาร์ทโฟน](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ Score สะสมตามเวลาและแปลงเป็น MTC ใ
 | **🎫 จองประสบการณ์** | จ่ายด้วย MTC สำหรับทัวร์ อีเวนต์ กิจกรรมวัฒนธรรม | ✅ ใช้ได้ |
 | **🏷️ ส่วนลด** | ลด 5-10% จากราคาเยนเมื่อจ่ายด้วย MTC | ✅ ใช้ได้ |
 | **🔑 เข้าถึงเฉพาะ** | อีเวนต์ที่ต้อง NFT เปิด, พิธี VIP เฉพาะ, ทัวร์ส่วนตัว | ✅ ใช้ได้ |
-| **📈 Toku Staking** | ล็อก MTC เพื่อบูสต์ Contribution Score (บูสต์สูงสุด ~50%) | 🔜 สิงหาคม 2026 |
+| **📈 Toku Staking** | ล็อก MTC เพื่อบูสต์ Contribution Score (บูสต์สูงสุด ~50%) | 🔜 ขั้นภายหลัง |
 | **🗳️ DAO Governance** | โหวต Treasury, Protocol Upgrade, การรับรองไซต์ | 🔜 2027 |
 | **🛍️ ร้านพันธมิตร** | จ่ายที่ร้านค้า/ร้านอาหารพันธมิตร | 🔜 ขยายตัว |
 
@@ -331,6 +331,16 @@ MTC ค้ำจุนด้วย **เศรษฐกิจจริง** — 
 
 เศรษฐกิจ Matsuri กำลังย้ายทีละขั้นจาก off-chain (Django/PostgreSQL) สู่ on-chain (Solana Smart Contract) ผ่านการย้ายนี้ การดำเนินการทั้งหมดจะเป็น **Trustless, Auditable, Permissionless**
 
+:::info การทยอยเปิดตัวตามขั้นการตรวจสอบ — อะไรขึ้นก่อน
+การย้ายนี้ถูกกำกับด้วย **การตรวจสอบความปลอดภัยแบบเป็นขั้น (Hashlock)** ลำดับจึงถูกขับเคลื่อนด้วยการตรวจสอบ ไม่ใช่ปฏิทินตายตัว:
+
+- **`matsuri-buyback`** (รายได้ → ซื้อคืน MTC อัตโนมัติ) เป็นสัญญา **แรก** ที่ขึ้น on-chain — ตรวจสอบในปี 2026 (Phase 1) deploy หลังจาก list บน Raydium
+- **`matsuri-vesting`** (พูลปล่อยแบบ halving 550M) จะตามมาในช่วง **Grand Unlock 2027-06-01** (Phase 1.5) พร้อมกับ `matsuri-distribution`
+- **สัญญา mining** ด้านล่าง (referral / adventure / omikuji) เป็น **ขั้นภายหลัง** แต่ละตัว deploy ก็ต่อเมื่อผ่านการตรวจสอบของตัวเองแล้วเท่านั้น
+
+หมายเลข product-phase ในตารางด้านล่างอธิบายวิสัยทัศน์การเปิดตัว; วันที่ของมันถูกจัดเรียงตามกำหนดการตรวจสอบนี้
+:::
+
 ```mermaid
 graph LR
     subgraph "ปัจจุบัน (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 ติดตาม Engagement\n(PostgreSQL)"]
         O4["💰 จ่ายเงิน\n(ธนาคาร/คริปโต Manual)"]
     end
-    subgraph "สิงหาคม 2026 (Hybrid)"
+    subgraph "on-chain แรก (2026, หลังตรวจสอบ)"
+        H0["💱 ซื้อคืนจากรายได้ → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "ขั้นที่ผ่านการตรวจสอบในภายหลัง (Hybrid)"
         H1["⚡ Referral → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Adventure Mining → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 คราวด์ฟันดิง + สิทธิ์ NFT\n(Backer Governance)"]
         G3["⚡ แบ่งรายได้อัตโนมัติ\n(ครีเอเตอร์ + ชุมชน + buy-back)"]
     end
-    O1 & O2 & O3 & O4 -->|"ย้าย"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"ย้าย (ตรวจสอบแล้ว)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"Grand Unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"ร่วมสร้าง"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | เฟส | ไทม์ไลน์ | สิ่งที่เป็น on-chain |
 | :--- | :--- | :--- |
 | **Phase 1 (ปัจจุบัน)** | เปิดใช้งาน | MTC Token (SPL), Raydium LP, Solana Pay Verification |
-| **Phase 2 (สิงหาคม 2026)** | Smart Contract Mainnet Deploy | ค่าคอมแนะนำ, รางวัล Adventure Mining, สุ่ม Omikuji, Media Mining ผ่าน Oracle |
-| **Phase 3 (มิถุนายน 2027)** | Grand Unlock | แจก Halving 550M MTC, DAO Governance, กระจายศูนย์เต็มรูปแบบ |
-| **Phase 4 (2027〜)** | เศรษฐกิจร่วมสร้าง | Marketplace on-chain (ร้านของดีท้องถิ่น + ร้าน GCF), คราวด์ฟันดิงสิทธิ์ NFT, แบ่งรายได้อัตโนมัติให้ครีเอเตอร์ + ชุมชน + buy-back |
+| **Phase 2 (2026, audit-gated)** | Smart Contract แรกขึ้น mainnet หลังการตรวจสอบ Hashlock | **`matsuri-buyback`** — รายได้ธุรกิจ → ซื้อคืน MTC อัตโนมัติ |
+| **Phase 3 (Grand Unlock, 2027-06-01)** | พูล 550M เปิดใช้งาน | **`matsuri-vesting`** — ปล่อยแบบ halving ของพูล mining 550M (พร้อม `matsuri-distribution`); เริ่ม DAO Governance |
+| **Phase 4 (ภายหลัง, แต่ละตัว audit-gated)** | สัญญา mining ขึ้น mainnet | ค่าคอมแนะนำ, รางวัล Adventure Mining, สุ่ม Omikuji, Media Mining ผ่าน Oracle |
+| **Phase 5 (2027〜)** | เศรษฐกิจร่วมสร้าง | Marketplace on-chain (ร้านของดีท้องถิ่น + ร้าน GCF), คราวด์ฟันดิงสิทธิ์ NFT, แบ่งรายได้อัตโนมัติให้ครีเอเตอร์ + ชุมชน + buy-back |
 
 :::warning ทำไมไม่ทำทุกอย่าง on-chain ทันที?
 **เราจะไม่เปิดใช้งานฟังก์ชัน on-chain ที่เงินผู้ใช้เคลื่อนไหวจนกว่า Security Audit จะเสร็จสมบูรณ์** นี่คือหลักการของเรา
 
 สถานการณ์ปัจจุบัน:
 - **ความเสี่ยงต่อเงินผู้ใช้: ไม่มี** — ปัจจุบันรางวัล/Score ทั้งหมดจัดการ off-chain (Django) ไม่มีฟังก์ชันที่เงินผู้ใช้เคลื่อนผ่าน Smart Contract เปิดใช้งาน
-- **กำหนดการ Audit: Q2〜Q3 2026** — ผ่าน Security Audit ระดับมืออาชีพ deploy Mainnet ทีละสัญญาตามความปลอดภัยที่ยืนยัน
+- **การตรวจสอบแบบเป็นขั้น (Hashlock):** Phase 1 ตรวจสอบ `matsuri-buyback` (2026); Phase 1.5 ตรวจสอบ `matsuri-vesting` + `matsuri-distribution` (ช่วง unlock 2027-06-01) สัญญาจะ deploy ขึ้น mainnet ทีละตัว ก็ต่อเมื่อผ่านการตรวจสอบแล้วเท่านั้น
 - **Audit เสร็จสิ้น = เงื่อนไขก่อน Deploy** — ไม่เปิดใช้งาน Smart Contract ที่ยัง Audit ไม่เสร็จบน Mainnet เด็ดขาด
 
 รางวัลช่วง off-chain ก็ตรวจสอบได้ — ทุกธุรกรรมมี `solana_signature` เป็นหลักฐานการชำระเงิน

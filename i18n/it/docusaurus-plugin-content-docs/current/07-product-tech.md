@@ -330,7 +330,13 @@ Per i programmi Rust su Solana siamo partiti da test unitari per la logica di ba
 
 ### Struttura d'insieme
 
-Matsuri deploya **tre programmi Anchor (Rust)** su Solana, ognuno dei quali porta uno dei pilastri dell'ecosistema.
+> ⚠️ **Nota di stato.** I tre programmi mostrati qui sotto sono la **reference di design della
+> Fase 2** del protocollo e **non sono ancora deployati su mainnet**. Il lavoro di sicurezza
+> on-chain procede come **audit scaglionato** (Hashlock): la Fase 1 audita `matsuri-buyback`
+> (ago. 2026); la Fase 1.5 audita `matsuri-vesting` + `matsuri-distribution` (Q1 2027). Il
+> diagramma descrive l'architettura obiettivo, non lo stato di deployment attuale.
+
+Il design di Matsuri comprende **tre programmi Anchor (Rust)** su Solana, ognuno dei quali porta uno dei pilastri dell'ecosistema (reference di design della Fase 2 — non ancora deployato):
 
 ```mermaid
 graph TB

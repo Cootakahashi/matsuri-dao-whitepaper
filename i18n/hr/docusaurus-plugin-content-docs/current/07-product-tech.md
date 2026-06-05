@@ -330,7 +330,13 @@ Za Rust programe na Solani krećemo s unit testovima core logike (matematičkih 
 
 ### Opća struktura
 
-Matsuri deploya **tri Anchor programa (Rust)** na Solani, svaki nosi jedan stup ekosustava.
+> ⚠️ **Napomena o statusu.** Tri programa prikazana u nastavku **Phase 2 su referentni
+> dizajn** protokola i **još nisu deployani na mainnet**. On-chain sigurnosni rad odvija se kao
+> **postupni audit** (Hashlock): Phase 1 auditira `matsuri-buyback`; Phase 1.5 auditira
+> `matsuri-vesting` + `matsuri-distribution`. Dijagram opisuje ciljanu arhitekturu, a ne trenutačno
+> stanje deploya.
+
+Matsurijev dizajn sastoji se od **tri Anchor programa (Rust)** na Solani, svaki nosi jedan stup ekosustava (Phase 2 referentni dizajn — još nije deployano).
 
 ```mermaid
 graph TB

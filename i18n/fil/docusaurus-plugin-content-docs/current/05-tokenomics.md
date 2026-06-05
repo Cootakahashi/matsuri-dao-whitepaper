@@ -176,6 +176,10 @@ Ang **550 milyon (halos 61% ng total supply)** na MTC na mag-u-unlock sa Hunyo 1
 Ginagamit ang **2-taong halving** na mas mabilis kaysa sa 4-taong cycle ng Bitcoin.
 Nahahati sa dalawa ang emission kada 2 taon, at sa teorya, ang gantimpala ay tumatagal sa ilang dekada.
 
+:::info Aling contract ang gumagawa nito
+Sa 2027-06-01 unlock, ang 550M pool ay dumadaloy mula sa third-party na **Streamflow** lockup patungo sa **`matsuri-vesting`** smart contract, na nag-eexecute ng halving release sa on-chain. Ang `matsuri-vesting` ay bahagi ng staged **Hashlock** audit (Phase 1.5), kasama ng `matsuri-distribution`. Ang unang contract na ide-deploy ay ang `matsuri-buyback` (Phase 1, 2026).
+:::
+
 | Panahon | Emission Rate | Bilang | Cumulative Emission |
 | :--- | :---: | :--- | :---: |
 | **1st Period** 2027 – 2029 | **50%** | Mga 275 milyon | 50% |

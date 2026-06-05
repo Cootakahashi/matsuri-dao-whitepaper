@@ -176,6 +176,10 @@ Persamaan ini menerangkan reka bentuk struktur: jika pendapatan perniagaan berte
 Kami telah mengguna pakai **kitaran halving dua tahun**, lebih pantas daripada kitaran empat tahun Bitcoin.
 Kadar pelepasan dibahagi dua setiap dua tahun, mengekalkan ganjaran mengalir secara teori selama berdekad-dekad.
 
+:::info Contract mana yang melaksanakan ini
+Pada unlock 2027-06-01, pool 550M mengalir daripada penguncian pihak ketiga **Streamflow** ke smart contract **`matsuri-vesting`**, yang melaksanakan pelepasan halving on-chain. `matsuri-vesting` adalah sebahagian daripada audit **Hashlock** berperingkat (Fasa 1.5), bersama `matsuri-distribution`. Contract pertama yang naik ialah `matsuri-buyback` (Fasa 1, 2026).
+:::
+
 | Tempoh | Bahagian pelepasan | Jumlah dilepaskan | Terkumpul |
 | :--- | :---: | :--- | :---: |
 | **Tempoh 1** 2027–2029 | **50%** | ~275M | 50% |

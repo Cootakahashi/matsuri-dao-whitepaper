@@ -330,7 +330,13 @@ Para sa Rust program sa Solana, sinimulan ang unit test ng core logic (math modu
 
 ### Overall Structure
 
-Ang Matsuri ay nagde-deploy ng **3 Anchor (Rust) programs** sa Solana, at bawat isa ay nangangasiwa ng isang pillar ng ecosystem.
+> ⚠️ **Status note.** Ang tatlong program na ipinapakita sa ibaba ay ang **Phase 2 design
+> reference** ng protocol at **hindi pa naka-deploy sa mainnet**. Ang on-chain security work ay
+> isinasagawa bilang **staged audit** (Hashlock): ina-audit ng Phase 1 ang `matsuri-buyback`;
+> ina-audit ng Phase 1.5 ang `matsuri-vesting` + `matsuri-distribution`. Inilalarawan ng diagram
+> ang target architecture, hindi ang kasalukuyang deployment state.
+
+Ang design ng Matsuri ay binubuo ng **3 Anchor (Rust) programs** sa Solana, at bawat isa ay nangangasiwa ng isang pillar ng ecosystem (Phase 2 design reference — hindi pa naka-deploy).
 
 ```mermaid
 graph TB

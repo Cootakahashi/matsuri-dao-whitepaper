@@ -34,6 +34,7 @@ MTC hiện có thể giao dịch trên Raydium (DEX). Nếu thanh khoản không
 
 ### Rủi ro kỹ thuật
 - Smart contract có thể chứa lỗi hoặc lỗ hổng
+- Các smart contract của giao thức đang trải qua một audit bảo mật bên thứ ba theo từng giai đoạn (Hashlock) và chưa được deploy lên mainnet. Không contract nào được kích hoạt trên mainnet cho đến khi vượt qua audit của nó. Hoàn thành audit không loại bỏ mọi rủi ro
 - Sự cố hoặc gián đoạn của chính mạng Solana có thể tạm thời làm cho giao dịch bất khả thi
 - Sự không nhất quán dữ liệu có thể nảy sinh trong quá trình di chuyển off-chain → on-chain
 

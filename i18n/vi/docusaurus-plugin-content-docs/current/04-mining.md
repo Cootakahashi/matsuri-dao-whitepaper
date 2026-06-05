@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > Kiếm bằng hành động. Tiêu cho trải nghiệm. Giữ và xem nó tăng trưởng.
 
-MTC không phải là token đầu cơ. Nó lưu thông qua một nền kinh tế thực nơi mọi hành động sản sinh giá trị và nắm giữ nó. Ứng dụng web và bảng điều khiển admin **đã hoạt động**. Điểm đóng góp hiện được ghi off-chain (trong Django) và sẽ di chuyển on-chain theo từng giai đoạn từ tháng 8/2026.
+MTC không phải là token đầu cơ. Nó lưu thông qua một nền kinh tế thực nơi mọi hành động sản sinh giá trị và nắm giữ nó. Ứng dụng web và bảng điều khiển admin **đã hoạt động**. Điểm đóng góp hiện được ghi off-chain (trong Django) và sẽ di chuyển on-chain theo **các giai đoạn được kiểm soát bằng audit** — mỗi contract chỉ lên mainnet sau khi vượt qua audit bảo mật của nó (xem [lộ trình di chuyển on-chain](#on-chain-migration-roadmap) bên dưới).
 
 :::tip Bức tranh lớn
 MTC có **một nền kinh tế hoàn toàn khép kín**: bạn kiếm qua hoạt động thực, bạn tiêu cho trải nghiệm thực, và giá trị tăng khi hệ sinh thái tăng. Trang này giải thích cơ chế chi tiết.
@@ -80,17 +80,17 @@ Không có internet ở một đền thờ xa? Không sao. J-Times ghi hoạt đ
 2. Ghi nó cục bộ ngay cả khi ngoại tuyến (giữ trong 7 ngày)
 3. Gửi đến server để xác minh khi mạng quay lại
 4. Phản ánh vào số dư của bạn dưới dạng điểm đóng góp
-5. Từ tháng 8/2026: điểm đã xác minh được ghi on-chain qua oracle và có thể kiểm chứng trên blockchain
+5. Trong một giai đoạn được audit về sau: điểm đã xác minh được ghi on-chain qua oracle và có thể kiểm chứng trên blockchain
 
 ---
 
 ### 2. ⛩️ Đào phiêu lưu (đi và kiếm)
 
-**Dự án "Junrei" — smart contract hoàn thành, deploy mainnet tháng 8/2026**
+**Dự án "Junrei" — thiết kế smart contract hoàn thành; deploy mainnet trong một giai đoạn được audit về sau (sau contract buyback của Giai đoạn 1)**
 
 ![Đêm tại một thánh địa — trong tĩnh lặng, omikuji trở thành ánh sáng](/brand/07_A_night_shrine.webp)
 
-Một tính năng thế hệ tiếp theo dùng GPS và ưu đãi token để định hình "dòng người" vật lý. Bản đồ thánh địa **đã hoạt động** trong ứng dụng Matsuri web. Điểm đóng góp hiện được ghi off-chain; phân phối phần thưởng on-chain bắt đầu sau khi deploy smart contract tháng 8/2026.
+Một tính năng thế hệ tiếp theo dùng GPS và ưu đãi token để định hình "dòng người" vật lý. Bản đồ thánh địa **đã hoạt động** trong ứng dụng Matsuri web. Điểm đóng góp hiện được ghi off-chain; phân phối phần thưởng on-chain bắt đầu sau khi deploy mainnet được audit của contract này trong một giai đoạn về sau.
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as Bạn (Matsuri App)
     participant GPS as Check-in GPS
     participant API as Backend Matsuri
-    participant SC as Solana (từ Aug 2026)
+    participant SC as Solana (giai đoạn audit về sau)
 
     U->>GPS: Đến đền thờ, chạm "check in"
     GPS->>API: Gửi tọa độ + proof hash
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: Hiện kết quả: "⛩️ Check-in xong!" + omikuji
     U->>API: Rút omikuji
     API-->>U: "🏆 Daikichi! Điểm thưởng!"
-    API->>SC: Đẩy lên Solana (bất đồng bộ, từ August)
+    API->>SC: Đẩy lên Solana (bất đồng bộ, giai đoạn về sau)
 ```
 
 
@@ -201,8 +201,8 @@ Thành viên GCF nhận quyền truy cập vào bảng điều khiển admin chu
 | **📢 Phân phối nội dung** | Đăng và lan tỏa bài viết và nội dung J-Times |
 | **📊 Theo dõi giới thiệu** | Theo dõi hoạt động và doanh thu của người dùng được giới thiệu theo thời gian thực |
 
-:::warning Hiện off-chain → di chuyển on-chain tháng 8/2026
-Hoa hồng giới thiệu hiện được theo dõi trong Django (PostgreSQL) và trả qua chuyển khoản ngân hàng hoặc crypto. Từ **tháng 8/2026**, chúng di chuyển sang **smart contract Matsuri Referral** trên Solana, mang đến chi trả on-chain, có thể kiểm toán.
+:::warning Hiện off-chain → di chuyển on-chain trong một giai đoạn được audit về sau
+Hoa hồng giới thiệu hiện được theo dõi trong Django (PostgreSQL) và trả qua chuyển khoản ngân hàng hoặc crypto. Trong một giai đoạn về sau — sau khi vượt qua audit bảo mật riêng của nó — chúng di chuyển sang **smart contract Matsuri Referral** trên Solana, mang đến chi trả on-chain, có thể kiểm toán. (Contract đầu tiên được audit và lên on-chain là `matsuri-buyback`; xem [lộ trình di chuyển](#on-chain-migration-roadmap).)
 :::
 
 ![Bộ sản phẩm di động — quản lý mọi thứ từ điện thoại của bạn](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ Không có tiền nào được đặt cược. Đó đơn giản là thưởng 
 | **🎫 Đặt trải nghiệm** | Trả cho tour, sự kiện và hoạt động văn hóa bằng MTC | ✅ Có sẵn |
 | **🏷️ Giảm giá** | Giảm 5–10% giá quy đổi yên khi trả bằng MTC | ✅ Có sẵn |
 | **🔑 Quyền truy cập độc quyền** | Sự kiện gated bằng NFT, nghi lễ chỉ cho VIP, tour riêng | ✅ Có sẵn |
-| **📈 Toku staking** | Khóa MTC để boost điểm đóng góp (boost lên đến ~50%) | 🔜 Tháng 8/2026 |
+| **📈 Toku staking** | Khóa MTC để boost điểm đóng góp (boost lên đến ~50%) | 🔜 Giai đoạn về sau |
 | **🗳️ Quản trị DAO** | Bỏ phiếu về treasury, nâng cấp giao thức và công nhận điểm | 🔜 2027 |
 | **🛍️ Cửa hàng đối tác** | Trả tại các cửa hàng và nhà hàng đối tác | 🔜 Đang mở rộng |
 
@@ -331,6 +331,16 @@ MTC được hỗ trợ bởi một **nền kinh tế thực** — không chỉ 
 
 Nền kinh tế Matsuri đang di chuyển theo từng giai đoạn từ off-chain (Django/PostgreSQL) sang on-chain (smart contracts Solana). Qua quá trình di chuyển này, mọi vận hành trở nên **trustless, có thể kiểm toán và permissionless**.
 
+:::info Triển khai theo từng giai đoạn audit — cái gì lên trước
+Quá trình di chuyển được kiểm soát bằng một **audit bảo mật theo từng giai đoạn (Hashlock)**, nên thứ tự được dẫn dắt bởi audit, không phải bởi một lịch cố định:
+
+- **`matsuri-buyback`** (doanh thu → tự động mua lại MTC) là contract **đầu tiên** lên on-chain — được audit năm 2026 (Giai đoạn 1), deploy sau khi list trên Raydium.
+- **`matsuri-vesting`** (pool giải phóng halving 550M) theo sau quanh **Grand Unlock 2027-06-01** (Giai đoạn 1.5), cùng với `matsuri-distribution`.
+- Các **contract đào** bên dưới (referral / adventure / omikuji) là **các giai đoạn về sau**, mỗi cái chỉ deploy sau khi vượt qua audit riêng của nó.
+
+Các số giai đoạn sản phẩm trong bảng dưới mô tả tầm nhìn triển khai; ngày của chúng được sắp xếp sau lịch audit này.
+:::
+
 ```mermaid
 graph LR
     subgraph "Hôm nay (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 Theo dõi tham gia\n(PostgreSQL)"]
         O4["💰 Chi trả\n(ngân hàng / crypto, thủ công)"]
     end
-    subgraph "Tháng 8/2026 (hybrid)"
+    subgraph "On-chain đầu tiên (2026, sau audit)"
+        H0["💱 Mua lại từ doanh thu → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "Các giai đoạn được audit về sau (hybrid)"
         H1["⚡ Giới thiệu → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Đào phiêu lưu → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 Crowdfunding + quyền NFT\n(quản trị backer)"]
         G3["⚡ Chia sẻ doanh thu tự động\n(creator + cộng đồng + buyback)"]
     end
-    O1 & O2 & O3 & O4 -->|"di chuyển"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"di chuyển (đã audit)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"grand unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"cộng tạo"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | Giai đoạn | Lịch trình | Cái gì lên on-chain |
 | :--- | :--- | :--- |
 | **Giai đoạn 1 (hiện tại)** | Đang hoạt động | Token MTC (SPL), Raydium LP, xác minh Solana Pay |
-| **Giai đoạn 2 (tháng 8/2026)** | Deploy mainnet smart contract | Hoa hồng giới thiệu, phần thưởng đào phiêu lưu, rút Omikuji, đào truyền thông dựa trên oracle |
-| **Giai đoạn 3 (tháng 6/2027)** | Grand unlock | Phân phối halving 550M MTC, quản trị DAO, phi tập trung hoàn toàn |
-| **Giai đoạn 4 (2027+)** | Kinh tế cộng tạo | Sàn giao dịch on-chain (cửa hàng đặc sản khu vực + GCF store), crowdfunding với quyền NFT, chia sẻ doanh thu tự động cho creator + cộng đồng + buyback |
+| **Giai đoạn 2 (2026, audit-gated)** | Smart contract đầu tiên lên mainnet, sau audit Hashlock của nó | **`matsuri-buyback`** — doanh thu kinh doanh → tự động mua lại MTC |
+| **Giai đoạn 3 (Grand Unlock, 2027-06-01)** | Pool 550M kích hoạt | **`matsuri-vesting`** — giải phóng halving của pool đào 550M (cùng `matsuri-distribution`); bắt đầu quản trị DAO |
+| **Giai đoạn 4 (về sau, mỗi cái audit-gated)** | Contract đào lên mainnet | Hoa hồng giới thiệu, phần thưởng đào phiêu lưu, rút Omikuji, đào truyền thông dựa trên oracle |
+| **Giai đoạn 5 (2027+)** | Kinh tế cộng tạo | Sàn giao dịch on-chain (cửa hàng đặc sản khu vực + GCF store), crowdfunding với quyền NFT, chia sẻ doanh thu tự động cho creator + cộng đồng + buyback |
 
 :::warning Vì sao chúng tôi không đưa mọi thứ on-chain ngay bây giờ?
 **Chúng tôi không bật bất kỳ tính năng on-chain nào di chuyển tiền của người dùng cho đến khi audit bảo mật hoàn thành.** Đó là nguyên tắc của chúng tôi.
 
 Tình trạng hiện tại:
 - **Rủi ro với tiền người dùng: không có** — mọi phần thưởng và điểm hiện được quản lý off-chain (Django). Không tính năng smart contract nào di chuyển tiền người dùng đang hoạt động
-- **Lịch audit: Q2–Q3 2026** — contract sẽ được deploy lên mainnet từng cái một, chỉ sau khi vượt qua audit bảo mật chuyên nghiệp
+- **Audit theo từng giai đoạn (Hashlock):** Giai đoạn 1 audit `matsuri-buyback` (2026); Giai đoạn 1.5 audit `matsuri-vesting` + `matsuri-distribution` (quanh thời điểm unlock 2027-06-01). Contract được deploy lên mainnet từng cái một, chỉ sau khi vượt qua audit của chúng
 - **Hoàn thành audit là điều kiện tiên quyết để deploy** — chúng tôi sẽ không bao giờ kích hoạt smart contract chưa audit trên mainnet
 
 Phần thưởng kiếm được trong giai đoạn off-chain vẫn có thể kiểm chứng — mỗi giao dịch bao gồm `solana_signature` làm bằng chứng thanh toán.

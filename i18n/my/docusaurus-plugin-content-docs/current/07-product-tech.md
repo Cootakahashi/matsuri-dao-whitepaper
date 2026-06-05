@@ -330,7 +330,13 @@ Solana ပေါ်ရှိ Rust program အတွက် core logic (math modul
 
 ### အခြေခံ ဖွဲ့စည်းမှု
 
-Matsuri သည် **Anchor (Rust) program ၃ ခု**ကို Solana တွင် deploy လုပ်၍ ecosystem ၏ မဏ္ဍိုင်တစ်ခုစီကို တာဝန်ယူသည်။
+> ⚠️ **အခြေအနေ မှတ်ချက်။** အောက်တွင် ပြထားသော program ၃ ခုသည် protocol ၏ **Phase 2 design
+> reference** ဖြစ်ပြီး **mainnet သို့ မ deploy ရသေးပါ**။ On-chain security လုပ်ငန်းကို
+> **အဆင့်ဆင့် audit** (Hashlock) အဖြစ် ဆောင်ရွက်သည်: Phase 1 က `matsuri-buyback` ကို audit လုပ်;
+> Phase 1.5 က `matsuri-vesting` + `matsuri-distribution` ကို audit လုပ်။ ဤပုံသည် ပစ်မှတ်
+> architecture ကို ဖော်ပြ၍ လက်ရှိ deploy အခြေအနေ မဟုတ်ပါ။
+
+Matsuri ၏ design သည် Solana ပေါ်တွင် **Anchor (Rust) program ၃ ခု**ဖြင့် ဖွဲ့စည်းထား၍ ecosystem ၏ မဏ္ဍိုင်တစ်ခုစီကို တာဝန်ယူသည် (Phase 2 design reference — မ deploy ရသေး)။
 
 ```mermaid
 graph TB

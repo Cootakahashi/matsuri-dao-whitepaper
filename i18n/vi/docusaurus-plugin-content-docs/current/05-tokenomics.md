@@ -176,6 +176,10 @@ Phương trình này mô tả một thiết kế cấu trúc: nếu doanh thu ki
 Chúng tôi đã chọn **chu kỳ halving hai năm**, nhanh hơn chu kỳ bốn năm của Bitcoin.
 Tỷ lệ giải phóng giảm một nửa mỗi hai năm, giữ phần thưởng chảy về lý thuyết trong nhiều thập kỷ.
 
+:::info Contract nào thực hiện điều này
+Tại thời điểm unlock 2027-06-01, pool 550M chảy từ khóa của bên thứ ba **Streamflow** vào smart contract **`matsuri-vesting`**, contract này thực thi giải phóng halving on-chain. `matsuri-vesting` là một phần của audit **Hashlock** theo từng giai đoạn (Giai đoạn 1.5), cùng với `matsuri-distribution`. Contract đầu tiên lên là `matsuri-buyback` (Giai đoạn 1, 2026).
+:::
+
 | Giai đoạn | Tỷ lệ giải phóng | Số lượng giải phóng | Tích lũy |
 | :--- | :---: | :--- | :---: |
 | **Giai đoạn 1** 2027–2029 | **50%** | ~275M | 50% |

@@ -330,7 +330,13 @@ Untuk program Rust pada Solana, kami telah memulakan dengan unit tests untuk log
 
 ### Struktur keseluruhan
 
-Matsuri melaksanakan **tiga program Anchor (Rust)** pada Solana, masing-masing membawa salah satu tonggak ekosistem.
+> ⚠️ **Nota status.** Tiga program yang ditunjukkan di bawah ialah **rujukan reka bentuk
+> Fasa 2** protokol dan **belum dilaksanakan ke mainnet**. Kerja keselamatan on-chain
+> berlangsung sebagai **audit berperingkat** (Hashlock): Fasa 1 mengaudit `matsuri-buyback`
+> (Ogos 2026); Fasa 1.5 mengaudit `matsuri-vesting` + `matsuri-distribution` (Q1 2027).
+> Rajah menggambarkan seni bina sasaran, bukan keadaan pelaksanaan semasa.
+
+Reka bentuk Matsuri terdiri daripada **tiga program Anchor (Rust)** pada Solana, masing-masing membawa salah satu tonggak ekosistem (rujukan reka bentuk Fasa 2 — belum dilaksanakan).
 
 ```mermaid
 graph TB

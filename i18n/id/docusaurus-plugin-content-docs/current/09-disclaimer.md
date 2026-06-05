@@ -34,6 +34,7 @@ MTC saat ini dapat diperdagangkan di Raydium (DEX). Jika likuiditas tidak cukup,
 
 ### Risiko teknis
 - Smart contracts mungkin mengandung bug atau kerentanan
+- Smart contracts protokol sedang menjalani audit keamanan pihak ketiga bertahap (Hashlock) dan belum di-deploy ke mainnet. Tidak ada contract yang diaktifkan di mainnet sampai lulus auditnya. Penyelesaian audit tidak menghilangkan semua risiko
 - Kegagalan atau pemadaman dari jaringan Solana sendiri dapat membuat transaksi sementara tak mungkin
 - Inkonsistensi data dapat muncul selama migrasi off-chain → on-chain
 

@@ -330,7 +330,13 @@ For Rust-programmerne på Solana er vi startet med unit-tests på kernelogikken 
 
 ### Overordnet opbygning
 
-Matsuri deployer **tre Anchor-programmer (Rust)** på Solana, som hver bærer en søjle af økosystemet.
+> ⚠️ **Statusnote.** De tre programmer vist nedenfor er protokollens **Fase 2-designreference**
+> og er **endnu ikke deployet til mainnet**. On-chain-sikkerhedsarbejdet forløber som en
+> **trinvis revision** (Hashlock): Fase 1 reviderer `matsuri-buyback` (aug. 2026); Fase 1.5
+> reviderer `matsuri-vesting` + `matsuri-distribution` (Q1 2027). Diagrammet beskriver
+> målarkitekturen, ikke den nuværende deploy-tilstand.
+
+Matsuris design omfatter **tre Anchor-programmer (Rust)** på Solana, som hver bærer en søjle af økosystemet (Fase 2-designreference — endnu ikke deployet):
 
 ```mermaid
 graph TB

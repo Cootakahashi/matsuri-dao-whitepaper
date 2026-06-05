@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > Zarađujte djelovanjem. Trošite na iskustva. Držite i rastite.
 
-MTC nije spekulativni token. Sve radnje stvaraju i crpe vrijednost u realnoj ekonomiji. Web aplikacija i admin ploča **već su u pogonu**. Trenutačno se bodovi doprinosa bilježe off-chain (Django), a od kolovoza 2026. postupno se sele on-chain.
+MTC nije spekulativni token. Sve radnje stvaraju i crpe vrijednost u realnoj ekonomiji. Web aplikacija i admin ploča **već su u pogonu**. Trenutačno se bodovi doprinosa bilježe off-chain (Django), a sele se on-chain u **fazama uvjetovanima auditom** — svaki ugovor odlazi na mainnet tek nakon što prođe svoj sigurnosni audit (vidi [roadmap migracije on-chain](#on-chain-migration-roadmap) u nastavku).
 
 :::tip Velika slika
 MTC ima **potpuno cirkularnu ekonomiju**: zarađujete stvarnom aktivnošću, trošite na stvarna iskustva, a vrijednost raste s ekosustavom. Na ovoj stranici ulazimo u mehaniku.
@@ -80,17 +80,17 @@ Nema interneta u svetištu na selu? Nema problema. J-Times logira aktivnost loka
 2. Logira lokalno, i offline (čuva 7 dana)
 3. Šalje na server i validira kad se mreža vrati
 4. Odražava se kao bodovi doprinosa u saldu
-5. Od kolovoza 2026.: validirani bod zapisuje se on-chain preko oraklea i može se provjeriti na blockchainu
+5. U kasnijoj auditiranoj fazi: validirani bod zapisuje se on-chain preko oraklea i može se provjeriti na blockchainu
 
 ---
 
 ### 2. ⛩️ Adventure Mining (zaradi hodajući)
 
-**Projekt „Junrei (hodočašće)" ── pametni ugovor gotov, mainnet deploy kolovoz 2026.**
+**Projekt „Junrei (hodočašće)" ── dizajn pametnog ugovora gotov; mainnet deploy u kasnijoj auditiranoj fazi (nakon Phase 1 buyback ugovora)**
 
 ![Svetište u noći ── u tišini omikuji postaje svjetlo](/brand/07_A_night_shrine.webp)
 
-Funkcija sljedeće generacije koja koristi GPS i token poticaje za upravljanje fizičkim tokovima ljudi. Karta svetih mjesta **već radi u Matsuri web aplikaciji**. Bodovi doprinosa trenutačno se bilježe off-chain, a on-chain isplate kreću nakon deploya pametnog ugovora u kolovozu 2026.
+Funkcija sljedeće generacije koja koristi GPS i token poticaje za upravljanje fizičkim tokovima ljudi. Karta svetih mjesta **već radi u Matsuri web aplikaciji**. Bodovi doprinosa trenutačno se bilježe off-chain, a on-chain isplate kreću nakon auditiranog mainnet deploya ovog ugovora u kasnijoj fazi.
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as Vi (Matsuri App)
     participant GPS as GPS check-in
     participant API as Matsuri backend
-    participant SC as Solana (od kolovoza 2026.)
+    participant SC as Solana (kasnija auditirana faza)
 
     U->>GPS: Dolazak u svetište, "Check in"
     GPS->>API: Šalji koordinate + proof hash
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: Prikaži rezultat: "⛩️ Check-in uspješan!" + omikuji
     U->>API: Povuci omikuji
     API-->>U: "🏆 Dai-kichi! Bonus bodovi!"
-    API->>SC: Šalje se na Solanu (async, nakon kolovoza)
+    API->>SC: Šalje se na Solanu (async, kasnija faza)
 ```
 
 
@@ -201,8 +201,8 @@ GCF članovi dobivaju pristup posvećenoj administracijskoj ploči.
 | **📢 Sadržaj** | Objavljujte i širite J-Times članke i sadržaj |
 | **📊 Praćenje preporuka** | Pratite aktivnost preporučenih korisnika i prihode u stvarnom vremenu |
 
-:::warning Trenutačno off-chain → od kolovoza 2026. on-chain
-Provizije za preporuke trenutno se prate u Djangu (PostgreSQL) i isplaćuju bankovnim transferom ili kriptom. Od **kolovoza 2026.** sele se u **Matsuri Referral pametni ugovor** na Solani, pa isplate postaju on-chain provjerljive.
+:::warning Trenutačno off-chain → u kasnijoj auditiranoj fazi on-chain
+Provizije za preporuke trenutno se prate u Djangu (PostgreSQL) i isplaćuju bankovnim transferom ili kriptom. U kasnijoj fazi — nakon što prođe vlastiti sigurnosni audit — sele se u **Matsuri Referral pametni ugovor** na Solani, pa isplate postaju on-chain provjerljive. (Prvi auditirani on-chain ugovor je `matsuri-buyback`; vidi [roadmap migracije](#on-chain-migration-roadmap).)
 :::
 
 ![Mobile Suite ── sva administracija s pametnog telefona](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ Novac se ne ulaže. Riječ je o nasumičnom bonusu za **radnju „posjetio sam m
 | **🎫 Rezerviraj iskustva** | Plati ture, evente i kulturne aktivnosti MTC-om | ✅ Dostupno |
 | **🏷️ Popust** | 5–10% popust na cijenu u jenima kod plaćanja MTC-om | ✅ Dostupno |
 | **🔑 Ekskluzivni pristup** | NFT-gated eventi, VIP rituali, privatne ture | ✅ Dostupno |
-| **📈 Toku staking** | Zaključaj MTC i pojačaj bodove doprinosa (boost do oko 50%) | 🔜 Kolovoz 2026. |
+| **📈 Toku staking** | Zaključaj MTC i pojačaj bodove doprinosa (boost do oko 50%) | 🔜 Kasnija faza |
 | **🗳️ DAO upravljanje** | Glasaj o treasuryju, nadogradnjama protokola, certifikaciji mjesta | 🔜 2027. |
 | **🛍️ Partnerske trgovine** | Plaćaj u partnerskim trgovinama i restoranima | 🔜 U širenju |
 
@@ -331,6 +331,16 @@ MTC je podržan **realnom ekonomijom** — a ne samo emisijom tokena.
 
 Matsuri ekonomija postupno se seli s off-chaina (Django/PostgreSQL) na on-chain (Solana pametni ugovori). Ta migracija čini sve operacije **trustless, auditabilnima, bez dopuštenja**.
 
+:::info Postupno uvođenje uvjetovano auditom — što ide prvo
+Migracija je uvjetovana **postupnim sigurnosnim auditom (Hashlock)**, pa redoslijed određuju auditi, a ne fiksni kalendar:
+
+- **`matsuri-buyback`** (prihod → automatski otkup MTC-a) prvi je ugovor koji ide on-chain — auditiran 2026. (Phase 1), deployan nakon Raydium listanja.
+- **`matsuri-vesting`** (550M halving-release pool) slijedi oko **Grand Unlocka 2027-06-01** (Phase 1.5), zajedno s `matsuri-distribution`.
+- **Mining ugovori** u nastavku (referral / adventure / omikuji) **kasnije su faze**, svaki deployan tek nakon što prođe vlastiti audit.
+
+Brojevi faza proizvoda u tablici u nastavku opisuju viziju uvođenja; njihovi datumi posloženi su iza ovog rasporeda audita.
+:::
+
 ```mermaid
 graph LR
     subgraph "Danas (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 Praćenje angažmana\n(PostgreSQL)"]
         O4["💰 Isplata\n(banka/kripto ručno)"]
     end
-    subgraph "Kolovoz 2026. (hibrid)"
+    subgraph "Prvi on-chain (2026., nakon audita)"
+        H0["💱 Otkup iz prihoda → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "Kasnije auditirane faze (hibrid)"
         H1["⚡ Preporuke → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Adventure mining → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 Crowdfunding + NFT prava\n(upravljanje doprinositelja)"]
         G3["⚡ Automatska raspodjela prihoda\n(kreatori + zajednica + buyback)"]
     end
-    O1 & O2 & O3 & O4 -->|"migracija"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"migracija (auditirano)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"Grand Unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"sustvaranje"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | Faza | Vremenski okvir | Što ide on-chain |
 | :--- | :--- | :--- |
 | **Faza 1 (sada)** | U pogonu | MTC token (SPL), Raydium LP, Solana Pay verifikacija |
-| **Faza 2 (kolovoz 2026.)** | Pametni ugovori se deployaju na mainnet | Provizije preporuka, nagrade za adventure mining, omikuji loterija, media mining preko oraklea |
-| **Faza 3 (lipanj 2027.)** | Grand Unlock | Halving raspodjela 550M MTC, DAO upravljanje, potpuna decentralizacija |
-| **Faza 4 (2027+)** | Sustvaralačka ekonomija | On-chain tržnica (regionalne posebnosti + GCF trgovine), crowdfunding s NFT pravima, automatska raspodjela prihoda kreatorima + zajednici + buybacku |
+| **Faza 2 (2026., uvjetovano auditom)** | Prvi pametni ugovor na mainnetu, nakon Hashlock audita | **`matsuri-buyback`** — poslovni prihod → automatski otkup MTC-a |
+| **Faza 3 (Grand Unlock, 2027-06-01)** | Aktivira se 550M pool | **`matsuri-vesting`** — halving-release 550M mining poola (s `matsuri-distribution`); kreće DAO upravljanje |
+| **Faza 4 (kasnije, svaka uvjetovana auditom)** | Mining ugovori na mainnetu | Provizije preporuka, nagrade za adventure mining, omikuji loterija, media mining preko oraklea |
+| **Faza 5 (2027+)** | Sustvaralačka ekonomija | On-chain tržnica (regionalne posebnosti + GCF trgovine), crowdfunding s NFT pravima, automatska raspodjela prihoda kreatorima + zajednici + buybacku |
 
 :::warning Zašto ne sve odmah on-chain?
 **Dok se ne završi sigurnosni audit, ne aktiviramo on-chain funkcije u kojima se kreće novac korisnika.** To je naše načelo.
 
 Trenutačna situacija:
 - **Rizik sredstava korisnika: nema ga** — sve nagrade i bodovi sada su off-chain (Django); ne rade funkcije koje premještaju sredstva korisnika putem pametnih ugovora
-- **Plan audita: Q2–Q3 2026.** — nakon profesionalnog sigurnosnog audita ugovori se postupno deployaju na mainnet
+- **Postupni audit (Hashlock):** Phase 1 auditira `matsuri-buyback` (2026.); Phase 1.5 auditira `matsuri-vesting` + `matsuri-distribution` (oko unlocka 2027-06-01). Ugovori se deployaju na mainnet jedan po jedan, tek nakon što prođu svoj audit
 - **Dovršen audit preduvjet je za deploy** — neauditirane pametne ugovore nikad ne aktiviramo na mainnetu
 
 Off-chain nagrade također su provjerljive — sve transakcije sadrže `solana_signature` kao dokaz plaćanja.

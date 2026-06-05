@@ -34,6 +34,7 @@ MTC se danas može trgovati na Raydiumu (DEX), ali ako likvidnost nije dovoljna,
 
 ### Tehnički rizik
 - Pametni ugovori mogu sadržavati greške ili ranjivosti
+- Pametni ugovori protokola prolaze postupni sigurnosni audit treće strane (Hashlock) i još nisu deployani na mainnet. Nijedan ugovor ne aktivira se na mainnetu dok ne prođe svoj audit. Dovršetak audita ne uklanja sve rizike
 - Kvarovi ili prekidi same Solana mreže mogu privremeno onemogućiti transakcije
 - Tijekom migracije off-chain → on-chain može doći do odstupanja u podacima
 

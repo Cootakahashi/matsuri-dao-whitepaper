@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > Kumita sa aksyon. Gamitin sa karanasan. Pag-aariin at palaguin.
 
-Hindi speculative token ang MTC. Bawat aksyon ay lumilikha ng halaga at umiikot sa real economy na kinukuha rin ang halaga. Ang web application at management dashboard ay **gumagana na ngayon**. Sa kasalukuyan, nakatala ang contribution score sa off-chain (Django), at unti-unting lilipat sa on-chain mula Agosto 2026.
+Hindi speculative token ang MTC. Bawat aksyon ay lumilikha ng halaga at umiikot sa real economy na kinukuha rin ang halaga. Ang web application at management dashboard ay **gumagana na ngayon**. Sa kasalukuyan, nakatala ang contribution score sa off-chain (Django), at lilipat sa on-chain sa **audit-gated na mga yugto** — ang bawat contract ay napupunta sa mainnet matapos lamang ipasa ang security audit nito (tingnan ang [on-chain migration roadmap](#on-chain-migration-roadmap) sa ibaba).
 
 :::tip Buong Larawan
 May **kompletong circular economy** ang MTC: Kumita sa tunay na aktibidad, gamitin sa tunay na karanasan, at lumalago ang halaga kasabay ng paglawak ng ecosystem. Sa pahinang ito, ipinapaliwanag namin nang detalyado ang mekanismong ito.
@@ -80,17 +80,17 @@ Walang internet sa rural shrine? Walang problema. Lokal na nitatala ng J-Times a
 2. Offline man, naitatala sa lokal (7 days retention)
 3. Pagbalik ng network, ipinapadala sa server at na-verify
 4. Makikita sa balance bilang contribution score
-5. Mula Agosto 2026: Ang na-verify na score ay ita-record sa on-chain sa pamamagitan ng oracle, at makokonfirm sa blockchain
+5. Sa isang mas huling audited na yugto: Ang na-verify na score ay ita-record sa on-chain sa pamamagitan ng oracle, at makokonfirm sa blockchain
 
 ---
 
 ### 2. ⛩️ Adventure Mining (Kumita sa Paglakad)
 
-**Project "Pilgrimage" ── Smart contract tapos na, mainnet deploy sa Agosto 2026**
+**Project "Pilgrimage" ── Tapos na ang smart-contract design; mainnet deploy sa isang mas huling audited na yugto (matapos ang Phase 1 buyback contract)**
 
 ![Sagradong lugar sa gabi ── sa katahimikan, nagiging liwanag ang Omikuji](/brand/07_A_night_shrine.webp)
 
-Next-generation feature na kumokontrol ng pisikal na "daloy ng tao" gamit ang GPS at token incentive. Ang sacred map ay **gumagana na** sa Matsuri Web app. Sa kasalukuyan, nakatala ang contribution score sa off-chain, at sisimulan ang on-chain reward distribution pagkatapos ng smart contract deployment sa Agosto 2026.
+Next-generation feature na kumokontrol ng pisikal na "daloy ng tao" gamit ang GPS at token incentive. Ang sacred map ay **gumagana na** sa Matsuri Web app. Sa kasalukuyan, nakatala ang contribution score sa off-chain, at sisimulan ang on-chain reward distribution pagkatapos ng audited mainnet deployment ng contract na ito sa isang mas huling yugto.
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as Ikaw (Matsuri App)
     participant GPS as GPS Check-in
     participant API as Matsuri Backend
-    participant SC as Solana (mula Agosto 2026)
+    participant SC as Solana (mas huling audited na yugto)
 
     U->>GPS: Dumating sa shrine, i-tap ang "Check-in"
     GPS->>API: Ipadala ang coordinates + proof hash
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: Ipakita ang resulta: "⛩️ Tapos na ang check-in!" + Omikuji
     U->>API: Magpa-Omikuji
     API-->>U: "🏆 Daikichi! Bonus score!"
-    API->>SC: Ipadala sa Solana (async, mula Agosto)
+    API->>SC: Ipadala sa Solana (async, mas huling yugto)
 ```
 
 
@@ -201,8 +201,8 @@ Binibigyan ng access sa espesyal na management dashboard ang GCF members.
 | **📢 Content Distribution** | Ipamahagi at palawakin ang artikulo at content ng J-Times |
 | **📊 Referral Tracking** | Real-time tracking ng gawi at kita ng users na inireferral |
 
-:::warning Kasalukuyang Off-chain → Lilipat sa On-chain sa Agosto 2026
-Ang referral commission ay kasalukuyang tina-track sa Django (PostgreSQL) at binabayaran sa bank transfer o cryptocurrency. Mula **Agosto 2026**, lilipat sa **Matsuri Referral smart contract** sa Solana para maisakatuparan ang on-chain auditable payment.
+:::warning Kasalukuyang Off-chain → Lilipat sa On-chain sa isang mas huling audited na yugto
+Ang referral commission ay kasalukuyang tina-track sa Django (PostgreSQL) at binabayaran sa bank transfer o cryptocurrency. Sa isang mas huling yugto — matapos ipasa ang sarili nitong security audit — lilipat sa **Matsuri Referral smart contract** sa Solana para maisakatuparan ang on-chain auditable payment. (Ang unang audited na on-chain contract ay `matsuri-buyback`; tingnan ang [migration roadmap](#on-chain-migration-roadmap).)
 :::
 
 ![Mobile Suite ── lahat ng management mula sa smartphone](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ Walang kailangang monetary bet. Random bonus para sa **kilos ng "pagbisita"**. S
 | **🎫 Book ng karanasan** | Magbayad sa MTC para sa tour, event, cultural activity | ✅ Available na |
 | **🏷️ Discount** | 5-10% discount sa ¥ price sa MTC payment | ✅ Available na |
 | **🔑 Limited Access** | NFT-gated event, VIP-exclusive ritual, private tour | ✅ Available na |
-| **📈 Toku Staking** | I-lock ang MTC para mag-boost ng contribution score (hanggang ~50% boost) | 🔜 Agosto 2026 |
+| **📈 Toku Staking** | I-lock ang MTC para mag-boost ng contribution score (hanggang ~50% boost) | 🔜 Mas huling yugto |
 | **🗳️ DAO Governance** | Boto sa treasury, protocol upgrade, site certification | 🔜 2027 |
 | **🛍️ Partner Store** | Magbayad sa mga partner shop at restaurant | 🔜 Lumalawak |
 
@@ -331,6 +331,16 @@ Sinusuportahan ang MTC ng **real economy** — hindi lang basta token emission.
 
 Ang Matsuri economy ay unti-unting lumilipat mula sa off-chain (Django/PostgreSQL) patungong on-chain (Solana smart contracts). Sa pamamagitan ng migration na ito, lahat ng operation ay magiging **trustless, auditable, at permissionless**.
 
+:::info Audit-staged rollout — ano ang unang ide-deploy
+Ang migration ay kinokontrol ng isang **staged security audit (Hashlock)**, kaya ang pagkakasunod-sunod ay batay sa mga audit, hindi sa nakatakdang kalendaryo:
+
+- Ang **`matsuri-buyback`** (revenue → automatic MTC buy-back) ang **unang** contract na mapupunta sa on-chain — na-audit noong 2026 (Phase 1), na-deploy matapos ang Raydium listing.
+- Ang **`matsuri-vesting`** (550M halving-release pool) ay susunod sa paligid ng **2027-06-01 Grand Unlock** (Phase 1.5), kasama ng `matsuri-distribution`.
+- Ang mga **mining contract** sa ibaba (referral / adventure / omikuji) ay **mga mas huling yugto**, bawat isa ay ide-deploy lamang matapos ipasa ang sarili nitong audit.
+
+Inilalarawan ng mga product-phase number sa talahanayan sa ibaba ang rollout vision; ang mga petsa nito ay isinaayos kasunod ng audit schedule na ito.
+:::
+
 ```mermaid
 graph LR
     subgraph "Ngayon (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 Engagement tracking\n(PostgreSQL)"]
         O4["💰 Payout\n(bank/crypto manual)"]
     end
-    subgraph "Agosto 2026 (Hybrid)"
+    subgraph "Unang on-chain (2026, post-audit)"
+        H0["💱 Revenue buyback → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "Mga mas huling audited na yugto (Hybrid)"
         H1["⚡ Referral → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Adventure Mining → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 Crowdfunding + NFT rights\n(backer governance)"]
         G3["⚡ Automated revenue distribution\n(Creator + Community + Buyback)"]
     end
-    O1 & O2 & O3 & O4 -->|"Migration"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"Migration (audited)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"Grand unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"Co-creation"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | Phase | Timeline | Ano ang Mako-on-chain |
 | :--- | :--- | :--- |
 | **Phase 1 (Ngayon)** | Gumagana | MTC token (SPL), Raydium LP, Solana Pay verification |
-| **Phase 2 (Agosto 2026)** | Smart contract mainnet deploy | Referral commission, adventure mining reward, Omikuji raffle, media mining sa pamamagitan ng oracle |
-| **Phase 3 (Hunyo 2027)** | Grand unlock | 550M MTC halving distribution, DAO governance, kompletong desentralisasyon |
-| **Phase 4 (2027〜)** | Co-creation economy | On-chain marketplace (local specialty shop + GCF store), crowdfunding na may NFT rights, automatic revenue distribution sa creator + community + buyback |
+| **Phase 2 (2026, audit-gated)** | Unang smart contract sa mainnet, matapos ang Hashlock audit nito | **`matsuri-buyback`** — revenue ng negosyo → automatic MTC buy-back |
+| **Phase 3 (Grand Unlock, 2027-06-01)** | Nag-aaktibo ang 550M pool | **`matsuri-vesting`** — halving-release ng 550M mining pool (kasama ang `matsuri-distribution`); nagsisimula ang DAO governance |
+| **Phase 4 (mas huli, bawat isa ay audit-gated)** | Mga mining contract sa mainnet | Referral commission, adventure mining reward, Omikuji raffle, media mining sa pamamagitan ng oracle |
+| **Phase 5 (2027〜)** | Co-creation economy | On-chain marketplace (local specialty shop + GCF store), crowdfunding na may NFT rights, automatic revenue distribution sa creator + community + buyback |
 
 :::warning Bakit hindi ngayon on-chain lahat?
 **Hindi namin bubuksan ang on-chain function na nagpapagalaw ng pondo ng user hanggang hindi natatapos ang security audit.** Iyan ang prinsipyo namin.
 
 Kasalukuyang Sitwasyon:
 - **Panganib sa pondo ng user: Wala** — Sa kasalukuyan, lahat ng reward at score ay pinamamahalaan sa off-chain (Django), at walang gumagana pang function na nagpapagalaw ng pondo ng user sa pamamagitan ng smart contract
-- **Iskedyul ng Audit: 2026 Q2〜Q3** — Sa pamamagitan ng professional security audit, unti-unti naming ide-deploy sa mainnet ang mga contract na nakumpirma na safe
+- **Staged audit (Hashlock):** Ina-audit ng Phase 1 ang `matsuri-buyback` (2026); ina-audit ng Phase 1.5 ang `matsuri-vesting` + `matsuri-distribution` (sa paligid ng 2027-06-01 unlock). Ang mga contract ay ide-deploy sa mainnet nang isa-isa, matapos lamang ipasa ang audit nito
 - **Kinakailangan ang tapos na audit bago mag-deploy** — Hindi kailanman paaandarin sa mainnet ang smart contract na hindi pa tapos na-audit
 
 Maaaring i-verify ang reward kahit sa off-chain period — lahat ng transaksyon ay may kasamang `solana_signature` bilang proof of settlement.

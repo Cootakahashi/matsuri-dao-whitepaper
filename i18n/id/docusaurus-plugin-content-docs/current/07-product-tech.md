@@ -330,7 +330,13 @@ Untuk program Rust di Solana, kami telah memulai dengan unit tests untuk logika 
 
 ### Struktur keseluruhan
 
-Matsuri men-deploy **tiga program Anchor (Rust)** di Solana, masing-masing membawa salah satu pilar ekosistem.
+> ⚠️ **Catatan status.** Tiga program yang ditampilkan di bawah adalah **referensi desain
+> Fase 2** dari protokol dan **belum di-deploy ke mainnet**. Pekerjaan keamanan on-chain
+> berlangsung sebagai **audit bertahap** (Hashlock): Fase 1 mengaudit `matsuri-buyback`
+> (Agustus 2026); Fase 1.5 mengaudit `matsuri-vesting` + `matsuri-distribution` (Q1 2027).
+> Diagram menggambarkan arsitektur target, bukan keadaan deploy saat ini.
+
+Desain Matsuri terdiri dari **tiga program Anchor (Rust)** di Solana, masing-masing membawa salah satu pilar ekosistem (referensi desain Fase 2 — belum di-deploy).
 
 ```mermaid
 graph TB

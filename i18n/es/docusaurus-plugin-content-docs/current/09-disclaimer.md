@@ -34,6 +34,7 @@ MTC cotiza actualmente en Raydium (DEX); si la liquidez no es suficiente, **pued
 
 ### Riesgo técnico
 - Los smart contracts pueden contener bugs o vulnerabilidades
+- Los smart contracts del protocolo están sometidos a una **auditoría de seguridad escalonada de terceros (Hashlock)** y **aún no están desplegados en mainnet**. Ningún contrato se activa en mainnet hasta que supera su auditoría. Completar la auditoría no elimina todos los riesgos
 - Los fallos o paradas de la red Solana pueden impedir temporalmente las transacciones
 - Pueden producirse inconsistencias de datos durante la migración off-chain → on-chain
 

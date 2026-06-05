@@ -176,6 +176,10 @@ The **550 million MTC (about 61% of total supply)** that unlock on June 1, 2027 
 We have adopted a **two-year halving cycle**, faster than Bitcoin's four-year cycle.
 The release rate halves every two years, keeping rewards flowing in theory for decades.
 
+:::info Which contract performs this
+At the 2027-06-01 unlock, the 550M pool flows from the third-party **Streamflow** lockup into the **`matsuri-vesting`** smart contract, which executes the halving release on-chain. `matsuri-vesting` is part of the staged **Hashlock** audit (Phase 1.5), alongside `matsuri-distribution`. The first contract to ship is `matsuri-buyback` (Phase 1, 2026).
+:::
+
 | Period | Release share | Amount released | Cumulative |
 | :--- | :---: | :--- | :---: |
 | **Period 1** 2027–2029 | **50%** | ~275M | 50% |

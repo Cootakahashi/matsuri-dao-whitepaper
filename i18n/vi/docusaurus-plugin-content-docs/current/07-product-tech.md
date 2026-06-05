@@ -330,7 +330,14 @@ graph TB
 
 ### Cấu trúc tổng thể
 
-Matsuri triển khai **ba chương trình Anchor (Rust)** trên Solana, mỗi chương trình mang một trong các trụ cột của hệ sinh thái.
+> ⚠️ **Ghi chú trạng thái.** Ba chương trình hiển thị bên dưới là **thiết kế tham
+> chiếu Giai đoạn 2** của giao thức và **chưa được deploy lên mainnet**. Công việc bảo mật
+> on-chain tiến hành như một **audit theo từng giai đoạn** (Hashlock): Giai đoạn 1 audit
+> `matsuri-buyback` (tháng 8/2026); Giai đoạn 1.5 audit `matsuri-vesting` +
+> `matsuri-distribution` (Q1 2027). Sơ đồ mô tả kiến trúc mục tiêu, không phải trạng
+> thái deploy hiện tại.
+
+Thiết kế của Matsuri gồm **ba chương trình Anchor (Rust)** trên Solana, mỗi chương trình mang một trong các trụ cột của hệ sinh thái (thiết kế tham chiếu Giai đoạn 2 — chưa được deploy).
 
 ```mermaid
 graph TB

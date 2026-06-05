@@ -34,6 +34,7 @@ MTC est actuellement négociable sur Raydium (DEX) ; si la liquidité est insuff
 
 ### Risque technique
 - Les smart contracts peuvent contenir des bugs ou des vulnérabilités
+- Les smart contracts du protocole font l'objet d'un **audit de sécurité tiers échelonné (Hashlock)** et **ne sont pas encore déployés en mainnet**. Aucun contrat n'est activé en mainnet tant qu'il n'a pas réussi son audit. L'achèvement de l'audit n'élimine pas tous les risques
 - Des pannes ou interruptions de Solana peuvent rendre les transactions temporairement impossibles
 - Des incohérences de données peuvent survenir lors de la migration off-chain → on-chain
 

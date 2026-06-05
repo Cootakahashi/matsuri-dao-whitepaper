@@ -34,6 +34,7 @@ MTC kini boleh diniagakan di Raydium (DEX). Jika kecairan tidak mencukupi, **and
 
 ### Risiko teknikal
 - Smart contracts mungkin mengandungi pepijat atau kelemahan
+- Smart contracts protokol sedang menjalani audit keselamatan pihak ketiga berperingkat (Hashlock) dan belum dilaksanakan ke mainnet. Tiada contract diaktifkan di mainnet sehingga ia lulus auditnya. Penyiapan audit tidak menghapuskan semua risiko
 - Kegagalan atau gangguan rangkaian Solana sendiri boleh menjadikan transaksi mustahil buat sementara waktu
 - Ketidakkonsistenan data mungkin timbul semasa penghijrahan off-chain → on-chain
 

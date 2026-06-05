@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > Tjen ved at handle. Brug på oplevelser. Hold og vokse.
 
-MTC er ikke en spekulationstoken. Alle handlinger skaber og henter værdi i en reel økonomi. Webappen og admin-panelet er **allerede i drift**. Bidragsscorerne registreres p.t. off-chain (Django), og fra august 2026 flyttes de trinvist on-chain.
+MTC er ikke en spekulationstoken. Alle handlinger skaber og henter værdi i en reel økonomi. Webappen og admin-panelet er **allerede i drift**. Bidragsscorerne registreres p.t. off-chain (Django) og flyttes on-chain i **revisionsstyrede trin** — hver kontrakt går først til mainnet, når den har bestået sin sikkerhedsrevision (se [roadmappen for on-chain-migreringen](#roadmap-for-on-chain-migreringen) nedenfor).
 
 :::tip Det store billede
 MTC har **en fuldt ud cirkulær økonomi**: du tjener gennem reel aktivitet, bruger på reelle oplevelser, og værdien vokser med økosystemet. På denne side går vi i dybden med mekanismen.
@@ -80,17 +80,17 @@ Ingen internet ved en helligdom på landet? Intet problem. J-Times logger aktivi
 2. Logger lokalt, selv offline (bevares 7 dage)
 3. Sender til serveren og validerer, når netværket er tilbage
 4. Opdateres som bidragsscore i din balance
-5. Fra august 2026: den validerede score skrives on-chain via en orakel og kan efterprøves på blockchainen
+5. I en senere revideret fase: den validerede score skrives on-chain via en orakel og kan efterprøves på blockchainen
 
 ---
 
 ### 2. ⛩️ Adventure Mining (tjen ved at gå)
 
-**Projektet "Junrei (pilgrimsfærd)" ── smart contract færdig, mainnet-deploy august 2026**
+**Projektet "Junrei (pilgrimsfærd)" ── smart contract-design færdigt; mainnet-deploy i en senere revideret fase (efter Fase 1-tilbagekøbskontrakten)**
 
 ![Nat ved det hellige sted ── i stilheden bliver omikuji til lys](/brand/07_A_night_shrine.webp)
 
-En næste generations funktion, der bruger GPS og token-incitamenter til at styre den fysiske strøm af mennesker. Det hellige kort kører **allerede i Matsuri-webappen**. Bidragsscorer registreres off-chain i dag, og on-chain-udbetalinger starter efter smart contract-deployet i august 2026.
+En næste generations funktion, der bruger GPS og token-incitamenter til at styre den fysiske strøm af mennesker. Det hellige kort kører **allerede i Matsuri-webappen**. Bidragsscorer registreres off-chain i dag, og on-chain-udbetalinger starter efter denne kontrakts reviderede mainnet-deploy i en senere fase.
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as Dig (Matsuri App)
     participant GPS as GPS check-in
     participant API as Matsuri-backend
-    participant SC as Solana (fra august 2026)
+    participant SC as Solana (senere revideret fase)
 
     U->>GPS: Ankom til helligdom, tryk "Check ind"
     GPS->>API: Send koordinater + proof-hash
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: Vis resultat: "⛩️ Check-in fuldført!" + omikuji
     U->>API: Træk omikuji
     API-->>U: "🏆 Dai-kichi! Bonus-score!"
-    API->>SC: Sendes til Solana (async, efter august)
+    API->>SC: Sendes til Solana (async, senere fase)
 ```
 
 
@@ -201,8 +201,8 @@ GCF-medlemmer får adgang til et dedikeret administrationspanel.
 | **📢 Indhold** | Udgiv og sprede J-Times-artikler og indhold |
 | **📊 Henvisningssporing** | Følg henviste brugeres aktivitet og indtægter i realtid |
 
-:::warning I dag off-chain → migrerer on-chain august 2026
-Henvisningskommissioner spores i dag i Django (PostgreSQL) og udbetales via bankoverførsel eller krypto. Fra **august 2026** flyttes de til **Matsuri Referral smart contract** på Solana, så udbetalingerne bliver reviderbare on-chain.
+:::warning I dag off-chain → migrerer on-chain i en senere revideret fase
+Henvisningskommissioner spores i dag i Django (PostgreSQL) og udbetales via bankoverførsel eller krypto. I en senere fase — efter den har bestået sin egen sikkerhedsrevision — flyttes de til **Matsuri Referral smart contract** på Solana, så udbetalingerne bliver reviderbare on-chain. (Den første reviderede on-chain-kontrakt er `matsuri-buyback`; se [migreringsroadmappen](#roadmap-for-on-chain-migreringen).)
 :::
 
 ![Mobil-suite ── al administration fra smartphonen](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ Der sættes ingen penge på spil. Det er blot en tilfældig bonus for **handling
 | **🎫 Book oplevelser** | Betal ture, events og kulturaktiviteter med MTC | ✅ Tilgængelig |
 | **🏷️ Rabat** | 5–10% rabat på yen-prisen ved MTC-betaling | ✅ Tilgængelig |
 | **🔑 Eksklusiv adgang** | NFT-gatede events, VIP-ritualer, private ture | ✅ Tilgængelig |
-| **📈 Toku-staking** | Lås MTC og boost din bidragsscore (op til ca. 50% boost) | 🔜 August 2026 |
+| **📈 Toku-staking** | Lås MTC og boost din bidragsscore (op til ca. 50% boost) | 🔜 Senere fase |
 | **🗳️ DAO-styring** | Stem om treasury, protokol-opgraderinger, site-certificering | 🔜 2027 |
 | **🛍️ Partnerbutikker** | Betal hos partnerforretninger og restauranter | 🔜 Udvides |
 
@@ -331,6 +331,16 @@ MTC er understøttet af en **reel økonomi** — ikke bare token-emission.
 
 Matsuri-økonomien migrerer trinvist fra off-chain (Django/PostgreSQL) til on-chain (Solana smart contracts). Migreringen gør alle operationer **trustless, reviderbare, uden tilladelse**.
 
+:::info Revisionsstyret udrulning — hvad kommer først
+Migreringen er styret af en **trinvis sikkerhedsrevision (Hashlock)**, så rækkefølgen drives af revisioner, ikke af en fast kalender:
+
+- **`matsuri-buyback`** (indtægt → automatisk MTC-tilbagekøb) er den **første** kontrakt, der går on-chain — revideret i 2026 (Fase 1), deployet efter Raydium-noteringen.
+- **`matsuri-vesting`** (550M-halveringspuljen) følger omkring **Grand Unlock den 2027-06-01** (Fase 1.5), sammen med `matsuri-distribution`.
+- **Minedrifts-kontrakterne** nedenfor (henvisning / adventure / omikuji) er **senere faser**, hver deployet først efter at have bestået sin egen revision.
+
+Produktfase-numrene i tabellen nedenfor beskriver udrulningsvisionen; deres datoer er placeret bag denne revisionsplan.
+:::
+
 ```mermaid
 graph LR
     subgraph "I dag (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 Engagement-sporing\n(PostgreSQL)"]
         O4["💰 Udbetaling\n(bank/krypto manuelt)"]
     end
-    subgraph "August 2026 (hybrid)"
+    subgraph "Først on-chain (2026, efter revision)"
+        H0["💱 Indtægts-tilbagekøb → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "Senere reviderede faser (hybrid)"
         H1["⚡ Henvisninger → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Adventure mining → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 Crowdfunding + NFT-rettigheder\n(bidragsyder-governance)"]
         G3["⚡ Automatisk indtægtsfordeling\n(skabere + fællesskab + tilbagekøb)"]
     end
-    O1 & O2 & O3 & O4 -->|"migrerer"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"migrerer (revideret)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"Grand Unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"samskabelse"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | Fase | Tidslinje | Hvad der bliver on-chain |
 | :--- | :--- | :--- |
 | **Fase 1 (nu)** | Live | MTC-token (SPL), Raydium LP, Solana Pay-verifikation |
-| **Fase 2 (august 2026)** | Smart contracts deployes på mainnet | Henvisningskommissioner, adventure-mining-belønninger, omikuji-lotteri, media mining via orakel |
-| **Fase 3 (juni 2027)** | Grand Unlock | 550M MTC halveringsfordeling, DAO-styring, fuld decentralisering |
-| **Fase 4 (2027+)** | Samskabende økonomi | On-chain-markedsplads (regionale specialiteter + GCF-butikker), crowdfunding med NFT-rettigheder, automatisk indtægtsfordeling til skabere + fællesskab + tilbagekøb |
+| **Fase 2 (2026, revisionsstyret)** | Første smart contract på mainnet, efter dens Hashlock-revision | **`matsuri-buyback`** — forretningsindtægt → automatisk MTC-tilbagekøb |
+| **Fase 3 (Grand Unlock, 2027-06-01)** | 550M-puljen aktiveres | **`matsuri-vesting`** — halveringsudgivelse af 550M-miningpuljen (med `matsuri-distribution`); DAO-styring begynder |
+| **Fase 4 (senere, hver revisionsstyret)** | Minedrifts-kontrakter på mainnet | Henvisningskommissioner, adventure-mining-belønninger, omikuji-lotteri, media mining via orakel |
+| **Fase 5 (2027+)** | Samskabende økonomi | On-chain-markedsplads (regionale specialiteter + GCF-butikker), crowdfunding med NFT-rettigheder, automatisk indtægtsfordeling til skabere + fællesskab + tilbagekøb |
 
 :::warning Hvorfor ikke alt on-chain med det samme?
 **Indtil sikkerhedsrevisionen er gennemført, aktiverer vi ikke on-chain-funktioner, hvor brugernes midler bevæger sig.** Det er vores princip.
 
 Status i dag:
 - **Brugermidler i fare: nej** — alle belønninger og scorer holdes i dag off-chain (Django); ingen funktioner flytter brugermidler via smart contracts
-- **Revisionsplan: Q2-Q3 2026** — når en professionel sikkerhedsrevision er bestået, deployes kontrakterne trinvist til mainnet
+- **Trinvis revision (Hashlock):** Fase 1 reviderer `matsuri-buyback` (2026); Fase 1.5 reviderer `matsuri-vesting` + `matsuri-distribution` (omkring oplåsningen den 2027-06-01). Kontrakterne deployes til mainnet én ad gangen, kun efter at have bestået deres revision
 - **Afsluttet revision er en forudsætning for deploy** — vi aktiverer aldrig en uevalueret smart contract på mainnet
 
 Off-chain-belønningerne kan også verificeres — alle transaktioner indeholder `solana_signature` som betalingsbevis.

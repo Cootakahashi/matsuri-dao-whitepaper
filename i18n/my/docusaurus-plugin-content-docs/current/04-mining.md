@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > လုပ်ဆောင်မှုဖြင့် ရှာ။ အတွေ့အကြုံတွင် သုံး။ ပိုင်ဆိုင်၍ ကြီးထွား။
 
-MTC သည် ကြံစည်မှု token မဟုတ်ပါ။ လုပ်ဆောင်မှုတိုင်းသည် တန်ဖိုးကို ဖန်တီးပြီး တန်ဖိုးကို ရယူသော real economy ကို လည်ပတ်ပါသည်။ Web application နှင့် admin dashboard များသည် **ယခုပင် အသုံးပြုနိုင်**ပြီ။ လက်ရှိ off-chain (Django) ဖြင့် contribution score များ မှတ်တမ်းတင်နေပြီး 2026 သြဂုတ် နောက်ပိုင်း တစ်ဆင့်ချင်း on-chain သို့ ပြောင်းရွှေ့ပါမည်။
+MTC သည် ကြံစည်မှု token မဟုတ်ပါ။ လုပ်ဆောင်မှုတိုင်းသည် တန်ဖိုးကို ဖန်တီးပြီး တန်ဖိုးကို ရယူသော real economy ကို လည်ပတ်ပါသည်။ Web application နှင့် admin dashboard များသည် **ယခုပင် အသုံးပြုနိုင်**ပြီ။ လက်ရှိ off-chain (Django) ဖြင့် contribution score များ မှတ်တမ်းတင်နေပြီး **audit-gated အဆင့်များ** ဖြင့် on-chain သို့ ပြောင်းရွှေ့ပါမည် — contract တစ်ခုစီသည် ၎င်း၏ security audit အောင်မြင်ပြီးမှသာ mainnet သို့ သွားသည် (အောက်ပါ [on-chain migration roadmap](#on-chain-migration-roadmap) ကို ကြည့်ပါ)။
 
 :::tip အခြေအနေအားလုံး
 MTC တွင် **အပြည့်အဝ လည်ပတ်သော စီးပွားရေး** ရှိသည်: တကယ့်လှုပ်ရှားမှုများမှ တစ်ဆင့် ရှာ၊ တကယ့်အတွေ့အကြုံတွင် သုံး၊ ecosystem ချဲ့ထွင်မှုနှင့်အတူ တန်ဖိုး ကြီးထွား။ ဤစာမျက်နှာတွင် ထိုယန္တရားကို အသေးစိတ် ရှင်းပြပါမည်။
@@ -80,17 +80,17 @@ graph LR
 2. Offline ဖြစ်စေကာမူ local တွင် မှတ်တမ်းတင် (7 ရက် သိမ်း)
 3. Network ပြန်ဖြစ်သောအခါ server သို့ ပို့ / စစ်ဆေး
 4. Contribution score အဖြစ် လက်ကျန်တွင် ပြသ
-5. 2026 သြဂုတ် နောက်ပိုင်း: စစ်ဆေးပြီး score ကို oracle မှတဆင့် on-chain မှတ်တမ်းတင်၊ blockchain တွင် အတည်ပြုနိုင်
+5. နောက်ပိုင်း audit လုပ်ပြီးသော အဆင့်တွင်: စစ်ဆေးပြီး score ကို oracle မှတဆင့် on-chain မှတ်တမ်းတင်၊ blockchain တွင် အတည်ပြုနိုင်
 
 ---
 
 ### 2. ⛩️ Adventure Mining (လမ်းလျှောက်၍ ရှာ)
 
-**Project "Pilgrimage" ── Smart contract ပြီးဆုံး၊ 2026 သြဂုတ် mainnet deploy**
+**Project "Pilgrimage" ── Smart-contract ဒီဇိုင်း ပြီးဆုံး၊ mainnet deploy ကို နောက်ပိုင်း audit လုပ်ပြီးသော အဆင့်တွင် (Phase 1 buyback contract ပြီးနောက်)**
 
 ![ညဘက် သန့်ရှင်းသော နေရာ ── ငြိမ်သက်မှုထဲမှ Omikuji သည် အလင်းဖြစ်လာသည်](/brand/07_A_night_shrine.webp)
 
-GPS နှင့် token incentive ကို အသုံးပြု၍ ရုပ်ပိုင်းဆိုင်ရာ "လူလှုပ်ရှားမှု" ကို ထိန်းချုပ်သော နောက်မျိုးဆက် လုပ်ဆောင်ချက်။ သန့်ရှင်းသောနေရာ map ကို Matsuri Web app တွင် **ယခုပင် အသုံးပြုနိုင်**ပြီ။ လက်ရှိ off-chain တွင် contribution score မှတ်တမ်းတင်ပြီး 2026 သြဂုတ် smart contract deploy ပြီးလျှင် on-chain ဆုဝေမည်။
+GPS နှင့် token incentive ကို အသုံးပြု၍ ရုပ်ပိုင်းဆိုင်ရာ "လူလှုပ်ရှားမှု" ကို ထိန်းချုပ်သော နောက်မျိုးဆက် လုပ်ဆောင်ချက်။ သန့်ရှင်းသောနေရာ map ကို Matsuri Web app တွင် **ယခုပင် အသုံးပြုနိုင်**ပြီ။ လက်ရှိ off-chain တွင် contribution score မှတ်တမ်းတင်ပြီး ဤ contract ၏ audit လုပ်ထားသော mainnet deploy ပြီးနောက် နောက်ပိုင်း အဆင့်တွင် on-chain ဆုဝေမည်။
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ sequenceDiagram
     participant U as သင် (Matsuri App)
     participant GPS as GPS Check-in
     participant API as Matsuri Backend
-    participant SC as Solana (2026 သြဂုတ် နောက်ပိုင်း)
+    participant SC as Solana (နောက်ပိုင်း audit အဆင့်)
 
     U->>GPS: နတ်ကွန်းရောက် "Check-in" ကို tap
     GPS->>API: ကိုဩဒိနိတ်+ proof hash ပို့
@@ -119,7 +119,7 @@ sequenceDiagram
     API-->>U: ရလဒ် ပြသ: "⛩️ Check-in ပြီး!" + Omikuji
     U->>API: Omikuji ဆွဲ
     API-->>U: "🏆 ဒိုင်ကီချိ! Bonus score!"
-    API->>SC: Solana သို့ ပို့ (async၊ သြဂုတ် နောက်ပိုင်း)
+    API->>SC: Solana သို့ ပို့ (async၊ နောက်ပိုင်း အဆင့်)
 ```
 
 
@@ -201,8 +201,8 @@ GCF အဖွဲ့ဝင်များအတွက် သီးသန့် ad
 | **📢 Content ဖြန့်ဝေ** | J-Times ဆောင်းပါး・content ကို ဖြန့်ဝေ・ပျံ့နှံ့ |
 | **📊 Referral ခြေရာခံ** | မိတ်ဆက်ပေးထားသော အသုံးပြုသူ၏ လုပ်ဆောင်မှုနှင့် ဝင်ငွေကို real-time တွင် ခြေရာခံ |
 
-:::warning လက်ရှိ off-chain → 2026 သြဂုတ်တွင် on-chain သို့ ပြောင်းရွှေ့
-မိတ်ဆက် ကော်မရှင်ကို လက်ရှိ Django (PostgreSQL) တွင် ခြေရာခံပြီး ဘဏ်လွှဲ သို့မဟုတ် crypto ဖြင့် ပေးနေပါသည်။ **2026 သြဂုတ်** နောက်ပိုင်း Solana ပေါ်ရှိ **Matsuri Referral smart contract** သို့ ပြောင်းရွှေ့ကာ on-chain audit-able ပေးငွေ အကောင်အထည်ဖော်မည်။
+:::warning လက်ရှိ off-chain → နောက်ပိုင်း audit လုပ်ပြီးသော အဆင့်တွင် on-chain သို့ ပြောင်းရွှေ့
+မိတ်ဆက် ကော်မရှင်ကို လက်ရှိ Django (PostgreSQL) တွင် ခြေရာခံပြီး ဘဏ်လွှဲ သို့မဟုတ် crypto ဖြင့် ပေးနေပါသည်။ နောက်ပိုင်း အဆင့်တွင် — ၎င်း၏ security audit အောင်မြင်ပြီးနောက် — Solana ပေါ်ရှိ **Matsuri Referral smart contract** သို့ ပြောင်းရွှေ့ကာ on-chain audit-able ပေးငွေ အကောင်အထည်ဖော်မည်။ (ပထမဆုံး audit လုပ်ထားသော on-chain contract မှာ `matsuri-buyback` ဖြစ်သည်; [migration roadmap](#on-chain-migration-roadmap) ကို ကြည့်ပါ။)
 :::
 
 ![Mobile Suite ── စီမံခန့်ခွဲမှုအားလုံးကို smartphone မှ](/brand/10_A_woven_platform.webp)
@@ -280,7 +280,7 @@ Adventure mining check-in တိုင်းတွင် အခမဲ့ Omikuji
 | **🎫 အတွေ့အကြုံ ဘုကင်** | Tour၊ event၊ ယဉ်ကျေးမှုလှုပ်ရှားမှု များကို MTC ဖြင့် ပေးချေ | ✅ ရနိုင်ပြီ |
 | **🏷️ လျှော့** | MTC ပေးချေမှုတွင် ¥ ဈေးနှုန်း၏ 5-10% လျှော့ | ✅ ရနိုင်ပြီ |
 | **🔑 သီးသန့် ဝင်ခွင့်** | NFT gate ပါဝင်သော ပွဲ၊ VIP ထူးခြားသော ဝတ်ပြုပွဲ၊ ကိုယ်ရေးကိုယ်တာ tour | ✅ ရနိုင်ပြီ |
-| **📈 Toku Staking** | MTC ကို lock ၍ contribution score boost (အများဆုံး 50% ခန့်) | 🔜 2026 သြဂုတ် |
+| **📈 Toku Staking** | MTC ကို lock ၍ contribution score boost (အများဆုံး 50% ခန့်) | 🔜 နောက်ပိုင်း အဆင့် |
 | **🗳️ DAO Governance** | Treasury၊ protocol upgrade၊ site certification တို့ကို မဲပေး | 🔜 2027 |
 | **🛍️ Partner ဆိုင်** | ပူးတွဲ ဆိုင်・စားသောက်ဆိုင်များတွင် ပေးချေ | 🔜 ချဲ့ထွင်နေ |
 
@@ -331,6 +331,16 @@ MTC သည် **real economy** က ကျောထောက်နောက်ခ
 
 Matsuri economy သည် off-chain (Django/PostgreSQL) မှ on-chain (Solana smart contract) သို့ အဆင့်ဆင့် ပြောင်းရွှေ့နေသည်။ ဤပြောင်းရွှေ့မှုဖြင့် လုပ်ငန်းအားလုံး **trustless・audit-able・permissionless** ဖြစ်လာမည်။
 
+:::info Audit-အဆင့်ဆင့် rollout — ပထမဆုံး ဘာ deploy လုပ်မလဲ
+ပြောင်းရွှေ့မှုကို **အဆင့်ဆင့် security audit (Hashlock)** က ထိန်းချုပ်ထားသောကြောင့် အစီအစဉ်သည် သတ်မှတ်ပြက္ခဒိန်မဟုတ်ဘဲ audit များက ဆုံးဖြတ်သည်:
+
+- **`matsuri-buyback`** (ဝင်ငွေ → အလိုအလျောက် MTC buy-back) သည် on-chain သို့ သွားမည့် **ပထမဆုံး** contract ဖြစ်သည် — 2026 တွင် audit လုပ် (Phase 1)၊ Raydium listing ပြီးနောက် deploy။
+- **`matsuri-vesting`** (550M halving-release pool) သည် **2027-06-01 Grand Unlock** (Phase 1.5) ခန့်တွင် `matsuri-distribution` နှင့်အတူ နောက်ဆက်တွဲလာသည်။
+- အောက်ပါ **mining contracts** (referral / adventure / omikuji) များသည် **နောက်ပိုင်း အဆင့်များ** ဖြစ်ပြီး တစ်ခုစီ ၎င်း၏ audit အောင်မြင်ပြီးမှသာ deploy လုပ်သည်။
+
+အောက်ပါ ဇယားရှိ product-phase နံပါတ်များသည် rollout vision ကို ဖော်ပြ၍ ၎င်းတို့၏ ရက်စွဲများကို ဤ audit အစီအစဉ်နောက်တွင် စီစဉ်ထားသည်။
+:::
+
 ```mermaid
 graph LR
     subgraph "လက်ရှိ (off-chain)"
@@ -339,7 +349,10 @@ graph LR
         O3["📊 Engagement ခြေရာခံ\n(PostgreSQL)"]
         O4["💰 ပေးငွေ\n(ဘဏ်/crypto ကိုယ်တိုင်)"]
     end
-    subgraph "2026 သြဂုတ် (Hybrid)"
+    subgraph "ပထမ on-chain (2026, audit-ပြီးနောက်)"
+        H0["💱 ဝင်ငွေ buyback → on-chain\n(matsuri-buyback contract)"]
+    end
+    subgraph "နောက်ပိုင်း audit အဆင့်များ (Hybrid)"
         H1["⚡ Referral → on-chain\n(matsuri-referral contract)"]
         H2["⛩️ Adventure Mining → on-chain\n(matsuri-worship contract)"]
         H3["🎲 Omikuji → on-chain\n(matsuri-omikuji contract)"]
@@ -355,7 +368,8 @@ graph LR
         G2["🎫 Crowdfunding + NFT အခွင့်အရေး\n(ထောက်ပံ့သူ governance)"]
         G3["⚡ အလိုအလျောက် ဝင်ငွေခွဲဝေ\n(Creator + Community + Buyback)"]
     end
-    O1 & O2 & O3 & O4 -->|"ပြောင်းရွှေ့"| H1 & H2 & H3 & H4
+    O1 & O2 & O3 & O4 -->|"ပြောင်းရွှေ့ (audit)"| H0
+    H0 --> H1 & H2 & H3 & H4
     H1 & H2 & H3 & H4 -->|"ကြီးမား unlock"| F1 & F2 & F3
     F1 & F2 & F3 -->|"အတူတကွဖန်တီး"| G1 & G2 & G3
 ```
@@ -363,16 +377,17 @@ graph LR
 | Phase | Timeline | On-chain ဖြစ်မည့် အရာ |
 | :--- | :--- | :--- |
 | **Phase 1 (လက်ရှိ)** | အသုံးပြုနေ | MTC token (SPL)၊ Raydium LP၊ Solana Pay စစ်ဆေးမှု |
-| **Phase 2 (2026 သြဂုတ်)** | Smart contract mainnet deploy | Referral ကော်မရှင်၊ adventure mining ဆု၊ Omikuji မဲနှိုက်၊ oracle မှတဆင့် media mining |
-| **Phase 3 (2027 ဇွန်)** | ကြီးမား unlock | 550M MTC ထက်ဝက် ဝေမှု၊ DAO governance၊ အပြည့်အဝ ဗဟိုမဲ့ |
-| **Phase 4 (2027〜)** | အတူတကွဖန်တီးမှု economy | On-chain marketplace (ဒေသထွက်ကုန်ဆိုင် + GCF store)၊ NFT အခွင့်အရေးပါ crowdfunding၊ creator + community + buyback သို့ အလိုအလျောက် ဝင်ငွေခွဲဝေ |
+| **Phase 2 (2026, audit-gated)** | ၎င်း၏ Hashlock audit ပြီးနောက် mainnet ပေါ် ပထမဆုံး smart contract | **`matsuri-buyback`** — လုပ်ငန်းဝင်ငွေ → အလိုအလျောက် MTC buy-back |
+| **Phase 3 (Grand Unlock, 2027-06-01)** | 550M pool စတင် အသက်ဝင် | **`matsuri-vesting`** — 550M mining pool ၏ halving-release (`matsuri-distribution` နှင့်); DAO governance စတင် |
+| **Phase 4 (နောက်ပိုင်း၊ တစ်ခုစီ audit-gated)** | mainnet ပေါ် mining contracts | Referral ကော်မရှင်၊ adventure mining ဆု၊ Omikuji မဲနှိုက်၊ oracle မှတဆင့် media mining |
+| **Phase 5 (2027〜)** | အတူတကွဖန်တီးမှု economy | On-chain marketplace (ဒေသထွက်ကုန်ဆိုင် + GCF store)၊ NFT အခွင့်အရေးပါ crowdfunding၊ creator + community + buyback သို့ အလိုအလျောက် ဝင်ငွေခွဲဝေ |
 
 :::warning ဘာကြောင့် အခုပဲ အားလုံး on-chain မလုပ်တာလဲ?
 **Security audit ပြီးဆုံးသည်အထိ အသုံးပြုသူငွေ လှုပ်သော on-chain လုပ်ဆောင်ချက်ကို မဖွင့်ပါ။** ၎င်းသည် ကျွန်ုပ်တို့၏ မူ။
 
 လက်ရှိ အခြေအနေ:
 - **အသုံးပြုသူငွေ အန္တရာယ်: မရှိ** — လောလောဆယ် ဆု・score အားလုံးကို off-chain (Django) တွင် စီမံပြီး smart contract မှတဆင့် အသုံးပြုသူငွေ လှုပ်သော လုပ်ဆောင်ချက်များ မလည်ပတ်
-- **Audit schedule: 2026 Q2〜Q3** — Professional security audit ကို အောင်မြင်ပြီး လုံခြုံမှု အတည်ပြုပြီးသော contract မှ တစ်ဆင့်ချင်း mainnet သို့ deploy
+- **အဆင့်ဆင့် audit (Hashlock):** Phase 1 က `matsuri-buyback` ကို audit လုပ် (2026); Phase 1.5 က `matsuri-vesting` + `matsuri-distribution` ကို audit လုပ် (2027-06-01 unlock ခန့်တွင်)။ Contract များကို ၎င်းတို့၏ audit အောင်မြင်ပြီးမှသာ တစ်ခုစီ mainnet သို့ deploy လုပ်သည်
 - **Audit ပြီးစီးခြင်းသည် deploy အတွက် ကြိုတင်အခြေအနေ** — Audit မပြီးဆုံးသေးသော smart contract ကို mainnet တွင် မည်သည့်အခါမျှ မဖွင့်
 
 Off-chain ကာလအတွင်း ဆုများကိုပါ စစ်ဆေးနိုင်——လုပ်ငန်းစဉ်တိုင်းတွင် ငွေပေးချေ သက်သေအဖြစ် `solana_signature` ပါဝင်သည်။

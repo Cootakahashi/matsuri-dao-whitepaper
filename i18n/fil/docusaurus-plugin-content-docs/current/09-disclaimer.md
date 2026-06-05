@@ -34,6 +34,7 @@ Kasalukuyang maaaring itrade ang MTC sa Raydium (DEX), ngunit kung hindi sapat a
 
 ### Panganib sa Teknolohiya
 - Posibleng maglaman ng bug o vulnerability ang smart contract
+- Ang mga smart contract ng protocol ay sumasailalim sa isang staged na third-party security audit (Hashlock) at hindi pa naka-deploy sa mainnet. Walang contract na inaaktibo sa mainnet hangga't hindi nito ipinapasa ang audit nito. Ang pagkumpleto ng audit ay hindi nag-aalis ng lahat ng panganib
 - Maaaring pansamantalang maging imposible ang transaksyon dahil sa pagkasira o pagtigil ng Solana network mismo
 - Maaaring magkaroon ng inconsistency ng data sa off-chain → on-chain migration
 

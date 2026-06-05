@@ -176,6 +176,10 @@ De **550 millioner MTC (ca. 61% af samlet udbud)**, der frigives fra 1. juni 202
 Vi bruger en **halvering hvert andet år** — hurtigere end Bitcoins fire-års-cyklus.
 Hvert andet år halveres udgivelsesmængden, og belønninger fortsætter teoretisk i årtier.
 
+:::info Hvilken kontrakt udfører dette
+Ved oplåsningen den 2027-06-01 flyder 550M-puljen fra tredjeparts-**Streamflow**-lockuppet ind i **`matsuri-vesting`**-smart contracten, som udfører halveringsudgivelsen on-chain. `matsuri-vesting` er en del af den trinvise **Hashlock**-revision (Fase 1.5), sammen med `matsuri-distribution`. Den første kontrakt, der udrulles, er `matsuri-buyback` (Fase 1, 2026).
+:::
+
 | Periode | Andel | Antal | Akkumuleret |
 | :--- | :---: | :--- | :---: |
 | **1. periode** 2027 – 2029 | **50%** | ca. 275M | 50% |

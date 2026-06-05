@@ -176,6 +176,10 @@ Formula opisuje strukturu: „ako se poslovni prihod nastavi i buyback izvršava
 Koristimo **halving svake dvije godine** — brže od Bitcoinova četverogodišnjeg ciklusa.
 Svake dvije godine količina emisije prepolovljuje se, a nagrade teorijski traju desetljećima.
 
+:::info Koji ugovor to izvodi
+Pri unlocku 2027-06-01 pool od 550M teče iz lockupa treće strane **Streamflow** u pametni ugovor **`matsuri-vesting`**, koji izvodi halving release on-chain. `matsuri-vesting` dio je postupnog **Hashlock** audita (Phase 1.5), zajedno s `matsuri-distribution`. Prvi ugovor koji se deploya je `matsuri-buyback` (Phase 1, 2026.).
+:::
+
 | Razdoblje | Postotak | Količina | Kumulativno |
 | :--- | :---: | :--- | :---: |
 | **1. razdoblje** 2027. – 2029. | **50%** | oko 275M | 50% |
