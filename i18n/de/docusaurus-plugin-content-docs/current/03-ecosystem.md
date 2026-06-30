@@ -36,6 +36,15 @@ Beginnt mit Kulturerlebnis-Buchungen und expandiert in Etappen in **Pensionen**,
 Eine Medienplattform, die den Reiz japanischer Kultur in die Welt trägt. Du verdienst MTC durch Engagement wie das Lesen und Teilen von Artikeln.
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — entdecke kulturelle Erlebnisse" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — Restaurantfinder mit Ernährungsfiltern (glutenfrei, laktosefrei, nussfrei)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — Shop für japanische Kulturgüter" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — Crowdfunding für kulturelle Projekte" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*Vom Erlebnis über Essen und Waren bis zur Co-Creation — die Matsuri-App durchläuft bereits den kompletten Kreislauf. Von links nach rechts: Erlebnisse entdecken, allergikerfreundliche Restaurants finden, Kunsthandwerk kaufen, Crowdfunding-Projekte unterstützen.*
+
 ---
 
 ## 🤝 Social Mining (verbinden und verdienen)

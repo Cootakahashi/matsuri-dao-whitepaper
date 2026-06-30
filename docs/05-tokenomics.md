@@ -130,6 +130,13 @@ The MTC economy is still early, but real activity has already begun.
 We do not yet have a "huge success" track record. 50 events and test operation — that is the reality today. But the product is running, the community exists, and we are in the phase of scaling up from here in earnest.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri checkout — pay by card, MTC balance, or crypto (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="A live Matsuri wallet — MTC balance and accrued rewards" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC is already spendable, not a someday-promise: at checkout you can settle with your MTC balance or on-chain crypto, and a live wallet shows accrued rewards next to its MTC balance.*
+
 ---
 
 ## Buyback protocol

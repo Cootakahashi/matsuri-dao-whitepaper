@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri Sacred Site Map — आस-पास के shrine उनके live reward multipliers के साथ" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Sacred Site Map</strong> — अपने आस-पास के shrine और उनके live multipliers एक नज़र में देखिए (जैसे Meiji Jingū पर ×2.5, सीमांत स्थल पर ×8.0)। दिन में तीन check-in, हर 24 घंटे में रीसेट — नक्शा आपको दुर्लभ, ज़्यादा इनाम वाले स्थलों की ओर ले जाता है।</p>
+  </div>
+</div>
+
 
 **मूल सिद्धांत — जितने कम आगंतुक, उतनी ज़्यादा कमाई :**
 

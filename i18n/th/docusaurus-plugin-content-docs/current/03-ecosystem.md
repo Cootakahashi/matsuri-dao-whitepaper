@@ -36,6 +36,15 @@ graph TD
 แพลตฟอร์มสื่อที่ส่งต่อเสน่ห์ของวัฒนธรรมญี่ปุ่นสู่โลก รับ MTC ผ่านการมีส่วนร่วม เช่น อ่านบทความ แชร์ ฯลฯ
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — ค้นพบประสบการณ์ทางวัฒนธรรม" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — ค้นหาร้านอาหารพร้อมตัวกรองด้านอาหาร (ปลอดกลูเตน ปลอดนม ปลอดถั่ว)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — ช้อปสินค้าวัฒนธรรมญี่ปุ่น" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — ระดมทุนสำหรับโครงการทางวัฒนธรรม" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*จากประสบการณ์สู่อาหาร สินค้า และการร่วมสร้าง — แอป Matsuri ทำงานครบลูปแล้ว จากซ้ายไปขวา: ค้นพบประสบการณ์ ค้นหาร้านอาหารที่เป็นมิตรกับผู้แพ้อาหาร ช้อปงานหัตถกรรม สนับสนุนโครงการระดมทุน*
+
 ---
 
 ## 🤝 Social Mining (เชื่อมต่อเพื่อรับรางวัล)

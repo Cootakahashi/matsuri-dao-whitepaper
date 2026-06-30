@@ -61,6 +61,13 @@ Trên cơ sở đó, cái có thể đáp ứng yêu cầu **nhu cầu du lịch
 
 <small>*Theo vốn hóa thị trường (~230 tỷ $ vs ~50 tỷ $) và DeFi TVL (~54 tỷ $ vs ~5,7 tỷ $), Ethereum vẫn dẫn đầu một khoảng rộng. Solana đang tăng trưởng nhanh chóng về "tốc độ, chi phí và sử dụng thực."*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Phantom phê duyệt một đặt chỗ Matsuri 3,500 MTC trên Solana — phí mạng $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Một đặt chỗ Matsuri thực được thanh toán trên Solana qua Phantom — <strong>3,500 MTC</strong> với phí mạng chỉ <strong>$0.0068</strong>. Con số "trung bình $0.007" trong bảng phía trên, được hiện thực hóa. Chính điều này khiến việc thả vài đồng xu vào hòm công đức trở nên khả thi về mặt kinh tế.</p>
+  </div>
+</div>
+
 ---
 
 :::tip Lý lẽ kinh tế của osaisen (tiền công đức)

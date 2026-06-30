@@ -89,6 +89,15 @@ Di seluruh tiga produk —
 **Token utility terdesentralisasi di blockchain Solana.** Lebih dari sekadar alat pembayaran, MTC menghubungkan orang-orang yang datang ke Jepang dengan budaya yang patut dilindungi, mengubah setiap pengalaman menjadi sesuatu yang menopang masa depan Jepang — sebuah **ekonomi budaya yang diciptakan bersama** di mana pengalaman dan perdagangan beredar bersama. Ketiga produk dijahit bersama oleh **MTC**.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Lihat Matsuri di App Store" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri di App Store — dinilai 5.0, versi 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Ini bukan konsep di atas kertas. <strong>Matsuri sudah tayang di App Store</strong> — pemesanan, pembayaran, dompet Web3, dan mining kunjungan kuil, semuanya sudah berjalan hari ini. Halaman-halaman berikut menjelaskan produk yang bisa Anda unduh sekarang juga.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Navigasi Whitepaper

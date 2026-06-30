@@ -61,6 +61,13 @@ Ethereum 是为世界带来"智能合约"革命的区块链先驱。它开辟了
 
 <small>*※ 以市值(约 $230B vs Solana 约 $50B)与 DeFi TVL(约 $54B vs 约 $5.7B)论,Ethereum 仍压倒性领先。Solana 则在"速度、低费、真实使用"上高速成长*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="在 Solana 上通过 Phantom 批准一笔 3,500 MTC 的 Matsuri 预约 — 网络手续费 $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>一笔通过 Phantom 在 Solana 上完成结算的真实 Matsuri 预约 — <strong>3,500 MTC</strong>,而网络手续费仅 <strong>$0.0068</strong>。这正是上表中"平均 $0.007"的具体体现。也正因如此,往功德箱里投入几枚硬币这样的小额支付才在经济上行得通。</p>
+  </div>
+</div>
+
 ---
 
 :::tip 香火钱的经济合理性

@@ -130,6 +130,13 @@ MTC-økonomien er stadig i en tidlig fase, men den reelle aktivitet er allerede 
 Vi har endnu ikke "et vindende track record". 50 events og testdrift — det er virkeligheden lige nu. Men produktet kører, fællesskabet findes, og vi står på tærsklen til seriøs ekspansion.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri-kassen — betal med kort, MTC-saldo eller krypto (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="En aktiv Matsuri-wallet — MTC-saldo og optjente belønninger" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC kan allerede bruges, ikke et løfte om engang: i kassen kan du afregne med din MTC-saldo eller on-chain-krypto, og en aktiv wallet viser optjente belønninger ved siden af MTC-saldoen.*
+
 ---
 
 ## Tilbagekøbsprotokol

@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Mapa de lugares sagrados de Matsuri — santuarios cercanos con multiplicadores de recompensa en vivo" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Mapa de lugares sagrados</strong> — ve de un vistazo los santuarios a tu alrededor y sus multiplicadores en vivo (p. ej. ×2.5 en Meiji Jingū, ×8.0 en un lugar remoto). Tres check-ins al día, que se reinician cada 24 horas — el mapa te orienta hacia los lugares más raros y de mayor recompensa.</p>
+  </div>
+</div>
+
 
 **Principio básico — cuantos menos visitantes, más ganas:**
 

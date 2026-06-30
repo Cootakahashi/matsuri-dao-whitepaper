@@ -61,6 +61,13 @@ Sa ibabaw nito, ang tanging kayang tumugon sa requirement ng **tunay na demand n
 
 <small>*※ Ang Ethereum ay nananatiling pinakanangunguna sa market cap (~$230B vs Solana ~$50B), DeFi TVL (~$54B vs ~$5.7B). Ang Solana ay mabilis na lumalago sa "bilis, mura, aktwal na paggamit"*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Phantom approval para sa 3,500 MTC na Matsuri booking sa Solana — network fee $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Isang tunay na Matsuri booking na na-settle sa Solana sa pamamagitan ng Phantom — <strong>3,500 MTC</strong> sa network fee na <strong>$0.0068</strong> lamang. Ang "average na $0.007" sa table sa itaas, ginawang nakikita. Ito ang dahilan kung bakit ekonomikong makatuwiran ang paghagis ng katumbas ng ilang barya sa offering box.</p>
+  </div>
+</div>
+
 ---
 
 :::tip Economic Rationality ng Offering

@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Peta Situs Suci Matsuri — kuil terdekat dengan pengganda imbalan langsung" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Peta Situs Suci</strong> — lihat sekilas kuil-kuil di sekitarmu dan pengganda langsungnya (mis. ×2.5 di Meiji Jingū, ×8.0 di situs perbatasan). Tiga check-in per hari, diatur ulang setiap 24 jam — peta mengarahkanmu ke titik-titik yang lebih langka dan berimbalan lebih tinggi.</p>
+  </div>
+</div>
+
 
 **Prinsip inti — semakin sedikit pengunjung, semakin banyak yang kamu hasilkan:**
 

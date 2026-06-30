@@ -36,6 +36,15 @@ Nagsisimula mula sa booking ng cultural experience, at unti-unting lumalawak sa 
 Media platform na naghahatid ng ganda ng kulturang Hapones sa mundo. Maaaring kumita ng MTC sa pamamagitan ng engagement tulad ng pagbasa at pagshare ng artikulo.
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — tuklasin ang mga karanasang kultural" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — restaurant finder na may dietary filter (gluten-free, dairy-free, nut-free)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — mamili ng mga produktong kultural na Hapones" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — crowdfunding para sa mga proyektong kultural" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*Mula karanasan hanggang pagkain, kalakal, at co-creation — buo nang umaandar ang Matsuri app sa kabuuang loop. Mula kaliwa pakanan: tuklasin ang mga karanasan, humanap ng allergy-friendly na restoran, mamili ng crafts, suportahan ang mga crowdfunding project.*
+
 ---
 
 ## 🤝 Social Mining (Kumita sa Pag-uugnay)

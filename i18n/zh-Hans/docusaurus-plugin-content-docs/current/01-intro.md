@@ -89,6 +89,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 **Solana 区块链上的去中心化实用型代币。** 它不仅是一种支付工具,更将到访者与值得守护的文化紧密相连,每一次体验都在支撑日本的未来——这是一个体验与经济相互循环的**共创型文化经济体**。三款产品都由 **MTC** 串联成一个整体。
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="在 App Store 上查看 Matsuri" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="App Store 上的 Matsuri — 评分 5.0,版本 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>这不是停留在纸面上的概念。<strong>Matsuri 已在 App Store 上线</strong>——预约、支付、Web3 钱包以及参拜挖矿,全部已于今天上线。接下来的页面所介绍的,是一款你现在就能下载的产品。</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 白皮书导航

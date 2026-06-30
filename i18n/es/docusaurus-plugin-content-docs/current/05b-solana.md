@@ -61,6 +61,13 @@ Dicho eso, para el requisito de **demanda turística real × micropagos de alta 
 
 <small>*※ Ethereum sigue liderando ampliamente en capitalización (~$230B vs ~$50B) y DeFi TVL (~$54B vs ~$5,7B). Solana crece rápidamente en «velocidad, coste y uso real»*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Aprobación de Phantom para una reserva Matsuri de 3,500 MTC en Solana — comisión de red $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Una reserva Matsuri real liquidada en Solana a través de Phantom — <strong>3,500 MTC</strong> por una comisión de red de tan solo <strong>$0.0068</strong>. El «promedio de $0.007» de la tabla anterior, hecho tangible. Esto es lo que hace económicamente viable arrojar el equivalente a unas pocas monedas en una caja de ofrendas.</p>
+  </div>
+</div>
+
 ---
 
 :::tip La lógica económica de la ofrenda

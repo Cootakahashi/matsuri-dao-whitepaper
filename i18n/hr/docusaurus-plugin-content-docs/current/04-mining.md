@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri karta svetih mjesta — obližnja svetišta s aktivnim multiplikatorima nagrada" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Karta svetih mjesta</strong> — pogledajte svetišta oko sebe i njihove aktivne multiplikatore na prvi pogled (npr. ×2.5 u Meiji Jingūu, ×8.0 na rubnom mjestu). Tri prijave dnevno, uz reset svaka 24 sata — karta vas usmjerava prema rjeđim mjestima s većom nagradom.</p>
+  </div>
+</div>
+
 
 **Osnovno načelo — manje posjećena mjesta daju više:**
 

@@ -36,6 +36,15 @@ Mulai dengan pemesanan pengalaman budaya dan berkembang bertahap ke **penginapan
 Platform media yang menyampaikan pesona budaya Jepang ke dunia. Kamu menghasilkan MTC melalui keterlibatan seperti membaca dan membagikan artikel.
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — temukan pengalaman budaya" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — pencari restoran dengan filter diet (bebas gluten, bebas susu, bebas kacang)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — belanja barang budaya Jepang" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — crowdfunding untuk proyek budaya" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*Dari pengalaman ke makanan, barang, dan ko-kreasi — aplikasi Matsuri sudah menjalankan loop lengkapnya. Dari kiri ke kanan: temukan pengalaman, cari restoran ramah alergi, belanja kerajinan, dukung proyek crowdfunding.*
+
 ---
 
 ## 🤝 Penambangan sosial (terhubung dan hasilkan)

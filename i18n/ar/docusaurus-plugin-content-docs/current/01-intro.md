@@ -89,6 +89,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 **رمز خدمي لامركزي على بلوكتشين Solana.** ليس مجرد وسيلة دفع، بل جسر يربط الزائرين بالثقافة التي تستحق الحماية، حيث تدعم كل تجربة مستقبل اليابان — **اقتصاد ثقافي إبداعي مشترك** تتدفق فيه التجربة والاقتصاد في دورة متصلة. هذه المنتجات الثلاثة يربطها **MTC** معًا.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="عرض Matsuri على App Store" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri على App Store — بتقييم 5.0، الإصدار 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>هذا ليس مفهومًا على الورق. <strong>Matsuri متاح الآن على App Store</strong> — الحجوزات والمدفوعات ومحفظة Web3 وتعدين زيارة المعابد، كلها تعمل اليوم. الصفحات التالية تصف منتجًا يمكنك تنزيله الآن.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 دليل الورقة البيضاء

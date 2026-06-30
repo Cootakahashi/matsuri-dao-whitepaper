@@ -89,6 +89,15 @@ MTC **कमाउनुहोस् र फैलाउनुहोस्।**
 **Solana ब्लकचेनमा एउटा विकेन्द्रीकृत utility टोकन।** भुक्तानीको साधन भन्दा बढी, MTC ले जापानमा आउने मानिसहरूलाई संरक्षण गर्न लायक संस्कृतिसँग जोड्छ, हरेक अनुभवलाई जापानको भविष्यलाई समर्थन गर्ने कुरामा परिणत गर्छ — एउटा **सह-सिर्जित सांस्कृतिक अर्थतन्त्र** जहाँ अनुभव र व्यापार सँगै परिक्रमण गर्छन्। तीनै उत्पादनहरू **MTC** द्वारा एकसाथ सिलाइएका छन्।
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="App Store मा Matsuri हेर्नुहोस्" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="App Store मा Matsuri — 5.0 मूल्याङ्कन, संस्करण 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>यो कागजमा रहेको अवधारणा होइन। <strong>Matsuri App Store मा उपलब्ध छ</strong> — बुकिङ, भुक्तानी, Web3 वालेट, र मन्दिर-भ्रमण mining, सबै आज नै चलिरहेका छन्। तलका पृष्ठहरूले तपाईंले अहिले नै डाउनलोड गर्न सक्ने उत्पादन वर्णन गर्छन्।</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Whitepaper नेभिगेसन

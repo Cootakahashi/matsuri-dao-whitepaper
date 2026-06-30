@@ -89,6 +89,15 @@ MTCを**稼ぐ・広げる**。
 **Solanaブロックチェーン上の分散型ユーティリティトークン。** 単なる決済手段ではなく、訪れる人と守るべき文化をつなぎ、体験の一つ一つが日本の未来を支える——体験と経済が循環する**共創型の文化エコノミー**です。この3つのプロダクトすべてを**MTC**がつないでいます。
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="App Store で Matsuri を見る" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="App Store の Matsuri — 評価 5.0、バージョン 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>これは紙の上の構想ではありません。<strong>Matsuri は App Store で公開中</strong>——予約、決済、Web3 ウォレット、参拝マイニングまで、すべて今日から動いています。この先のページが説明するのは、今すぐダウンロードできるプロダクトです。</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 ホワイトペーパー ナビゲーション

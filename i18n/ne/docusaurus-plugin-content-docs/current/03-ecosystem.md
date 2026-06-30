@@ -36,6 +36,15 @@ graph TD
 जापानी संस्कृतिको आकर्षण संसारमा पुर्‍याउने मिडिया प्लेटफर्म। तपाईंले लेखहरू पढ्ने र साझा गर्ने जस्ता संलग्नताहरूमार्फत MTC कमाउनुहुन्छ।
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — सांस्कृतिक अनुभवहरू पत्ता लगाउनुहोस्" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — आहार फिल्टरसहितको रेस्टुरेन्ट खोजकर्ता (gluten-free, dairy-free, nut-free)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — जापानी सांस्कृतिक सामान किनमेल" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — सांस्कृतिक परियोजनाहरूका लागि crowdfunding" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*अनुभवदेखि खाना, सामान, र सह-सिर्जनासम्म — Matsuri एपले पहिले नै पूरा लूप चलाउँछ। बायाँदेखि दायाँ: अनुभवहरू पत्ता लगाउनुहोस्, एलर्जी-मैत्री रेस्टुरेन्ट खोज्नुहोस्, हस्तकला किन्नुहोस्, crowdfunding परियोजनाहरूलाई समर्थन गर्नुहोस्।*
+
 ---
 
 ## 🤝 सामाजिक खनन (जोडिनुहोस् र कमाउनुहोस्)

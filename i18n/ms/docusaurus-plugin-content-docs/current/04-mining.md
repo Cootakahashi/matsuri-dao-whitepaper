@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Peta Tapak Suci Matsuri — kuil berdekatan dengan pengganda ganjaran langsung" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Peta Tapak Suci</strong> — lihat sepintas lalu kuil di sekeliling anda dan pengganda langsungnya (cth. ×2.5 di Meiji Jingū, ×8.0 di tapak sempadan). Tiga check-in sehari, ditetap semula setiap 24 jam — peta mengarahkan anda ke lokasi yang lebih jarang dan berganjaran lebih tinggi.</p>
+  </div>
+</div>
+
 
 **Prinsip teras — semakin sedikit pelawat, semakin banyak yang anda peroleh:**
 

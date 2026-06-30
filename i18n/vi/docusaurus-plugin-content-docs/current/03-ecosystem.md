@@ -36,6 +36,15 @@ Bắt đầu với việc đặt trải nghiệm văn hóa và mở rộng theo 
 Một nền tảng truyền thông đưa sức quyến rũ của văn hóa Nhật Bản đến với thế giới. Bạn kiếm MTC qua việc tham gia như đọc và chia sẻ bài viết.
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — khám phá trải nghiệm văn hóa" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — tìm nhà hàng với bộ lọc ăn kiêng (không gluten, không sữa, không hạt)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — mua sắm hàng hóa văn hóa Nhật Bản" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — gây quỹ cộng đồng cho các dự án văn hóa" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*Từ trải nghiệm đến ẩm thực, hàng hóa và cộng tạo — ứng dụng Matsuri đã vận hành trọn vòng. Từ trái sang phải: khám phá trải nghiệm, tìm nhà hàng thân thiện với dị ứng, mua đồ thủ công, ủng hộ các dự án gây quỹ cộng đồng.*
+
 ---
 
 ## 🤝 Đào xã hội (kết nối và kiếm)

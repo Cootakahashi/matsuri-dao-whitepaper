@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri 聖地マップ ── 周辺の神社とリアルタイム報酬倍率" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>聖地マップ</strong> ── 周辺の神社とそのリアルタイム倍率を一目で確認(例:明治神宮で ×2.5、辺境のサイトで ×8.0)。1日3回までチェックインでき、24時間ごとにリセット ── マップがより希少で高報酬なスポットへと誘います。</p>
+  </div>
+</div>
+
 
 **基本原則 — 訪問者が少ないサイトほど多く稼げる：**
 

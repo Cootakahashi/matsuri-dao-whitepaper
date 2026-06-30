@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="خريطة المواقع المقدسة في Matsuri — المعابد القريبة مع مضاعفات مكافآت حيّة" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>خريطة المواقع المقدسة</strong> — شاهد المعابد من حولك ومضاعفاتها الحيّة بلمحة واحدة (مثلًا ×2.5 في معبد ميجي، ×8.0 في موقع نائٍ). ثلاثة تسجيلات حضور يوميًا، تُعاد كل 24 ساعة — توجّهك الخريطة نحو المواقع الأندر والأعلى مكافأة.</p>
+  </div>
+</div>
+
 
 **المبدأ الأساسي — المواقع الأقل زيارة تكسب أكثر:**
 

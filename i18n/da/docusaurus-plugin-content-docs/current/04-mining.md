@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri-kort over hellige steder — nærliggende helligdomme med live belønningsmultiplikatorer" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Kort over hellige steder</strong> — se helligdommene omkring dig og deres live-multiplikatorer med ét blik (f.eks. ×2.5 ved Meiji Jingū, ×8.0 ved et afsidesliggende sted). Tre check-ins om dagen, der nulstilles hver 24. time — kortet guider dig mod de sjældnere steder med højere belønning.</p>
+  </div>
+</div>
+
 
 **Grundprincip — sjældent besøgte steder giver mere:**
 

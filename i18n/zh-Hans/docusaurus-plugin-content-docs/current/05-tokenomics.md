@@ -130,6 +130,13 @@ MTC 的经济圈尚在初期,但真实活动已经开始。
 我们还没有"大获成功"的业绩。50 场活动加测试运营——这就是当下的现实。但是,产品在跑、社区在场,我们正处于准备全面扩张的阶段。
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri 结账 — 用银行卡、MTC 余额或加密货币(SOL/MTC)支付" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="一个真实运行的 Matsuri 钱包 — MTC 余额与累计奖励" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC 已经可以花出去,而不是"某天"的承诺:结账时你可以用 MTC 余额或链上加密货币结算,运行中的钱包会在 MTC 余额旁显示累计的奖励。*
+
 ---
 
 ## 回购协议

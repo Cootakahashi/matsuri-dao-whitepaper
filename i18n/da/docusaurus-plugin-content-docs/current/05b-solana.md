@@ -60,6 +60,13 @@ Uden det fundament Ethereum lagde, eksisterede hverken Solana eller det nuværen
 
 <small>*※ Ethereum er stadig suverænt største målt på markedsværdi (ca. 230 mia. $ vs. Solana ca. 50 mia. $) og DeFi TVL (ca. 54 mia. $ vs. ca. 5,7 mia. $). Solana vokser eksplosivt på "hastighed, lave gebyrer og reel brug".*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Phantom-godkendelse af en Matsuri-booking på 3,500 MTC på Solana — netværksgebyr $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>En ægte Matsuri-booking afregnet på Solana via Phantom — <strong>3,500 MTC</strong> for et netværksgebyr på blot <strong>$0.0068</strong>. "Gennemsnittet på $0.007" i tabellen ovenfor, gjort håndgribeligt. Det er dette, der gør det økonomisk forsvarligt at kaste det, der svarer til nogle få mønter, i en offerboks.</p>
+  </div>
+</div>
+
 ---
 
 :::tip Den økonomiske logik bag offerpenge

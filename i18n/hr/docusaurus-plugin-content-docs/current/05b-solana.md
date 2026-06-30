@@ -60,6 +60,13 @@ Bez temelja koje je postavio Ethereum, ni Solana ni današnji Web3 ne bi postoja
 
 <small>*※ Ethereum je i dalje uvjerljivo prvi po tržišnoj kapitalizaciji (oko 230 mlrd. $ vs. Solana oko 50 mlrd. $) i DeFi TVL-u (oko 54 mlrd. $ vs. oko 5,7 mlrd. $). Solana eksplozivno raste na „brzini, niskim naknadama i stvarnoj upotrebi".*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Phantom odobrenje za Matsuri rezervaciju od 3,500 MTC na Solani — mrežna naknada $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Stvarna Matsuri rezervacija namirena na Solani putem Phantoma — <strong>3,500 MTC</strong> uz mrežnu naknadu od samo <strong>$0.0068</strong>. „Prosječnih $0.007" iz tablice iznad, opipljivo. Upravo to čini bacanje protuvrijednosti nekoliko novčića u kutiju za milodare ekonomski isplativim.</p>
+  </div>
+</div>
+
 ---
 
 :::tip Ekonomska logika priloga za svetište

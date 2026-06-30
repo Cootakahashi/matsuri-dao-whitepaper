@@ -61,6 +61,13 @@ Di atas itu, yang boleh memenuhi keperluan **permintaan pelancongan sebenar × m
 
 <small>*Mengikut permodalan pasaran (~230 bilion $ vs ~50 bilion $) dan DeFi TVL (~54 bilion $ vs ~5.7 bilion $), Ethereum masih mendahului dengan margin lebar. Solana sedang berkembang pesat pada "kelajuan, kos, dan penggunaan sebenar."*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Kelulusan Phantom untuk tempahan Matsuri 3,500 MTC di Solana — yuran rangkaian $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Tempahan Matsuri sebenar diselesaikan di Solana melalui Phantom — <strong>3,500 MTC</strong> dengan yuran rangkaian hanya <strong>$0.0068</strong>. "Purata $0.007" pada jadual di atas, menjadi nyata. Inilah yang menjadikan melemparkan setara beberapa syiling ke dalam kotak persembahan berdaya maju dari segi ekonomi.</p>
+  </div>
+</div>
+
 ---
 
 :::tip Rasional ekonomi osaisen (wang persembahan)

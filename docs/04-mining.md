@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri Sacred Site Map — nearby shrines with live reward multipliers" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Sacred Site Map</strong> — see the shrines around you and their live multipliers at a glance (e.g. ×2.5 at Meiji Jingū, ×8.0 at a frontier site). Three check-ins per day, resetting every 24 hours — the map nudges you toward the rarer, higher-reward spots.</p>
+  </div>
+</div>
+
 
 **Core principle — the fewer the visitors, the more you earn:**
 

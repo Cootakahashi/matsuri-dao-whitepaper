@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri သန့်ရှင်းသော နေရာ မြေပုံ — အနီးအနားရှိ ဘုရားကျောင်းများနှင့် တိုက်ရိုက် ဆုကြေး multiplier များ" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>သန့်ရှင်းသော နေရာ မြေပုံ</strong> — သင့်ပတ်ဝန်းကျင်ရှိ ဘုရားကျောင်းများနှင့် ၎င်းတို့၏ တိုက်ရိုက် multiplier များကို တစ်ချက်တည်းဖြင့် ကြည့်ပါ (ဥပမာ Meiji Jingū တွင် ×2.5၊ နယ်စပ်နေရာ၌ ×8.0)။ တစ်နေ့လျှင် check-in သုံးကြိမ်၊ ၂၄ နာရီတိုင်း ပြန်လည်သတ်မှတ် — မြေပုံက ပိုရှားပါးပြီး ဆုကြေးပိုများသော နေရာများသို့ သင့်ကို လမ်းညွှန်ပေးသည်။</p>
+  </div>
+</div>
+
 
 **အခြေခံမူ — လာရောက်သူ နည်းသော site က ပိုရှာ:**
 

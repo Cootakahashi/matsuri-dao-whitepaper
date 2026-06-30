@@ -61,6 +61,13 @@ Su quella base, ciò che può soddisfare i requisiti di **domanda turistica real
 
 <small>*Per capitalizzazione di mercato (~230 miliardi vs ~50 miliardi di dollari) e TVL DeFi (~54 miliardi vs ~5,7 miliardi), Ethereum resta nettamente in testa. Solana sta crescendo rapidamente su «velocità, costo e utilizzo reale».*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Approvazione Phantom per una prenotazione Matsuri da 3,500 MTC su Solana — commissione di rete $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Una prenotazione Matsuri reale regolata su Solana tramite Phantom — <strong>3,500 MTC</strong> per una commissione di rete di appena <strong>$0.0068</strong>. La «media di $0.007» della tabella qui sopra, resa tangibile. È questo che rende economicamente sostenibile lanciare l'equivalente di poche monete in una cassetta delle offerte.</p>
+  </div>
+</div>
+
 ---
 
 :::tip La razionalità economica dell'osaisen (l'offerta in denaro)

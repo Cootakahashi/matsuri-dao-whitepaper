@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="แผนที่สถานที่ศักดิ์สิทธิ์ของ Matsuri — ศาลเจ้าใกล้เคียงพร้อมตัวคูณรางวัลแบบเรียลไทม์" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>แผนที่สถานที่ศักดิ์สิทธิ์</strong> — เห็นศาลเจ้ารอบตัวคุณและตัวคูณแบบเรียลไทม์ได้ในพริบตา (เช่น ×2.5 ที่ Meiji Jingū, ×8.0 ที่จุดชายขอบ) เช็กอินได้วันละ 3 ครั้ง รีเซ็ตทุก 24 ชั่วโมง — แผนที่จะชี้นำคุณไปยังจุดที่หายากกว่าและให้รางวัลสูงกว่า</p>
+  </div>
+</div>
+
 
 **หลักการพื้นฐาน — ยิ่งจุดผู้มาเยือนน้อย ยิ่งหารายได้ได้มาก:**
 

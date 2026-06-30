@@ -89,6 +89,15 @@ På tvers av alle tre produkter:
 **En desentralisert utility-token på Solana-blokkjeden.** Ikke bare et betalingsmiddel, men en bro mellom de besøkende og kulturen som skal vernes — hver enkelt opplevelse bærer Japans framtid. En **samskapende kulturøkonomi** der opplevelse og økonomi sirkulerer i samme krets. **MTC** er det som binder disse tre produktene sammen.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Se Matsuri i App Store" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri i App Store — vurdert til 5.0, versjon 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Dette er ikke et konsept på papiret. <strong>Matsuri er tilgjengelig i App Store</strong> — bestillinger, betalinger, en Web3-lommebok og helligdomsbesøk-mining, alt levert i dag. Sidene som følger beskriver et produkt du kan laste ned akkurat nå.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Whitepaper-navigasjon

@@ -36,6 +36,15 @@ Starter med booking af kulturoplevelser og udvides trinvist til **gæstehuse**, 
 Et medie, der bringer japansk kultur ud i verden. Tjen MTC ved at læse, dele og engagere dig i artiklerne.
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — opdag kulturoplevelser" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — restaurantsøgning med kostfiltre (glutenfri, mælkefri, nøddefri)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — køb japanske kulturvarer" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — crowdfunding til kulturprojekter" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*Fra oplevelse til mad, varer og samskabelse — Matsuri-appen kører allerede hele løkken. Fra venstre til højre: opdag oplevelser, find allergivenlige restauranter, køb håndværk, støt crowdfunding-projekter.*
+
 ---
 
 ## 🤝 Social Mining (tjen ved at forbinde dig)

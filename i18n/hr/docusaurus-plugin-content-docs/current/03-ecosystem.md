@@ -36,6 +36,15 @@ Kreće od rezervacije kulturnih iskustava, pa se postupno širi na **guest house
 Medij koji japansku kulturu nosi u svijet. Zaradite MTC čitanjem, dijeljenjem i angažiranjem s člancima.
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — otkrijte kulturna iskustva" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — pretraživač restorana s prehrambenim filtrima (bez glutena, bez mliječnih proizvoda, bez orašastih plodova)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — kupnja japanskih kulturnih proizvoda" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — crowdfunding za kulturne projekte" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*Od iskustva do hrane, robe i sustvaranja — Matsuri aplikacija već vrti cijeli krug. Slijeva nadesno: otkrijte iskustva, pronađite restorane prilagođene alergijama, kupujte rukotvorine, podržite crowdfunding projekte.*
+
 ---
 
 ## 🤝 Social Mining (zaradi povezujući)

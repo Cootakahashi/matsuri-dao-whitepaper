@@ -89,6 +89,15 @@ Circula por los tres productos:
 **Un token de utilidad descentralizado sobre la blockchain de Solana.** No es un simple medio de pago: conecta a quienes visitan con la cultura que merece ser preservada, de modo que cada experiencia sostiene el futuro de Japón — una **economía cultural de co-creación** donde experiencia y economía circulan juntas. Los tres productos están conectados por **MTC**.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Ver Matsuri en el App Store" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri en el App Store — valorada 5.0, versión 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Esto no es un concepto sobre papel. <strong>Matsuri ya está disponible en el App Store</strong> — reservas, pagos, una billetera Web3 y minería de visita a santuarios, todo funcionando hoy. Las páginas siguientes describen un producto que puedes descargar ahora mismo.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Guía del whitepaper

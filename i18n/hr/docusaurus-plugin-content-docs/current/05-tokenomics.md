@@ -130,6 +130,13 @@ MTC ekonomija još je u ranoj fazi, ali stvarna aktivnost već je u tijeku.
 Još nemamo „velike uspješne rezultate". 50 eventa i testni pogon — to je sadašnja realnost. Ali proizvod radi, zajednica postoji, i stojimo na pragu ozbiljne ekspanzije.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri naplata — plaćanje karticom, MTC saldom ili kriptom (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="Aktivni Matsuri novčanik — MTC saldo i prikupljene nagrade" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC se već može trošiti, nije obećanje za jednog dana: pri naplati možete platiti svojim MTC saldom ili on-chain kriptom, a aktivni novčanik prikazuje prikupljene nagrade uz MTC saldo.*
+
 ---
 
 ## Buyback protokol

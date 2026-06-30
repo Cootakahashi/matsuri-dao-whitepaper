@@ -61,6 +61,13 @@ On top of that, what can meet the requirements of **real tourism demand × high-
 
 <small>*By market cap (~$230B vs ~$50B) and DeFi TVL (~$54B vs ~$5.7B), Ethereum still leads by a wide margin. Solana is growing rapidly on "speed, cost, and real usage."*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Phantom approval for a 3,500 MTC Matsuri booking on Solana — network fee $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>A real Matsuri booking settled on Solana through Phantom — <strong>3,500 MTC</strong> for a network fee of just <strong>$0.0068</strong>. The "average $0.007" in the table above, made tangible. This is what makes tossing the equivalent of a few coins into an offering box economically viable.</p>
+  </div>
+</div>
+
 ---
 
 :::tip The economic rationality of osaisen (offering money)

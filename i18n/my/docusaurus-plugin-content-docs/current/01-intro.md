@@ -89,6 +89,15 @@ MTC ကို **ရှာ၊ ချဲ့**။
 **Solana blockchain ပေါ်ရှိ ဗဟိုမဲ့ utility token။** ရိုးရိုး ငွေပေးချေစနစ်တစ်ခုမျှ မဟုတ်ပါ။ လာရောက်သူများနှင့် ကာကွယ်သင့်သော ယဉ်ကျေးမှုကို ချိတ်ဆက်ပေးပြီး အတွေ့အကြုံတစ်ခုစီသည် ဂျပန်၏ အနာဂတ်ကို ထောက်ပံ့ပေးသည်—အတွေ့အကြုံနှင့် စီးပွားရေး လည်ပတ်နေသော **အတူတကွဖန်တီးသည့် ယဉ်ကျေးမှု စီးပွားရေး** ဖြစ်သည်။ ဤထုတ်ကုန် ၃ မျိုးလုံးကို **MTC** က ချိတ်ဆက်ပေးပါသည်။
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="App Store တွင် Matsuri ကို ကြည့်ပါ" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="App Store ပေါ်ရှိ Matsuri — အဆင့်သတ်မှတ်ချက် 5.0၊ ဗားရှင်း 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>ဤသည်မှာ စာရွက်ပေါ်က သဘောတရားတစ်ခု မဟုတ်ပါ။ <strong>Matsuri ကို App Store တွင် အသုံးပြုနိုင်ပြီ</strong> — ဘွတ်ကင်များ၊ ငွေပေးချေမှုများ၊ Web3 ပိုက်ဆံအိတ်နှင့် ဘုရားဖူး mining အားလုံးကို ယနေ့ပင် အသုံးပြုနိုင်ပြီ။ နောက်လာမည့် စာမျက်နှာများသည် သင် ယခုပင် ဒေါင်းလုဒ်ဆွဲနိုင်သော ထုတ်ကုန်တစ်ခုကို ဖော်ပြထားသည်။</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 White Paper Navigation

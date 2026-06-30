@@ -130,6 +130,13 @@ Nasa early stage pa ang MTC economic zone, ngunit nagsimula na ang aktwal na akt
 Hindi pa namin "malakihang track record ng tagumpay". 50 events at test operation — iyan ang kasalukuyang realidad. Ngunit gumagana ang produkto, umiiral ang community, at kami ay nasa phase ng pag-expand mula ngayon.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri checkout — magbayad gamit ang card, MTC balance, o crypto (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="Isang live na Matsuri wallet — MTC balance at naipong rewards" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*Magagastos na ang MTC, hindi pangako para sa balang araw: sa checkout maaari kang magbayad gamit ang iyong MTC balance o on-chain crypto, at ipinapakita ng live wallet ang naipong rewards katabi ng MTC balance nito.*
+
 ---
 
 ## Buyback Protocol

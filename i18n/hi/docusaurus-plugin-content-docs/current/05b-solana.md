@@ -61,6 +61,13 @@ Ethereum की रची हुई नींव के बिना न Solana 
 
 <small>*Market cap (~$230B बनाम ~$50B) और DeFi TVL (~$54B बनाम ~$5.7B) के हिसाब से Ethereum आज भी बड़े अंतर से आगे है। Solana "गति, लागत और असली उपयोग" पर तेज़ी से बढ़ रहा है।*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Solana पर 3,500 MTC Matsuri बुकिंग के लिए Phantom अनुमोदन — नेटवर्क शुल्क $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>एक असली Matsuri बुकिंग Solana पर Phantom के ज़रिए तय हुई — सिर्फ़ <strong>$0.0068</strong> के नेटवर्क शुल्क पर <strong>3,500 MTC</strong>। ऊपर की तालिका का "औसत $0.007" यहाँ मूर्त रूप में। यही वह बात है जो offering box में कुछ सिक्कों के बराबर डालने को आर्थिक रूप से व्यवहार्य बनाती है।</p>
+  </div>
+</div>
+
 ---
 
 :::tip Osaisen (अर्पण) की आर्थिक तर्कसंगति

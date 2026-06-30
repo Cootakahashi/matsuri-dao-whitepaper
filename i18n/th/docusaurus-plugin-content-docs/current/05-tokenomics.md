@@ -130,6 +130,13 @@ graph LR
 เรายังไม่มี "ผลงานความสำเร็จยิ่งใหญ่" 50 อีเวนต์และทดลองใช้งาน — นั่นคือความจริงปัจจุบัน แต่ผลิตภัณฑ์กำลังทำงาน ชุมชนมีอยู่จริง และเราอยู่ในเฟสที่กำลังขยายตัวอย่างจริงจังจากจุดนี้
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="หน้าชำระเงิน Matsuri — จ่ายด้วยบัตร ยอด MTC หรือคริปโต (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="กระเป๋าเงิน Matsuri จริง — ยอด MTC และรางวัลที่สะสมไว้" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC ใช้จ่ายได้แล้วจริง ไม่ใช่คำสัญญาในวันข้างหน้า: ที่หน้าชำระเงินคุณสามารถจ่ายด้วยยอด MTC หรือคริปโตบน on-chain และกระเป๋าเงินจริงจะแสดงรางวัลที่สะสมไว้ข้างยอด MTC*
+
 ---
 
 ## Buy-back Protocol (ซื้อคืน)

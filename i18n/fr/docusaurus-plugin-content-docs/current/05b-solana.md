@@ -61,6 +61,13 @@ Cela dit, pour l'exigence de **demande touristique réelle × micro-paiements à
 
 <small>*※ Ethereum reste largement en tête en capitalisation (~230 Md$ vs ~50 Md$) et en DeFi TVL (~54 Md$ vs ~5,7 Md$). Solana connaît une croissance fulgurante en « vitesse, coût et usage réel »*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Approbation Phantom pour une réservation Matsuri de 3,500 MTC sur Solana — frais de réseau $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Une vraie réservation Matsuri réglée sur Solana via Phantom — <strong>3,500 MTC</strong> pour des frais de réseau de seulement <strong>$0.0068</strong>. La « moyenne de $0.007 » du tableau ci-dessus, rendue tangible. C'est ce qui rend économiquement viable le fait de jeter l'équivalent de quelques pièces dans un tronc à offrandes.</p>
+  </div>
+</div>
+
 ---
 
 :::tip La logique économique de l'offrande

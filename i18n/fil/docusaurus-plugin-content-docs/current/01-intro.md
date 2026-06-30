@@ -89,6 +89,15 @@ Sa tatlong produkto,
 **Decentralized utility token sa Solana blockchain.** Hindi lamang isang paraan ng pagbabayad — pinag-uugnay nito ang mga bumibisita at ang kulturang dapat pangalagaan, at bawat karanasan ay sumusuporta sa kinabukasan ng Japan — isang **co-creative cultural economy** kung saan umiikot ang karanasan at ekonomiya. Ang tatlong produktong ito ay pinag-uugnay lahat ng **MTC**.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Tingnan ang Matsuri sa App Store" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri sa App Store — na-rate ng 5.0, bersyon 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Hindi ito konsepto sa papel lamang. <strong>Live na ang Matsuri sa App Store</strong> — mga booking, bayad, Web3 wallet, at shrine-visit mining, lahat ay gumagana na ngayon. Ang mga sumusunod na pahina ay naglalarawan ng produktong maaari mong i-download ngayon din.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Gabay sa Whitepaper

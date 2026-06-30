@@ -89,6 +89,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 **Utility Token แบบกระจายศูนย์บนบล็อกเชน Solana** ไม่ใช่แค่ช่องทางชำระเงิน แต่เป็นตัวเชื่อมผู้มาเยือนกับวัฒนธรรมที่ควรค่าแก่การปกป้อง ทุกประสบการณ์ล้วนค้ำจุนอนาคตของญี่ปุ่น — **เศรษฐกิจวัฒนธรรมแบบร่วมสร้าง**ที่ประสบการณ์และเศรษฐกิจหมุนเวียนไปด้วยกัน ทั้ง 3 ผลิตภัณฑ์นี้เชื่อมต่อกันด้วย **MTC**
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="ดู Matsuri บน App Store" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri บน App Store — คะแนน 5.0 เวอร์ชัน 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>นี่ไม่ใช่แนวคิดบนกระดาษ <strong>Matsuri เปิดให้บริการแล้วบน App Store</strong> — ทั้งการจอง การชำระเงิน กระเป๋าเงิน Web3 และการขุดจากการไปสักการะศาลเจ้า ทั้งหมดพร้อมใช้งานแล้ววันนี้ หน้าถัดไปจะอธิบายผลิตภัณฑ์ที่คุณดาวน์โหลดได้ทันที</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 สารบัญ White Paper

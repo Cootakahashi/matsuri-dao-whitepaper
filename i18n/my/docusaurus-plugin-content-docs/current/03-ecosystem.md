@@ -36,6 +36,15 @@ graph TD
 ဂျပန်ယဉ်ကျေးမှု၏ ဆွဲဆောင်မှုကို ကမ္ဘာသို့ ပို့ဆောင်သော မီဒီယာ platform။ ဆောင်းပါးဖတ်・share စသည့် engagement မှတဆင့် MTC ရယူနိုင်။
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — ယဉ်ကျေးမှု အတွေ့အကြုံများကို ရှာဖွေပါ" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — အစားအသောက် filter များ (gluten-free, dairy-free, nut-free) ပါသော စားသောက်ဆိုင် ရှာဖွေစနစ်" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — ဂျပန် ယဉ်ကျေးမှု ပစ္စည်းများ ဈေးဝယ်ခြင်း" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — ယဉ်ကျေးမှု ပရောဂျက်များအတွက် crowdfunding" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*အတွေ့အကြုံမှ အစားအစာ၊ ကုန်ပစ္စည်းနှင့် အတူတကွ ဖန်တီးမှုအထိ — Matsuri အက်ပ်သည် ပြည့်စုံသော loop ကို ယခုပင် လည်ပတ်နေပြီ။ ဘယ်မှ ညာသို့— အတွေ့အကြုံများ ရှာဖွေ၊ ဓာတ်မတည့်မှုနှင့် သင့်လျော်သော စားသောက်ဆိုင်များ ရှာဖွေ၊ လက်မှုပစ္စည်းများ ဈေးဝယ်၊ crowdfunding ပရောဂျက်များကို ပံ့ပိုးပါ။*
+
 ---
 
 ## 🤝 Social Mining (ချိတ်ဆက်၍ ရှာ)

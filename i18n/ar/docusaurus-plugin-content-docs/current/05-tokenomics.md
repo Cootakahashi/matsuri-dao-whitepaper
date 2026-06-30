@@ -130,6 +130,13 @@ graph LR
 ليس لدينا بعد «سجل نجاح كبير». 50 فعالية وتشغيل تجريبي — هذا هو الواقع الآن. لكن المنتج يعمل، والمجتمع موجود، ونحن في مرحلة التوسّع الفعلي من هنا.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="دفع Matsuri — ادفع بالبطاقة أو رصيد MTC أو العملات المشفّرة (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="محفظة Matsuri حيّة — رصيد MTC والمكافآت المتراكمة" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC قابل للإنفاق بالفعل، وليس وعدًا مؤجّلًا: عند الدفع يمكنك التسوية برصيد MTC أو بالعملات المشفّرة on-chain، وتعرض المحفظة الحيّة المكافآت المتراكمة بجانب رصيد MTC.*
+
 ---
 
 ## بروتوكول Buy-back (إعادة الشراء)

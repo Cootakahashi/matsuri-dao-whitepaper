@@ -89,6 +89,15 @@ Kroz sva tri proizvoda:
 **Decentralizirani utility token na Solana blockchainu.** Nije samo sredstvo plaćanja, nego most između posjetitelja i kulture koju treba očuvati — svako iskustvo nosi budućnost Japana. **Sustvaralačka kulturna ekonomija** u kojoj iskustvo i ekonomija cirkuliraju u istom krugu. Upravo **MTC** povezuje ova tri proizvoda.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Pogledajte Matsuri u App Storeu" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri u App Storeu — ocjena 5.0, verzija 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Ovo nije koncept na papiru. <strong>Matsuri je dostupan u App Storeu</strong> — rezervacije, plaćanja, Web3 novčanik i mining posjeta svetištima, sve već radi danas. Stranice koje slijede opisuju proizvod koji možete preuzeti upravo sada.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Navigacija whitepaperom

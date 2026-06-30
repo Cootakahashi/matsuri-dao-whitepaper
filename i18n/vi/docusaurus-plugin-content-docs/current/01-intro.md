@@ -89,6 +89,15 @@ Xuyên suốt cả ba sản phẩm —
 **Một utility token phi tập trung trên blockchain Solana.** Hơn cả một phương tiện thanh toán, MTC kết nối những người đến Nhật Bản với nền văn hóa đáng được bảo vệ, biến mọi trải nghiệm thành điều gì đó hỗ trợ tương lai của Nhật Bản — một **nền kinh tế văn hóa cộng tạo** nơi trải nghiệm và thương mại lưu thông cùng nhau. Cả ba sản phẩm được khâu lại với nhau bởi **MTC**.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Xem Matsuri trên App Store" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri trên App Store — đánh giá 5.0, phiên bản 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Đây không phải là một ý tưởng trên giấy. <strong>Matsuri đã có mặt trên App Store</strong> — đặt chỗ, thanh toán, ví Web3 và đào khi viếng đền, tất cả đều đã ra mắt hôm nay. Những trang tiếp theo mô tả một sản phẩm bạn có thể tải xuống ngay bây giờ.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Điều hướng Whitepaper

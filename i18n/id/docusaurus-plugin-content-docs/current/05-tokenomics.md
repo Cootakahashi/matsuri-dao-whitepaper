@@ -130,6 +130,13 @@ Ekonomi MTC masih dini, tetapi aktivitas nyata telah dimulai.
 Kami belum memiliki rekam jejak "kesuksesan besar." 50 acara dan operasi uji coba — itulah realitas hari ini. Tetapi produk berjalan, komunitas ada, dan kami berada di fase scaling up dari sini secara serius.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Checkout Matsuri — bayar dengan kartu, saldo MTC, atau crypto (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="Dompet Matsuri yang aktif — saldo MTC dan imbalan yang terkumpul" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC sudah bisa dibelanjakan, bukan janji suatu hari nanti: saat checkout kamu bisa membayar dengan saldo MTC atau crypto on-chain, dan dompet yang aktif menampilkan imbalan terkumpul di samping saldo MTC-nya.*
+
 ---
 
 ## Protokol buyback

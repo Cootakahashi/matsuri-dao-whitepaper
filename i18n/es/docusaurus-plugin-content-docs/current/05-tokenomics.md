@@ -130,6 +130,13 @@ La economía MTC está aún en su fase inicial, pero ya hay actividad real.
 Todavía no tenemos «resultados de gran éxito». 50 eventos y operación de pruebas —— esa es la realidad hoy. Pero el producto funciona, la comunidad existe y estamos en la fase de escalar de verdad.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Pago en Matsuri — paga con tarjeta, saldo MTC o cripto (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="Una billetera Matsuri real — saldo MTC y recompensas acumuladas" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC ya es gastable, no una promesa para algún día: al pagar puedes liquidar con tu saldo MTC o cripto on-chain, y una billetera real muestra las recompensas acumuladas junto a su saldo MTC.*
+
 ---
 
 ## Protocolo de recompra

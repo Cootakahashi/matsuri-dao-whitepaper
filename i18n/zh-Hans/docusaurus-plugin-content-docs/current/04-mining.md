@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri 圣地地图 —— 周边神社及实时奖励倍数" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>圣地地图</strong> —— 一眼掌握周边的神社及其实时倍数(例如明治神宫 ×2.5,边远圣地 ×8.0)。每天可签到三次,每 24 小时重置一次 —— 地图会引导你前往更稀有、奖励更高的地点。</p>
+  </div>
+</div>
+
 
 **基本原则 — 访客越少的地方,赚得越多:**
 

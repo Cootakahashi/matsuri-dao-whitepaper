@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri-Karte heiliger Stätten — nahegelegene Schreine mit Live-Belohnungsmultiplikatoren" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>Karte heiliger Stätten</strong> — sieh auf einen Blick die Schreine um dich herum und ihre Live-Multiplikatoren (z. B. ×2.5 am Meiji Jingū, ×8.0 an einer abgelegenen Stätte). Drei Check-ins pro Tag, alle 24 Stunden zurückgesetzt — die Karte lenkt dich zu den selteneren, lohnenderen Orten.</p>
+  </div>
+</div>
+
 
 **Grundprinzip — je weniger Besuchende, desto mehr verdienst du:**
 

@@ -130,6 +130,13 @@ Die MTC-Wirtschaft ist noch jung, doch reale Aktivität hat bereits begonnen.
 Wir haben noch keine Bilanz „großer Erfolge" vorzuweisen. 50 Events und Testbetrieb — das ist die Realität von heute. Aber das Produkt läuft, die Community existiert, und wir stehen in der Phase, in der wir von hier aus ernsthaft skalieren.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri-Checkout — bezahle per Karte, MTC-Guthaben oder Krypto (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="Eine echte Matsuri-Wallet — MTC-Guthaben und aufgelaufene Belohnungen" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC ist bereits ausgebbar, kein Irgendwann-Versprechen: Beim Checkout kannst du mit deinem MTC-Guthaben oder On-Chain-Krypto bezahlen, und eine echte Wallet zeigt die aufgelaufenen Belohnungen neben dem MTC-Guthaben.*
+
 ---
 
 ## Buyback-Protokoll

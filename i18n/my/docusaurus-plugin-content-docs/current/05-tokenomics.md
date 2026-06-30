@@ -130,6 +130,13 @@ MTC စီးပွားရေးဇုန်သည် အစပိုင်း
 ကျွန်ုပ်တို့သည် "အောင်မြင်မှု ကြီးမား စွမ်းဆောင်ရည်" ကို မပိုင်ဆိုင်သေးပါ။ ပွဲ 50 ကြိမ်နှင့် test လည်ပတ်——ထိုသည်မှာ လက်ရှိ၏ အမှန်တရား။ သို့သော် product လည်ပတ်နေ၊ အသိုက်အဝန်း တည်ရှိနေပြီး ဤနေရာမှ အစစ်အမှန် ချဲ့ထွင်မည့် phase တွင် ရှိပါသည်။
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri ငွေရှင်းခြင်း — ကတ်၊ MTC လက်ကျန်ငွေ သို့မဟုတ် crypto (SOL/MTC) ဖြင့် ပေးချေပါ" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="တိုက်ရိုက် Matsuri ပိုက်ဆံအိတ် — MTC လက်ကျန်ငွေနှင့် စုဆောင်းရရှိသော ဆုကြေးများ" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC ကို ယခုပင် သုံးစွဲနိုင်ပြီ၊ တစ်နေ့တွင် ဆိုသော ကတိ မဟုတ်ပါ — ငွေရှင်းရာတွင် သင့် MTC လက်ကျန်ငွေ သို့မဟုတ် on-chain crypto ဖြင့် ရှင်းနိုင်ပြီး တိုက်ရိုက် ပိုက်ဆံအိတ်က MTC လက်ကျန်ငွေဘေးတွင် စုဆောင်းရရှိသော ဆုကြေးများကို ပြသသည်။*
+
 ---
 
 ## Buyback Protocol

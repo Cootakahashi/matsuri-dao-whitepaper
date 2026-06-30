@@ -130,6 +130,13 @@ L'economia di MTC è ancora agli inizi, ma un'attività reale è già partita.
 Non abbiamo ancora un track record di «grande successo». 50 eventi e operatività di prova — è questa la realtà di oggi. Ma il prodotto gira, la community esiste e siamo nella fase in cui si passa davvero a scalare.
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Checkout Matsuri — paga con carta, saldo MTC o crypto (SOL/MTC)" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="Un wallet Matsuri reale — saldo MTC e ricompense maturate" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC è già spendibile, non una promessa per un giorno: al checkout puoi pagare con il tuo saldo MTC o con crypto on-chain, e un wallet reale mostra le ricompense maturate accanto al saldo MTC.*
+
 ---
 
 ## Protocollo di buyback

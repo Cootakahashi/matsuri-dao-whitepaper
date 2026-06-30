@@ -89,6 +89,15 @@ MTC **verdienen und verbreiten**.
 **Ein dezentraler Utility-Token auf der Solana-Blockchain.** MTC ist mehr als nur ein Zahlungsmittel: Er verbindet die Menschen, die nach Japan kommen, mit der Kultur, die es zu bewahren gilt, und macht jedes Erlebnis zu einem Beitrag für Japans Zukunft — eine **mit-geschaffene Kulturwirtschaft**, in der Erlebnis und Handel gemeinsam zirkulieren. Alle drei Produkte sind durch **MTC** miteinander verwoben.
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="Matsuri im App Store ansehen" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="Matsuri im App Store — bewertet mit 5.0, Version 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Das ist kein Konzept auf dem Papier. <strong>Matsuri ist live im App Store</strong> — Buchungen, Zahlungen, eine Web3-Wallet und Schreinbesuchs-Mining, alles bereits heute verfügbar. Die folgenden Seiten beschreiben ein Produkt, das du jetzt sofort herunterladen kannst.</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 Whitepaper-Navigation

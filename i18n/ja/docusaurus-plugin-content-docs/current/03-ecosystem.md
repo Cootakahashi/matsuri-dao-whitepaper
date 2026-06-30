@@ -36,6 +36,15 @@ graph TD
 日本文化の魅力を世界へ届けるメディアプラットフォーム。記事を読む・シェアするなどのエンゲージメントを通じてMTCを獲得できます。
 :::
 
+<div style={{display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-home-discover.webp" alt="Matsuri — 文化体験を見つける" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-restaurant.webp" alt="Matsuri — 食事制限フィルター付きレストラン検索(グルテンフリー、乳製品不使用、ナッツ不使用)" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-shop.webp" alt="Matsuri — 日本の文化グッズを買う" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-crowdfunding.webp" alt="Matsuri — 文化プロジェクトのクラウドファンディング" style={{width: '100%', maxWidth: '164px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*体験から、衣・食・住、そして共創投資まで——Matsuri アプリはすでにフルループを回しています。左から:体験を見つける、アレルギー対応のレストランを探す、クラフトを買う、クラウドファンディングを支援する。*
+
 ---
 
 ## 🤝 ソーシャルマイニング（繋がって稼ぐ）

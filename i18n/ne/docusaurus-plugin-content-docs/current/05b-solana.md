@@ -61,6 +61,13 @@ Ethereum ले निर्माण गरेको आधार बिना,
 
 <small>*बजार पूँजीकरण (~$230B vs ~$50B) र DeFi TVL (~$54B vs ~$5.7B) द्वारा, Ethereum अझै फराकिलो मार्जिनले अग्रणी छ। Solana "गति, लागत, र वास्तविक उपयोग" मा द्रुत रूपमा बढिरहेको छ।*</small>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <img src="/img/apps/matsuri-phantom-pay.webp" alt="Solana मा 3,500 MTC Matsuri बुकिङका लागि Phantom अनुमोदन — नेटवर्क शुल्क $0.0068" style={{width: '100%', maxWidth: '240px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>Phantom मार्फत Solana मा निपटाइएको वास्तविक Matsuri बुकिङ — <strong>3,500 MTC</strong> को लागि नेटवर्क शुल्क मात्र <strong>$0.0068</strong>। माथिको तालिकाको "औसत $0.007" लाई मूर्त रूप दिइएको। यही कुराले चढाउने बाकसमा केही सिक्का बराबरको रकम हाल्ने कुरालाई आर्थिक रूपमा व्यवहार्य बनाउँछ।</p>
+  </div>
+</div>
+
 ---
 
 :::tip osaisen (चढाउने पैसा) को आर्थिक तर्कसंगतता

@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri 성지 지도 — 주변 신사와 실시간 보상 배율" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>성지 지도</strong> — 주변의 신사와 그 실시간 배율을 한눈에 확인(예: 메이지 신궁에서 ×2.5, 변경 사이트에서 ×8.0). 하루 3회까지 체크인할 수 있으며 24시간마다 리셋 — 지도가 더 희소하고 보상이 높은 스폿으로 이끌어 줍니다.</p>
+  </div>
+</div>
+
 
 **기본 원칙 — 방문자가 적은 사이트일수록 더 많이 번다:**
 

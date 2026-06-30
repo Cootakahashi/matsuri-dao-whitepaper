@@ -130,6 +130,13 @@ sequenceDiagram
   </div>
 </div>
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2rem 0'}}>
+  <img src="/img/apps/matsuri-sacred-map-live.webp" alt="Matsuri पवित्र स्थल नक्सा — नजिकैका मन्दिरहरू लाइभ पुरस्कार मल्टिप्लायरसहित" style={{width: '100%', maxWidth: '260px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}><strong>पवित्र स्थल नक्सा</strong> — तपाईंको वरपरका मन्दिरहरू र तिनका लाइभ मल्टिप्लायरहरू एकै नजरमा हेर्नुहोस् (जस्तै Meiji Jingū मा ×2.5, सीमान्त स्थलमा ×8.0)। दिनमा तीन पटक चेक-इन, हरेक 24 घण्टामा रिसेट हुने — नक्साले तपाईंलाई दुर्लभ, उच्च-पुरस्कार स्थानहरूतर्फ डोऱ्याउँछ।</p>
+  </div>
+</div>
+
 
 **मूल सिद्धान्त — आगन्तुकहरू जति कम, तपाईंले त्यति बढी कमाउनुहुन्छ:**
 

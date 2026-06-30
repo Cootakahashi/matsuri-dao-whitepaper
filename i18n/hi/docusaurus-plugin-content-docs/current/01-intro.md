@@ -89,6 +89,15 @@ MTC **कमाइए और फैलाइए**।
 **Solana blockchain पर एक विकेन्द्रीकृत utility token।** महज़ भुगतान का साधन नहीं — MTC जापान आने वालों को उस संस्कृति से जोड़ता है जिसे बचाया जाना चाहिए, और हर अनुभव को ऐसी शक्ति में बदल देता है जो जापान के कल को सँभाले। यह एक **सह-सर्जित सांस्कृतिक अर्थव्यवस्था** है, जहाँ अनुभव और वाणिज्य साथ-साथ प्रवाहित होते हैं। तीनों उत्पादों को आपस में जोड़ने वाला धागा है **MTC**।
 :::
 
+<div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', margin: '2.5rem 0'}}>
+  <a href="https://apps.apple.com/app/matsuri-%E7%A5%AD/id6761138366" target="_blank" rel="noopener noreferrer" aria-label="App Store पर Matsuri देखें" className="app-store-badge">
+    <img src="/img/apps/matsuri-appstore.webp" alt="App Store पर Matsuri — रेटिंग 5.0, वर्शन 1.1.2" style={{width: '100%', maxWidth: '220px', borderRadius: '20px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.25)'}} />
+  </a>
+  <div style={{flex: '1 1 260px', maxWidth: '400px'}}>
+    <p style={{margin: 0, fontSize: '0.95rem', lineHeight: 1.6}}>यह कागज़ पर बना कोई कॉन्सेप्ट नहीं है। <strong>Matsuri App Store पर लाइव है</strong> — बुकिंग, भुगतान, एक Web3 वॉलेट, और मंदिर-दर्शन माइनिंग, सब आज से उपलब्ध हैं। आगे के पृष्ठ उस उत्पाद का वर्णन करते हैं जिसे आप अभी डाउनलोड कर सकते हैं।</p>
+  </div>
+</div>
+
 ---
 
 ## 📖 श्वेतपत्र की सूची

@@ -130,6 +130,13 @@ MTC की अर्थव्यवस्था अभी शुरुआती 
 अभी हमारे पास "विशाल सफलता" का कोई रिकॉर्ड नहीं है। 50 events और परीक्षण-संचालन — आज की वास्तविकता यही है। पर उत्पाद चल रहा है, समुदाय है, और हम यहाँ से गंभीरता से विस्तार के चरण में हैं।
 :::
 
+<div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', margin: '2.5rem 0 1rem'}}>
+  <img src="/img/apps/matsuri-payment-methods.webp" alt="Matsuri checkout — कार्ड, MTC बैलेंस, या crypto (SOL/MTC) से भुगतान" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+  <img src="/img/apps/matsuri-mypage-rewards.webp" alt="एक लाइव Matsuri वॉलेट — MTC बैलेंस और संचित रिवॉर्ड्स" style={{width: '100%', maxWidth: '204px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.2)', boxShadow: '0 8px 28px rgba(0,0,0,0.25)'}} />
+</div>
+
+*MTC अभी से खर्च करने योग्य है, किसी दिन का वादा नहीं: checkout पर आप अपने MTC बैलेंस या on-chain crypto से भुगतान कर सकते हैं, और एक लाइव वॉलेट अपने MTC बैलेंस के साथ संचित रिवॉर्ड्स दिखाता है।*
+
 ---
 
 ## Buyback protocol
