@@ -1,21 +1,13 @@
 .docProgress {
-  position: sticky;
-  top: var(--ifm-navbar-height, 60px);
-  z-index: 100;
-  background: var(--ifm-background-color);
-  padding: 0.65rem 0 0.85rem;
-  margin: 0 0 2rem;
+  /*
+   * Plain in-flow header (NOT sticky): in this Docusaurus layout an ancestor
+   * with `overflow: auto` that never scrolls breaks `position: sticky`, which
+   * made the bar mis-position and overlap the reading-hero pills below it
+   * (badly so on mobile). Keeping it in normal flow is glitch-free everywhere.
+   */
+  margin: 0 0 1.5rem;
+  padding: 0 0 1rem;
   border-bottom: 1px solid rgba(167, 139, 250, 0.08);
-  backdrop-filter: saturate(180%) blur(10px);
-  -webkit-backdrop-filter: saturate(180%) blur(10px);
-}
-
-[data-theme='dark'] .docProgress {
-  background: rgba(10, 10, 15, 0.85);
-}
-
-[data-theme='light'] .docProgress {
-  background: rgba(255, 255, 255, 0.85);
 }
 
 .docProgress__bar {
